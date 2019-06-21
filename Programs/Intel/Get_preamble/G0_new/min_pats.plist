@@ -1,0 +1,807 @@
+Version 1.0;
+
+
+
+GlobalPList min_pats  {
+ 	GlobalPList  DS10_light_multiple_C3_4_cmp_0106c_list [Mask ALL_MASK_PINs_CWA, addr_all, ADSnn, ADSTB1t0nn_0, ADSTB1t0nn_1, BNRnn, AP1t0nn_0, AP1t0nn_1, reqnn]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581305M014258_010604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_multiple_C3_4_cmp_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_5555_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581359M010459_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_5555_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581360M010459_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_5555_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581379M010459_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_5555_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581380M010459_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_AAAA_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581361M010460_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_AAAA_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581362M010460_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_AAAA_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581381M010460_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_AAAA_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581382M010460_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all0_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581355M010458_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all0_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581356M010458_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all0_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581375M010458_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all0_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581376M010458_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all1_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581357M010457_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all1_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581358M010457_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_receiver_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all1_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581377M010457_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_receiver_all1_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581378M010457_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_receiver_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581367M010463_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581368M010463_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581387M010463_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581388M010463_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581369M010464_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581370M010464_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581389M010464_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581390M010464_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581363M010462_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581364M010462_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581383M010462_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581384M010462_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581365M010461_010604b_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_0_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581366M010461_010604d_NG0647aj_0fxxxx0xhIr04xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_b_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581385M010461_010604b_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_d_N_G0_647a_j_f_x_0_I_1_f2_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581386M010461_010604d_NG0647aj_0fxxxx0xhIr12xxxxxPmrxR4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+ 	}
+ 	GlobalPList IDV_00_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581307M014255_010604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_IDV_00_97_OBR1;
+ 	}
+ 	GlobalPList IDV_01_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581308M014256_010604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_IDV_01_97_OBR1;
+ 	}
+ 	GlobalPList IDV_15_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581309M014257_010604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_IDV_15_97_OBR1;
+ 	}
+ 	GlobalPList agu_adder_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581188M011747_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_agu_adder_bist_OBR1;
+ 	}
+ 	GlobalPList agu_adder_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581238M011747_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_agu_adder_bist_OBR1;
+ 	}
+ 	GlobalPList agu_fppla_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581189M011748_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_agu_fppla_bist_OBR1;
+ 	}
+ 	GlobalPList agu_fppla_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581239M011748_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_agu_fppla_bist_OBR1;
+ 	}
+ 	GlobalPList autohalt_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581306M014260_010604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_C1_cmp_OBR1;
+ 	}
+ 	GlobalPList bd_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581254M010443_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode0_0110a_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581256M010443_011002a_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode0_0112c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581255M010443_011202c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode0_0114c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581257M010443_011402c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode0_0118c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581258M010443_011802c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581274M010443_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode1_0110a_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581276M010443_011002a_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode1_0112c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581275M010443_011202c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode1_0114c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581277M010443_011402c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bd_mode1_0118c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581278M010443_011802c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_braindeadJ_OBR1;
+ 	}
+ 	GlobalPList bist_c0_modeA_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_a_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581296M009971_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_bist_c0_l2wa_OBR1;
+ 	}
+ 	GlobalPList bist_c1_modeA_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_a_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581297M009972_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_bist_c1_l2wa_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_AGU_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581181M011695_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_AGU_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_AGU_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581231M011695_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_AGU_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_DCU_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581180M011694_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_DCU_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_DCU_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581230M011694_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_DCU_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_dtlb_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581182M011696_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_dtlb_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_dtlb_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581232M011696_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_dtlb_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_fau_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581183M011697_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_fau_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_fau_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581233M011697_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_fau_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_macro_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581187M011701_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_macro_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_macro_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581237M011701_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_macro_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_mob_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581184M011698_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_mob_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_mob_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581234M011698_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_mob_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_noMSROM_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581179M011693_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_noMSROM_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_noMSROM_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581229M011693_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_noMSROM_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_pfp_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581185M011699_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_pfp_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_pfp_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581235M011699_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_pfp_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_simd_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581186M011700_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_nohw_simd_OBR1;
+ 	}
+ 	GlobalPList bist_dc_nohw_simd_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581236M011700_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_nohw_simd_OBR1;
+ 	}
+ 	GlobalPList bist_dualcore_modeA_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_a_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581298M009973_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_bist_dualc_OBR1;
+ 	}
+ 	GlobalPList bpu_array_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581190M011749_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bpu_array_bist_OBR1;
+ 	}
+ 	GlobalPList bpu_array_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581240M011749_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bpu_array_bist_OBR1;
+ 	}
+ 	GlobalPList bsel_hrc_mode0_list [Mask Mode_0_pin_masked, TDO, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581172Y003456_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_simple_firsttest_OBR1;
+ 		Pat s3581173Y003456_010604i_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_simple_firsttest_OBR1;
+ 		Pat s3581174Y003456_010604m_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_simple_firsttest_OBR1;
+ 	}
+ 	GlobalPList bsel_hrc_mode1_list [Mask Mode_1_pin_masked, TDO, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581222Y003456_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_simple_firsttest_OBR1;
+ 		Pat s3581223Y003456_010604i_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_simple_firsttest_OBR1;
+ 		Pat s3581224Y003456_010604m_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_simple_firsttest_OBR1;
+ 	}
+ 	GlobalPList dcu_bist_patch_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581191M011750_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_dcu_bist_patch_OBR1;
+ 	}
+ 	GlobalPList dcu_bist_patch_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581241M011750_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_dcu_bist_patch_OBR1;
+ 	}
+ 	GlobalPList dft_idcode_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat g3581316H003045_010604c_MG0647aj_0fxxxx0xhucx0xxxxxPfrxR4_dft_idcode_OBR1;
+ 	}
+ 	GlobalPList dft_idcode_ctv_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat g3583438H003045_010604c_MG0647aj_0fxxxx0xhucx0xxxxxPfrxR4_dft_idcode_ctv_OBR1;
+ 	}
+ 	GlobalPList dicc_powervirus1_modea_0116c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [PreBurst cwma_pre_vrevR4_P_011616_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581310M014384_011604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_Power_Virus_mrm1_cmp_OBR1;
+ 	}
+ 	GlobalPList dicc_powervirus1_modea_0118c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [PreBurst cwma_pre_vrevR4_P_011818_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581311M014384_011804c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_Power_Virus_mrm1_cmp_OBR1;
+ 	}
+ 	GlobalPList dicc_powervirus_modea_0116c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [PreBurst cwma_pre_vrevR4_P_011616_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581312M014389_011604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_Power_Virus_mrm4_cmp_OBR1;
+ 	}
+ 	GlobalPList dicc_powervirus_modea_0118c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [PreBurst cwma_pre_vrevR4_P_011818_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581313M014389_011804c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_Power_Virus_mrm4_cmp_OBR1;
+ 	}
+ 	GlobalPList dicc_powervirus_mrm6nc_0116c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [PreBurst cwma_pre_vrevR4_P_011616_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581314M014390_011604c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_Power_Virus_mrm6nc_cmp_OBR1;
+ 	}
+ 	GlobalPList dicc_powervirus_mrm6nc_0118c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [PreBurst cwma_pre_vrevR4_P_011818_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581315M014390_011804c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_Power_Virus_mrm6nc_cmp_OBR1;
+ 	}
+ 	GlobalPList dtlb_array_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581192M011751_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_dtlb_array_bist_OBR1;
+ 	}
+ 	GlobalPList dtlb_array_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581242M011751_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_dtlb_array_bist_OBR1;
+ 	}
+ 	GlobalPList dualc_bist_bypass_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581260M011692_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_dualc_bist_bypass_J_OBR1;
+ 	}
+ 	GlobalPList dualc_bist_bypass_mode0_0108c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010808_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581261M011692_010802c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_dualc_bist_bypass_J_OBR1;
+ 	}
+ 	GlobalPList dualc_bist_bypass_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581280M011692_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_dualc_bist_bypass_J_OBR1;
+ 	}
+ 	GlobalPList dualc_bist_bypass_mode1_0108c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010808_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581281M011692_010802c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_dualc_bist_bypass_J_OBR1;
+ 	}
+ 	GlobalPList duty_cycle_read_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581175M014499_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_duty_cycle_read_OBR1;
+ 	}
+ 	GlobalPList duty_cycle_read_mode0_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581176M014499_011604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_duty_cycle_read_OBR1;
+ 	}
+ 	GlobalPList duty_cycle_read_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581225M014499_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_duty_cycle_read_OBR1;
+ 	}
+ 	GlobalPList duty_cycle_read_mode1_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581226M014499_011604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_duty_cycle_read_OBR1;
+ 	}
+ 	GlobalPList ex_bist_c0_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581156M009975_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_c0_cr_OBR1;
+ 	}
+ 	GlobalPList ex_bist_c0_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581206M009975_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_c0_cr_OBR1;
+ 	}
+ 	GlobalPList ex_bist_c1_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581157M009974_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_c1_cr_OBR1;
+ 	}
+ 	GlobalPList ex_bist_c1_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581207M009974_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_c1_cr_OBR1;
+ 	}
+ 	GlobalPList ex_bist_dualcore_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581158M009976_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_bist_dc_cr_OBR1;
+ 	}
+ 	GlobalPList ex_bist_dualcore_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581208M009976_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_bist_dc_cr_OBR1;
+ 	}
+ 	GlobalPList fau_fmu_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581193M011752_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_fau_fmu_bist_OBR1;
+ 	}
+ 	GlobalPList fau_fmu_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581243M011752_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_fau_fmu_bist_OBR1;
+ 	}
+ 	GlobalPList fsbsel_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581259M010453_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_bsel_J_OBR1;
+ 	}
+ 	GlobalPList fsbsel_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581279M010453_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_bsel_J_OBR1;
+ 	}
+ 	GlobalPList fuse_read_A00h_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581268M012248_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserA00h_OBR1;
+ 	}
+ 	GlobalPList fuse_read_A00h_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581288M012248_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserA00h_OBR1;
+ 	}
+ 	GlobalPList fuse_read_A22h_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581266M012244_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserA22h_OBR1;
+ 	}
+ 	GlobalPList fuse_read_A22h_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581286M012244_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserA22h_OBR1;
+ 	}
+ 	GlobalPList fuse_read_A_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581264M009969_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserA_OBR1;
+ 	}
+ 	GlobalPList fuse_read_A_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581284M009969_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserA_OBR1;
+ 	}
+ 	GlobalPList fuse_read_Are_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581269M016420_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserA_REG_OBR1;
+ 	}
+ 	GlobalPList fuse_read_Are_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581289M016420_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserA_REG_OBR1;
+ 	}
+ 	GlobalPList fuse_read_B22h_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581267M012245_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserB22h_OBR1;
+ 	}
+ 	GlobalPList fuse_read_B22h_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581287M012245_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserB22h_OBR1;
+ 	}
+ 	GlobalPList fuse_read_B_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581265M009970_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserB_OBR1;
+ 	}
+ 	GlobalPList fuse_read_B_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581285M009970_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserB_OBR1;
+ 	}
+ 	GlobalPList fuse_read_Bre_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581270M016421_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fuserB_REG_OBR1;
+ 	}
+ 	GlobalPList fuse_read_Bre_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581290M016421_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fuserB_REG_OBR1;
+ 	}
+ 	GlobalPList fuse_write_A_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581271M010450_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fusewA_OBR1;
+ 	}
+ 	GlobalPList fuse_write_A_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581291M010450_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fusewA_OBR1;
+ 	}
+ 	GlobalPList fuse_write_B_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581272M010451_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_fusewB_OBR1;
+ 	}
+ 	GlobalPList fuse_write_B_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581292M010451_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_fusewB_OBR1;
+ 	}
+ 	GlobalPList hvbi_dualc_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581159M014500_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_mull_bist_OBR1;
+ 	}
+ 	GlobalPList hvbi_dualc_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581209M014500_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_mull_bist_OBR1;
+ 	}
+ 	GlobalPList ifu_cache_array_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581194M011753_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_ifu_cache_array_bist_OBR1;
+ 	}
+ 	GlobalPList ifu_cache_array_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581244M011753_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_ifu_cache_array_bist_OBR1;
+ 	}
+ 	GlobalPList leakage_0106c_list [Mask ALL_MASK_PINs_CWA, dft_clk]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581295M010442_010602c_NG0647aj_0fxfxx0xxIra1xxxxxPfrxR4_iddq_J_OBR1;
+ 	}
+ 	GlobalPList macro_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581195M011754_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_macro_bist_OBR1;
+ 	}
+ 	GlobalPList macro_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581245M011754_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_macro_bist_OBR1;
+ 	}
+ 	GlobalPList mob_array_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581196M011758_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_mob_array_bist_OBR1;
+ 	}
+ 	GlobalPList mob_array_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581246M011758_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_mob_array_bist_OBR1;
+ 	}
+ 	GlobalPList mob_control_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581197M011755_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_mob_control_bist_OBR1;
+ 	}
+ 	GlobalPList mob_control_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581247M011755_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_mob_control_bist_OBR1;
+ 	}
+ 	GlobalPList open_short_0106c_list [Mask shops_mask_pins]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s0563008M000000_010604c_NB0548aj_0xxxxx0xxaxxxxxxxxxxxxxx_open_short_OBR1;
+ 	}
+ 	GlobalPList peci_d_qc_0106c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_x_x_0_I_q_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat d3520423M011173_010604c_NG0647aj_0xxxxx0xhIcq0xxxxxPfrxR4_quad_core_peci_ping42_OBR1;
+ 		Pat d3559120M011287_010604c_NG0647aj_0xxxxx0xhIcq0xxxxxPfrxR4_quad_core_peci_ping84_OBR1;
+ 	}
+ 	GlobalPList peci_get_temp1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_x_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat d3491196M010602_010604c_MG0647aj_0fxxxx0xhucx0xxxxxPfrxR4_peci_get_temp1_combination2_hrc_OBR1;
+ 	}
+ 	GlobalPList pfp_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581198M011756_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_pfp_bist_OBR1;
+ 	}
+ 	GlobalPList pfp_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581248M011756_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_pfp_bist_OBR1;
+ 	}
+ 	GlobalPList read_iocal_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581177M010452_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_read_iocal_data_OBR1;
+ 	}
+ 	GlobalPList read_iocal_mode0_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_011616_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581178M010452_011604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_read_iocal_data_OBR1;
+ 	}
+ 	GlobalPList read_iocal_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581227M010452_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_read_iocal_data_OBR1;
+ 	}
+ 	GlobalPList read_iocal_mode1_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_011616_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581228M010452_011604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_read_iocal_data_OBR1;
+ 	}
+ 	GlobalPList sicc_deepsleep_cmp_0110c_list [Mask ALL_MASK_PINs_CWA, TDO, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_011010_c_M_G0_647a_j_f_w_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3583424M014263_011004c_MG0647aj_0fwxxx0xhucx0xxxxxPfrxR4_deep_sleep_cmp_OBR1;
+ 	}
+ 	GlobalPList simd_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581199M011757_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_simd_bist_OBR1;
+ 	}
+ 	GlobalPList simd_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581249M011757_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_simd_bist_OBR1;
+ 	}
+ 	GlobalPList thermal_sensor_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_x_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat d3472205M014269_010604c_MG0647aj_0fxxxx0xhucx0xxxxxPfrxR4_sensor_000_000_000_000_OBR1;
+ 	}
+ 	GlobalPList thermal_sensor_cat_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_x_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat d3471895M014262_010604c_MG0647aj_0fxxxx0xhucx0xxxxxPfrxR4_catastrofic_000_000_000_000_OBR1;
+ 	}
+ 	GlobalPList thermal_sensor_unf_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevR4_P_010606_c_M_G0_647a_j_f_x_0_u_x_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat d3485007M014270_010604c_MG0647aj_0fxxxx0xhucx0xxxxxPfrxR4_sensor_par_05x_000_000_5_OBR1;
+ 	}
+ 	GlobalPList vid_LHHLLLL_mode0_0110c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_011010_c_N_G0_647a_j_f_v_1_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581335M012969_011004c_NG0647aj_0fvxxf1xxIr06xxxxxPfrxR4_nBS_VID6to0_LHHLLLL_OBR1;
+ 	}
+ 	GlobalPList vid_LHHLLLL_mode1_0110c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_011010_c_N_G0_647a_j_f_v_1_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581345M012969_011004c_NG0647aj_0fvxxf1xxIr16xxxxxPfrxR4_nBS_VID6to0_LHHLLLL_OBR1;
+ 	}
+ 	GlobalPList vid_LLLHHHH_mode0_0110c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_011010_c_N_G0_647a_j_f_v_1_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581336M012970_011004c_NG0647aj_0fvxxf1xxIr06xxxxxPfrxR4_nBS_VID6to0_LLLHHHH_OBR1;
+ 	}
+ 	GlobalPList vid_LLLHHHH_mode1_0110c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_011010_c_N_G0_647a_j_f_v_1_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581346M012970_011004c_NG0647aj_0fvxxf1xxIr16xxxxxPfrxR4_nBS_VID6to0_LLLHHHH_OBR1;
+ 	}
+ 	GlobalPList vix_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581164M010357_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_all0_J_OBR1;
+ 		Pat s3581165M010358_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_all1_J_OBR1;
+ 		Pat s3581166M010359_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_AAAA_J_OBR1;
+ 		Pat s3581167M010360_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_5555_J_OBR1;
+ 		Pat s3581168M011161_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_rcomp0_all0_J_OBR1;
+ 		Pat s3581169M011162_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_rcomp0_all1_J_OBR1;
+ 		Pat s3581170M011163_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_rcomp0_AAAA_J_OBR1;
+ 		Pat s3581171M011164_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_samplepreload_rcomp0_5555_J_OBR1;
+ 	}
+ 	GlobalPList vix_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581214M010357_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_all0_J_OBR1;
+ 		Pat s3581215M010358_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_all1_J_OBR1;
+ 		Pat s3581216M010359_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_AAAA_J_OBR1;
+ 		Pat s3581217M010360_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_5555_J_OBR1;
+ 		Pat s3581218M011161_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_rcomp0_all0_J_OBR1;
+ 		Pat s3581219M011162_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_rcomp0_all1_J_OBR1;
+ 		Pat s3581220M011163_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_rcomp0_AAAA_J_OBR1;
+ 		Pat s3581221M011164_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_samplepreload_rcomp0_5555_J_OBR1;
+ 	}
+ 	GlobalPList vix_highz_bscan_modeA_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_a_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581299M010361_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_samplepreload_highz_all0_J_OBR1;
+ 		Pat s3581300M010362_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_samplepreload_highz_all1_J_OBR1;
+ 		Pat s3581301M010363_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_samplepreload_highz_AAAA_J_OBR1;
+ 		Pat s3581302M010364_010604c_NG0647aj_0fxxxx0xhIra1xxxxxPfrxR4_samplepreload_highz_5555_J_OBR1;
+ 	}
+ 	GlobalPList vox_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, PECI]   {
+# Additional pattern version release.  Oddball version: OBR1
+		GlobalPList vox_std_bscan_mode0_0106c_list  [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+ 		Pat s3581161M010354_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_extest_all1_J_OBR1;
+ 		Pat s3581162M010355_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_extest_AAAA_J_OBR1;
+ 		Pat s3581163M010356_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_extest_5555_J_OBR1;
+ 	}
+	PList vox_isvm_bscan_mode0_0106c_list;
+}
+ 	GlobalPList vox_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, PECI]   {
+# Additional pattern version release.  Oddball version: OBR1
+		GlobalPList  vox_std_bscan_mode1_0106c_list   [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+ 		Pat s3581211M010354_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_extest_all1_J_OBR1;
+ 		Pat s3581212M010355_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_extest_AAAA_J_OBR1;
+ 		Pat s3581213M010356_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_extest_5555_J_OBR1;
+ 	}
+		PList vox_isvm_bscan_mode1_0106c_list;
+}
+	GlobalPList vox_isvm_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581160M010353_010604c_NG0647aj_0fxxxx0xhIr04xxxxxPfrxR4_extest_all0_J_OBR1;
+ 	}
+ 	GlobalPList vox_isvm_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581210M010353_010604c_NG0647aj_0fxxxx0xhIr12xxxxxPfrxR4_extest_all0_J_OBR1;
+ 	}
+ 	GlobalPList IBIST_ACIOLB_iosbft_5555_mode0_0106j_list [Mask ALL_MASK_PINs_CWA, BR0nn, BPM3t0nn_0, BPM_2_3t0nn_0, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_j_N_G0_647a_j_f_t_0_I_q_f2_iosbft_0_x]  {
+# Additional pattern version release.  Oddball version: OBR2
+ 		Pat s3443543M005317_010604j_NG0647aj_0ftxsx0xsIrq6xxxxxPmoxR4_IBIST_ACIOLB_iosbft_5555_J_LD1_OBR2;
+ 	}
+ 	GlobalPList IBIST_ACIOLB_iosbft_5555_mode0_0106n_list [Mask ALL_MASK_PINs_CWA, BR0nn, BPM3t0nn_0, BPM_2_3t0nn_0, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_n_N_G0_647a_j_f_t_0_I_q_f2_iosbft_0_x]  {
+# Additional pattern version release.  Oddball version: OBR2
+ 		Pat s3444008M005317_010604n_NG0647aj_0ftxsx0xsIrq6xxxxxPmoxR4_IBIST_ACIOLB_iosbft_5555_J_LD1_OBR2;
+ 	}
+ 	GlobalPList IBIST_ACIOLB_iosbft_5555_mode0_0106p_list [Mask ALL_MASK_PINs_CWA, BR0nn, BPM3t0nn_0, BPM_2_3t0nn_0, TDO_2]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_p_N_G0_647a_j_f_t_0_I_q_f2_iosbft_0_x]  {
+# Additional pattern version release.  Oddball version: OBR2
+ 		Pat s3444011M005317_010604p_NG0647aj_0ftxsx0xsIrq6xxxxxPmoxR4_IBIST_ACIOLB_iosbft_5555_J_LD1_OBR2;
+ 	}
+ 	GlobalPList IBIST_ACIOLB_iosbft_5555_mode1_0106j_list [Mask ALL_MASK_PINs_CWA, BR0nn, BPM3t0nn_0, BPM_2_3t0nn_0, TDO]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_j_N_G0_647a_j_f_t_0_I_q_f2_iosbft_0_x]  {
+# Additional pattern version release.  Oddball version: OBR2
+ 		Pat s3443563M005317_010604j_NG0647aj_0ftxsx0xsIrq6xxxxxPmoxR4_IBIST_ACIOLB_iosbft_5555_J_LD2_OBR2;
+ 	}
+ 	GlobalPList IBIST_ACIOLB_iosbft_5555_mode1_0106n_list [Mask ALL_MASK_PINs_CWA, BR0nn, BPM3t0nn_0, BPM_2_3t0nn_0, TDO]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_n_N_G0_647a_j_f_t_0_I_q_f2_iosbft_0_x]  {
+# Additional pattern version release.  Oddball version: OBR2
+ 		Pat s3443561M005317_010604n_NG0647aj_0ftxsx0xsIrq6xxxxxPmoxR4_IBIST_ACIOLB_iosbft_5555_J_LD2_OBR2;
+ 	}
+ 	GlobalPList IBIST_ACIOLB_iosbft_5555_mode1_0106p_list [Mask ALL_MASK_PINs_CWA, BR0nn, BPM3t0nn_0, BPM_2_3t0nn_0, TDO]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_p_N_G0_647a_j_f_t_0_I_q_f2_iosbft_0_x]  {
+# Additional pattern version release.  Oddball version: OBR2
+ 		Pat s3443559M005317_010604p_NG0647aj_0ftxsx0xsIrq6xxxxxPmoxR4_IBIST_ACIOLB_iosbft_5555_J_LD2_OBR2;
+ 	}
+
+
+#*****************************************************added STSBF patterns**************************************************
+	GlobalPList pbist_l2_Data_ST_011202_list  [Mask cc_io, itpclkout, adstb1t0nn, addr_all, reqnn, data_all, dstb, dinvnn, fsbsel, dft_clk]  [ PreBurst  cwma_pre_vrevR4_P_011212_c_N_G0_647a_j_f_x_0_I_x_f1_reg_0_x] { 
+	Pat s3584450M014395_011204c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st0_c_d_OBR;
+	Pat s3584451M014395_011204c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st0_s_d_OBR;
+	Pat s3584452M014395_011204c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st1_c_d_OBR;
+	Pat s3584453M014395_011204c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st1_s_d_OBR;
+} # end of pbist_l2_Data_ST_011202_list 
+
+
+	GlobalPList pbist_l2_Data_ST_011802_list  [Mask cc_io, itpclkout, adstb1t0nn, addr_all, reqnn, data_all, dstb, dinvnn, fsbsel, dft_clk]  [ PreBurst  cwma_pre_vrevR4_P_011818_c_N_G0_647a_j_f_x_0_I_x_f1_reg_0_x] { 
+	Pat s3584454M014395_011804c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st0_c_d_OBR;
+	Pat s3584455M014395_011804c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st0_s_d_OBR;
+	Pat s3584456M014395_011804c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st1_c_d_OBR;
+	Pat s3584457M014395_011804c_NG0647aj_xfxxxx0xxIcx0xxxxxPfrxR4_Power_Virus_st1_s_d_OBR;
+} # end of pbist_l2_Data_ST_011802_list 
+
+# kwong7 - SBF using E0 traces that are in ratio10 and ratio18 - 
+
+	GlobalPList pbist_TagRead_0112c_list [Mask vid] [ PreBurst cwma_pre_vrevR4_P_011010_c_N_E0_626a_j_x_a_x_x_a_f1_reg_0_2 ] { 
+		Pat g2407446M005472_011002c_NE0626aj_0xaxxpxt2xxaxxxxxxPfr2R4_read_10110xxx_s_l2t_l2l4000k;
+	} # end of pbist_TAG_l2_c_011202_list
+
+	GlobalPList pbist_TagWrite_0112c_list [Mask vid] [ PreBurst cwma_pre_vrevR4_P_011010_c_N_E0_626a_j_x_a_x_x_a_f1_reg_0_2 ] { 
+		Pat s2407443M005463_011002c_NE0626aj_0xaxxpxt2xxaxxxxxxPfr2R4_sbfwrite_10110xxx_s_l2t_l2l4000k;
+	} # end of pbist_TAG_l2_c_011202_list
+
+	GlobalPList pbist_TagRead_0118c_list [Mask vid] [ PreBurst cwma_pre_vrevR4_P_011818_c_N_E0_626a_j_x_a_x_x_a_f1_reg_0_2 ] { 
+		Pat g2407447M005472_011802c_NE0626aj_0xaxxpxt2xxaxxxxxxPfr2R4_read_10110xxx_s_l2t_l2l4000k;
+	} # end of pbist_TAG_l2_c_011802_list
+
+	GlobalPList pbist_TagWrite_0118c_list [Mask vid] [ PreBurst cwma_pre_vrevR4_P_011818_c_N_E0_626a_j_x_a_x_x_a_f1_reg_0_2 ] { 
+		Pat s2407445M005463_011802c_NE0626aj_0xaxxpxt2xxaxxxxxxPfr2R4_sbfwrite_10110xxx_s_l2t_l2l4000k;
+	} # end of pbist_TAG_l2_c_011802_list    
+#****************************************** Rasum oddballs - Added by yeng 9/5/2006 ******************************************
+            GlobalPList PIROM_Read_List {
+                        Pat Wmt_RASUM_PIROM_Read_CMT;
+            }
+
+            GlobalPList PIROM_Verify_All_List {
+                        Pat Wmt_RASUM_PIROM_Verify_Upper_CMT;
+                        Pat Wmt_RASUM_PIROM_Verify_Lower_CMT;
+            }
+
+            GlobalPList PIROM_Verify_First_Core_List {
+                        Pat Wmt_RASUM_PIROM_Verify_First_Core_CMT;
+            }
+
+            GlobalPList Wmt_RASUM_PIROM_Verify_Lower_CMT {
+                        Pat Wmt_RASUM_PIROM_Verify_Lower_CMT;
+            }
+
+            GlobalPList PIROM_Verify_Second_Core_List {
+                        Pat Wmt_RASUM_PIROM_Verify_Second_Core_CMT;
+            }
+
+            GlobalPList PIROM_Verify_Thermal_List {
+                        Pat Wmt_RASUM_PIROM_Verify_First_Core_CMT;
+                        Pat Wmt_RASUM_PIROM_Verify_Second_Core_CMT;
+            }
+
+            GlobalPList PIROM_Verify_Upper_List {
+                        Pat Wmt_RASUM_PIROM_Verify_Upper_CMT;
+            }
+
+            GlobalPList PIROM_WP_Check_List {
+                        Pat Wmt_RASUM_PIROM_WP_Check_CMT;
+            }
+
+            GlobalPList PIROM_Write_List {
+                        Pat Wmt_RASUM_PIROM_Write_CMT;
+            }
+
+            GlobalPList PIROM_Write_Protect_List {
+                        Pat Wmt_RASUM_PIROM_WP_CMT;
+            }
+#********************************************************************added open short TGT *************************************
+ 	GlobalPList open_short_TGT_0106c_list [Mask shops_mask_pins]  [BurstOff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s0563008M000000_010604c_NB0548aj_0xxxxx0xxaxxxxxxxxxxxxxx_open_short_OBR1;
+ 	}
+#**************************************************************************************************************************************
+#************************************added vox dynODT***********************************************************************
+	GlobalPList vox_dynODT_all0_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x_ODToff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581262M013964_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_extest_dynODT_all0_J_OBR1; 
+ 	}
+ 	GlobalPList vox_dynODT_all0_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x_ODToff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581282M013964_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_extest_dynODT_all0_J_OBR1;
+ 	}
+ 	GlobalPList vox_dynODT_all1_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_0_f1_reg_0_x_ODToff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581263M013964_010602c_NG0647aj_0fxfxx0xxIr04xxxxxPfrxR4_extest_dynODT_all1_J_OBR1;
+ 	}
+ 	GlobalPList vox_dynODT_all1_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, PECI]  [BurstOff]  [PreBurst cwma_pre_vrevR4_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_reg_0_x_ODToff]  {
+# Additional pattern version release.  Oddball version: OBR1
+ 		Pat s3581283M013964_010602c_NG0647aj_0fxfxx0xxIr12xxxxxPfrxR4_extest_dynODT_all1_J_OBR1;
+ 	}
+#*********************************************************************************************************************************
+}

@@ -1,0 +1,1930 @@
+Version 1.0;
+
+GlobalPList cache_list    {
+
+      GlobalPList sst_cachemain_list    {
+
+         GlobalPList sst_cachemaincore_24161616_list    {
+
+            GlobalPList sst_cachemaincore_hfmmin_24161616_list   {
+
+               GlobalPList sst_cachemaincore_hfmmin_lsa_24161616_list    {
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_wbs_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0021540N4026969_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_wbs_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_wbs_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_iqu_lp0_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027074N3987308_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_iqu_lp0_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_iqu_lp0_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ifu_icd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0049452N3986448_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_icd_scan_ifuicdvcd_fx_c;
+                     Pat g0048435N3986453_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_icd_pmovi_ifuicdvcd_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ifu_icd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ifu_lpg_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027099N3986853_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_lpg_scan_xadrhole_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ifu_lpg_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_tag_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0038781N3986865_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_tag_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_tag_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rob_wbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065263N3986923_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbh_gallop_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rob_wbh_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_miu_sdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046157N3987023_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_miu_sdb_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_miu_sdb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ieu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065266N3987056_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_ieu_ram_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ieu_ram_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_itr_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026916N3987090_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_itr_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_itr_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_pab_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046139N3987098_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_pab_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_pab_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mlc_sqd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039312N3987118_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sqd_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mlc_sqd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rob_all_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065254N3987144_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rob_all_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rob_all_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_bit_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0036854N3988360_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bit_gallop_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_bit_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rat_nls_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065260N3988383_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_nls_pmovi_wrspaced_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rat_nls_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_bde_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065252N3988425_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bde_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_bde_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_bdo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026908N3988438_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bdo_pmovi_fx_s;
+                     Pat g0026880N3988447_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bdo_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_bdo_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ifu_ics_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026951N3988489_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_ics_pmovi_fx_s;
+                     Pat g0026746N3988494_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_ics_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ifu_ics_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_pre_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027032N3988495_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_pre_gallop_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_pre_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_pmh_pdd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027015N3988515_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_pdd_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_pmh_pdd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_fbt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046126N3988568_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbt_pmovi_fx_s;
+                     Pat g0026819N3988576_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbt_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_fbt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_lpe_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027050N3988722_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpe_pmovi_dweqcol_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_lpe_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_lpo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026931N3988741_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpo_pmovi_dweqcol_fx_s;
+                     Pat g0026956N3988742_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpo_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_lpo_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_msu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027250N3989042_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_msu_ram_matspp_wrspaced_fx_s;
+                     Pat g0042030N3989052_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_msu_ram_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_msu_ram_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mob_llb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026994N3989618_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_pmovi_fx_s;
+                     Pat g0026899N3989645_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_scan_fx_c;
+                     Pat g0032466N3989646_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mob_llb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mob_rlb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0029484N3989653_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rlb_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mob_rlb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_pre_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065270N3991140_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_pre_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_pre_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_pro_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065269N3991164_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_pro_galcol_dweqcol_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_pro_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ifu_vct_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0036671N3991497_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vct_pmovi_fx_s;
+                     Pat g0026930N3991505_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vct_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ifu_vct_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_pmh_std_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026879N3991593_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_std_galcol_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_pmh_std_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_pmh_stl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027046N3991622_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_stl_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_pmh_stl_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ifu_vcd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0049453N3991632_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vcd_pmovi_ifuicdvcd_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ifu_vcd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_idu_esm_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027045N3993671_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_idu_esm_pmovi_fx_s;
+                     Pat g0026919N3993685_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_idu_esm_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_idu_esm_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_ifu_spg_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065286N3993686_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_spg_gallop_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_ifu_spg_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dtl_ld1_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065255N3993714_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_ld1_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dtl_ld1_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dtl_sd0_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065258N3993744_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_sd0_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dtl_sd0_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dtl_sd1_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065257N3993747_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_sd1_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dtl_sd1_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039315N4028072_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_rsb_marchc_bpursb_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_rsb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_tar_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027109N4003095_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_tar_gallop_fy_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_tar_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_tge_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065271N4003114_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_tge_galcol_dweqcol_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_tge_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_lrl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065256N4003151_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lrl_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_lrl_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_lru_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065267N4003183_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lru_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_lru_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_sta_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026845N4003211_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_sta_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_sta_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rob_wbl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039019N4026331_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_gallop_fx_s;
+                     Pat g0041030N4026366_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_scan_fx_c;
+                     Pat g0041605N4338820_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_pmovi_fx_s;
+                     Pat g0044630N4338822_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_pmovi_fy_c;
+                     Pat g0041063N4338823_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_scan_fx_rs;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rob_wbl_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_fbs_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0031915N4026406_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbs_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_fbs_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_pmh_pdt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065289N4026424_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_pdt_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_pmh_pdt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_dcu_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027307N4026433_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_dat_gallop_fx_s;
+                     Pat g0043706N4026535_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_dat_scan_parity_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_dcu_dat_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_gle_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039070N4026703_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_gle_galcol_dweqcol_fx_s;
+                     Pat g0027625N4026705_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_gle_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_gle_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_bge_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065265N4026759_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bge_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_bge_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_bpu_bgo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065264N4026781_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bgo_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_bpu_bgo_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_pmh_stt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046155N4026804_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_stt_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_pmh_stt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mob_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0035817N4026813_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_scan_fx_c;
+                     Pat g0027188N4026821_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_pmovi_fx_s;
+                     Pat g0037984N4026827_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mob_rsb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mob_lsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065261N4026880_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lsb_scan_fx_c;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mob_lsb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mob_lbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065253N4026924_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lbh_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mob_lbh_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mlc_sta_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026940N4026930_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sta_scan_fx_c;
+                     Pat g0026988N4956307_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sta_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mlc_sta_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rat_frt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065259N4036406_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_frt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rat_frt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rat_hrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065274N4036418_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_hrt_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rat_hrt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rat_prt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065268N4036436_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_prt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rat_prt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rat_vrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065292N4036468_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_vrt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rat_vrt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rat_xrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0041512N4036484_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rat_xrt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rat_xrt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_rob_rdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0035784N4338828_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matspp_masking_fx_s;
+                     Pat g0041517N4338829_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_mcpmovi_masking_fx_s;
+                     Pat g0038662N4338830_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fy_s;
+                     Pat g0039473N4338831_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_xdecode_masking_fx_s;
+                     Pat g0039016N4338832_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0040603N4338833_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_scan_rdbset_fx_s;
+                     Pat g0037654N4338834_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0035659N4338836_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0041208N4338837_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_pmovi_masking_fx_s;
+                     Pat g0034895N4338838_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0039084N4338840_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_marchc_masking_fy_s;
+                     Pat g0035216N4338842_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matspp_masking_fy_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_rob_rdb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_lsa_mlc_lru_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027048N4956306_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_lru_pmovi_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_lsa_mlc_lru_24161616_list
+
+
+               } # end of sst_cachemaincore_hfmmin_lsa_24161616_list
+
+
+               GlobalPList sst_cachemaincore_hfmmin_ssa_24161616_list    {
+
+                  GlobalPList sst_cachemaincore_hfmmin_ssa_mlc_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046571N4002586_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_dat_galcol_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_ssa_mlc_dat_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_hfmmin_ssa_mlc_tag_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046162N4002717_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_tag_galcol_fx_s;
+                  } # end of sst_cachemaincore_hfmmin_ssa_mlc_tag_24161616_list
+
+               } # end of sst_cachemaincore_hfmmin_ssa_24161616_list
+
+
+            } # end of sst_cachemaincore_hfmmin_24161616_list
+
+
+            GlobalPList sst_cachemaincore_lfmmin_24161616_list    {
+
+               GlobalPList sst_cachemaincore_lfmmin_lsa_24161616_list    {
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_wbs_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0021540N4026969_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_wbs_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_wbs_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_iqu_lp0_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027074N3987308_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_iqu_lp0_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_iqu_lp0_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ifu_icd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0049452N3986448_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_icd_scan_ifuicdvcd_fx_c;
+                     Pat g0048435N3986453_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_icd_pmovi_ifuicdvcd_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ifu_icd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ifu_lpg_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027099N3986853_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_lpg_scan_xadrhole_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ifu_lpg_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_tag_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0038781N3986865_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_tag_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_tag_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rob_wbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065263N3986923_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbh_gallop_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rob_wbh_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_miu_sdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046157N3987023_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_miu_sdb_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_miu_sdb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ieu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065266N3987056_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_ieu_ram_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ieu_ram_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_itr_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026916N3987090_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_itr_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_itr_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_pab_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046139N3987098_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_pab_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_pab_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mlc_sqd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039312N3987118_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sqd_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mlc_sqd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rob_all_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065254N3987144_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rob_all_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rob_all_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_bit_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0036854N3988360_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bit_gallop_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_bit_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rat_nls_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065260N3988383_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_nls_pmovi_wrspaced_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rat_nls_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_bde_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065252N3988425_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bde_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_bde_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_bdo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026908N3988438_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bdo_pmovi_fx_s;
+                     Pat g0026880N3988447_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bdo_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_bdo_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ifu_ics_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026951N3988489_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_ics_pmovi_fx_s;
+                     Pat g0026746N3988494_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_ics_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ifu_ics_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_pre_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027032N3988495_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_pre_gallop_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_pre_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_pmh_pdd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027015N3988515_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_pdd_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_pmh_pdd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_fbt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046126N3988568_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbt_pmovi_fx_s;
+                     Pat g0026819N3988576_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbt_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_fbt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_lpe_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027050N3988722_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpe_pmovi_dweqcol_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_lpe_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_lpo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026931N3988741_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpo_pmovi_dweqcol_fx_s;
+                     Pat g0026956N3988742_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpo_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_lpo_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_msu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027250N3989042_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_msu_ram_matspp_wrspaced_fx_s;
+                     Pat g0042030N3989052_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_msu_ram_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_msu_ram_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mob_llb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026994N3989618_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_pmovi_fx_s;
+                     Pat g0026899N3989645_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_scan_fx_c;
+                     Pat g0032466N3989646_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mob_llb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mob_rlb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0029484N3989653_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rlb_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mob_rlb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_pre_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065270N3991140_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_pre_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_pre_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_pro_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065269N3991164_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_pro_galcol_dweqcol_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_pro_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ifu_vct_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0036671N3991497_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vct_pmovi_fx_s;
+                     Pat g0026930N3991505_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vct_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ifu_vct_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_pmh_std_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026879N3991593_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_std_galcol_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_pmh_std_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_pmh_stl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027046N3991622_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_stl_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_pmh_stl_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ifu_vcd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0049453N3991632_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vcd_pmovi_ifuicdvcd_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ifu_vcd_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_idu_esm_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027045N3993671_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_idu_esm_pmovi_fx_s;
+                     Pat g0026919N3993685_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_idu_esm_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_idu_esm_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_ifu_spg_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065286N3993686_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_spg_gallop_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_ifu_spg_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dtl_ld1_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065255N3993714_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_ld1_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dtl_ld1_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dtl_sd0_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065258N3993744_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_sd0_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dtl_sd0_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dtl_sd1_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065257N3993747_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_sd1_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dtl_sd1_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039315N4028072_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_rsb_marchc_bpursb_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_rsb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_tge_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065271N4003114_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_tge_galcol_dweqcol_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_tge_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_lrl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065256N4003151_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lrl_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_lrl_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_lru_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065267N4003183_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lru_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_lru_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_sta_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026845N4003211_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_sta_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_sta_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rob_wbl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039019N4026331_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_gallop_fx_s;
+                     Pat g0041030N4026366_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_scan_fx_c;
+                     Pat g0041605N4338820_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_pmovi_fx_s;
+                     Pat g0044630N4338822_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_pmovi_fy_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rob_wbl_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_fbs_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0031915N4026406_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbs_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_fbs_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_pmh_pdt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065289N4026424_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_pdt_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_pmh_pdt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_dcu_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027307N4026433_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_dat_gallop_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_dcu_dat_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_gle_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0039070N4026703_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_gle_galcol_dweqcol_fx_s;
+                     Pat g0027625N4026705_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_gle_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_gle_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_bge_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065265N4026759_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bge_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_bge_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_bpu_bgo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065264N4026781_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bgo_scan_dweqcol_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_bpu_bgo_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_pmh_stt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046155N4026804_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_stt_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_pmh_stt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mob_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0035817N4026813_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_scan_fx_c;
+                     Pat g0027188N4026821_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_pmovi_fx_s;
+                     Pat g0037984N4026827_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mob_rsb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mob_lsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065261N4026880_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lsb_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mob_lsb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mob_lbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065253N4026924_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lbh_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mob_lbh_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_mlc_sta_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026940N4026930_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sta_scan_fx_c;
+                  } # end of sst_cachemaincore_lfmmin_lsa_mlc_sta_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rat_frt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065259N4036406_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_frt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rat_frt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rat_hrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065274N4036418_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_hrt_pmovi_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rat_hrt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rat_prt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065268N4036436_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_prt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rat_prt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rat_vrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0065292N4036468_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_vrt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rat_vrt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rat_xrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0041512N4036484_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rat_xrt_pmovinx2y_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rat_xrt_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_lsa_rob_rdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0035784N4338828_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matspp_masking_fx_s;
+                     Pat g0041517N4338829_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_mcpmovi_masking_fx_s;
+                     Pat g0039473N4338831_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_xdecode_masking_fx_s;
+                     Pat g0039016N4338832_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0037654N4338834_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0035659N4338836_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                     Pat g0041208N4338837_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_pmovi_masking_fx_s;
+                     Pat g0034895N4338838_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_lsa_rob_rdb_24161616_list
+
+
+               } # end of sst_cachemaincore_lfmmin_lsa_24161616_list
+
+
+               GlobalPList sst_cachemaincore_lfmmin_ssa_24161616_list    {
+
+                  GlobalPList sst_cachemaincore_lfmmin_ssa_mlc_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046571N4002586_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_dat_galcol_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_ssa_mlc_dat_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_lfmmin_ssa_mlc_tag_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0046162N4002717_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_tag_galcol_fx_s;
+                  } # end of sst_cachemaincore_lfmmin_ssa_mlc_tag_24161616_list
+
+               } # end of sst_cachemaincore_lfmmin_ssa_24161616_list
+
+
+            } # end of sst_cachemaincore_lfmmin_24161616_list
+
+
+            GlobalPList sst_cachemaincore_xfmmin_24161616_list    {
+
+               GlobalPList sst_cachemaincore_xfmmin_lsa_24161616_list    {
+
+                  GlobalPList sst_cachemaincore_xfmmin_lsa_ieu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0029439N4957587_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ieu_ram_ieudataret_fx_s;
+                  } # end of sst_cachemaincore_xfmmin_lsa_ieu_ram_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_xfmmin_lsa_miu_sdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027164N4957588_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_miu_sdb_miudataret_fx_s;
+                  } # end of sst_cachemaincore_xfmmin_lsa_miu_sdb_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_xfmmin_lsa_dcu_lru_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0045440N4957589_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lru_dcudataret_fx_s;
+                  } # end of sst_cachemaincore_xfmmin_lsa_dcu_lru_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_xfmmin_lsa_mob_lbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027254N4957591_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lbh_mobdataret_fx_s;
+                  } # end of sst_cachemaincore_xfmmin_lsa_mob_lbh_24161616_list
+
+
+                  GlobalPList sst_cachemaincore_xfmmin_lsa_rat_nls_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027216N4957593_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_rat_nls_ratnlsdataret_fx_s;
+                  } # end of sst_cachemaincore_xfmmin_lsa_rat_nls_24161616_list
+
+               } # end of sst_cachemaincore_xfmmin_lsa_24161616_list
+
+
+               GlobalPList sst_cachemaincore_xfmmin_ssa_24161616_list    {
+
+                  GlobalPList sst_cachemaincore_xfmmin_ssa_mlc_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027337N4957610_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_dat_ssadataret_fx_s;
+                  } # end of sst_cachemaincore_xfmmin_ssa_mlc_dat_24161616_list
+
+               } # end of sst_cachemaincore_xfmmin_ssa_24161616_list
+
+            } # end of sst_cachemaincore_xfmmin_24161616_list
+
+         } # end of sst_cachemaincore_24161616_list
+
+
+         GlobalPList sst_cachemainuncore_16161616_list    {
+
+            GlobalPList sst_cachemainuncore_ufmmin_16161616_list    {
+
+               GlobalPList sst_cachemainuncore_ufmmin_lsa_16161616_list    {
+
+                  GlobalPList sst_cachemainuncore_ufmmin_lsa_llc8m_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_llc8m_llc_lru_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027112N4002764_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_lru_galcol_fx_s;
+                        Pat g0032510N4002791_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_lru_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_llc8m_llc_lru_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_llc8m_llc_sta_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026938N4002810_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_sta_galcol_fx_s;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_llc8m_llc_sta_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmin_lsa_llc8m_16161616_list
+
+
+                  GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_css_rf0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0039096N3987160_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rf0_galcol_fx_s;
+                        Pat g0021550N3987163_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rf0_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_css_rf0_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_css_rp0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0021444N3987183_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rp0_scan_fx_c;
+                        Pat g0027598N3987184_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rp0_pmovi_fx_s;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_css_rp0_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_csf_th0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026963N3988533_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_csf_th0_pmovi_fx_s;
+                        Pat g0026832N3988542_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_csf_th0_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_csf_th0_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_pyq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027137N3993587_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_pyq_pmovi_fx_s;
+                        Pat g0027081N3993596_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_pyq_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_pyq_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_waq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027116N3993601_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_waq_pmovi_fx_s;
+                        Pat g0026878N3993609_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_waq_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_waq_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_wbe_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027009N3993612_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wbe_pmovi_fx_s;
+                        Pat g0027246N3993619_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wbe_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_wbe_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_wdb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027207N3993626_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_pmovi_fx_s;
+                        Pat g0039127N3993630_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_gallop_fx_s;
+                        Pat g0026933N3993641_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_scan_fx_c;
+                        Pat g0039155N3993642_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_ttu_wdb_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_htb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0029430N3993664_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_htb_pmovi_ifuicdvcd_fx_s;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_htb_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_bec_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027023N3993748_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_bec_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_bec_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_htd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0065285N4002471_16161616a2x18_MA0dA07NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_htd_pmovinx2y_fx_s;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_htd_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_dtl_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027151N4027643_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtl_gallop_fx_s;
+                        Pat g0027126N4027676_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtl_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_dtl_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_dtc_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027181N4338271_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi3csitt_fx_s;
+                        Pat g0032124N4338272_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchccsitt_fx_s;
+                        Pat g0027310N4338273_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpscancsicor_fx_rs;
+                        Pat g0027076N4338276_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpscancsicsi_fx_rs;
+                        Pat g0027346N4338277_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi2csicsi_fx_s;
+                        Pat g0027131N4338278_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_march2pf2avcsicsi_fx_rs;
+                        Pat g0026947N4338279_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpscancsitt_fx_rs;
+                        Pat g0027271N4338280_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi2csitt_fx_s;
+                        Pat g0039063N4338281_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_march2pf2avcsitt_fx_rs;
+                        Pat g0027561N4338282_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mppmovicsicsi_fx_rs;
+                        Pat g0027442N4338284_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pf1csicor_fx_rs;
+                        Pat g0043830N4338286_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pf1csicsi_fx_rs;
+                        Pat g0027221N4338287_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi1csitt_fx_s;
+                        Pat g0027578N4338288_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pfcsicor_fx_rs;
+                        Pat g0027082N4338289_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pfcsicsi_fx_rs;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_gqu_dtc_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_lsa_nonllc_css_td0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027450N4541203_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0049431N4541205_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0046188N4541206_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0038710N4541207_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0027339N4541208_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_rs;
+                     } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_css_td0_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmin_lsa_nonllc_16161616_list
+
+
+               } # end of sst_cachemainuncore_ufmmin_lsa_16161616_list
+
+
+               GlobalPList sst_cachemainuncore_ufmmin_ssa_16161616_list    {
+
+                  GlobalPList sst_cachemainuncore_ufmmin_ssa_llc8m_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmin_ssa_llc8m_llc_tag_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026971N4002875_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_tag_galcol_fx_s;
+                        Pat g0036536N4002921_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_tag_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmin_ssa_llc8m_llc_tag_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmin_ssa_llc8m_llc_dat_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026634N4002647_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_scan_fx_c;
+                        Pat g0029258N4002651_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_galcol_fx_s;
+                     } # end of sst_cachemainuncore_ufmmin_ssa_llc8m_llc_dat_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmin_ssa_llc8m_16161616_list
+
+
+                  GlobalPList sst_cachemainuncore_ufmmin_ssa_nonllc_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmin_ssa_nonllc_pcu_rmd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026937N3990026_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pcu_rmd_scan_fx_c;
+                        Pat g0026935N3990034_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pcu_rmd_gallop_cmdA_fx_s;
+                     } # end of sst_cachemainuncore_ufmmin_ssa_nonllc_pcu_rmd_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmin_ssa_nonllc_16161616_list
+
+
+               } # end of sst_cachemainuncore_ufmmin_ssa_16161616_list
+
+            } # end of sst_cachemainuncore_ufmmin_16161616_list
+
+
+            GlobalPList sst_cachemainuncore_ufmmax_16161616_list    {
+
+               GlobalPList sst_cachemainuncore_ufmmax_lsa_16161616_list    {
+
+                  GlobalPList sst_cachemainuncore_ufmmax_lsa_llc8m_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_llc8m_llc_lru_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027112N4002764_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_lru_galcol_fx_s;
+                        Pat g0032510N4002791_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_lru_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_llc8m_llc_lru_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_llc8m_llc_sta_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026938N4002810_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_sta_galcol_fx_s;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_llc8m_llc_sta_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmax_lsa_llc8m_16161616_list
+
+
+                  GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_css_rf0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0039096N3987160_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rf0_galcol_fx_s;
+                        Pat g0021550N3987163_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rf0_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_css_rf0_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_css_rp0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0021444N3987183_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rp0_scan_fx_c;
+                        Pat g0027598N3987184_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rp0_pmovi_fx_s;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_css_rp0_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_csf_th0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026963N3988533_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_csf_th0_pmovi_fx_s;
+                        Pat g0026832N3988542_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_csf_th0_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_csf_th0_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_pyq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027137N3993587_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_pyq_pmovi_fx_s;
+                        Pat g0027081N3993596_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_pyq_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_pyq_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_waq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027116N3993601_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_waq_pmovi_fx_s;
+                        Pat g0026878N3993609_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_waq_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_waq_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_wbe_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027009N3993612_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wbe_pmovi_fx_s;
+                        Pat g0027246N3993619_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wbe_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_wbe_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_wdb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027207N3993626_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_pmovi_fx_s;
+                        Pat g0039127N3993630_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_gallop_fx_s;
+                        Pat g0026933N3993641_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_scan_fx_c;
+                        Pat g0039155N3993642_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_ttu_wdb_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_htb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0029430N3993664_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_htb_pmovi_ifuicdvcd_fx_s;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_htb_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_bec_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027023N3993748_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_bec_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_bec_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_htd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0065285N4002471_16161616a2x18_MA0dA07NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_htd_pmovinx2y_fx_s;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_htd_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_dtl_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027151N4027643_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtl_gallop_fx_s;
+                        Pat g0027126N4027676_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtl_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_dtl_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_dtc_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027181N4338271_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi3csitt_fx_s;
+                        Pat g0032124N4338272_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchccsitt_fx_s;
+                        Pat g0027310N4338273_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpscancsicor_fx_rs;
+                        Pat g0027076N4338276_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpscancsicsi_fx_rs;
+                        Pat g0027346N4338277_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi2csicsi_fx_s;
+                        Pat g0027131N4338278_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_march2pf2avcsicsi_fx_rs;
+                        Pat g0026947N4338279_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpscancsitt_fx_rs;
+                        Pat g0027271N4338280_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi2csitt_fx_s;
+                        Pat g0039063N4338281_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_march2pf2avcsitt_fx_rs;
+                        Pat g0027561N4338282_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mppmovicsicsi_fx_rs;
+                        Pat g0027442N4338284_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pf1csicor_fx_rs;
+                        Pat g0043830N4338286_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pf1csicsi_fx_rs;
+                        Pat g0027221N4338287_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarchi1csitt_fx_s;
+                        Pat g0027578N4338288_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pfcsicor_fx_rs;
+                        Pat g0027082N4338289_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtc_mpmarch2pfcsicsi_fx_rs;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_gqu_dtc_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_lsa_nonllc_css_td0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0027450N4541203_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0049431N4541205_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0046188N4541206_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0038710N4541207_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_s;
+                        Pat g0027339N4541208_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_td0_scancsidb_fx_rs;
+                     } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_css_td0_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmax_lsa_nonllc_16161616_list
+
+
+               } # end of sst_cachemainuncore_ufmmax_lsa_16161616_list
+
+
+               GlobalPList sst_cachemainuncore_ufmmax_ssa_16161616_list    {
+
+                  GlobalPList sst_cachemainuncore_ufmmax_ssa_llc8m_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmax_ssa_llc8m_llc_tag_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026971N4002875_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_tag_galcol_fx_s;
+                        Pat g0036536N4002921_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_tag_scan_fx_c;
+                     } # end of sst_cachemainuncore_ufmmax_ssa_llc8m_llc_tag_16161616_list
+
+
+                     GlobalPList sst_cachemainuncore_ufmmax_ssa_llc8m_llc_dat_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026634N4002647_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_scan_fx_c;
+                        Pat g0029258N4002651_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_galcol_fx_s;
+                     } # end of sst_cachemainuncore_ufmmax_ssa_llc8m_llc_dat_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmax_ssa_llc8m_16161616_list
+
+
+                  GlobalPList sst_cachemainuncore_ufmmax_ssa_nonllc_16161616_list    {
+
+                     GlobalPList sst_cachemainuncore_ufmmax_ssa_nonllc_pcu_rmd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                     LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                        Pat g0026937N3990026_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pcu_rmd_scan_fx_c;
+                        Pat g0026935N3990034_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pcu_rmd_gallop_cmdA_fx_s;
+                     } # end of sst_cachemainuncore_ufmmax_ssa_nonllc_pcu_rmd_16161616_list
+
+                  } # end of sst_cachemainuncore_ufmmax_ssa_nonllc_16161616_list
+
+               } # end of sst_cachemainuncore_ufmmax_ssa_16161616_list
+
+            } # end of sst_cachemainuncore_ufmmax_16161616_list
+
+         } # end of sst_cachemainuncore_16161616_list
+
+      } # end of sst_cachemain_list
+
+
+      GlobalPList sst_cachefmax_list    {
+
+         GlobalPList sst_cachefmaxcore_24161616_list    {
+
+            GlobalPList sst_cachefmaxcore_iqu_lp0_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027074N3987308_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_iqu_lp0_pmovinx2y_fx_s;
+            } # end of sst_cachefmaxcore_iqu_lp0_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_ifu_icd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0048435N3986453_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_icd_pmovi_ifuicdvcd_fx_s;
+            } # end of sst_cachefmaxcore_ifu_icd_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rob_wbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065263N3986923_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbh_gallop_fx_s;
+            } # end of sst_cachefmaxcore_rob_wbh_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dcu_pab_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0046139N3987098_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_pab_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_dcu_pab_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_bit_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0036854N3988360_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bit_gallop_fx_s;
+            } # end of sst_cachefmaxcore_bpu_bit_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rat_nls_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065260N3988383_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_nls_pmovi_wrspaced_fx_s;
+            } # end of sst_cachefmaxcore_rat_nls_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_bdo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026908N3988438_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bdo_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_bpu_bdo_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_ifu_ics_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026951N3988489_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_ics_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_ifu_ics_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dcu_pre_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027032N3988495_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_pre_gallop_fx_s;
+            } # end of sst_cachefmaxcore_dcu_pre_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_pmh_pdd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027015N3988515_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_pdd_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_pmh_pdd_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dcu_fbt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0046126N3988568_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbt_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_dcu_fbt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_lpe_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027050N3988722_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpe_pmovi_dweqcol_fx_s;
+            } # end of sst_cachefmaxcore_bpu_lpe_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_lpo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026931N3988741_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpo_pmovi_dweqcol_fx_s;
+            } # end of sst_cachefmaxcore_bpu_lpo_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_msu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027250N3989042_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_msu_ram_matspp_wrspaced_fx_s;
+            } # end of sst_cachefmaxcore_msu_ram_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_mob_llb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026994N3989618_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_mob_llb_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_mob_rlb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0029484N3989653_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rlb_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_mob_rlb_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_pro_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065269N3991164_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_pro_galcol_dweqcol_fx_s;
+            } # end of sst_cachefmaxcore_bpu_pro_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_ifu_vct_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0036671N3991497_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vct_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_ifu_vct_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_pmh_std_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026879N3991593_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_std_galcol_fx_s;
+            } # end of sst_cachefmaxcore_pmh_std_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_pmh_stl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027046N3991622_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_stl_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_pmh_stl_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_ifu_vcd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0049453N3991632_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vcd_pmovi_ifuicdvcd_fx_s;
+            } # end of sst_cachefmaxcore_ifu_vcd_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_idu_esm_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027045N3993671_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_idu_esm_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_idu_esm_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_ifu_spg_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065286N3993686_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_spg_gallop_fx_s;
+            } # end of sst_cachefmaxcore_ifu_spg_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dtl_ld1_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065255N3993714_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_ld1_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_dtl_ld1_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_mlc_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0046571N4002586_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_dat_galcol_fx_s;
+            } # end of sst_cachefmaxcore_mlc_dat_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_mlc_tag_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0046162N4002717_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_tag_galcol_fx_s;
+            } # end of sst_cachefmaxcore_mlc_tag_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0039315N4028072_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_rsb_marchc_bpursb_fx_s;
+            } # end of sst_cachefmaxcore_bpu_rsb_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_tar_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027109N4003095_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_tar_gallop_fy_s;
+            } # end of sst_cachefmaxcore_bpu_tar_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_tge_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065271N4003114_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_tge_galcol_dweqcol_fx_s;
+            } # end of sst_cachefmaxcore_bpu_tge_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dcu_lrl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065256N4003151_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lrl_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_dcu_lrl_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dcu_lru_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065267N4003183_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_lru_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_dcu_lru_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rob_wbl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0039019N4026331_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_gallop_fx_s;
+            } # end of sst_cachefmaxcore_rob_wbl_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_dcu_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027307N4026433_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_dat_gallop_fx_s;
+            } # end of sst_cachefmaxcore_dcu_dat_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_bpu_gle_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0039070N4026703_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_gle_galcol_dweqcol_fx_s;
+            } # end of sst_cachefmaxcore_bpu_gle_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_pmh_stt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0046155N4026804_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_stt_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_pmh_stt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_mob_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027188N4026821_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_mob_rsb_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_mob_lbh_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065253N4026924_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lbh_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_mob_lbh_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rat_frt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065259N4036406_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_frt_pmovinx2y_fx_s;
+            } # end of sst_cachefmaxcore_rat_frt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rat_hrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065274N4036418_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_hrt_pmovi_fx_s;
+            } # end of sst_cachefmaxcore_rat_hrt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rat_prt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065268N4036436_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_prt_pmovinx2y_fx_s;
+            } # end of sst_cachefmaxcore_rat_prt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rat_vrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065292N4036468_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rat_vrt_pmovinx2y_fx_s;
+            } # end of sst_cachefmaxcore_rat_vrt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rat_xrt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0041512N4036484_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rat_xrt_pmovinx2y_fx_s;
+            } # end of sst_cachefmaxcore_rat_xrt_24161616_list
+
+
+            GlobalPList sst_cachefmaxcore_rob_rdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0034895N4338838_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_rdb_matsp_masking_fx_s;
+            } # end of sst_cachefmaxcore_rob_rdb_24161616_list
+
+
+         } # end of sst_cachefmaxcore_24161616_list
+
+
+         GlobalPList sst_cachefmaxuncore_16161616_list    {
+
+            GlobalPList sst_cachefmaxuncore_llc_tag_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026971N4002875_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_tag_galcol_fx_s;
+            } # end of sst_cachefmaxuncore_llc_tag_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_css_rf0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0039096N3987160_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rf0_galcol_fx_s;
+            } # end of sst_cachefmaxuncore_css_rf0_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_css_rp0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027598N3987184_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rp0_pmovi_fx_s;
+            } # end of sst_cachefmaxuncore_css_rp0_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_csf_th0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026963N3988533_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_csf_th0_pmovi_fx_s;
+            } # end of sst_cachefmaxuncore_csf_th0_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_pcu_rmd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026935N3990034_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pcu_rmd_gallop_cmdA_fx_s;
+            } # end of sst_cachefmaxuncore_pcu_rmd_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_ttu_pyq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027137N3993587_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_pyq_pmovi_fx_s;
+            } # end of sst_cachefmaxuncore_ttu_pyq_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_ttu_waq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027116N3993601_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_waq_pmovi_fx_s;
+            } # end of sst_cachefmaxuncore_ttu_waq_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_ttu_wbe_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027009N3993612_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wbe_pmovi_fx_s;
+            } # end of sst_cachefmaxuncore_ttu_wbe_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_ttu_wdb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027207N3993626_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_pmovi_fx_s;
+               Pat g0039127N3993630_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_gallop_fx_s;
+            } # end of sst_cachefmaxuncore_ttu_wdb_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_gqu_htb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0029430N3993664_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_htb_pmovi_ifuicdvcd_fx_s;
+            } # end of sst_cachefmaxuncore_gqu_htb_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_gqu_htd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0065285N4002471_16161616a2x18_MA0dA07NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_htd_pmovinx2y_fx_s;
+            } # end of sst_cachefmaxuncore_gqu_htd_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_llc_dat_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0029258N4002651_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_galcol_fx_s;
+            } # end of sst_cachefmaxuncore_llc_dat_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_llc_lru_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027112N4002764_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_lru_galcol_fx_s;
+            } # end of sst_cachefmaxuncore_llc_lru_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_llc_sta_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0026938N4002810_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_sta_galcol_fx_s;
+            } # end of sst_cachefmaxuncore_llc_sta_16161616_list
+
+
+            GlobalPList sst_cachefmaxuncore_gqu_dtl_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#            LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+               Pat g0027151N4027643_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtl_gallop_fx_s;
+            } # end of sst_cachefmaxuncore_gqu_dtl_16161616_list
+
+         } # end of sst_cachefmaxuncore_16161616_list
+
+      } # end of sst_cachefmax_list
+
+
+      GlobalPList sst_cacheedc_list    {
+
+         GlobalPList sst_cacheedcuncore_16161616_list    {
+
+            GlobalPList sst_cacheedcuncore_eccon_16161616_list    {
+
+               GlobalPList sst_cacheedcuncore_eccon_llc_dat_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026903N4036143_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_galcol_ecc_fx_s;
+                  Pat g0049265N4036152_16161616a2x18_MA0dA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_dat_marchc_ecc_fx_cs;
+               } # end of sst_cacheedcuncore_eccon_llc_dat_16161616_list
+
+            } # end of sst_cacheedcuncore_eccon_16161616_list
+
+         } # end of sst_cacheedcuncore_16161616_list
+
+      } # end of sst_cacheedc_list
+
+
+      GlobalPList sst_cacheprescreenepbistdv_list    {
+
+         GlobalPList sst_cacheprescreenepbistdvcore_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#         LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+            Pat g0021401N4002923_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_pbactive;
+            Pat g0021252N4030040_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_core_loopstatus;
+            Pat g0021324N4030042_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_core_loopctrs;
+            Pat g0021367N4030043_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_core_check_reset;
+         } # end of sst_cacheprescreenepbistdvcore_24161616_list
+
+
+         GlobalPList sst_cacheprescreenepbistdvuncore_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#         LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+            Pat g0027286N4002922_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pbactive;
+            Pat g0021388N4032072_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_uncore_check_reset;
+         } # end of sst_cacheprescreenepbistdvuncore_16161616_list
+
+      } # end of sst_cacheprescreenepbistdv_list
+
+
+      GlobalPList sst_cacheprescreen_list    {
+
+         GlobalPList sst_cacheprescreencore_24161616_list    {
+
+            GlobalPList sst_cacheprescreencore_lsa_24161616_list    {
+
+               GlobalPList sst_cacheprescreencore_lsa_dcu_wbs_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0021540N4026969_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_wbs_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dcu_wbs_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_ifu_icd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0049452N3986448_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_icd_scan_ifuicdvcd_fx_c;
+               } # end of sst_cacheprescreencore_lsa_ifu_icd_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_ifu_lpg_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0027099N3986853_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_lpg_scan_xadrhole_fx_c;
+               } # end of sst_cacheprescreencore_lsa_ifu_lpg_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dcu_tag_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0038781N3986865_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_tag_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dcu_tag_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_miu_sdb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0046157N3987023_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_miu_sdb_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_miu_sdb_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_ieu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065266N3987056_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_ieu_ram_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_ieu_ram_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_itr_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026916N3987090_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_itr_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_itr_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_mlc_sqd_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0039312N3987118_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sqd_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_mlc_sqd_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_rob_all_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065254N3987144_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_rob_all_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_rob_all_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_bde_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065252N3988425_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bde_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_bde_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_bdo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026880N3988447_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bdo_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_bdo_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_ifu_ics_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026746N3988494_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_ics_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_ifu_ics_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dcu_fbt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026819N3988576_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbt_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dcu_fbt_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_lpo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026956N3988742_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_lpo_scan_dweqcol_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_lpo_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_msu_ram_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0042030N3989052_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_msu_ram_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_msu_ram_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_mob_llb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026899N3989645_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_scan_fx_c;
+                  Pat g0032466N3989646_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_llb_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_mob_llb_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_pre_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065270N3991140_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_pre_scan_dweqcol_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_pre_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_ifu_vct_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026930N3991505_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_ifu_vct_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_ifu_vct_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_idu_esm_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026919N3993685_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_idu_esm_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_idu_esm_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dtl_sd0_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065258N3993744_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_sd0_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dtl_sd0_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dtl_sd1_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065257N3993747_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_dtl_sd1_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dtl_sd1_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dcu_sta_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026845N4003211_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_sta_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dcu_sta_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_rob_wbl_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0041030N4026366_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_rob_wbl_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_rob_wbl_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dcu_fbs_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0031915N4026406_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_fbs_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_dcu_fbs_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_pmh_pdt_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065289N4026424_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_pmh_pdt_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_pmh_pdt_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_dcu_dat_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0043706N4026535_24161616a2x18_MA0dA01NxU_2bxx2eC_4x0xxxpxx0xxx_dcu_dat_scan_parity_fx_s;
+               } # end of sst_cacheprescreencore_lsa_dcu_dat_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_gle_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0027625N4026705_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_gle_scan_dweqcol_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_gle_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_bge_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065265N4026759_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bge_scan_dweqcol_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_bge_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_bpu_bgo_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065264N4026781_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_bpu_bgo_scan_dweqcol_fx_c;
+               } # end of sst_cacheprescreencore_lsa_bpu_bgo_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_mob_rsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0035817N4026813_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_scan_fx_c;
+                  Pat g0037984N4026827_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mob_rsb_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_mob_rsb_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_mob_lsb_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0065261N4026880_24161616a2x18_MA0dA07NxU_2bxx2eC_4x0xxxpxx0xxx_mob_lsb_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_mob_lsb_24161616_list
+
+
+               GlobalPList sst_cacheprescreencore_lsa_mlc_sta_24161616_list [PreBurst lfd_pre_2M_vrevA2_24161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026940N4026930_24161616a2x18_MA0cA01NxU_2bxx2eC_4x0xxxpxx0xxx_mlc_sta_scan_fx_c;
+               } # end of sst_cacheprescreencore_lsa_mlc_sta_24161616_list
+
+            } # end of sst_cacheprescreencore_lsa_24161616_list
+
+         } # end of sst_cacheprescreencore_24161616_list
+
+
+         GlobalPList sst_cacheprescreenuncore_16161616_list    {
+
+            GlobalPList sst_cacheprescreenuncore_lsa_16161616_list    {
+
+               GlobalPList sst_cacheprescreenuncore_lsa_llc8m_16161616_list    {
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_llc8m_llc_lru_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0032510N4002791_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_lru_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_llc8m_llc_lru_16161616_list
+
+               } # end of sst_cacheprescreenuncore_lsa_llc8m_16161616_list
+
+
+               GlobalPList sst_cacheprescreenuncore_lsa_nonllc_16161616_list    {
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_css_rf0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0021550N3987163_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rf0_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_css_rf0_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_css_rp0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0021444N3987183_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_css_rp0_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_css_rp0_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_csf_th0_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026832N3988542_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_csf_th0_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_csf_th0_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_ttu_pyq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027081N3993596_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_pyq_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_ttu_pyq_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_ttu_waq_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026878N3993609_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_waq_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_ttu_waq_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_ttu_wbe_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027246N3993619_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wbe_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_ttu_wbe_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_ttu_wdb_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0026933N3993641_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_scan_fx_c;
+                     Pat g0039155N3993642_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_ttu_wdb_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_ttu_wdb_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_gqu_bec_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027023N3993748_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_bec_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_gqu_bec_16161616_list
+
+
+                  GlobalPList sst_cacheprescreenuncore_lsa_nonllc_gqu_dtl_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#                  LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                     Pat g0027126N4027676_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_gqu_dtl_scan_fx_c;
+                  } # end of sst_cacheprescreenuncore_lsa_nonllc_gqu_dtl_16161616_list
+
+               } # end of sst_cacheprescreenuncore_lsa_nonllc_16161616_list
+
+
+            } # end of sst_cacheprescreenuncore_lsa_16161616_list
+
+
+            GlobalPList sst_cacheprescreenuncore_ssa_16161616_list    {
+
+               GlobalPList sst_cacheprescreenuncore_ssa_llc_tag_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0036536N4002921_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_llc_tag_scan_fx_c;
+               } # end of sst_cacheprescreenuncore_ssa_llc_tag_16161616_list
+
+
+               GlobalPList sst_cacheprescreenuncore_ssa_pcu_rmd_16161616_list [PreBurst lfd_pre_8M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0]  [Mask pcie_txp, pcie_tx, dmi_txp, dmi_tx, vid_bus, bclk_buf, PRDY_N, mbp, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N] {
+#               LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+                  Pat g0026937N3990026_16161616a2x18_MA0cA01NxU_8bxx2eC_4x0xxxpxx0xxx_pcu_rmd_scan_fx_c;
+               } # end of sst_cacheprescreenuncore_ssa_pcu_rmd_16161616_list
+
+            } # end of sst_cacheprescreenuncore_ssa_16161616_list
+
+         } # end of sst_cacheprescreenuncore_16161616_list
+
+      } # end of sst_cacheprescreen_list
+
+} # end of cache_list
+

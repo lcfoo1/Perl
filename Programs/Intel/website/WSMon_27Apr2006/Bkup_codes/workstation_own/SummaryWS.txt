@@ -1,0 +1,7 @@
+Status=In Active
+Server=pgxpw4035
+Team=TV
+User=wmah
+Logon=03/23/2006 22:09:57
+LastActive=Tue Mar 28 16:47:02 2006
+Active=Yes(IDLE=0days, 4hours, 29mins)

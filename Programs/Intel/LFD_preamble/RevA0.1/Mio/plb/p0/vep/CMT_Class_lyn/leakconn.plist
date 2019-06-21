@@ -1,0 +1,23 @@
+Version 1.0;
+
+GlobalPList leakconn_16161616_list    {
+
+   GlobalPList leakconn_hi_hfmnom_16161616_list  [PreBurst leakconn_hi_lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask TDO, mbp, vid_bus, bclk_buf] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0030797N4957372_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_bscan_highz;
+   } # end of leakconn_hi_hfmnom_16161616_list
+
+
+   GlobalPList leakconn_hfmnom_16161616_list [PreBurst leakconn_lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask TDO, mbp, vid_bus, bclk_buf] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0030797N4957372_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_bscan_highz;
+   } # end of leakconn_hfmnom_16161616_list
+
+
+   GlobalPList leakconn_low_hfmnom_16161616_list [PreBurst leakconn_low_lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask TDO, mbp, vid_bus, bclk_buf] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0030797N4957372_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_bscan_highz;
+   } # end of leakconn_low_hfmnom_16161616_list
+
+} # end of leakconn_16161616_list
+

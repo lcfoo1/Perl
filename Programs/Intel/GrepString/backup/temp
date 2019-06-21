@@ -1,0 +1,12 @@
+Pattern File: g2487542A009821_011404c_ME0626am_0fxfxx0xhElxxxxxxxIfrxO7_cmov.pat.data
+2
+Start label: JTAGstraps_Start1_g2487542A009821_011404c_ME0626am_0fxfxx0xhElxxxxxxxIfrxO7_cmov:
+End label: JTAGstraps_End1_g2487542A009821_011404c_ME0626am_0fxfxx0xhElxxxxxxxIfrxO7_cmov:
+
+2
+Pin:TDI, Column:184
+0b00010001000010001111000 [0x088478] [23 bits]
+Pin:SPARE4, Column:225
+0bZZZZZZZZZZZZZZZZZZZZZZZ [0x000000] [23 bits]
+Pin:SPARE8, Column:227
+0bZZZZZZZZZZZZZZZZZZZZZZZ [0x000000] [23 bits]

@@ -1,0 +1,423 @@
+# This has the test cases for PCIER template:
+
+COMPOSITE PCIER
+{
+    PCIER_Verify_Fail(COMPNAME = PCIER_Verify_Fail)
+    0?NEXT,
+    1?NEXT;
+
+    PCIER_Execute_Pass(COMPNAME = PCIER_Execute_Pass)
+    0?NEXT,
+    1?NEXT;
+}
+
+
+COMPOSITE PCIER_Verify_Fail
+{
+      DEF (SEGNAME = $name,
+			AnodeForceCurrent = 0.000100,
+			CathodeForceVoltage = 0.00,
+			cathodePins = "P002",
+			anodePins = "P001",
+			timings = "",
+			patlist = "",
+			level = "",
+			debugMode = BRIEF,
+			preinstance = "",
+			postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+			bypassGlobal = "",
+			maskPins = "",
+        );
+
+       DEF (TEMPLATENAME = PCIER_Verify,
+            TESTTYPE = Fail,
+            TESTMODE = "",
+            TESTDESC = "",
+            DESIREDOUT = "F0");
+       DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTMODE_$TESTDESC_$DESIREDOUT);
+       DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME);
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_GenCoreVerifyFail_MaskPinsInvalid_F0
+    # Test Description: The parameter mask_pins, which is a iCGENCore common parameter has invalid parameter
+    #		This is to get to test that it fails Verify if iCGENCore common parameter is invalid.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = GenCoreVerifyFail,
+   	            TESTDESC = MaskPinsInvalid,
+   	            maskPins = "invalid-pin"
+   	            level = iValLevelNom,
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_ForceCurrent_Undefined_F0
+    # Test Description: The force_current must be equal/greater than 0.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = ForceCurrent,
+   	            TESTDESC = Undefined,
+   	            AnodeForceCurrent = -5555555.555, # For simulating that it is not defined.
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+		
+	######################################################################################################
+    # Test Name: PCIER_Verify_Fail_ForceVoltage_Undefined_F0
+    # Test Description: The force voltage must be equal/greater than 0.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = ForceVoltage,
+   	            TESTDESC = Undefined,
+   	            CathodeForceVoltage = -5555555.555, # For simulating that it is not defined.
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+		
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_CathodePins_Undefined_F0
+    # Test Description: Parameter cathode_pins needs to be defined.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = CathodePins,
+   	            TESTDESC = Undefined,
+   	            cathodePins = "",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_CathodePins_Invalid_F0
+    # Test Description: Parameter cathode_pins has an invalid-pin
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = CathodePins,
+   	            TESTDESC = Invalid,
+   	            cathodePins = "invalid_pin",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_CathodePins_MoreThanAnode_F0
+    # Test Description: The number of cathode pins and number of anode pins should be same.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = CathodePins,
+   	            TESTDESC = MoreThanAnode,
+   	            cathodePins = "P002 P004",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_CathodePin_NotDM250Or65GPMU_F0
+    # Test Description: The cathode pin, LDPS, is not a DM250 or 6.5G PMU connected pin..
+    # HSD 5510
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = CathodePin,
+   	            TESTDESC = NotDM250Or65GPMU,
+   	            cathodePins = "LDPS",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_AnodePins_Undefined_F0
+    # Test Description: Parameter anode_pins needs to be defined.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = AnodePins,
+   	            TESTDESC = Undefined,
+   	            anodePins = "",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_AnodePins_Invalid_F0
+    # Test Description: Parameter anode_pins has an invalid-pin
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = AnodePins,
+   	            TESTDESC = Invalid,
+   	            anodePins = "invalid_pin",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_AnodePins_MoreThanCathode_F0
+    # Test Description: The number of anode pins and number of cathode pins should be same.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = AnodePins,
+   	            TESTDESC = MoreThanCathode,
+   	            anodePins = "P001 P003",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_AnodePin_NotDM250Or65GPMU_F0
+    # Test Description: The anode pin, Tx11, is not a DM250 or 6.5G PMU connected pin..
+    # HSD 5510
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = AnodePin,
+   	            TESTDESC = NotDM250Or65GPMU,
+   	            anodePins = "Tx11",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Verify_Fail_AnodeAndCathodePin_NotOfSameType_F0
+    # Test Description: The Cathode pin is of type: DM250 and Anode pin is of type: 6.5G PMU pin.
+    # HSD 5510
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = AnodeAndCathodePin,
+   	            TESTDESC = NotOfSameType,
+   	            anodePins = "Tx11p",
+   	            cathodePins = "P002",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    
+	######################################################################################################
+    # Test Name: PCIER_Verify_Fail_Levels_Invalid_F0
+    # Test Description: Parameter levels has an invalid input
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = Levels,
+   	            TESTDESC = Invalid,
+   	            level = "invalid_levels",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+}
+
+
+COMPOSITE PCIER_Execute_Pass
+{
+
+  # Note that there are no tests that pass the functionality of PCIER as the cathode current (which
+  # is a result of the transistor within the chip circuitry) will be zero always on iVal: causes failure.
+  # but using preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile InputFiles.txt" could simulate cathode current.
+
+      DEF (SEGNAME = $name,
+			AnodeForceCurrent = 0.000170,
+			CathodeForceVoltage = 0.0,
+			cathodePins = "P002",
+			anodePins = "P001",
+			timings = "",
+			patlist = "",
+			level = "",
+			debugMode = BRIEF,
+			preinstance = "",
+			postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+			bypassGlobal = "",	
+			maskPins = "",			
+        );
+
+       DEF (TEMPLATENAME = PCIER_Execute,
+            TESTTYPE = Pass,
+            TESTMODE = "",
+            TESTDESC = "",
+            DESIREDOUT = "P1");
+       DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTMODE_$TESTDESC_$DESIREDOUT);
+       DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME);
+
+    ######################################################################################################
+    # Test Name: PCIER_Execute_Pass_Bypass__P1
+    # Test Description: This is a test bypassed to port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+	   tt_pcier (
+	   	    TESTMODE = Bypass,
+			TESTDESC = "",
+			bypassGlobal = "BYPASSVars.Bypass_PCIER_Port1"
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+		
+    ######################################################################################################
+    # Test Name: PCIER_Execute_Pass_Bypass__P0
+    # Test Description: This is a test bypassed to port 0
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = Bypass,
+   	            TESTDESC = "",
+   	            DESIREDOUT = "F0",
+   	            bypassGlobal = "BYPASSVars.Bypass_PCIER_Port0"
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+   
+
+    ######################################################################################################
+    # Test Name: PCIER_Execute_Pass_SingleTest_DebugDisabled_P1
+    # Test Description: This is a simulate Test for single test which pass port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = SingleTest,
+   	            TESTDESC = DebugDisabled,
+   	            DESIREDOUT = "P1",
+   	            debugMode = DISABLED,
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+
+    ######################################################################################################
+    # Test Name: PCIER_Execute_Pass_SingleTest_Regular_P1
+    # Test Description: This is a simulate Test for single test which pass port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = SingleTest,
+   	            TESTDESC = Regular,
+   	            DESIREDOUT = "P1",
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+		
+		
+	######################################################################################################
+    # Test Name: PCIER_Execute_Pass_ForceVoltage_Regular_P1
+    # Test Description: This is a simulate Test for forcing cathode with voltage which pass port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = ForceVoltage,
+   	            TESTDESC = Regular,
+				AnodeForceCurrent = 0.0,
+				CathodeForceVoltage = 0.02,
+   	            DESIREDOUT = "P1",
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+		
+	
+	######################################################################################################
+    # Test Name: PCIER_Execute_Pass_ForceBoth_Regular_P1
+    # Test Description: This is a simulate Test for forcing both current and voltage which pass port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = ForceBoth,
+   	            TESTDESC = Regular,
+				CathodeForceVoltage = 0.02,
+   	            DESIREDOUT = "P1",
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+		
+		
+	######################################################################################################
+    # Test Name: PCIER_Execute_Pass_Function_Regular_P1
+    # Test Description: This is dummmy exercise pattern/levels/timing execution which pass port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+		tt_func (SEGNAME = $name,
+		   datalogMode = ON,
+		   bypassGlobal = "",
+		   postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+		   patlist = basic_func_list_pass,
+		   timings = iValTimings50MHz,
+		   secondPassTimings = "",
+		   maxCaptureFails = 1,
+		   level = iValLevelFuncPass,
+		   ssidESequence = "",
+		   ssidERecovery = "",
+		   ssidGPwrdwn = NO,
+		   ssidGRestore = "",
+		   ssidOExecute = "FIRST_FAIL",
+		   TESTMODE = Function,
+		   TESTDESC = Regular,
+		   eapMode = "EAP_OFF",
+		   )
+	  1?NEXT,
+	  0?NEXT;
+		
+	
+	######################################################################################################
+    # Test Name: PCIER_Execute_Pass_ExecutePattern_Regular_P1
+    # Test Description: This exercise pattern/timings/levels execution which pass port 1
+    # Expected Behavior: Exit on port 1
+    ######################################################################################################
+	   
+	   tt_pcier (
+				TESTMODE = ExecutePattern,
+   	            TESTDESC = Regular,
+				CathodeForceVoltage = 0.02,
+   	            DESIREDOUT = "P1",
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+				patlist = "basic_func_list_pass",
+				timings = "iValTimings50MHz",
+				level = iValLevelFuncPass,
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+		
+	
+	######################################################################################################
+    # Test Name: PCIER_Execute_Fail_AnodeExceedClampLimit_Regular_F0
+    # Test Description: Test for forcing anode with huge current and exceed clamp limit.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = AnodeExceedClampLimit,
+   	            TESTDESC = Regular,
+				TESTTYPE = Fail,
+				AnodeForceCurrent = 100.0,
+				CathodeForceVoltage = 0.0,
+   	            DESIREDOUT = "F0",
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+		
+		
+	######################################################################################################
+    # Test Name: PCIER_Execute_Fail_CathodeExceedClampLimit_Regular_F0
+    # Test Description: Test for forcing cathode with huge voltage and exceed clamp limit.
+    # Expected Behavior: Exit on port 0
+    ######################################################################################################
+	   tt_pcier (
+				TESTMODE = CathodeExceedClampLimit,
+   	            TESTDESC = Regular,
+				TESTTYPE = Fail,
+				AnodeForceCurrent = 0.0,
+				CathodeForceVoltage = 10.0,
+   	            DESIREDOUT = "F0",
+   	            preinstance = "iVal_utilityfunc!ModifyDUTModelCfgFile /DutModelInputFiles/XGDiode_InputFiles_Pass.txt",
+   	            )
+   	    0?NEXT,
+   	    1?NEXT;
+}
+

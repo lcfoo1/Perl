@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4057
+Team=TM
+User=lfoo1
+Logon=10/30/2006 14:49:37
+LastActive=Mon Nov  6 17:23:35 2006
+Active=Yes(IDLE=0days, 0hours, 1mins)

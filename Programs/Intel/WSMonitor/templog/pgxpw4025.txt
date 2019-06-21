@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4025
+Team=TV
+User=jkoh
+Logon=2/2/2007 10:47:00 AM
+LastActive=3/7/2007 10:08:01 PM
+Active=No(IDLE=33days, 11hrs, 21mins)

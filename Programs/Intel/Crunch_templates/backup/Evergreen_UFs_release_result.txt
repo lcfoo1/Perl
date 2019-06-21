@@ -1,0 +1,47 @@
+
+Microsoft (R) Visual Studio Version 8.0.50727.762.
+Copyright (C) Microsoft Corp 1984-2005. All rights reserved.
+1>------ Rebuild All started: Project: CPD_UF, Configuration: Release Win32 ------
+1>Deleting intermediate and output files for project 'CPD_UF', configuration 'Release|Win32'
+1>Compiling...
+1>SpeedDecode.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>AHMER_UF_LIB.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>ipo_ufs.cpp
+1>hnarravu.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>Get_FAFIConfigFile.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>SensorDecisionUF.cpp
+1>ippdctshmooprocf.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>ippdct.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>ippdctshmooprocc.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>ThermDiode.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>ThermDiode_Enh2.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>ThermDiode_Enh1.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>AVIDsetCLASS.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>PrintBin.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>UserFuncUtils.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>logbintoube.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>CDM_STDRun.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>TDP.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>Generating Code...
+1>Linking...
+1>   Creating library .\lib\CPD_UF.lib and object .\lib\CPD_UF.exp
+1>Embedding manifest...
+1>Build log was saved at "file://p:\tpapps\CorTeX\UFs\Rev4.9.1_PG1\nhm\Release\BuildLog.htm"
+1>CPD_UF - 0 error(s), 0 warning(s)
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========

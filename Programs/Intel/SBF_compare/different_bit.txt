@@ -1,0 +1,788 @@
+Start line C:\intel\Perl\Programs\compare\test\SBF_read.pat.data data 19
+Start line C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data data 21
+RS2t0nn_1 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : Z - address 1577
+X - address 1578 : Z - address 1578
+X - address 1579 : Z - address 1579
+X - address 1580 : Z - address 1580
+VID6t0_3 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580
+SMInn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+BPRInn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+BINITnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : 1 - address 1577
+Z - address 1578 : 1 - address 1578
+Z - address 1579 : 1 - address 1579
+Z - address 1580 : 1 - address 1580
+TMS have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+0 - address 287 : 1 - address 287
+0 - address 288 : 1 - address 288
+0 - address 289 : 1 - address 289
+0 - address 290 : 1 - address 290
+1 - address 295 : 0 - address 295
+1 - address 296 : 0 - address 296
+1 - address 297 : 0 - address 297
+1 - address 298 : 0 - address 298
+0 - address 311 : 1 - address 311
+0 - address 312 : 1 - address 312
+0 - address 313 : 1 - address 313
+0 - address 314 : 1 - address 314
+1 - address 317 : 0 - address 317
+1 - address 318 : 0 - address 318
+1 - address 319 : 0 - address 319
+1 - address 320 : 0 - address 320
+0 - address 397 : 1 - address 397
+0 - address 398 : 1 - address 398
+0 - address 399 : 1 - address 399
+0 - address 400 : 1 - address 400
+1 - address 405 : 0 - address 405
+1 - address 406 : 0 - address 406
+1 - address 407 : 0 - address 407
+1 - address 408 : 0 - address 408
+0 - address 421 : 1 - address 421
+0 - address 422 : 1 - address 422
+0 - address 423 : 1 - address 423
+0 - address 424 : 1 - address 424
+1 - address 427 : 0 - address 427
+1 - address 428 : 0 - address 428
+1 - address 429 : 0 - address 429
+1 - address 430 : 0 - address 430
+0 - address 601 : 1 - address 601
+0 - address 602 : 1 - address 602
+0 - address 603 : 1 - address 603
+0 - address 604 : 1 - address 604
+1 - address 607 : 0 - address 607
+1 - address 608 : 0 - address 608
+1 - address 609 : 0 - address 609
+1 - address 610 : 0 - address 610
+0 - address 781 : 1 - address 781
+0 - address 782 : 1 - address 782
+0 - address 783 : 1 - address 783
+0 - address 784 : 1 - address 784
+1 - address 787 : 0 - address 787
+1 - address 788 : 0 - address 788
+1 - address 789 : 0 - address 789
+1 - address 790 : 0 - address 790
+0 - address 961 : 1 - address 961
+0 - address 962 : 1 - address 962
+0 - address 963 : 1 - address 963
+0 - address 964 : 1 - address 964
+1 - address 967 : 0 - address 967
+1 - address 968 : 0 - address 968
+1 - address 969 : 0 - address 969
+1 - address 970 : 0 - address 970
+0 - address 1141 : 1 - address 1141
+0 - address 1142 : 1 - address 1142
+0 - address 1143 : 1 - address 1143
+0 - address 1144 : 1 - address 1144
+1 - address 1147 : 0 - address 1147
+1 - address 1148 : 0 - address 1148
+1 - address 1149 : 0 - address 1149
+1 - address 1150 : 0 - address 1150
+0 - address 1321 : 1 - address 1321
+0 - address 1322 : 1 - address 1322
+0 - address 1323 : 1 - address 1323
+0 - address 1324 : 1 - address 1324
+1 - address 1329 : 0 - address 1329
+1 - address 1330 : 0 - address 1330
+1 - address 1331 : 0 - address 1331
+1 - address 1332 : 0 - address 1332
+0 - address 1345 : 1 - address 1345
+0 - address 1346 : 1 - address 1346
+0 - address 1347 : 1 - address 1347
+0 - address 1348 : 1 - address 1348
+1 - address 1351 : 0 - address 1351
+1 - address 1352 : 0 - address 1352
+1 - address 1353 : 0 - address 1353
+1 - address 1354 : 0 - address 1354
+0 - address 1475 : 1 - address 1475
+0 - address 1476 : 1 - address 1476
+0 - address 1477 : 1 - address 1477
+0 - address 1478 : 1 - address 1478
+1 - address 1483 : 0 - address 1483
+1 - address 1484 : 0 - address 1484
+1 - address 1485 : 0 - address 1485
+1 - address 1486 : 0 - address 1486
+0 - address 1499 : 1 - address 1499
+0 - address 1500 : 1 - address 1500
+0 - address 1501 : 1 - address 1501
+0 - address 1502 : 1 - address 1502
+1 - address 1505 : 0 - address 1505
+1 - address 1506 : 0 - address 1506
+1 - address 1507 : 0 - address 1507
+1 - address 1508 : 0 - address 1508
+0 - address 1523 : 1 - address 1523
+0 - address 1524 : 1 - address 1524
+0 - address 1525 : 1 - address 1525
+0 - address 1526 : 1 - address 1526
+1 - address 1527 : 0 - address 1527
+1 - address 1528 : 0 - address 1528
+1 - address 1529 : 0 - address 1529
+1 - address 1530 : 0 - address 1530
+RSPnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : Z - address 1577
+X - address 1578 : Z - address 1578
+X - address 1579 : Z - address 1579
+X - address 1580 : Z - address 1580
+STPCLKnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+TCK have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+0 - address 1531 : 1 - address 1531
+0 - address 1533 : 1 - address 1533
+1 - address 1538 : 0 - address 1538
+1 - address 1539 : 0 - address 1539
+1 - address 1540 : 0 - address 1540
+0 - address 1543 : 1 - address 1543
+1 - address 1577 : 0 - address 1577
+1 - address 1579 : 0 - address 1579
+TRSTnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+RS2t0nn_2 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : Z - address 1577
+X - address 1578 : Z - address 1578
+X - address 1579 : Z - address 1579
+X - address 1580 : Z - address 1580
+VID6t0_1 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580
+INITnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+GTLREF_ADDR have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+DPSLPnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+LINT1 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 0 - address 1577
+X - address 1578 : 0 - address 1578
+X - address 1579 : 0 - address 1579
+X - address 1580 : 0 - address 1580
+VID6t0_5 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580
+VID6t0_2 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580
+PREQnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : Z - address 1577
+X - address 1578 : Z - address 1578
+X - address 1579 : Z - address 1579
+X - address 1580 : Z - address 1580
+RS2t0nn_0 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : Z - address 1577
+X - address 1578 : Z - address 1578
+X - address 1579 : Z - address 1579
+X - address 1580 : Z - address 1580
+LINT0 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 0 - address 1577
+X - address 1578 : 0 - address 1578
+X - address 1579 : 0 - address 1579
+X - address 1580 : 0 - address 1580
+AACLKPH have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+H - address 1577 : Z - address 1577
+H - address 1578 : Z - address 1578
+H - address 1579 : Z - address 1579
+H - address 1580 : Z - address 1580
+GTLREF_DATA have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+SLPnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+VID6t0_6 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580
+DEFERnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+VID6t0_0 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580
+TRDYnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+BPM3t0nn_3 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+1 - address 1577 : Z - address 1577
+1 - address 1578 : Z - address 1578
+1 - address 1579 : Z - address 1579
+1 - address 1580 : Z - address 1580
+COMP_0aM_8aC have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 0 - address 1577
+X - address 1578 : 0 - address 1578
+X - address 1579 : 0 - address 1579
+X - address 1580 : 0 - address 1580
+FORCEPRnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+TDI have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+0 - address 0 : 1 - address 0
+0 - address 1 : 1 - address 1
+0 - address 2 : 1 - address 2
+0 - address 3 : 1 - address 3
+0 - address 4 : 1 - address 4
+0 - address 5 : 1 - address 5
+0 - address 6 : 1 - address 6
+0 - address 7 : 1 - address 7
+0 - address 8 : 1 - address 8
+0 - address 9 : 1 - address 9
+0 - address 10 : 1 - address 10
+0 - address 11 : 1 - address 11
+0 - address 12 : 1 - address 12
+0 - address 13 : 1 - address 13
+0 - address 14 : 1 - address 14
+0 - address 15 : 1 - address 15
+0 - address 16 : 1 - address 16
+0 - address 17 : 1 - address 17
+0 - address 18 : 1 - address 18
+0 - address 19 : 1 - address 19
+0 - address 20 : 1 - address 20
+0 - address 21 : 1 - address 21
+0 - address 22 : 1 - address 22
+0 - address 23 : 1 - address 23
+0 - address 24 : 1 - address 24
+0 - address 25 : 1 - address 25
+0 - address 26 : 1 - address 26
+0 - address 27 : 1 - address 27
+0 - address 28 : 1 - address 28
+0 - address 29 : 1 - address 29
+0 - address 30 : 1 - address 30
+0 - address 31 : 1 - address 31
+0 - address 32 : 1 - address 32
+0 - address 33 : 1 - address 33
+0 - address 34 : 1 - address 34
+0 - address 35 : 1 - address 35
+0 - address 36 : 1 - address 36
+0 - address 37 : 1 - address 37
+0 - address 38 : 1 - address 38
+0 - address 39 : 1 - address 39
+0 - address 40 : 1 - address 40
+0 - address 41 : 1 - address 41
+0 - address 42 : 1 - address 42
+0 - address 43 : 1 - address 43
+0 - address 44 : 1 - address 44
+0 - address 45 : 1 - address 45
+0 - address 46 : 1 - address 46
+1 - address 247 : 0 - address 247
+1 - address 248 : 0 - address 248
+1 - address 249 : 0 - address 249
+1 - address 250 : 0 - address 250
+0 - address 275 : 1 - address 275
+0 - address 276 : 1 - address 276
+1 - address 279 : 0 - address 279
+1 - address 280 : 0 - address 280
+0 - address 299 : 1 - address 299
+0 - address 300 : 1 - address 300
+0 - address 301 : 1 - address 301
+0 - address 302 : 1 - address 302
+1 - address 303 : 0 - address 303
+1 - address 304 : 0 - address 304
+1 - address 305 : 0 - address 305
+1 - address 306 : 0 - address 306
+0 - address 309 : 1 - address 309
+0 - address 310 : 1 - address 310
+0 - address 311 : 1 - address 311
+0 - address 312 : 1 - address 312
+1 - address 313 : 0 - address 313
+1 - address 314 : 0 - address 314
+1 - address 315 : 0 - address 315
+1 - address 316 : 0 - address 316
+0 - address 321 : 1 - address 321
+0 - address 322 : 1 - address 322
+1 - address 329 : 0 - address 329
+1 - address 330 : 0 - address 330
+0 - address 339 : 1 - address 339
+0 - address 340 : 1 - address 340
+1 - address 347 : 0 - address 347
+1 - address 348 : 0 - address 348
+0 - address 357 : 1 - address 357
+0 - address 358 : 1 - address 358
+1 - address 361 : 0 - address 361
+1 - address 362 : 0 - address 362
+0 - address 377 : 1 - address 377
+0 - address 378 : 1 - address 378
+1 - address 381 : 0 - address 381
+1 - address 382 : 0 - address 382
+0 - address 411 : 1 - address 411
+0 - address 412 : 1 - address 412
+1 - address 415 : 0 - address 415
+1 - address 416 : 0 - address 416
+0 - address 419 : 1 - address 419
+0 - address 420 : 1 - address 420
+0 - address 421 : 1 - address 421
+0 - address 422 : 1 - address 422
+1 - address 423 : 0 - address 423
+1 - address 424 : 0 - address 424
+1 - address 425 : 0 - address 425
+1 - address 426 : 0 - address 426
+0 - address 461 : 1 - address 461
+0 - address 462 : 1 - address 462
+1 - address 465 : 0 - address 465
+1 - address 466 : 0 - address 466
+0 - address 469 : 1 - address 469
+0 - address 470 : 1 - address 470
+1 - address 473 : 0 - address 473
+1 - address 474 : 0 - address 474
+0 - address 477 : 1 - address 477
+0 - address 478 : 1 - address 478
+1 - address 481 : 0 - address 481
+1 - address 482 : 0 - address 482
+0 - address 485 : 1 - address 485
+0 - address 486 : 1 - address 486
+1 - address 489 : 0 - address 489
+1 - address 490 : 0 - address 490
+0 - address 493 : 1 - address 493
+0 - address 494 : 1 - address 494
+1 - address 497 : 0 - address 497
+1 - address 498 : 0 - address 498
+0 - address 509 : 1 - address 509
+0 - address 510 : 1 - address 510
+1 - address 517 : 0 - address 517
+1 - address 518 : 0 - address 518
+0 - address 559 : 1 - address 559
+0 - address 560 : 1 - address 560
+1 - address 567 : 0 - address 567
+1 - address 568 : 0 - address 568
+0 - address 571 : 1 - address 571
+0 - address 572 : 1 - address 572
+1 - address 579 : 0 - address 579
+1 - address 580 : 0 - address 580
+0 - address 583 : 1 - address 583
+0 - address 584 : 1 - address 584
+1 - address 591 : 0 - address 591
+1 - address 592 : 0 - address 592
+0 - address 595 : 1 - address 595
+0 - address 596 : 1 - address 596
+1 - address 603 : 0 - address 603
+1 - address 604 : 0 - address 604
+0 - address 639 : 1 - address 639
+0 - address 640 : 1 - address 640
+1 - address 643 : 0 - address 643
+1 - address 644 : 0 - address 644
+0 - address 645 : 1 - address 645
+0 - address 646 : 1 - address 646
+1 - address 649 : 0 - address 649
+1 - address 650 : 0 - address 650
+0 - address 653 : 1 - address 653
+0 - address 654 : 1 - address 654
+1 - address 657 : 0 - address 657
+1 - address 658 : 0 - address 658
+0 - address 659 : 1 - address 659
+0 - address 660 : 1 - address 660
+0 - address 661 : 1 - address 661
+0 - address 662 : 1 - address 662
+1 - address 665 : 0 - address 665
+1 - address 666 : 0 - address 666
+0 - address 669 : 1 - address 669
+0 - address 670 : 1 - address 670
+1 - address 673 : 0 - address 673
+1 - address 674 : 0 - address 674
+0 - address 677 : 1 - address 677
+0 - address 678 : 1 - address 678
+1 - address 683 : 0 - address 683
+1 - address 684 : 0 - address 684
+1 - address 697 : 0 - address 697
+1 - address 698 : 0 - address 698
+0 - address 703 : 1 - address 703
+0 - address 704 : 1 - address 704
+1 - address 707 : 0 - address 707
+1 - address 708 : 0 - address 708
+0 - address 817 : 1 - address 817
+0 - address 818 : 1 - address 818
+1 - address 821 : 0 - address 821
+1 - address 822 : 0 - address 822
+0 - address 827 : 1 - address 827
+0 - address 828 : 1 - address 828
+0 - address 829 : 1 - address 829
+0 - address 830 : 1 - address 830
+1 - address 831 : 0 - address 831
+1 - address 832 : 0 - address 832
+1 - address 833 : 0 - address 833
+1 - address 834 : 0 - address 834
+0 - address 835 : 1 - address 835
+0 - address 836 : 1 - address 836
+0 - address 837 : 1 - address 837
+0 - address 838 : 1 - address 838
+1 - address 839 : 0 - address 839
+1 - address 840 : 0 - address 840
+1 - address 841 : 0 - address 841
+1 - address 842 : 0 - address 842
+0 - address 845 : 1 - address 845
+0 - address 846 : 1 - address 846
+1 - address 849 : 0 - address 849
+1 - address 850 : 0 - address 850
+0 - address 853 : 1 - address 853
+0 - address 854 : 1 - address 854
+1 - address 857 : 0 - address 857
+1 - address 858 : 0 - address 858
+0 - address 869 : 1 - address 869
+0 - address 870 : 1 - address 870
+1 - address 877 : 0 - address 877
+1 - address 878 : 0 - address 878
+0 - address 919 : 1 - address 919
+0 - address 920 : 1 - address 920
+1 - address 927 : 0 - address 927
+1 - address 928 : 0 - address 928
+0 - address 931 : 1 - address 931
+0 - address 932 : 1 - address 932
+1 - address 939 : 0 - address 939
+1 - address 940 : 0 - address 940
+0 - address 943 : 1 - address 943
+0 - address 944 : 1 - address 944
+1 - address 951 : 0 - address 951
+1 - address 952 : 0 - address 952
+0 - address 955 : 1 - address 955
+0 - address 956 : 1 - address 956
+1 - address 963 : 0 - address 963
+1 - address 964 : 0 - address 964
+0 - address 995 : 1 - address 995
+0 - address 996 : 1 - address 996
+1 - address 999 : 0 - address 999
+1 - address 1000 : 0 - address 1000
+0 - address 1007 : 1 - address 1007
+0 - address 1008 : 1 - address 1008
+0 - address 1009 : 1 - address 1009
+0 - address 1010 : 1 - address 1010
+1 - address 1011 : 0 - address 1011
+1 - address 1012 : 0 - address 1012
+1 - address 1013 : 0 - address 1013
+1 - address 1014 : 0 - address 1014
+0 - address 1015 : 1 - address 1015
+0 - address 1016 : 1 - address 1016
+0 - address 1017 : 1 - address 1017
+0 - address 1018 : 1 - address 1018
+1 - address 1019 : 0 - address 1019
+1 - address 1020 : 0 - address 1020
+1 - address 1021 : 0 - address 1021
+1 - address 1022 : 0 - address 1022
+0 - address 1025 : 1 - address 1025
+0 - address 1026 : 1 - address 1026
+0 - address 1027 : 1 - address 1027
+0 - address 1028 : 1 - address 1028
+1 - address 1035 : 0 - address 1035
+1 - address 1036 : 0 - address 1036
+1 - address 1037 : 0 - address 1037
+1 - address 1038 : 0 - address 1038
+0 - address 1049 : 1 - address 1049
+0 - address 1050 : 1 - address 1050
+1 - address 1057 : 0 - address 1057
+1 - address 1058 : 0 - address 1058
+0 - address 1085 : 1 - address 1085
+0 - address 1086 : 1 - address 1086
+1 - address 1089 : 0 - address 1089
+1 - address 1090 : 0 - address 1090
+0 - address 1173 : 1 - address 1173
+0 - address 1174 : 1 - address 1174
+1 - address 1177 : 0 - address 1177
+1 - address 1178 : 0 - address 1178
+0 - address 1189 : 1 - address 1189
+0 - address 1190 : 1 - address 1190
+1 - address 1193 : 0 - address 1193
+1 - address 1194 : 0 - address 1194
+0 - address 1195 : 1 - address 1195
+0 - address 1196 : 1 - address 1196
+1 - address 1199 : 0 - address 1199
+1 - address 1200 : 0 - address 1200
+0 - address 1201 : 1 - address 1201
+0 - address 1202 : 1 - address 1202
+1 - address 1205 : 0 - address 1205
+1 - address 1206 : 0 - address 1206
+0 - address 1209 : 1 - address 1209
+0 - address 1210 : 1 - address 1210
+1 - address 1213 : 0 - address 1213
+1 - address 1214 : 0 - address 1214
+0 - address 1229 : 1 - address 1229
+0 - address 1230 : 1 - address 1230
+1 - address 1237 : 0 - address 1237
+1 - address 1238 : 0 - address 1238
+0 - address 1279 : 1 - address 1279
+0 - address 1280 : 1 - address 1280
+0 - address 1281 : 1 - address 1281
+0 - address 1282 : 1 - address 1282
+1 - address 1283 : 0 - address 1283
+1 - address 1284 : 0 - address 1284
+1 - address 1285 : 0 - address 1285
+1 - address 1286 : 0 - address 1286
+0 - address 1293 : 1 - address 1293
+0 - address 1294 : 1 - address 1294
+1 - address 1297 : 0 - address 1297
+1 - address 1298 : 0 - address 1298
+0 - address 1303 : 1 - address 1303
+0 - address 1304 : 1 - address 1304
+0 - address 1305 : 1 - address 1305
+0 - address 1306 : 1 - address 1306
+1 - address 1307 : 0 - address 1307
+1 - address 1308 : 0 - address 1308
+1 - address 1309 : 0 - address 1309
+1 - address 1310 : 0 - address 1310
+0 - address 1315 : 1 - address 1315
+0 - address 1316 : 1 - address 1316
+0 - address 1317 : 1 - address 1317
+0 - address 1318 : 1 - address 1318
+1 - address 1319 : 0 - address 1319
+1 - address 1320 : 0 - address 1320
+1 - address 1321 : 0 - address 1321
+1 - address 1322 : 0 - address 1322
+0 - address 1335 : 1 - address 1335
+0 - address 1336 : 1 - address 1336
+0 - address 1337 : 1 - address 1337
+0 - address 1338 : 1 - address 1338
+1 - address 1339 : 0 - address 1339
+1 - address 1340 : 0 - address 1340
+1 - address 1341 : 0 - address 1341
+1 - address 1342 : 0 - address 1342
+0 - address 1343 : 1 - address 1343
+0 - address 1344 : 1 - address 1344
+0 - address 1345 : 1 - address 1345
+0 - address 1346 : 1 - address 1346
+1 - address 1347 : 0 - address 1347
+1 - address 1348 : 0 - address 1348
+1 - address 1349 : 0 - address 1349
+1 - address 1350 : 0 - address 1350
+0 - address 1415 : 1 - address 1415
+0 - address 1416 : 1 - address 1416
+1 - address 1419 : 0 - address 1419
+1 - address 1420 : 0 - address 1420
+0 - address 1491 : 1 - address 1491
+0 - address 1492 : 1 - address 1492
+1 - address 1495 : 0 - address 1495
+1 - address 1496 : 0 - address 1496
+0 - address 1497 : 1 - address 1497
+0 - address 1498 : 1 - address 1498
+0 - address 1499 : 1 - address 1499
+0 - address 1500 : 1 - address 1500
+1 - address 1501 : 0 - address 1501
+1 - address 1502 : 0 - address 1502
+1 - address 1503 : 0 - address 1503
+1 - address 1504 : 0 - address 1504
+0 - address 1511 : 1 - address 1511
+0 - address 1512 : 1 - address 1512
+0 - address 1517 : 1 - address 1517
+0 - address 1518 : 1 - address 1518
+1 - address 1521 : 0 - address 1521
+1 - address 1522 : 0 - address 1522
+1 - address 1523 : 0 - address 1523
+1 - address 1524 : 0 - address 1524
+0 - address 1527 : 1 - address 1527
+0 - address 1528 : 1 - address 1528
+0 - address 1529 : 1 - address 1529
+0 - address 1530 : 1 - address 1530
+0 - address 1531 : 1 - address 1531
+0 - address 1532 : 1 - address 1532
+0 - address 1533 : 1 - address 1533
+0 - address 1534 : 1 - address 1534
+0 - address 1535 : 1 - address 1535
+0 - address 1536 : 1 - address 1536
+0 - address 1537 : 1 - address 1537
+0 - address 1538 : 1 - address 1538
+0 - address 1539 : 1 - address 1539
+0 - address 1540 : 1 - address 1540
+0 - address 1541 : 1 - address 1541
+0 - address 1542 : 1 - address 1542
+0 - address 1543 : 1 - address 1543
+0 - address 1544 : 1 - address 1544
+0 - address 1545 : 1 - address 1545
+0 - address 1546 : 1 - address 1546
+0 - address 1547 : 1 - address 1547
+0 - address 1548 : 1 - address 1548
+0 - address 1549 : 1 - address 1549
+0 - address 1550 : 1 - address 1550
+0 - address 1551 : 1 - address 1551
+0 - address 1552 : 1 - address 1552
+0 - address 1553 : 1 - address 1553
+0 - address 1554 : 1 - address 1554
+0 - address 1555 : 1 - address 1555
+0 - address 1556 : 1 - address 1556
+0 - address 1557 : 1 - address 1557
+0 - address 1558 : 1 - address 1558
+0 - address 1559 : 1 - address 1559
+0 - address 1560 : 1 - address 1560
+0 - address 1561 : 1 - address 1561
+0 - address 1562 : 1 - address 1562
+0 - address 1563 : 1 - address 1563
+0 - address 1564 : 1 - address 1564
+0 - address 1565 : 1 - address 1565
+0 - address 1566 : 1 - address 1566
+0 - address 1567 : 1 - address 1567
+0 - address 1568 : 1 - address 1568
+0 - address 1569 : 1 - address 1569
+0 - address 1570 : 1 - address 1570
+0 - address 1571 : 1 - address 1571
+0 - address 1572 : 1 - address 1572
+0 - address 1573 : 1 - address 1573
+0 - address 1574 : 1 - address 1574
+0 - address 1575 : 1 - address 1575
+0 - address 1576 : 1 - address 1576
+0 - address 1577 : 1 - address 1577
+0 - address 1578 : 1 - address 1578
+0 - address 1579 : 1 - address 1579
+0 - address 1580 : 1 - address 1580
+0 - address 1581 : 1 - address 1581
+0 - address 1582 : 1 - address 1582
+0 - address 1583 : 1 - address 1583
+0 - address 1584 : 1 - address 1584
+0 - address 1585 : 1 - address 1585
+DPWRnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : Z - address 1577
+X - address 1578 : Z - address 1578
+X - address 1579 : Z - address 1579
+X - address 1580 : Z - address 1580
+IGNNEnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+COMP_0bM_8bC have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 0 - address 1577
+X - address 1578 : 0 - address 1578
+X - address 1579 : 0 - address 1579
+X - address 1580 : 0 - address 1580
+A20Mnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+DCLKPH have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+H - address 1577 : Z - address 1577
+H - address 1578 : Z - address 1578
+H - address 1579 : Z - address 1579
+H - address 1580 : Z - address 1580
+BR1nn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : 1 - address 1577
+Z - address 1578 : 1 - address 1578
+Z - address 1579 : 1 - address 1579
+Z - address 1580 : 1 - address 1580
+DPRSTPnn have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+X - address 1577 : 1 - address 1577
+X - address 1578 : 1 - address 1578
+X - address 1579 : 1 - address 1579
+X - address 1580 : 1 - address 1580
+VID6t0_4 have different bits
+File 1: C:\intel\Perl\Programs\compare\test\SBF_read.pat.data
+File 2: C:\intel\Perl\Programs\compare\test\g1671609M005472_011002c_NB1607dj_0xaxxpxt2xxaxxxxxxPfr2N4_read_10110xxx_s_l2t_l2l4000k.pat.data
+Z - address 1577 : L - address 1577
+Z - address 1578 : L - address 1578
+Z - address 1579 : L - address 1579
+Z - address 1580 : L - address 1580

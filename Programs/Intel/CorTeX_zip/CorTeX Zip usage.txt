@@ -1,0 +1,3 @@
+C:\Perl\Programs\CorTeX_zip
+
+cortex_zip.pl -s C:\intel\tpapps\IDC_CorTeX -r Rev3.7.0v17e1 -f C:\intel\tpapps\IDC_CorTeX\GEN\Rev3.7.0v17e1.zip

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+
+	<xs:simpleType name="wordType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9_]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:attribute name="volt_unit">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="V" />
+				<xs:enumeration value="mV" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="freq_unit">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="GHz" />
+				<xs:enumeration value="MHz" />
+				<xs:enumeration value="Hz" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	
+	<xs:element name="lvl_selects">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="value" minOccurs="1" maxOccurs="unbounded" type="xs:nonNegativeInteger" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="voltage">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute ref="volt_unit" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="frequency">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute ref="freq_unit" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="gsds_vmin_source">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="voltage" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="frequency" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="store_results_in_gsds">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="voltage" minOccurs="1" maxOccurs="1" type="xs:string" />
+				<xs:element name="frequency" minOccurs="1" maxOccurs="1" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tokens_for_downstream_sockets">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="vmin_dff_token" minOccurs="1" maxOccurs="1" type="xs:string" />
+				<xs:element name="itd_vmin_dff_token" minOccurs="1" maxOccurs="1" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="corner">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="timings_freq_attr" minOccurs="1" maxOccurs="1" type="xs:string" />
+				<xs:element name="fusing_dff_token" minOccurs="1" maxOccurs="1" type="xs:string" />
+				<xs:element ref="tokens_for_downstream_sockets" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="lvl_selects" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="gsds_vmin_source" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="store_results_in_gsds" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="name" use="required" type="wordType" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="power_domain">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pin" minOccurs="1" maxOccurs="1" type="wordType" />
+				<xs:element name="apply_voltage_expression" minOccurs="0" maxOccurs="1" type="xs:string" />
+				<xs:element name="lvl_select_param" minOccurs="1" maxOccurs="1" type="wordType" />
+				<xs:element ref="corner" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="name" use="required" type="wordType" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- main schema -->
+	<xs:element name="infra_setup">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="power_domain" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

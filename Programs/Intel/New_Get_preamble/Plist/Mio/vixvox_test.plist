@@ -1,0 +1,55 @@
+Version 1.0;
+
+GlobalPList vixvox_test_list    {
+
+   GlobalPList vox_test_list    {
+
+      GlobalPList vol_list [PreBurst vol_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask THERMTRIP_N, IIOTDO, pxp_outs, BCLK_ITP_N, BCLK_ITP_P, TDO, PRDY_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+         Pat g0030742N4957367_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_extest_0;
+      } # end of vol_list
+
+
+      GlobalPList voh_list [PreBurst voh_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask THERMTRIP_N, IIOTDO, pxp_outs, BCLK_ITP_N, BCLK_ITP_P, TDO, PRDY_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+         Pat g0030822N4957366_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_extest_1;
+      } # end of voh_list
+
+   } # end of vox_test_list
+
+
+   GlobalPList vix_test_list    {
+
+      GlobalPList vil_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0]   {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+         Pat d0032512N4957364_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_sample_0;
+      } # end of vil_list
+
+
+      GlobalPList vih_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0]   {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+         Pat g0030766N4957365_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_sample_1;
+      } # end of vih_list
+
+   } # end of vix_test_list
+
+
+   GlobalPList extest0odtoff_hfmnom_16161616_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0]   {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat g0030834N4957368_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_extest_0_ODToff;
+   } # end of extest0odtoff_hfmnom_16161616_list
+
+
+   GlobalPList extest0odton_hfmnom_16161616_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0]   {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat g0030756N4957369_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_extest_0_ODTon;
+   } # end of extest0odton_hfmnom_16161616_list
+
+
+   GlobalPList extest1odton_hfmnom_16161616_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0]   {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat g0030806N4957370_16161616a2x18_MA0cA01Rxg_2txx22C_4x0xxxpxx0xxx_bscan_extest_1_ODTon;
+   } # end of extest1odton_hfmnom_16161616_list
+
+} # end of vixvox_test_list
+

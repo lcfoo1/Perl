@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BinMatrix>
+  <BinMatrixName>KNC_BM_B1-B</BinMatrixName>
+  <BinMatrixRevision>4</BinMatrixRevision>
+  <AttributeValueTable>
+    <Attribute name="num_core" order="tightest-to-loosest">61,60,57,48</Attribute>
+    <Attribute name="num_txs" order="tightest-to-loosest">0</Attribute>
+    <Attribute name="tim_core_freq_tfm" order="tightest-to-loosest">900000000,800000000,1238000000,1200000000,1182000000,1158000000,1143000000,1100000000,1053000000,1048000000,1000000000</Attribute>
+    <Attribute name="tim_core_freq" order="tightest-to-loosest">800000000,1143000000,1100000000,1091000000,1053000000,1048000000,1000000000</Attribute>
+  </AttributeValueTable>
+  <BOMGroupTable>
+    <BOMGroup name="B0_KNC_4BOM">
+      <!--
+<BOMList>
+	<BOM>0A4KDZAV_B</BOM>
+	<BOM>0A4KDZBV_B</BOM>
+	<BOM>0A4KDZCV_B</BOM>
+	<BOM>0A4KDZDV_B</BOM>
+	<BOM>0A4KDZFV_B</BOM>
+	<BOM>0A4KDZTV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1010">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1238000000</Attribute>
+        <Attribute name="tim_core_freq">1143000000</Attribute>
+      </Flow>
+      <Flow index="2" bin="1002">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1182000000</Attribute>
+        <Attribute name="tim_core_freq">1091000000</Attribute>
+      </Flow>
+      <Flow index="3" bin="1003">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1182000000</Attribute>
+        <Attribute name="tim_core_freq">1091000000</Attribute>
+      </Flow>
+      <Flow index="4" bin="1004">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1182000000</Attribute>
+        <Attribute name="tim_core_freq">1048000000</Attribute>
+      </Flow>
+      <Flow index="5" bin="1005">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1158000000</Attribute>
+        <Attribute name="tim_core_freq">1053000000</Attribute>
+      </Flow>
+      <Flow index="6" bin="1006">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1158000000</Attribute>
+        <Attribute name="tim_core_freq">1000000000</Attribute>
+      </Flow>
+      <Flow index="7" bin="1007">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1200000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="8" bin="1008">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1238000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="9" bin="1011">
+        <Attribute name="num_core">48</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">900000000</Attribute>
+        <Attribute name="tim_core_freq">800000000</Attribute>
+      </Flow>
+      <Flow index="10" bin="1009">
+        <Attribute name="num_core">48</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">900000000</Attribute>
+        <Attribute name="tim_core_freq">800000000</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="B0_KNC_8BOM">
+      <!--
+<BOMList>
+	<BOM>0A8KDZAV_B</BOM>
+	<BOM>0A8KDZBV_B</BOM>
+	<BOM>0A8KDZCV_B</BOM>
+	<BOM>0A8KDZDV_B</BOM>
+	<BOM>0A8KDZFV_B</BOM>
+	<BOM>0A8KDZTV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1010">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1238000000</Attribute>
+        <Attribute name="tim_core_freq">1143000000</Attribute>
+      </Flow>
+      <Flow index="2" bin="1002">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1182000000</Attribute>
+        <Attribute name="tim_core_freq">1091000000</Attribute>
+      </Flow>
+      <Flow index="3" bin="1003">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1182000000</Attribute>
+        <Attribute name="tim_core_freq">1091000000</Attribute>
+      </Flow>
+      <Flow index="4" bin="1004">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1182000000</Attribute>
+        <Attribute name="tim_core_freq">1048000000</Attribute>
+      </Flow>
+      <Flow index="5" bin="1005">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1158000000</Attribute>
+        <Attribute name="tim_core_freq">1053000000</Attribute>
+      </Flow>
+      <Flow index="6" bin="1006">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1158000000</Attribute>
+        <Attribute name="tim_core_freq">1000000000</Attribute>
+      </Flow>
+      <Flow index="7" bin="1007">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1200000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="8" bin="1008">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1238000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="9" bin="1011">
+        <Attribute name="num_core">48</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">900000000</Attribute>
+        <Attribute name="tim_core_freq">800000000</Attribute>
+      </Flow>
+      <Flow index="10" bin="1009">
+        <Attribute name="num_core">48</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">900000000</Attribute>
+        <Attribute name="tim_core_freq">800000000</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="B1_KNC_4BOM">
+      <!--
+<BOMList>
+	<BOM>0A4KAZAVAB</BOM>
+	<BOM>0A4KAZBVAB</BOM>
+	<BOM>0A4KAZCVAB</BOM>
+	<BOM>0A4KAZDVAB</BOM>
+	<BOM>0A4KAZFVAB</BOM>
+	<BOM>0A4KAZTVAB</BOM>
+	<BOM>0A4KDZAVAB</BOM>
+	<BOM>0A4KDZBVAB</BOM>
+	<BOM>0A4KDZCVAB</BOM>
+	<BOM>0A4KDZDVAB</BOM>
+	<BOM>0A4KDZFVAB</BOM>
+	<BOM>0A4KDZTVAB</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1001">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1143000000</Attribute>
+        <Attribute name="tim_core_freq">1143000000</Attribute>
+      </Flow>
+      <Flow index="2" bin="1002">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1100000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="3" bin="1003">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1048000000</Attribute>
+        <Attribute name="tim_core_freq">1048000000</Attribute>
+      </Flow>
+      <Flow index="4" bin="1004">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1048000000</Attribute>
+        <Attribute name="tim_core_freq">1048000000</Attribute>
+      </Flow>
+      <Flow index="5" bin="1005">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1053000000</Attribute>
+        <Attribute name="tim_core_freq">1053000000</Attribute>
+      </Flow>
+      <Flow index="6" bin="1006">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1000000000</Attribute>
+        <Attribute name="tim_core_freq">1000000000</Attribute>
+      </Flow>
+      <Flow index="7" bin="1007">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1100000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="8" bin="1008">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1100000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="9" bin="1009">
+        <Attribute name="num_core">48</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">800000000</Attribute>
+        <Attribute name="tim_core_freq">800000000</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="B1_KNC_8BOM">
+      <!--
+<BOMList>
+	<BOM>0A8KAZAVAB</BOM>
+	<BOM>0A8KAZBVAB</BOM>
+	<BOM>0A8KAZCVAB</BOM>
+	<BOM>0A8KAZDVAB</BOM>
+	<BOM>0A8KAZFVAB</BOM>
+	<BOM>0A8KAZTVAB</BOM>
+	<BOM>0A8KDZAVAB</BOM>
+	<BOM>0A8KDZBVAB</BOM>
+	<BOM>0A8KDZCVAB</BOM>
+	<BOM>0A8KDZDVAB</BOM>
+	<BOM>0A8KDZFVAB</BOM>
+	<BOM>0A8KDZTVAB</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1001">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1143000000</Attribute>
+        <Attribute name="tim_core_freq">1143000000</Attribute>
+      </Flow>
+      <Flow index="2" bin="1002">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1100000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="3" bin="1003">
+        <Attribute name="num_core">61</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1048000000</Attribute>
+        <Attribute name="tim_core_freq">1048000000</Attribute>
+      </Flow>
+      <Flow index="4" bin="1004">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1048000000</Attribute>
+        <Attribute name="tim_core_freq">1048000000</Attribute>
+      </Flow>
+      <Flow index="5" bin="1005">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1053000000</Attribute>
+        <Attribute name="tim_core_freq">1053000000</Attribute>
+      </Flow>
+      <Flow index="6" bin="1006">
+        <Attribute name="num_core">60</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1000000000</Attribute>
+        <Attribute name="tim_core_freq">1000000000</Attribute>
+      </Flow>
+      <Flow index="7" bin="1007">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1100000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="8" bin="1008">
+        <Attribute name="num_core">57</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">1100000000</Attribute>
+        <Attribute name="tim_core_freq">1100000000</Attribute>
+      </Flow>
+      <Flow index="9" bin="1009">
+        <Attribute name="num_core">48</Attribute>
+        <Attribute name="num_txs">0</Attribute>
+        <Attribute name="tim_core_freq_tfm">800000000</Attribute>
+        <Attribute name="tim_core_freq">800000000</Attribute>
+      </Flow>
+    </BOMGroup>
+  </BOMGroupTable>
+</BinMatrix>

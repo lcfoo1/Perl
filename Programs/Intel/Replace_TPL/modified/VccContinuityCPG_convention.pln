@@ -1,0 +1,101 @@
+INST tt_vcccontinuitycpg {
+  NAME                                    $name;
+  TEMPLATE                                iCVccContinuityCPGTest;
+  level                                   $level;                                  #Datatype=STRING, REQUIRED
+  pins                                    $pins;                                   #Datatype=STRING, REQUIRED
+ #single_group_execution                  $singleGroupExecution;                   #Datatype=STRING, OPTIONAL  #Choices : ENABLED, DISABLED
+ #super_pin_group                         $superPinGroup;                          #Datatype=STRING, OPTIONAL
+  test_mode                               $testMode;                               #Datatype=STRING, REQUIRED  #Choices : VSIM, ISVM
+  test_mode_type                          $testModeType;                           #Datatype=STRING, OPTIONAL  #Choices : PRODUCTION, CHARACTERIZATION
+  force_value                             $forceValue;                             #Datatype=STRING, OPTIONAL
+  low_value                               $lowValue;                               #Datatype=STRING, REQUIRED
+  high_value                              $highValue;                              #Datatype=STRING, REQUIRED
+  force_start_value                       $forceStartValue;                        #Datatype=STRING, OPTIONAL
+  force_stop_value                        $forceStopValue;                         #Datatype=STRING, OPTIONAL
+  force_step_value                        $forceStepValue;                         #Datatype=STRING, OPTIONAL
+ #auto_measure_range                      $autoMeasureRange;                       #Datatype=STRING, OPTIONAL  #Choices : DISABLE_AUTO_MEASURE_RANGE, ENABLE_AUTO_MEASURE_RANGE
+  clamp_low_value                         $clampLowValue;                          #Datatype=STRING, OPTIONAL
+  clamp_high_value                        $clampHighValue;                         #Datatype=STRING, OPTIONAL
+  manual_measure_range                    $manualMeasureRange;                     #Datatype=STRING, OPTIONAL
+  restore_force_value                     $restoreForceValue;                      #Datatype=STRING, OPTIONAL   #Choices : "RESTORE", "DO_NOT_RESTORE";
+  user_pause                              $userPause;                              #Datatype=DOUBLE, OPTIONAL
+  datalog_mode                             $datalogMode;                             #Datatype=STRING, OPTIONAL  #Choices : ON, DISABLED, CAPTURE_ONLY
+  debug_mode                              $debugMode;                              #Datatype=STRING, OPTIONAL  #Choices : DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+  #serial_mode                            $serialMode;                             #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+  bypass_global                           $bypassGlobal;                           #Datatype=STRING, OPTIONAL
+  preinstance                             $preinstance;                            #Datatype=STRING, OPTIONAL
+  postinstance                            $postinstance;                           #Datatype=STRING, OPTIONAL
+  #preplist                               $preplist;                               #Datatype=STRING, OPTIONAL
+  #postplist                              $postplist;                              #Datatype=STRING, OPTIONAL
+  #preburst                               $preburst;                               #Datatype=STRING, OPTIONAL
+  #postburst                              $postburst;                              #Datatype=STRING, OPTIONAL
+  #EOT_power_down                         $eotPowerDown;                           #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+  #mask_pins                              $maskPins;                               #Datatype=STRING, OPTIONAL
+  #thermal_monitor_mode                   $thermalMonitorMode;                     #Datatype=STRING, OPTIONAL  #Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+  #thermal_monitor_offset_check           $thermalMonitorOffsetCheck;              #Datatype=STRING, OPTIONAL  #Choices : CHECK_LIMITS, MEASURE_ONLY
+  #thermal_monitor_ituff_tname            $thermalMonitorItuffTname;               #Datatype=STRING, OPTIONAL
+  #instance_profile                       $instanceProfile;                        #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+  #plist_check                       $plistCheck;                         #Datatype=STRING, OPTIONAL  #Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+  ignore_alarm                            $ignoreAlarm;                            #Datatype=STRING, OPTIONAL  #Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+  #ssid_e_sequence                  $ssidESequence;                    #Datatype=STRING, OPTIONAL
+  #ssid_e_recovery                 $ssidERecovery;                   #Datatype=STRING, OPTIONAL
+  #ssid_g_restore                     $ssidGRestore;                       #Datatype=STRING, OPTIONAL
+  #ssid_g_pwrdwn          $ssidGPwrdwn;             #Datatype=STRING, OPTIONAL  #Choices : NO, YES
+  #relay_token                            $relayToken;                             #Datatype=STRING, OPTIONAL
+  #ssid_o_execute                   $ssidOExecute;                     #Datatype=STRING, OPTIONAL  #Choices : FORCE_ALL, FIRST_FAIL
+  #capture_result                   $captureResult;                     #Datatype=STRING, OPTIONAL  #Choices : DO_NOT_CLEAR, CLEAR
+   #shutdown_mode                          $shutdownMode;                           #Datatype=STRING, OPTIONAL
+   #shutdown_delay_time                    $shutdownDelayTime;                      #Datatype=STRING, OPTIONAL
+   #free_drive_time                        $freeDriveTime;                          #Datatype=STRING, OPTIONAL
+}
+
+INST tt_vcccontinuitycpg2 {
+  NAME                                    $name;
+  TEMPLATE                                iCVccContinuityCPGTest;
+  level                                   $level;                                  #Datatype=STRING, REQUIRED
+  pins                                    $pins;                                   #Datatype=STRING, REQUIRED
+  single_group_execution                  $singleGroupExecution;                   #Datatype=STRING, OPTIONAL  #Choices : ENABLED, DISABLED
+  super_pin_group                         $superPinGroup;                          #Datatype=STRING, OPTIONAL
+  test_mode                               $testMode;                               #Datatype=STRING, REQUIRED  #Choices : VSIM, ISVM
+  test_mode_type                          $testModeType;                           #Datatype=STRING, OPTIONAL  #Choices : PRODUCTION, CHARACTERIZATION
+  force_value                             $forceValue;                             #Datatype=STRING, OPTIONAL
+  low_value                               $lowValue;                               #Datatype=STRING, REQUIRED
+  high_value                              $highValue;                              #Datatype=STRING, REQUIRED
+  force_start_value                       $forceStartValue;                        #Datatype=STRING, OPTIONAL
+  force_stop_value                        $forceStopValue;                         #Datatype=STRING, OPTIONAL
+  force_step_value                        $forceStepValue;                         #Datatype=STRING, OPTIONAL
+ #auto_measure_range                      $autoMeasureRange;                       #Datatype=STRING, OPTIONAL  #Choices : DISABLE_AUTO_MEASURE_RANGE, ENABLE_AUTO_MEASURE_RANGE
+  clamp_low_value                         $clampLowValue;                          #Datatype=STRING, OPTIONAL
+  clamp_high_value                        $clampHighValue;                         #Datatype=STRING, OPTIONAL
+  manual_measure_range                    $manualMeasureRange;                     #Datatype=STRING, OPTIONAL
+  restore_force_value                     $restoreForceValue;                      #Datatype=STRING, OPTIONAL   #Choices : "RESTORE", "DO_NOT_RESTORE";
+  user_pause                              $userPause;                              #Datatype=DOUBLE, OPTIONAL
+  datalog_mode                             $datalogMode;                             #Datatype=STRING, OPTIONAL  #Choices : ON, DISABLED, CAPTURE_ONLY
+  debug_mode                              $debugMode;                              #Datatype=STRING, OPTIONAL  #Choices : DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+ #serial_mode                             $serialMode;                             #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+  bypass_global                           $bypassGlobal;                           #Datatype=STRING, OPTIONAL
+  preinstance                             $preinstance;                            #Datatype=STRING, OPTIONAL
+  postinstance                            $postinstance;                           #Datatype=STRING, OPTIONAL
+ #preplist                                $preplist;                               #Datatype=STRING, OPTIONAL
+ #postplist                               $postplist;                              #Datatype=STRING, OPTIONAL
+ #preburst                                $preburst;                               #Datatype=STRING, OPTIONAL
+ #postburst                               $postburst;                              #Datatype=STRING, OPTIONAL
+ #EOT_power_down                          $eotPowerDown;                           #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+ #mask_pins                               $maskPins;                               #Datatype=STRING, OPTIONAL
+ #thermal_monitor_mode                    $thermalMonitorMode;                     #Datatype=STRING, OPTIONAL  #Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+ #thermal_monitor_offset_check            $thermalMonitorOffsetCheck;              #Datatype=STRING, OPTIONAL  #Choices : CHECK_LIMITS, MEASURE_ONLY
+ #thermal_monitor_ituff_tname             $thermalMonitorItuffTname;               #Datatype=STRING, OPTIONAL
+ #instance_profile                        $instanceProfile;                        #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+ #plist_check                        $plistCheck;                         #Datatype=STRING, OPTIONAL  #Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+  ignore_alarm                            $ignoreAlarm;                            #Datatype=STRING, OPTIONAL  #Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+ #ssid_e_sequence                   $ssidESequence;                    #Datatype=STRING, OPTIONAL
+ #ssid_e_recovery                  $ssidERecovery;                   #Datatype=STRING, OPTIONAL
+ #ssid_g_restore                      $ssidGRestore;                       #Datatype=STRING, OPTIONAL
+ #ssid_g_pwrdwn           $ssidGPwrdwn;             #Datatype=STRING, OPTIONAL  #Choices : NO, YES
+ #relay_token                             $relayToken;                             #Datatype=STRING, OPTIONAL
+ #ssid_o_execute                    $ssidOExecute;                     #Datatype=STRING, OPTIONAL  #Choices : FORCE_ALL, FIRST_FAIL
+ #capture_result                    $captureResult;                     #Datatype=STRING, OPTIONAL  #Choices : DO_NOT_CLEAR, CLEAR
+   #shutdown_mode                          $shutdownMode;                           #Datatype=STRING, OPTIONAL
+   #shutdown_delay_time                    $shutdownDelayTime;                      #Datatype=STRING, OPTIONAL
+   #free_drive_time                        $freeDriveTime;                          #Datatype=STRING, OPTIONAL
+}

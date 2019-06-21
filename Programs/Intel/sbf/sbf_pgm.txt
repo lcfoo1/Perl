@@ -1,0 +1,15 @@
+#BZ4KEHBVBB
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_hfm_0118c_min1192133_0419	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_hfm_0118c_min1192133_0419	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_hfm_0118c_min1482667_0103	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_hfm_0118c_min1482667_0103	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_hfm_0118c_max1192133_0422	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_hfm_0118c_max1192133_0422	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_hfm_0118c_max1482667_0107	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_hfm_0118c_max1482667_0107	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_hfm_0118c_max1332400_0515	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_hfm_0118c_max1332400_0515	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_lfm_0110c_min1601600_0924	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_lfm_0110c_min1601600_0924	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?
+use_previous_empty_history = "EMPTY",	template,	iF_KC_SBF_hfm_0118c_min1332400_0511	:	BZ,4,K,E,H,B,V,B,B,*,*,*,*/-773?/-774?/-775?/-7764/-7765/-7766/-7780/-7783/-7784/-7787/-7788/-779?
+use_previous_empty_history = "HISTORY",	template,	iF_KC_SBF_hfm_0118c_min1332400_0511	:	BZ,4,K,E,H,B,V,B,B,*,*,*,773?/774?/775?/7764/7765/7766/7780/7783/7784/7787/7788/779?

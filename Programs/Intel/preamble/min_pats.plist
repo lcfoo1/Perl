@@ -1,0 +1,457 @@
+Version 1.0;
+
+
+
+GlobalPList min_pats  {
+	GlobalPList IBIST_ACIOLB_ddr_5555_mode0_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115308M010469_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_5555_mode0_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115309M010469_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_5555_mode1_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119166M010469_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_5555_mode1_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119167M010469_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_AAAA_mode0_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115306M010470_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_AAAA_mode0_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115307M010470_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_AAAA_mode1_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119164M010470_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_AAAA_mode1_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119165M010470_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all0_mode0_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115302M010468_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all0_mode0_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115303M010468_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all0_mode1_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119160M010468_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all0_mode1_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119161M010468_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all1_mode0_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115304M010467_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all1_mode0_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115305M010467_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ACIOLB_ddr_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all1_mode1_0106b_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119162M010467_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ACIOLB_ddr_all1_mode1_0106d_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119163M010467_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ACIOLB_ddr_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_5555_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115290M010459_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_5555_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115291M010459_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_5555_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119148M010459_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_5555_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119149M010459_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_AAAA_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115292M010460_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_AAAA_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115293M010460_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_AAAA_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119150M010460_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_AAAA_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119151M010460_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all0_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115288M010458_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all0_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115289M010458_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all0_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119146M010458_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all0_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119147M010458_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all1_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115286M010457_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all1_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115287M010457_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_receiver_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all1_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119144M010457_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_receiver_all1_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119145M010457_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_receiver_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115298M010463_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115299M010463_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119156M010463_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_5555_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119157M010463_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_5555_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115300M010464_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115301M010464_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119158M010464_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_AAAA_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119159M010464_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_AAAA_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115296M010462_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115297M010462_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119154M010462_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all0_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119155M010462_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all0_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode0_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115294M010461_010604b_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode0_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_0_f2_reg_0_x]  {
+		Pat s1115295M010461_010604d_NB1607dj_0fxxxx0xhhc04xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode1_0106b_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_b_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119152M010461_010604b_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+	}
+	GlobalPList IBIST_ddr_full_transmitter_WA_all1_mode1_0106d_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked, A16t3nn_16, A16t3nn_13]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_d_N_B1_607d_j_f_x_0_h_1_f2_reg_0_x]  {
+		Pat s1119153M010461_010604d_NB1607dj_0fxxxx0xhhc12xxxxxPmrxN4_IBIST_ddr_full_transmitter_WA_all1_J_OBR1;
+	}
+	GlobalPList IDV_00_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1115632M005097_010604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_IDV_00_OBR1;
+	}
+	GlobalPList IDV_00_0110c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011010_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1115633M005097_011004c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_IDV_00_OBR1;
+	}
+	GlobalPList IDV_01_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1115628M005098_010604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_IDV_01_OBR1;
+	}
+	GlobalPList IDV_01_0110c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011010_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1115629M005098_011004c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_IDV_01_OBR1;
+	}
+	GlobalPList IDV_15_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1115630M005100_010604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_IDV_15_OBR1;
+	}
+	GlobalPList IDV_15_0110c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011010_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1115631M005100_011004c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_IDV_15_OBR1;
+	}
+	GlobalPList bd_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+		Pat s1124992M010443_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode0_0110a_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+		Pat s1124994M010443_011002a_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode0_0112c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+		Pat s1124993M010443_011202c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode0_0114c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  {
+		Pat s1124995M010443_011402c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+		Pat s1125479M010443_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode1_0110a_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+		Pat s1125481M010443_011002a_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode1_0112c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+		Pat s1125480M010443_011202c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bd_mode1_0114c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  {
+		Pat s1125482M010443_011402c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_braindeadJ_OBR1;
+	}
+	GlobalPList bist_c0_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112894M009971_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_c0_l2wa_OBR1;
+	}
+	GlobalPList bist_c0_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118228M009971_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_c0_l2wa_OBR1;
+	}
+	GlobalPList bist_c1_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112895M009972_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_c1_l2wa_OBR1;
+	}
+	GlobalPList bist_c1_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118229M009972_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_c1_l2wa_OBR1;
+	}
+	GlobalPList bist_dc_nohw_AGU_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159511M011695_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_AGU_OBR1;
+	}
+	GlobalPList bist_dc_nohw_AGU_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162141M011695_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_AGU_OBR1;
+	}
+	GlobalPList bist_dc_nohw_DCU_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159510M011694_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_DCU_OBR1;
+	}
+	GlobalPList bist_dc_nohw_DCU_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162140M011694_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_DCU_OBR1;
+	}
+	GlobalPList bist_dc_nohw_dtlb_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159512M011696_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_dtlb_OBR1;
+	}
+	GlobalPList bist_dc_nohw_dtlb_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162142M011696_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_dtlb_OBR1;
+	}
+	GlobalPList bist_dc_nohw_fau_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159513M011697_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_fau_OBR1;
+	}
+	GlobalPList bist_dc_nohw_fau_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162143M011697_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_fau_OBR1;
+	}
+	GlobalPList bist_dc_nohw_macro_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159517M011701_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_macro_OBR1;
+	}
+	GlobalPList bist_dc_nohw_macro_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162147M011701_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_macro_OBR1;
+	}
+	GlobalPList bist_dc_nohw_mob_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159514M011698_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_mob_OBR1;
+	}
+	GlobalPList bist_dc_nohw_mob_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162144M011698_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_mob_OBR1;
+	}
+	GlobalPList bist_dc_nohw_noMSROM_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159509M011693_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_noMSROM_OBR1;
+	}
+	GlobalPList bist_dc_nohw_noMSROM_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162139M011693_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_noMSROM_OBR1;
+	}
+	GlobalPList bist_dc_nohw_pfp_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159515M011699_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_pfp_OBR1;
+	}
+	GlobalPList bist_dc_nohw_pfp_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162145M011699_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_pfp_OBR1;
+	}
+	GlobalPList bist_dc_nohw_simd_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1159516M011700_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_nohw_simd_OBR1;
+	}
+	GlobalPList bist_dc_nohw_simd_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1162146M011700_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_nohw_simd_OBR1;
+	}
+	GlobalPList bist_dualcore_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112896M009973_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dualc_OBR1;
+	}
+	GlobalPList bist_dualcore_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118230M009973_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dualc_OBR1;
+	}
+	GlobalPList dft_idcode_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat d1115626H003045_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_dft_idcode_OBR1;
+	}
+	GlobalPList dft_idcode_0110c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat g1115627H003045_011004c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_dft_idcode_OBR1;
+	}
+	GlobalPList dicc_powervirus1_modea_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196112M005307_010604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm1_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus1_modea_0110c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011010_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196113M005307_011004c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm1_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus1_modea_0114c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011414_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196114M005307_011404c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm1_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus1_modea_0116c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011616_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196115M005307_011604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm1_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus1_modea_0118c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011818_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1222165M005307_011804c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm1_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus_modea_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196116M005314_010604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm4_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus_modea_0110c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011010_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196117M005314_011004c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm4_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus_modea_0114c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011414_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196118M005314_011404c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm4_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus_modea_0116c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011616_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196119M005314_011604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm4_cmp_OBR1;
+	}
+	GlobalPList dicc_powervirus_modea_0118c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011818_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1222167M005314_011804c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_Power_Virus_mrm4_cmp_OBR1;
+	}
+	GlobalPList digital_readout_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_x_0_h_x_f1_reg_0_x]  {
+		Pat d1115635M004033_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_digital_063_063_063_060_a2d01_si1_OBR1;
+	}
+	GlobalPList dts_dft_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_x_0_h_x_f1_reg_0_x]  {
+		Pat d1115637M005156_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_sensor_DFT_001_022_2_3_OBR1;
+		Pat d1115638M009282_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_sensor_DFT_000_000_6_2_OBR1;
+		Pat d1115639M009283_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_sensor_DFT_127_127_1_1_OBR1;
+	}
+	GlobalPList duty_cycle_read_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1152316M010454_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_duty_cycle_read_OBR1;
+	}
+	GlobalPList duty_cycle_read_mode0_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_011616_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1152317M010454_011604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_duty_cycle_read_OBR1;
+	}
+	GlobalPList duty_cycle_read_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1153148M010454_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_duty_cycle_read_OBR1;
+	}
+	GlobalPList duty_cycle_read_mode1_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_011616_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1153149M010454_011604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_duty_cycle_read_OBR1;
+	}
+	GlobalPList ex_bist_c0_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112897M009975_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_c0_cr_OBR1;
+	}
+	GlobalPList ex_bist_c0_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118231M009975_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_c0_cr_OBR1;
+	}
+	GlobalPList ex_bist_c1_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112898M009974_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_c1_cr_OBR1;
+	}
+	GlobalPList ex_bist_c1_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118232M009974_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_c1_cr_OBR1;
+	}
+	GlobalPList ex_bist_dualcore_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112899M009976_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_bist_dc_cr_OBR1;
+	}
+	GlobalPList ex_bist_dualcore_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118233M009976_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_bist_dc_cr_OBR1;
+	}
+	GlobalPList fsbsel_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112929M010453_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_bsel_J_OBR1;
+	}
+	GlobalPList fsbsel_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1120099M010453_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_bsel_J_OBR1;
+	}
+	GlobalPList fuse_read_A_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1112901M009969_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_fuserA_OBR1;
+	}
+	GlobalPList fuse_read_A_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1166445M009969_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_fuserA_OBR1;
+	}
+	GlobalPList fuse_read_B_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1112902M009970_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_fuserB_OBR1;
+	}
+	GlobalPList fuse_read_B_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1166446M009970_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_fuserB_OBR1;
+	}
+	GlobalPList fuse_write_A_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1112903M010450_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_fusewA_OBR1;
+	}
+	GlobalPList fuse_write_A_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1166447M010450_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_fusewA_OBR1;
+	}
+	GlobalPList fuse_write_B_mode0_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1112905M010451_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_fusewB_OBR1;
+	}
+	GlobalPList fuse_write_B_mode1_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  {
+		Pat s1166448M010451_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_fusewB_OBR1;
+	}
+	GlobalPList hvbi_dualc_bist_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1112900M009977_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_mull_bist_OBR1;
+	}
+	GlobalPList hvbi_dualc_bist_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1118234M009977_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_mull_bist_OBR1;
+	}
+	GlobalPList leakage_0106c_list [Mask ALL_MASK_PINs_CWA, dft_clk]  [BurstOff]  {
+		Pat s1115768M010442_010602c_NB1607dj_0fxfxx0xxhca1xxxxxPfrxN4_iddq_J_OBR1;
+	}
+	GlobalPList open_short_0106c_list [Mask ALL_MASK_PINs_CWA_os]  [BurstOff]  {
+		Pat s0563008M000000_010604c_NB0548aj_0xxxxx0xxaxxxxxxxxxxxxxx_open_short_OBR1;
+	}
+	GlobalPList read_iocal_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1152318M010452_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_read_iocal_data_OBR1;
+	}
+	GlobalPList read_iocal_mode0_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [PreBurst cwma_pre_vrevN4_P_011616_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1152319M010452_011604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_read_iocal_data_OBR1;
+	}
+	GlobalPList read_iocal_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1153150M010452_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_read_iocal_data_OBR1;
+	}
+	GlobalPList read_iocal_mode1_0116c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [PreBurst cwma_pre_vrevN4_P_011616_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1153151M010452_011604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_read_iocal_data_OBR1;
+	}
+	GlobalPList sicc_deepsleep_cmp_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196120M005296_010604c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_deep_sleep_cmp_OBR1;
+	}
+	GlobalPList sicc_deepsleep_cmp_0110c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011010_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196121M005296_011004c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_deep_sleep_cmp_OBR1;
+	}
+	GlobalPList sicc_deepsleep_cmp_0114c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_011414_c_M_B1_607d_j_f_w_0_h_x_f1_reg_0_x]  {
+		Pat d1196123M005296_011404c_MB1607dj_0fwxxx0xhhcx0xxxxxPfrxN4_deep_sleep_cmp_OBR1;
+	}
+	GlobalPList thermal_sensor_0106c_list [Mask ALL_MASK_PINs_CWA]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_x_0_h_x_f1_reg_0_x]  {
+		Pat d1115636M004001_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_sensor_000_000_000_000_OBR1;
+	}
+	GlobalPList thermal_sensor_cat_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_M_B1_607d_j_f_x_0_h_x_f1_reg_0_x]  {
+		Pat d1115634M004020_010604c_MB1607dj_0fxxxx0xhhcx0xxxxxPfrxN4_catastrofic_031_031_031_060_OBR1;
+	}
+	GlobalPList vix_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1195697M010357_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_all0_J_OBR1;
+		Pat s1195698M010358_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_all1_J_OBR1;
+		Pat s1195699M010359_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_AAAA_J_OBR1;
+		Pat s1195700M010360_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_5555_J_OBR1;
+		Pat s1195702M011161_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_rcomp0_all0_J_OBR1;
+		Pat s1195703M011162_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_rcomp0_all1_J_OBR1;
+		Pat s1195704M011163_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_rcomp0_AAAA_J_OBR1;
+		Pat s1195705M011164_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_samplepreload_rcomp0_5555_J_OBR1;
+	}
+	GlobalPList vix_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1196308M010357_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_all0_J_OBR1;
+		Pat s1196309M010358_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_all1_J_OBR1;
+		Pat s1196310M010359_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_AAAA_J_OBR1;
+		Pat s1196311M010360_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_5555_J_OBR1;
+		Pat s1196312M011161_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_rcomp0_all0_J_OBR1;
+		Pat s1196313M011162_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_rcomp0_all1_J_OBR1;
+		Pat s1196314M011163_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_rcomp0_AAAA_J_OBR1;
+		Pat s1196315M011164_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_samplepreload_rcomp0_5555_J_OBR1;
+	}
+	GlobalPList vix_highz_bscan_modeA_0106c_list [Mask ALL_MASK_PINs_CWA]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_a_f1_reg_0_x]  {
+		Pat s1197053M010361_010604c_NB1607dj_0fxxxx0xhhca1xxxxxPfrxN4_samplepreload_highz_all0_J_OBR1;
+		Pat s1197054M010362_010604c_NB1607dj_0fxxxx0xhhca1xxxxxPfrxN4_samplepreload_highz_all1_J_OBR1;
+		Pat s1197055M010363_010604c_NB1607dj_0fxxxx0xhhca1xxxxxPfrxN4_samplepreload_highz_AAAA_J_OBR1;
+		Pat s1197056M010364_010604c_NB1607dj_0fxxxx0xhhca1xxxxxPfrxN4_samplepreload_highz_5555_J_OBR1;
+	}
+	GlobalPList vox_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1195691M010353_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_extest_all0_J_OBR1;
+		Pat s1195692M010354_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_extest_all1_J_OBR1;
+		Pat s1195693M010355_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_extest_AAAA_J_OBR1;
+		Pat s1195694M010356_010604c_NB1607dj_0fxxxx0xhhc04xxxxxPfrxN4_extest_5555_J_OBR1;
+	}
+	GlobalPList vox_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1196302M010353_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_extest_all0_J_OBR1;
+		Pat s1196303M010354_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_extest_all1_J_OBR1;
+		Pat s1196304M010355_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_extest_AAAA_J_OBR1;
+		Pat s1196305M010356_010604c_NB1607dj_0fxxxx0xhhc12xxxxxPfrxN4_extest_5555_J_OBR1;
+	}
+	GlobalPList vox_dynODT_all0_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1195695M010465_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_extest_dynODT_all0_J_OBR1;
+	}
+	GlobalPList vox_dynODT_all0_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1196306M010465_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_extest_dynODT_all0_J_OBR1;
+	}
+	GlobalPList vox_dynODT_all1_bscan_mode0_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_0_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_0_f1_reg_0_x]  {
+		Pat s1195696M010466_010602c_NB1607dj_0fxfxx0xxhc04xxxxxPfrxN4_extest_dynODT_all1_J_OBR1;
+	}
+	GlobalPList vox_dynODT_all1_bscan_mode1_0106c_list [Mask ALL_MASK_PINs_CWA, Mode_1_pin_masked]  [BurstOff]  [PreBurst cwma_pre_vrevN4_P_010606_c_N_B1_607d_j_f_x_0_h_1_f1_reg_0_x]  {
+		Pat s1196307M010466_010602c_NB1607dj_0fxfxx0xxhc12xxxxxPfrxN4_extest_dynODT_all1_J_OBR1;
+	}
+}

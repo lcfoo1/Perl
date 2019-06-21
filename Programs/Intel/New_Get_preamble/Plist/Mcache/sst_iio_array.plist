@@ -1,0 +1,105 @@
+Version 1.0;
+
+GlobalPList sst_iio_array_list    {
+
+   GlobalPList sst_iiobistctm2_ufm_xx161616_list    {
+
+      GlobalPList sst_iiobistctm2_ufm_min_xx161616_list [Mask TDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N]  {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA3 mode=6g8m vectype=slowstIIO
+         Pat d0027474N4956070_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_idcode;
+         Pat d0027481N4956071_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_0;
+         Pat d0027478N4956072_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_2;
+         Pat d0027476N4956073_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_3;
+         Pat d0027475N4956074_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_4;
+         Pat d0027490N4956075_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_ramdump_id_3;
+         Pat d0027507N4749225_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_1r1w;
+         Pat d0027500N4750533_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_1r1w;
+         Pat d0027509N4750536_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_1r1w;
+         Pat d0027487N4750539_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_fpla_and;
+         Pat d0027482N4750540_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_fpla_and;
+         Pat d0027485N4750541_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_fpla_or;
+         Pat d0027503N4750542_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_fpla_or;
+      } # end of sst_iiobistctm2_ufm_min_xx161616_list
+
+
+      GlobalPList sst_iiobistctm2_ufm_max_xx161616_list [Mask TDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N]  {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA3 mode=6g8m vectype=slowstIIO
+         Pat d0027474N4956070_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_idcode;
+         Pat d0027481N4956071_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_0;
+         Pat d0027478N4956072_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_2;
+         Pat d0027476N4956073_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_3;
+         Pat d0027475N4956074_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_4;
+         Pat d0027490N4956075_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_ramdump_id_3;
+         Pat d0027507N4749225_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_1r1w;
+         Pat d0027500N4750533_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_1r1w;
+         Pat d0027509N4750536_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_1r1w;
+         Pat d0027487N4750539_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_fpla_and;
+         Pat d0027482N4750540_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_fpla_and;
+         Pat d0027485N4750541_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_fpla_or;
+         Pat d0027503N4750542_xx161616i2x18_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_fpla_or;
+      } # end of sst_iiobistctm2_ufm_max_xx161616_list
+
+   } # end of sst_iiobistctm2_ufm_xx161616_list
+
+
+   GlobalPList sst_iiobistctm3_ufm_xx163232_list    {
+
+      GlobalPList sst_iiobistctm3_ufm_min_xx163232_list [Mask TDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N]  {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA3 mode=6g8m vectype=slowstIIO
+         Pat d0027479N4956070_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_idcode;
+         Pat d0027484N4956071_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_0;
+         Pat d0027496N4956072_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_2;
+         Pat d0027491N4956073_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_3;
+         Pat d0027483N4956074_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_4;
+         Pat d0027515N4956075_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_ramdump_id_3;
+         Pat d0027518N4749225_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_1r1w;
+         Pat d0027523N4750533_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_1r1w;
+         Pat d0027538N4750536_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_1r1w;
+         Pat d0027549N4750531_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_2r2w;
+         Pat d0027568N4750532_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_4r4w;
+         Pat d0027545N4750534_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_2r2w;
+         Pat d0027562N4750535_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_4r4w;
+         Pat d0027570N4750537_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_2r2w;
+         Pat d0027591N4750538_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_4r4w;
+         Pat d0047510N4750543_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_vmask_sa0;
+         Pat d0027571N4750544_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_hmask_sa0;
+         Pat d0046952N4750545_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_lmask_sa0;
+         Pat d0027576N4750546_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_vmask_sa1;
+         Pat d0046943N4750547_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_hmask_sa1;
+         Pat d0027572N4750548_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_lmask_sa1;
+         Pat d0046944N4750549_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_cambist_sa0;
+         Pat d0027579N4750550_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_cambist_sa1;
+      } # end of sst_iiobistctm3_ufm_min_xx163232_list
+
+
+      GlobalPList sst_iiobistctm3_ufm_max_xx163232_list [Mask TDO, XDPRDYREQN_N, ocp_data, ocp_stb, OCPRDYACKN_N, CPU_RESETO_N]  {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA3 mode=6g8m vectype=slowstIIO
+         Pat d0027479N4956070_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_idcode;
+         Pat d0027484N4956071_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_0;
+         Pat d0027496N4956072_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_2;
+         Pat d0027491N4956073_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_3;
+         Pat d0027483N4956074_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_jtag_rw_reg_40_4;
+         Pat d0027515N4956075_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_ramdump_id_3;
+         Pat d0027518N4749225_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_1r1w;
+         Pat d0027523N4750533_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_1r1w;
+         Pat d0027538N4750536_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_1r1w;
+         Pat d0027549N4750531_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_2r2w;
+         Pat d0027568N4750532_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_marchc_s_4r4w;
+         Pat d0027545N4750534_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_2r2w;
+         Pat d0027562N4750535_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_movi_c_4r4w;
+         Pat d0027570N4750537_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_2r2w;
+         Pat d0027591N4750538_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_hammer10_s_4r4w;
+         Pat d0047510N4750543_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_vmask_sa0;
+         Pat d0027571N4750544_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_hmask_sa0;
+         Pat d0046952N4750545_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_lmask_sa0;
+         Pat d0027576N4750546_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_vmask_sa1;
+         Pat d0046943N4750547_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_hmask_sa1;
+         Pat d0027572N4750548_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_lmask_sa1;
+         Pat d0046944N4750549_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_cambist_sa0;
+         Pat d0027579N4750550_xx163232i2x1A_MA0cA06TxX_2bxx2kD_0x0xxxpxx0xxx_hvm_tcam_cambist_sa1;
+      } # end of sst_iiobistctm3_ufm_max_xx163232_list
+
+   } # end of sst_iiobistctm3_ufm_xx163232_list
+
+} # end of sst_iio_array_list
+

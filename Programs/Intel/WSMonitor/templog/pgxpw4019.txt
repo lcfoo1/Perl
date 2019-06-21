@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4019
+Team=TP
+User=fng
+Logon=3/7/2007 5:36:00 PM
+LastActive=3/7/2007 10:06:02 PM
+Active=Yes(IDLE=0days, 4hrs, 30mins)

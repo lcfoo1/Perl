@@ -1,0 +1,470 @@
+
+COMPOSITE LRBDTS
+{
+      DEF (
+	whichSocketFile = "",                        			#Datatype=STRING, OPTIONAL
+    	globalDebugMode = "",	                         		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    	globalDatalogMode = "FALSE",                       		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	engineeringMode = "",		                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, GET_USER_INPUT, SILENT
+	productName = "",				                #Datatype=STRING, OPTIONAL
+	locationCode = "",                             			#Datatype=INTEGER, OPTIONAL
+	testTemp = "",		                               		#Datatype=DOUBLE, OPTIONAL
+	corrWaferLot = "",			                        #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	verifyAllInstances = "",	                     		#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	engLocnGlobalName = "",                      			#Datatype=STRING, OPTIONAL
+	staticInstanceFilename = "",					#Datatype=STRING, OPTIONAL
+
+	# Common Test Class Parameters
+	preinstance = "",
+	preplist = "",
+	postplist = "",
+	preburst = "",
+	postburst = "",
+	eotPowerDown = FALSE,						#Choices : FALSE, TRUE
+	maskPins = "",
+	thermalMonitorMode = DISABLED,					#Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermalMonitorOffsetCheck = CHECK_LIMITS,			#Choices : CHECK_LIMITS, MEASURE_ONLY
+	thermalMonitorItuffTname = "",
+	instanceProfile = FALSE,					#Choices : FALSE, TRUE
+	plistCheck = EMPTY_DISABLED,				#Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+	ignoreAlarm = NONE,						#Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+	ssidESequence = "",
+	ssidERecovery = "",
+	ssidGPwrdwn = NO,				#Choices : NO, YES
+	relayToken = "",
+	ssidOExecute = FIRST_FAIL,	#Choices : FORCE_ALL, FIRST_FAIL
+	captureResult = CLEAR,	#Choices : DO_NOT_CLEAR, CLEAR
+
+   	datalogMode = ON,						#Choices : ON, DISABLED
+	bypassGlobal = "",
+	postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+	preinstance = "",
+	SEGNAME = $name,
+        debugMode = BRIEF,
+	setctscube = "SET_GLOBAL^CTSCVars.SC_ULT_DOWNLOAD_PATH-./iVal_LRB_DTS.ube",
+	setclass = "SET_GLOBAL^CTSCVars.SC_TEST_FLOW-SCLASS,SET_GLOBAL^CTSCVars.SC_LOCN-7721",
+	setsort = "SET_GLOBAL^CTSCVars.SC_TEST_FLOW-SSORT"
+	);
+
+	DEF (TEMPLATENAME = LRBDTS, 
+	TESTTYPE = EXECUTE, 
+	TESTITEM = "", 
+	TESTMODE = LRBDTS, 
+	DEBUGMODE = $debugMode,
+	DESIREDOUT = "");
+  	DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$TESTMODE_$DEBUGMODE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+
+        SORT_LRBDTS ( COMPNAME = SORT_LRBDTS, TESTMODE=SORT )
+        0?NEXT,
+        1?NEXT;
+
+        CLASS_LRBDTS ( COMPNAME = CLASS_LRBDTS, TESTMODE=CLASS)
+        0?NEXT,
+        1?NEXT; 
+}
+
+# SORT 
+COMPOSITE SORT_LRBDTS
+{
+	tt_userfunc (
+		TEMPLATENAME = UBE, 
+		TESTITEM = SETUP,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setctscube
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SORT, 
+		TESTITEM = LOCN,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setsort
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTTYPE = LRBDTS,
+		TESTITEM = POPULATE,
+		TESTMODE = ALL, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = 7251,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+		debugMode = "OBNOXIOUS",
+	)
+	        
+    	0?NEXT,
+    	1?NEXT;
+
+	tt_ube (
+		TEMPLATENAME = UBE,
+		TESTITEM = DFF,
+		TESTMODE = DOWNLOAD,
+    		DESIREDOUT = P1, 
+		ubeGlobal = "",
+		ubeField = "",
+		datalogMode = "ON",
+		debugMode = "OBNOXIOUS",
+		bypassGlobal = "",
+		dffLogForAries = "ENABLED",
+            	dffLogMegaToken = "ENABLED",	
+        )
+       	1?NEXT,
+       	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = STSM,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_stsm",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "trimread_sort_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = CURTEMP,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_curtemp",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "trimread_curtemp_sort_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = CAT8,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_cat8",
+	    capturePin = "P002",
+	    captureSize = 256,
+	    patlist = "trimread_cat8_sort_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = CAT85,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_cat85",
+	    capturePin = "P002",
+	    captureSize = 256,
+	    patlist = "trimread_cat85_sort_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = CALC,
+	    TESTITEM = BASIC,
+      	    DESIREDOUT = P1,
+	    instType = "CALC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_stsm",
+	    capturePin = "P002",
+	    captureSize = 16,
+    	    patlist = "trimread_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+        tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = CALC,
+	    TESTITEM = CURTEMP,
+      	    DESIREDOUT = P1,
+	    instType = "CALC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_curtemp",
+	    capturePin = "P002",
+	    captureSize = 16,
+    	    patlist = "trimread_curtemp_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+
+        tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = CALC,
+	    TESTITEM = CAT8,
+      	    DESIREDOUT = P1,
+	    instType = "CALC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_cat8",
+	    capturePin = "P002",
+	    captureSize = 128,
+    	    patlist = "trimread_cat8_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+
+        tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = CALC,
+	    TESTITEM = CAT85,
+      	    DESIREDOUT = P1,
+	    instType = "CALC",
+	    configFile = "./LRBDTS/sort_dts.xml",
+	    configSet = "basic_sort_cat85",
+	    capturePin = "P002",
+	    captureSize = 128,
+    	    patlist = "trimread_cat85_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+}
+
+
+
+# Class LRB DTS
+COMPOSITE CLASS_LRBDTS
+{
+#	tt_userfunc (
+#		TEMPLATENAME = UBE, 
+#		TESTITEM = SETUP,
+#      		DESIREDOUT = P1,
+#		datalogMode = "ON",
+#		functionName = "IDT.dll!DFF_GSDS",
+#		functionParameter = $setctscube
+#	)
+#  	0?NEXT,
+#  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = CLASS, 
+		TESTITEM = LOCN,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setclass
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTTYPE = LRBDTS,
+		TESTITEM = POPULATE,
+		TESTMODE = ALL, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = 7721,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+		debugMode = "OBNOXIOUS",
+	        staticInstanceFilename = ""
+	)
+	        
+    	0?NEXT,
+    	1?NEXT;
+
+#	tt_ube (
+#		TEMPLATENAME = UBE,
+#		TESTITEM = DFF,
+#		TESTMODE = DOWNLOAD,
+#   		DESIREDOUT = P1, 
+#		ubeGlobal = "",
+#		ubeField = "",
+#		datalogMode = "ON",
+#		bypassGlobal = "",
+#		dffLogForAries = "ENABLED",
+#           	dffLogMegaToken = "ENABLED",	
+#		debugMode = "OBNOXIOUS",
+#       )
+#      	1?NEXT,
+#      	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = STSM,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "basic_stsm",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "trimread_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+DTSEXEC:
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = CURTEMP,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "basic_curtemp",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "trimread_curtemp_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = CAT8,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "basic_cat8",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "trimread_cat8_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	   1?NEXT,
+   	   0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = CAT85,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "basic_cat85",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "trimread_cat85_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?DTSCALC,
+   	0?DTSCALC;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = HSD7299,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "basic_stsm",
+	    capturePin = "P002",
+	    captureSize = 16,
+	    patlist = "hsd7299_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?DTSEXEC,
+   	0?DTSEXEC;
+
+DTSCALC:
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = CALC,
+	    TESTITEM = MULTICONFIGSETSCALC,
+      	    DESIREDOUT = P1,
+	    instType = "CALC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "basic_stsm basic_curtemp basic_cat8 basic_cat85",
+	    capturePin = "P002",
+	    captureSize = 16,
+    	    patlist = "trimread_curtemp_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?1,
+   	0?1;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = EXEC,
+	    TESTITEM = STSMCURTEMP,
+      	    DESIREDOUT = P1,
+	    instType = "EXEC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "stsm_and_curtemp",
+	    capturePin = "P002",
+	    captureSize = 32,
+	    patlist = "trimread_stsm_and_curtemp_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+	tt_lrbdts (
+	    TEMPLATENAME = LRBDTS,
+	    TESTTYPE = CALC,
+	    TESTITEM = STSMCURTEMPCALC,
+      	    DESIREDOUT = P1,
+	    instType = "CALC",
+	    configFile = "./LRBDTS/dts.xml",
+	    configSet = "stsm_and_curtemp basic_cat8 basic_cat85",
+	    capturePin = "P002",
+	    captureSize = 16,
+            patlist = "trimread_stsm_and_curtemp_list",
+	    timings = "iValTimings50MHz",
+	    level = "iValLevelNom"
+	)
+   	1?NEXT,
+   	0?NEXT;
+
+}

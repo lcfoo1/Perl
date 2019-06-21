@@ -1,0 +1,231 @@
+DTFlowtableSheet,version=2.3:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1	Flow Table																																							
+						Flow Domain:																																		
+			Gate			Command				Limits		Datalog Display Results			Bin Number		Sort Number			Action			Group				Device			Debug		CT Profile Data								
+	Label	Enable	Job	Part	Env	Opcode	Parameter	TName	TNum	LoLim	HiLim	Scale	Units	Format	Pass	Fail	Pass	Fail	Result	Pass	Fail	State	Specifier	Sense	Condition	Name	Sense	Condition	Name	Assume	Sites	Elapsed Time (s)	Background Type	Serialize	Resource Lock	Flow Step Locked	Comment	Bin Name	Sort Name	
+		DIG_Norm				Test	Set_VDD_COND_DIG_VNOM																																	
+		DIG_Norm				Test	tapbistv_4775B0									4		1001	fail		TAPBIST_Fail													FALSE		FALSE				
+		DIG_Norm				nop	wtapbistv_BP2_4775B0									4		1002	fail		TAPBIST_Fail													FALSE		FALSE				
+		DIG_Norm				nop	wtapbistv_BP3_4775B0									4		1003	fail		TAPBIST_Fail													FALSE		FALSE				
+		DIG_Norm				nop	wtapbistv_BP4_4775B0									4		1004	fail		TAPBIST_Fail													FALSE		FALSE				
+		DIG_Norm				nop	wtapbistv_BP5_4775B0									4		1005	fail		TAPBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb0_top_byp_4775B0									4		1011	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb0_top_pll_4775B0									4		1011	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb1_top_byp_4775B0									4		1012	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb1_top_pll_4775B0									4		1012	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb2_top_byp_4775B0									4		1013	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb2_top_pll_4775B0									4		1013	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb3_top_byp_4775B0									4		1014	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_cb3_top_pll_4775B0									4		1014	fail		MBIST_Fail																			
+		DIG_Norm				nop	membistpv_P1_rom_byp_4775B0									4		1015	fail		MBIST_Fail																			
+		DIG_Norm				Test	membistpv_P1_rom_pll_4775B0									4		1015	fail		MBIST_Fail																			
+		DIG_Norm				Test	membistpv_P1_all_pll_4775B0									4		1016	fail		MBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb0_top_byp_4775B0									4		1021	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb0_top_pll_4775B0									4		1021	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb1_top_byp_4775B0									4		1022	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb1_top_pll_4775B0									4		1022	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb2_top_byp_4775B0									4		1023	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb2_top_pll_4775B0									4		1023	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb3_top_byp_4775B0									4		1024	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_cb3_top_pll_4775B0									4		1024	fail		LBIST_Fail																			
+		DIG_Norm				nop	logicbistv_all_top_pll_4775B0									4		1025	fail		LBIST_Fail																			
+		DIG_Norm				Test	PRT_all_4775B0									4		1031	fail		PRT_Fail																			
+		DIG_Norm				nop	PRT_cb0_cb1_4775B0									4		1032	fail		PRT_Fail																			
+		DIG_Norm				nop	PRT_cb0_cb1_cb2_4775B0									4		1033	fail		PRT_Fail																			
+		DIG_Norm				nop	PRT_cb3_4775B0									4		1034	fail		PRT_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb0_top_byp_4775B0									4		1041	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	scanburst_edt_cb0_top_pll_4775B0									4		1041	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb1_top_byp_4775B0									4		1042	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	scanburst_edt_cb1_top_pll_4775B0									4		1042	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb2_top_byp_4775B0									4		1043	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb2_top_pll_4775B0									4		1043	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb3_top_byp_4775B0									4		1044	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb3_top_pll_4775B0									4		1044	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_all_top_pll_4775B0									4		1045	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	scanburst_edt_cb0_cb1_pll_4775B0									4		1046	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	scanburst_edt_cb2_cb3_pll_4775B0									4		1047	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	ART_cb0_4775B0									4		1051	fail		ART_Fail																			
+		DIG_Norm				Test	ART_cb1_4775B0									4		1052	fail		ART_Fail																			
+		DIG_Norm				Test	ART_cb2_4775B0									4		1053	fail		ART_Fail																			
+		DIG_Norm				Test	ART_cb3_4775B0									4		1054	fail		ART_Fail													FALSE		FALSE				
+		DIG_Norm				nop	CCT_cb0_4775B0									4		1061	fail		CCT_Fail													FALSE		FALSE				
+		DIG_Norm				nop	CCT_cb1_4775B0									4		1062	fail		CCT_Fail																			
+		DIG_Norm				nop	CCT_cb2_4775B0									4		1063	fail		CCT_Fail													FALSE		FALSE				
+		DIG_Norm				nop	CCT_cb3_4775B0									4		1064	fail		CCT_Fail																			
+		DIG_Norm				nop	TK_top_tft_byp_pll_4775B0									4		1071	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	TK_top_tft_edt_pll_4775B0									4		1072	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	TK_top_ch_byp_4775B0									4		1073	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	TK_top_ch_edt_4775B0									4		1074	fail		StuckAtScan_Fail																			
+		DIG_Norm				nop	TK_top_sa_byp_4775B0									4		1075	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	TK_top_sa_edt_4775B0									4		1076	fail		StuckAtScan_Fail																			
+		DIG_Norm				Test	TK_top_art_edt_4775B0									4		1077	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	Set_VDD_COND_DIG_P7																											FALSE		FALSE				
+		DIG_HighCorner				Test	tapbistv_4775B0									4		1101	fail		TAPBIST_Fail													FALSE		FALSE				
+		DIG_HighCorner				nop	wtapbistv_BP2_4775B0									4		1102	fail		TAPBIST_Fail																			
+		DIG_HighCorner				nop	wtapbistv_BP3_4775B0									4		1103	fail		TAPBIST_Fail																			
+		DIG_HighCorner				nop	wtapbistv_BP4_4775B0									4		1104	fail		TAPBIST_Fail																			
+		DIG_HighCorner				nop	wtapbistv_BP5_4775B0									4		1105	fail		TAPBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb0_top_byp_4775B0									4		1121	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb0_top_pll_4775B0									4		1121	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb1_top_byp_4775B0									4		1122	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb1_top_pll_4775B0									4		1122	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb2_top_byp_4775B0									4		1123	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb2_top_pll_4775B0									4		1123	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb3_top_byp_4775B0									4		1124	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_cb3_top_pll_4775B0									4		1124	fail		LBIST_Fail																			
+		DIG_HighCorner				nop	logicbistv_all_top_pll_4775B0									4		1125	fail		LBIST_Fail																			
+		DIG_HighCorner				Test	PRT_all_4775B0									4		1131	fail		PRT_Fail																			
+		DIG_HighCorner				nop	PRT_cb0_cb1_4775B0									4		1132	fail		PRT_Fail																			
+		DIG_HighCorner				nop	PRT_cb0_cb1_cb2_4775B0									4		1133	fail		PRT_Fail																			
+		DIG_HighCorner				nop	PRT_cb3_4775B0									4		1134	fail		PRT_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_cb0_top_byp_4775B0									4		1141	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	scanburst_edt_cb0_top_pll_4775B0									4		1141	fail	PCB0	FCB0																			
+		DIG_HighCorner				nop	HDUMP_scanburst_edt_cb0_top_pll_4775B0														StuckAtScan_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_cb1_top_byp_4775B0									4		1142	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	scanburst_edt_cb1_top_pll_4775B0									4		1142	fail	PCB1	FCB1																			
+		DIG_HighCorner				nop	HDUMP_scanburst_edt_cb1_top_pll_4775B0														StuckAtScan_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_cb2_top_byp_4775B0									4		1143	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_cb2_top_pll_4775B0									4		1143	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	HDUMP_scanburst_edt_cb2_top_pll_4775B0														StuckAtScan_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_cb3_top_byp_4775B0									4		1144	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_cb3_top_pll_4775B0									4		1144	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	HDUMP_scanburst_edt_cb3_top_pll_4775B0														StuckAtScan_Fail																			
+		DIG_HighCorner				nop	scanburst_edt_all_top_pll_4775B0									4		1145	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	HDUMP_scanburst_edt_all_top_pll_4775B0														StuckAtScan_Fail																			
+		Dbg_DIG_HDUMP				NOP	scanburst_edt_cb0_cb1_pll_4775B0									4		1146	fail	PCB0_CB1	FCB0_CB1																			
+		Dbg_DIG_HDUMP				NOP	(PCB0 && PCB1 && FCB0_CB1)																																	
+		Dbg_DIG_HDUMP				NOP	HDUMP_scanburst_edt_cb0_cb1_pll_4775B0																																	
+		Dbg_DIG_HDUMP				NOP	scanburst_edt_cb0_cb1_pll_4775B0													PLP1	FLP1																			
+		Dbg_DIG_HDUMP				NOP	(FLP1)																																	
+		Dbg_DIG_HDUMP				NOP	HDUMP_scanburst_edt_cb0_cb1_pll_4775B0																																	
+		Dbg_DIG_HDUMP				NOP																																		
+		Dbg_DIG_HDUMP				NOP	scanburst_edt_cb0_cb1_pll_4775B0													PLP2	FLP2																			
+		Dbg_DIG_HDUMP				NOP	(FLP2)																																	
+		Dbg_DIG_HDUMP				NOP	HDUMP_scanburst_edt_cb0_cb1_pll_4775B0																																	
+		Dbg_DIG_HDUMP				NOP																																		
+		Dbg_DIG_HDUMP				NOP	scanburst_edt_cb0_cb1_pll_4775B0													PLP3	FLP3																			
+		Dbg_DIG_HDUMP				NOP	(FLP3)																																	
+		Dbg_DIG_HDUMP				NOP	HDUMP_scanburst_edt_cb0_cb1_pll_4775B0																																	
+		Dbg_DIG_HDUMP				NOP																																		
+		Dbg_DIG_HDUMP				NOP	scanburst_edt_cb0_cb1_pll_4775B0													PLP4	FLP4																			
+		Dbg_DIG_HDUMP				NOP	(FLP4)																																	
+		Dbg_DIG_HDUMP				NOP	HDUMP_scanburst_edt_cb0_cb1_pll_4775B0																																	
+		Dbg_DIG_HDUMP				NOP																																		
+		Dbg_DIG_HDUMP				NOP																																		
+		DIG_HighCorner				Test	scanburst_edt_cb2_cb3_pll_4775B0									4		1147	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	HDUMP_scanburst_edt_cb2_cb3_pll_4775B0														StuckAtScan_Fail																			
+		DIG_HighCorner				Test	ART_cb0_4775B0									4		1151	fail		ART_Fail																			
+		DIG_HighCorner				Test	ART_cb1_4775B0									4		1152	fail		ART_Fail																			
+		DIG_HighCorner				Test	ART_cb2_4775B0									4		1153	fail		ART_Fail																			
+		DIG_HighCorner				Test	ART_cb3_4775B0									4		1154	fail		ART_Fail																			
+		DIG_HighCorner				nop	CCT_cb0_4775B0									4		1161	fail		CCT_Fail																			
+		DIG_HighCorner				nop	CCT_cb1_4775B0									4		1162	fail		CCT_Fail																			
+		DIG_HighCorner				nop	CCT_cb2_4775B0									4		1163	fail		CCT_Fail																			
+		DIG_HighCorner				nop	CCT_cb3_4775B0									4		1164	fail		CCT_Fail																			
+		DIG_HighCorner				nop	TK_top_tft_byp_pll_4775B0									4		1171	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	TK_top_tft_edt_pll_4775B0									4		1172	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	TK_top_ch_byp_4775B0									4		1173	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	TK_top_ch_edt_4775B0									4		1174	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				nop	TK_top_sa_byp_4775B0									4		1175	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	TK_top_sa_edt_4775B0									4		1176	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	TK_top_art_edt_4775B0									4		1177	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	Set_VDD_COND_DIG_M7																																	
+		DIG_LowCorner				Test	tapbistv_4775B0									4		1201	fail		TAPBIST_Fail													FALSE		FALSE				
+		DIG_LowCorner				nop	wtapbistv_BP2_4775B0									4		1202	fail		TAPBIST_Fail																			
+		DIG_LowCorner				nop	wtapbistv_BP3_4775B0									4		1203	fail		TAPBIST_Fail																			
+		DIG_LowCorner				nop	wtapbistv_BP4_4775B0									4		1204	fail		TAPBIST_Fail																			
+		DIG_LowCorner				nop	wtapbistv_BP5_4775B0									4		1205	fail		TAPBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb0_top_byp_4775B0									4		1221	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb0_top_pll_4775B0									4		1221	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb1_top_byp_4775B0									4		1222	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb1_top_pll_4775B0									4		1222	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb2_top_byp_4775B0									4		1223	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb2_top_pll_4775B0									4		1223	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb3_top_byp_4775B0									4		1224	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_cb3_top_pll_4775B0									4		1224	fail		LBIST_Fail																			
+		DIG_LowCorner				nop	logicbistv_all_top_pll_4775B0									4		1225	fail		LBIST_Fail																			
+		DIG_LowCorner				Test	PRT_all_4775B0									4		1231	fail		PRT_Fail																			
+		DIG_LowCorner				nop	PRT_cb0_cb1_4775B0									4		1232	fail		PRT_Fail																			
+		DIG_LowCorner				nop	PRT_cb0_cb1_cb2_4775B0									4		1233	fail		PRT_Fail																			
+		DIG_LowCorner				nop	PRT_cb3_4775B0									4		1234	fail		PRT_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb0_top_byp_4775B0									4		1241	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	scanburst_edt_cb0_top_pll_4775B0									4		1241	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb1_top_byp_4775B0									4		1242	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	scanburst_edt_cb1_top_pll_4775B0									4		1242	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb2_top_byp_4775B0									4		1243	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb2_top_pll_4775B0									4		1243	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb3_top_byp_4775B0									4		1244	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb3_top_pll_4775B0									4		1244	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_all_top_pll_4775B0									4		1245	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	scanburst_edt_cb0_cb1_pll_4775B0									4		1246	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	scanburst_edt_cb2_cb3_pll_4775B0									4		1247	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	HDUMP_scanburst_edt_cb2_cb3_pll_4775B0														StuckAtScan_Fail																			
+		DIG_LowCorner				Test	ART_cb0_4775B0									4		1251	fail		ART_Fail																			
+		DIG_LowCorner				Test	ART_cb1_4775B0									4		1252	fail		ART_Fail																			
+		DIG_LowCorner				Test	ART_cb2_4775B0									4		1253	fail		ART_Fail																			
+		DIG_LowCorner				Test	ART_cb3_4775B0									4		1254	fail		ART_Fail																			
+		DIG_LowCorner				nop	CCT_cb0_4775B0									4		1261	fail		CCT_Fail																			
+		DIG_LowCorner				nop	CCT_cb1_4775B0									4		1262	fail		CCT_Fail																			
+		DIG_LowCorner				nop	CCT_cb2_4775B0									4		1263	fail		CCT_Fail																			
+		DIG_LowCorner				nop	CCT_cb3_4775B0									4		1264	fail		CCT_Fail																			
+		DIG_LowCorner				nop	TK_top_tft_byp_pll_4775B0									4		1271	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	TK_top_tft_edt_pll_4775B0									4		1272	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	TK_top_ch_byp_4775B0									4		1273	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	TK_top_ch_edt_4775B0									4		1274	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				nop	TK_top_sa_byp_4775B0									4		1275	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	TK_top_sa_edt_4775B0									4		1276	fail		StuckAtScan_Fail																			
+		DIG_LowCorner				Test	TK_top_art_edt_4775B0									4		1277	fail		StuckAtScan_Fail																			
+		DIG_HighCorner				Test	Set_VDD_COND_DIG_P10																																	
+		DIG_HighCorner				nop	membistpv_P1_cb0_top_byp_4775B0									4		1111	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb0_top_pll_4775B0									4		1111	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb1_top_byp_4775B0									4		1112	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb1_top_pll_4775B0									4		1112	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb2_top_byp_4775B0									4		1113	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb2_top_pll_4775B0									4		1113	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb3_top_byp_4775B0									4		1114	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_cb3_top_pll_4775B0									4		1114	fail		MBIST_Fail																			
+		DIG_HighCorner				nop	membistpv_P1_rom_byp_4775B0									4		1115	fail		MBIST_Fail																			
+		DIG_HighCorner				Test	membistpv_P1_rom_pll_4775B0									4		1115	fail		MBIST_Fail																			
+		DIG_HighCorner				Test	membistpv_P1_all_pll_4775B0									4		1116	fail		MBIST_Fail																			
+		DIG_LowCorner				Test	Set_VDD_COND_DIG_M10																																	
+		DIG_LowCorner				nop	membistpv_P1_cb0_top_byp_4775B0									4		1211	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb0_top_pll_4775B0									4		1211	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb1_top_byp_4775B0									4		1212	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb1_top_pll_4775B0									4		1212	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb2_top_byp_4775B0									4		1213	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb2_top_pll_4775B0									4		1213	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb3_top_byp_4775B0									4		1214	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_cb3_top_pll_4775B0									4		1214	fail		MBIST_Fail																			
+		DIG_LowCorner				nop	membistpv_P1_rom_byp_4775B0									4		1215	fail		MBIST_Fail																			
+		DIG_LowCorner				Test	membistpv_P1_rom_pll_4775B0									4		1215	fail		MBIST_Fail																			
+		DIG_LowCorner				Test	membistpv_P1_all_pll_4775B0									4		1216	fail		MBIST_Fail																			
+						Test	Set_VDD_COND_DIG_M20																																	
+						Test	VCCMIN_All									4		1401	Fail		LBIST_Fail																			
+		QUAL_DIG				characterize	tapbistv_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	PRT_all_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				nop	scanburst_edt_all_top_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	scanburst_edt_cb0_top_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	scanburst_edt_cb1_top_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				nop	scanburst_edt_cb0_cb1_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	scanburst_edt_cb2_cb3_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	ART_cb0_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	ART_cb1_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	ART_cb2_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	ART_cb3_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	TK_top_tft_edt_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	TK_top_sa_edt_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	TK_top_art_edt_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	membistpv_P1_rom_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	membistpv_P1_all_pll_4775B0 CORE_VCCMin_Search																																	
+		QUAL_DIG				characterize	VCCMIN_All CORE_VCCMin_Search																																	
+		DoShmoo				characterize	tapbistv_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	PRT_all_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	scanburst_edt_cb0_top_pll_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	scanburst_edt_cb1_top_pll_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	scanburst_edt_cb2_cb3_pll_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	ART_cb0_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	ART_cb1_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	ART_cb2_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	ART_cb3_4775B0 DIG_Shmoo																																	
+		DoShmoo				characterize	membistpv_P1_rom_pll_4775B0 MBIST_Shmoo																																	
+		DoShmoo				characterize	membistpv_P1_all_pll_4775B0 MBIST_Shmoo																																	
+						return																																		

@@ -1,0 +1,762 @@
+C:\Development\Teradyne\Programming\Perl\Programs\getlimit\VB\VBT_PMU_Frequency.bas
+		    Call LimitsTool.TestLimit(measured_freq_ck500kHz_BeforeCal, PinToMeasure, "PMU_Freq_ck500kHz_BeforeCal")
+
+		    Call LimitsTool.TestLimit(measured_freq_ck500kHz_AfterCal, PinToMeasure, "PMU_Freq_ck500kHz_AfterCal")
+
+		    Call LimitsTool.TestLimit(measured_freq_3MHz_BeforeCal, PinToMeasure, "PMU_Freq_OscSwr3MHz_BeforeCal")
+
+		    Call LimitsTool.TestLimit(measured_freq_3MHz_AfterCal, PinToMeasure, "PMU_Freq_OscSwr3MHz_AfterCal")
+
+C:\Development\Teradyne\Programming\Perl\Programs\getlimit\VB\VBT_PMU_LDO.bas
+		    Call LimitsTool.TestLimit(RF_LDO3P3_VOUT_0mA_3p7V, "VDDOUT_RF3P3", "PMU_" + "RF_LDO3P3_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(RF_LDO3P3_VOUT_100mA_3p7V, "VDDOUT_RF3P3", "PMU_" + "RF_LDO3P3_100mA_3p7V")
+
+		    Call LimitsTool.TestLimit(RF_LDO3P3_Q_Curr_0mA_3p7V, "ET_LINREG_VDD_V5P0", "PMU_" + "RF_LDO3P3_Q_Current")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_1mA_3p7V_RFLDO3P3")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_100mA_3p7V_RFLDO3P3")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_100mA_5p0V_RFLDO3P3")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "RF_LDO3P3_LDR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Divide(0.44576).Divide(load_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "RF_LDO3P3_LDR_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "RF_LDO3P3_LNR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Divide(0.44576).Multiply(1000).Divide(line_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "RF_LDO3P3_LNR_3p7V_5p25V")
+
+		    Call LimitsTool.TestLimit(BT_LDO3P3_VOUT_0mA_3p7V, "VDDOUT_BT3P3", "PMU_" + "BT_LDO3P3_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(BT_LDO3P3_VOUT_400mA_3p7V, "VDDOUT_BT3P3", "PMU_" + "BT_LDO3P3_400mA_3p7V")
+
+		    Call LimitsTool.TestLimit(BT_LDO3P3_Q_Curr_0mA_3p7V, "ET_LINREG_VDD_V5P0", "PMU_" + "BT_LDO3P3_Q_Current")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_1mA_3p7V_BTLDO3P3")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_400mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_400mA_3p7V_BTLDO3P3")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_400mA_5p25V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_400mA_5p25V_BTLDO3P3")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_400mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "BT_LDO3P3_LDR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_400mA_3p7V).Divide(0.44576).Divide(load_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "BT_LDO3P3_LDR_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_400mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_400mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "BT_LDO3P3_LNR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_400mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_400mA_3p7V).Divide(0.44576).Multiply(1000).Divide(line_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "BT_LDO3P3_LNR_3p7V_5p25V")
+
+		    Call LimitsTool.TestLimit(RETLDO_VOUT_0mA_1p0V, "VDDOUT_RETLDO", "PMU_" + "RETLDO_0mA_1p0V")
+
+		    Call LimitsTool.TestLimit(RETLDO_VOUT_10mA_1p0V, "VDDOUT_RETLDO", "PMU_" + "RETLDO_10mA_1p0V")
+
+		    Call LimitsTool.TestLimit(RETLDO_Q_current_0mA_1p0V, "CSR_VLX", "PMU_" + "RETLDO_Q_Current")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_1p0V, "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_VOUT_1mA_1p0V_RETLDO")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_10mA_1p0V, "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_VOUT_10mA_1p0V_RETLDO")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_10mA_0p95V, "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_VOUT_10mA_0p95V_RETLDO")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_10mA_1p05V, "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_VOUT_10mA_1p05V_RETLDO")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_1p0V.Subtract(VDDOUT_1P8_SW2_VOUT_10mA_1p0V).Abs, "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_LDR_Diff_RETLDO")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_10mA_1p05V.Subtract(VDDOUT_1P8_SW2_VOUT_10mA_0p95V).Abs, "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_LNR_Diff_RETLDO")
+
+		    Call LimitsTool.TestLimit(VDDOUT_HVLDO1P8_0mA_3p7V, "VDDOUT_1P8_2", "PMU_" + "VDDOUT_HVLDO1P8_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_HVLDO1P8_100mA_3p7V, "VDDOUT_1P8_2", "PMU_" + "VDDOUT_HVLDO1P8_100mA_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_HVLDO1P8_Q_Curr_0mA_3p7V, "ET_LINREG_VDD_V5P0", "PMU_" + "VDDOUT_HVLDO1P8_Q_Current")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_1mA_3p7V_HVLDO1P8")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_100mA_3p7V_HVLDO1P8")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_100mA_5p0V_HVLDO1P8")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_LDR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Divide(0.44576).Divide(load_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_LDR_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_LNR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Divide(0.44576).Multiply(1000).Divide(line_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_LNR_3p7V_5p25V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_HVLDO1P8_EMMC_0mA_3p7V, "VDDOUT_1P8_EMMC", "PMU_" + "VDDOUT_HVLDO1P8_EMMC_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_HVLDO1P8_EMMC_100mA_3p7V, "VDDOUT_1P8_EMMC", "PMU_" + "VDDOUT_HVLDO1P8_EMMC_100mA_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_HVLDO1P8_EMMC_Q_Curr_0mA_3p7V, "ET_LINREG_VDD_V5P0", "PMU_" + "VDDOUT_HVLDO1P8_EMMC_Q_Current")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_1mA_3p7V_HVLDO1P8_EMMC")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_3p7V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_100mA_3p7V_HVLDO1P8_EMMC")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "VDDOUT_1P8_SW2_100mA_5p0V_HVLDO1P8_EMMC")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_EMMC_LDR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_1mA_3p7V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Divide(0.44576).Divide(load_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_EMMC_LDR_3p7V")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Abs.Divide(0.44576), "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_EMMC_LNR_Diff")
+
+		    Call LimitsTool.TestLimit(VDDOUT_1P8_SW2_VOUT_100mA_5p25V.Subtract(VDDOUT_1P8_SW2_VOUT_100mA_3p7V).Divide(0.44576).Multiply(1000).Divide(line_diff).Abs, "VDDOUT_1P8_SW2", "PMU_" + "HVLDO1P8_EMMC_LNR_3p7V_5p25V")
+
+C:\Development\Teradyne\Programming\Perl\Programs\getlimit\VB\VBT_PMU_registerSetup.bas
+C:\Development\Teradyne\Programming\Perl\Programs\getlimit\VB\VBT_PMU_SWREG.bas
+		    Call LimitsTool.TestLimit(PDWN_I_VBAT_VDDIO_0V, "ET_LINREG_VDD_V5P0", "VBAT_PDWN_I_VDDIO_0V")
+
+		    Call LimitsTool.TestLimit(PDWN_I_VBAT_VDDIO_1p8V, "ET_LINREG_VDD_V5P0", "VBAT_PDWN_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PDWN_I_PMU_VDDIO_1p8V, "PMU_VDDIOP", "PMU_VDDIO_PDWN_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS0A_LDO_VDD1P0_0mA_3p7V_SLEEP, "CSR_VLX", "PS0A_LDO_VDD1P0_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0A_LDO_VDD1P22_0mA_3p7V_SLEEP, "ASR_VLX", "PS0A_LDO_VDD1P22_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0A_VDDOUT_RETLDO_0mA_3p7V_SLEEP, "VDDOUT_RETLDO", "PS0A_VDDOUT_RETLDO_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0A_VDDOUT_AON_0mA_3p7V_SLEEP, "VDDOUT_AON", "PS_VDDOUT_AON_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0A_Sleep_I_VBAT_SR, "ET_LINREG_VDD_V5P0", "PS0A_VBAT_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS0A_SLEEP_I_PMU_VDDIO_1p8V, "PMU_VDDIOP", "PS0A_PMU_VDDIO_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS0A_LDO_VDD_1P22_1mA_3p7V_SLEEP, "ASR_VLX", "PS0A_LDO_VDD_1P22_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0A_VDDOUT_AON_1mA_3p7V_SLEEP, "VDDOUT_AON", "PS0A_VDDOUT_AON_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0A_LDO_VDD_1P22_1mA_3p7V_SLEEP.Subtract(PS0A_VDDOUT_AON_1mA_3p7V_SLEEP).Divide(1 * mA).Abs, "PS_VDDOUT_AON", "PS_AON_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS0C_LDO_VDD1P0_0mA_3p7V_SLEEP, "CSR_VLX", "PS0C_LDO_VDD1P0_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0C_LDO_VDD1P22_0mA_3p7V_SLEEP, "ASR_VLX", "PS0C_LDO_VDD1P22_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0C_VDDOUT_RETLDO_0mA_3p7V_SLEEP, "VDDOUT_RETLDO", "PS0C_VDDOUT_RETLDO_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0C_VDDOUT_AON_0mA_3p7V_SLEEP, "VDDOUT_AON", "PS0C_VDDOUT_AON_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0C_Sleep_I_VBAT_SR, "ET_LINREG_VDD_V5P0", "PS0C_VBAT_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS0C_SLEEP_I_PMU_VDDIO_1p8V, "PMU_VDDIOP", "PS0C_PMU_VDDIO_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS0C_LDO_VDD_1P22_1mA_3p7V_SLEEP, "ASR_VLX", "PS0C_LDO_VDD_1P22_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0C_VDDOUT_AON_1mA_3p7V_SLEEP, "VDDOUT_AON", "PS0C_VDDOUT_AON_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS0C_LDO_VDD_1P22_1mA_3p7V_SLEEP.Subtract(PS0C_VDDOUT_AON_1mA_3p7V_SLEEP).Divide(1 * mA).Abs, "PS0C_VDDOUT_AON", "PS0C_AON_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS1A_LDO_VDD1P0_0mA_3p7V_SLEEP, "CSR_VLX", "PS1A_LDO_VDD1P0_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1A_LDO_VDD1P22_0mA_3p7V_SLEEP, "ASR_VLX", "PS1A_LDO_VDD1P22_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1A_VDDOUT_RETLDO_0mA_3p7V_SLEEP, "VDDOUT_RETLDO", "PS1A_VDDOUT_RETLDO_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1A_VDDOUT_AON_0mA_3p7V_SLEEP, "VDDOUT_AON", "PS1A_VDDOUT_AON_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1A_Sleep_I_VBAT_SR, "ET_LINREG_VDD_V5P0", "PS1A_VBAT_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS1A_SLEEP_I_PMU_VDDIO_1p8V, "PMU_VDDIOP", "PS1A_PMU_VDDIO_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS1A_LDO_VDD_1P22_1mA_3p7V_SLEEP, "ASR_VLX", "PS1A_LDO_VDD_1P22_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1A_VDDOUT_AON_1mA_3p7V_SLEEP, "VDDOUT_AON", "PS1A_VDDOUT_AON_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1A_LDO_VDD_1P22_1mA_3p7V_SLEEP.Subtract(PS1A_VDDOUT_AON_1mA_3p7V_SLEEP).Divide(1 * mA).Abs, "PS1A_VDDOUT_AON", "PS1A_AON_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS1C_LDO_VDD1P0_0mA_3p7V_SLEEP, "CSR_VLX", "PS1C_LDO_VDD1P0_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1C_LDO_VDD1P22_0mA_3p7V_SLEEP, "ASR_VLX", "PS1C_LDO_VDD1P22_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1C_VDDOUT_RETLDO_0mA_3p7V_SLEEP, "VDDOUT_RETLDO", "PS1C_VDDOUT_RETLDO_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1C_VDDOUT_AON_0mA_3p7V_SLEEP, "VDDOUT_AON", "PS1C_VDDOUT_AON_SLEEP_0mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1C_Sleep_I_VBAT_SR, "ET_LINREG_VDD_V5P0", "PS1C_VBAT_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS1C_SLEEP_I_PMU_VDDIO_1p8V, "PMU_VDDIOP", "PS1C_PMU_VDDIO_SLEEP_I_VDDIO_1p8V")
+
+		    Call LimitsTool.TestLimit(PS1C_LDO_VDD_1P22_1mA_3p7V_SLEEP, "ASR_VLX", "PS1C_LDO_VDD_1P22_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1C_VDDOUT_AON_1mA_3p7V_SLEEP, "VDDOUT_AON", "PS1C_VDDOUT_AON_SLEEP_1mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS1C_LDO_VDD_1P22_1mA_3p7V_SLEEP.Subtract(PS1C_VDDOUT_AON_1mA_3p7V_SLEEP).Divide(1 * mA).Abs, "PS1C_VDDOUT_AON", "PS1C_AON_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_60mA_3p0, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_60mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_60mA_3p7, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_60mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_60mA_5p25, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_60mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_60mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_60mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_60mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_60mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_60mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_60mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_80mA_3p0, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_80mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_80mA_3p7, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_80mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_80mA_5p25, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_80mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_80mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_80mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_80mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_80mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_80mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_80mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_3p0, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_100mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_3p7, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_100mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_5p25, "CSR_VLX", "PMU_CSR_" + "PWM_LDO_V_100mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_100mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_100mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_100mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_100mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_100mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PWM_VBAT_I_100mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_10mA_3p0.Subtract(PWM_VDDLDO_V_100mA_3p0).Abs, "CSR_VLX", "PMU_CSR_" + "PWM_LoadReg_3p0_10mA_100mA")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_10mA_3p7.Subtract(PWM_VDDLDO_V_100mA_3p7).Abs, "CSR_VLX", "PMU_CSR_" + "PWM_LoadReg_3p7_10mA_100mA")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_10mA_5p25.Subtract(PWM_VDDLDO_V_100mA_5p25).Abs, "CSR_VLX", "PMU_CSR_" + "PWM_LoadReg_5p25_10mA_100mA")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_5p25.Subtract(PWM_VDDLDO_V_100mA_3p0).Abs, "CSR_VLX", "PMU_CSR_" + "PWM_LineReg_100mA")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_60mA_3p0, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_60mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_60mA_3p7, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_60mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_60mA_5p25, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_60mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_80mA_3p0, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_80mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_80mA_3p7, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_80mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_80mA_5p25, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_80mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p0, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_100mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p7, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_100mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_5p25, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_100mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_60mA_3p0_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_60mA_3p0_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_60mA_3p7_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_60mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_60mA_5p25_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_60mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_80mA_3p0_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_80mA_3p0_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_80mA_3p7_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_80mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_80mA_5p25_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_80mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p0_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_100mA_3p0_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p7_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_100mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_5p25_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "PWM_Eff_100mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_3p0, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_100mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_3p7, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_100mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_100mA_5p25, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_100mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_100mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_100mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_100mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_100mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_100mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_100mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_150mA_3p0, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_150mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_150mA_3p7, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_150mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_150mA_5p25, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_150mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_150mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_150mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_150mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_150mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_150mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_150mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_200mA_3p0, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_200mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_200mA_3p7, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_200mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_200mA_5p25, "ASR_VLX", "PMU_ASR_" + "PWM_LDO_V_200mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_200mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_200mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_200mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_200mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_VDDBAT_I_200mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PWM_VBAT_I_200mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_10mA_3p0.Subtract(PWM_VDDLDO_V_200mA_3p0).Abs, "ASR_VLX", "PMU_ASR_" + "PWM_LoadReg_3p0_10mA_200mA")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_10mA_3p7.Subtract(PWM_VDDLDO_V_200mA_3p7).Abs, "ASR_VLX", "PMU_ASR_" + "PWM_LoadReg_3p7_10mA_200mA")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_10mA_5p25.Subtract(PWM_VDDLDO_V_200mA_5p25).Abs, "ASR_VLX", "PMU_ASR_" + "PWM_LoadReg_5p25_10mA_200mA")
+
+		    Call LimitsTool.TestLimit(PWM_VDDLDO_V_200mA_5p25.Subtract(PWM_VDDLDO_V_200mA_3p0).Abs, "ASR_VLX", "PMU_ASR_" + "PWM_LineReg_200mA")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p0, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_100mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p7, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_100mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_5p25, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_100mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_150mA_3p0, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_150mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_150mA_3p7, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_150mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_150mA_5p25, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_150mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_200mA_3p0, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_200mA_3p0")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_200mA_3p7, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_200mA_3p7")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_200mA_5p25, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_200mA_5p25")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p0_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_100mA_3p0_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_3p7_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_100mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_100mA_5p25_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_100mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_150mA_3p0_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_150mA_3p0_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_150mA_3p7_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_150mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_150mA_5p25_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_150mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_200mA_3p0_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_200mA_3p0_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_200mA_3p7_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_200mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PWM_Eff_200mA_5p25_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "PWM_Eff_200mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_0mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_0mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_0mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_0mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_0mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_0mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_0mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_QCurrent_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_0mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_Qcurrent_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_0mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_Qcurrent_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_10mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_10mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_10mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_10mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_10mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_10mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_10mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_10mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_10mA_3p0, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_10mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_10mA_3p7, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_10mA_5p25, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_30mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_30mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_30mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_30mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_30mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_30mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_30mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_30mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_30mA_3p0, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_30mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_30mA_3p7, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_30mA_5p25, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_50mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_50mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_50mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_50mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_LDO_V_50mA_5p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_50mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_50mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_50mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_50mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "PFM_VBAT_I_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_50mA_3p0, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_50mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_50mA_3p7, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_50mA_5p25, "PMU_VDDIOP", "PMU_ASR_" + "PFM_PMUVDDIO_I_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_10mA_3p0")     '[B8i]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_30mA_3p0")     '[B9i]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p0, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_50mA_3p0")     '[B10i]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p7, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_5p25, "ASR_VLX", "PMU_ASR_" + "PFM_Eff_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p0_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_10mA_3p0_INC_PMU_VDDIO")      '[B8ii]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p7_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_10mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_5p25_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_10mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p0_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_30mA_3p0_INC_PMU_VDDIO")      '[B9ii]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p7_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_30mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_5p25_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_30mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p0_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_50mA_3p0_INC_PMU_VDDIO")      '[B10ii]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p7_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_50mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_5p25_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_ASR_" + "PFM_Eff_50mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_0mA_3p0, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_0mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_0mA_3p7, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_0mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_0mA_5p25, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_0mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_0mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_QCurrent_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_0mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_Qcurrent_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_0mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_Qcurrent_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_1mA_3p0, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_1mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_1mA_3p7, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_1mA_5p25, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_1mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_VBAT_I_1mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_1mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_VBAT_I_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_1mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_VBAT_I_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_1mA_3p0, "PMU_VDDIOP", "PMU_ASR_" + "LPPFM_PMUVDDIO_I_1mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_1mA_3p7, "PMU_VDDIOP", "PMU_ASR_" + "LPPFM_PMUVDDIO_I_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_1mA_5p25, "PMU_VDDIOP", "PMU_ASR_" + "LPPFM_PMUVDDIO_I_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_20mA_3p0, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_20mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_20mA_3p7, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_20mA_5p25, "ASR_VLX", "PMU_ASR_" + "LPPFM_LDO_V_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_20mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_VBAT_I_20mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_20mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_VBAT_I_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_20mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_ASR_" + "LPPFM_VBAT_I_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_20mA_3p0, "PMU_VDDIOP", "PMU_ASR_" + "LPPFM_PMUVDDIO_I_20mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_20mA_3p7, "PMU_VDDIOP", "PMU_ASR_" + "LPPFM_PMUVDDIO_I_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_20mA_5p25, "PMU_VDDIOP", "PMU_ASR_" + "LPPFM_PMUVDDIO_I_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p0, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_1mA_3p0")       ' [B13i]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p7, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_5p25, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p0, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_20mA_3p0")      '[B14i]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p7, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_5p25, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p0, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_50mA_3p0")      '[B15i]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p7, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_5p25, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p0_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_1mA_3p0_INC_PMU_VDDIO")     '[B13ii]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p7_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_1mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_5p25_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_1mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p0_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_20mA_3p0_INC_PMU_VDDIO")   '[B14ii]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p7_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_20mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_5p25_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_20mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p0_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_50mA_3p0_INC_PMU_VDDIO")   '[B15ii]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p7_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_50mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_5p25_INC_PMUVDDIO, "ASR_VLX", "PMU_ASR_" + "LPPFM_Eff_50mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_0mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_0mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_0mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_0mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_0mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_0mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_0mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_QCurrent_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_0mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_Qcurrent_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_0mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_Qcurrent_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_10mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_10mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_10mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_10mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_10mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_10mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_10mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_10mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_10mA_3p0, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_10mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_10mA_3p7, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_10mA_5p25, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_30mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_30mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_30mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_30mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_30mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_30mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_30mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_30mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_30mA_3p0, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_30mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_30mA_3p7, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_30mA_5p25, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_50mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_50mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_50mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDLDO_V_50mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_LDO_V_50mA_5p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_50mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_50mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_50mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_VDDBAT_I_50mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "PFM_VBAT_I_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_50mA_3p0, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_50mA_3p0")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_50mA_3p7, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_PMUVDDIOA_I_50mA_5p25, "PMU_VDDIOP", "PMU_CSR_" + "PFM_PMUVDDIO_I_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_10mA_3p0")     '[C8i]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_10mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_10mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_30mA_3p0")     '[C9i]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_30mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_30mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p0, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_50mA_3p0")     '[C10i]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p7, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_5p25, "CSR_VLX", "PMU_CSR_" + "PFM_Eff_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p0_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_10mA_3p0_INC_PMU_VDDIO")      '[C8ii]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_3p7_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_10mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_10mA_5p25_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_10mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p0_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_30mA_3p0_INC_PMU_VDDIO")      '[C9ii]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_3p7_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_30mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_30mA_5p25_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_30mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p0_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_50mA_3p0_INC_PMU_VDDIO")      '[C10ii]
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_3p7_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_50mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PFM_Eff_50mA_5p25_INC_PMUVDDIO, "PMU_VDDIOP", "PMU_CSR_" + "PFM_Eff_50mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_0mA_3p0, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_0mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_0mA_3p7, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_0mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_0mA_5p25, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_0mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_0mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_QCurrent_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_0mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_Qcurrent_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_0mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_Qcurrent_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_1mA_3p0, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_1mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_1mA_3p7, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_1mA_5p25, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_1mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_VBAT_I_1mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_1mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_VBAT_I_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_1mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_VBAT_I_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_1mA_3p0, "PMU_VDDIOP", "PMU_CSR_" + "LPPFM_PMUVDDIO_I_1mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_1mA_3p7, "PMU_VDDIOP", "PMU_CSR_" + "LPPFM_PMUVDDIO_I_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_1mA_5p25, "PMU_VDDIOP", "PMU_CSR_" + "LPPFM_PMUVDDIO_I_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_20mA_3p0, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_20mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_20mA_3p7, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDLDO_V_20mA_5p25, "CSR_VLX", "PMU_CSR_" + "LPPFM_LDO_V_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_20mA_3p0, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_VBAT_I_20mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_20mA_3p7, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_VBAT_I_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_VDDBAT_I_20mA_5p25, "ET_LINREG_VDD_V5P0", "PMU_CSR_" + "LPPFM_VBAT_I_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_20mA_3p0, "PMU_VDDIOP", "PMU_CSR_" + "LPPFM_PMUVDDIO_I_20mA_3p0")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_20mA_3p7, "PMU_VDDIOP", "PMU_CSR_" + "LPPFM_PMUVDDIO_I_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_PMUVDDIOA_I_20mA_5p25, "PMU_VDDIOP", "PMU_CSR_" + "LPPFM_PMUVDDIO_I_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p0, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_1mA_3p0")       ' [C13i]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p7, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_1mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_5p25, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_1mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p0, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_20mA_3p0")      '[C14i]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p7, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_20mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_5p25, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_20mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p0, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_50mA_3p0")      '[C15i]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p7, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_50mA_3p7")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_5p25, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_50mA_5p25")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p0_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_1mA_3p0_INC_PMU_VDDIO")     '[C13ii]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_3p7_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_1mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_1mA_5p25_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_1mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p0_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_20mA_3p0_INC_PMU_VDDIO")   '[C14ii]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_3p7_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_20mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_20mA_5p25_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_20mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p0_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_50mA_3p0_INC_PMU_VDDIO")   '[C15ii]
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_3p7_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_50mA_3p7_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(LPPFM_Eff_50mA_5p25_INC_PMUVDDIO, "CSR_VLX", "PMU_CSR_" + "LPPFM_Eff_50mA_5p25_INC_PMU_VDDIO")
+
+		    Call LimitsTool.TestLimit(PS_LDO_VDD_1P22_5mA_3p7V, "ASR_VLX", "PMU_" + "PS_LDO_VDD_1P22_5mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_1P2_SW_5mA_3p7V, "VDDOUT_1P2_SW", "PMU_" + "PS_VDDOUT_1P2_SW_5mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_LDO_VDD_1P22_5mA_3p7V.Subtract(PS_VDDOUT_1P2_SW_5mA_3p7V).Divide(5 * mA).Abs, "PS_VDDOUT_1P2_SW", "PMU_" + "PS_VDDOUT_1P2_SW_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS_PMU_VDDIO_60mA_3p7V, "PMU_VDDIOP", "PMU_" + "PS_PMU_VDDIO_60mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_VDDIO_60mA_3p7V, "VDDOUT_VDDIO", "PMU_" + "PS_VDDOUT_VDDIO_60mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_PMU_VDDIO_60mA_3p7V.Subtract(PS_VDDOUT_VDDIO_60mA_3p7V).Divide(60 * mA).Abs, "PS_PMU_VDDIO", "PMU_" + "PS_VDDOUT_VDDIO_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS_PMU_VDDIO_20mA_3p7V, "PMU_VDDIOP", "PMU_" + "PS_PMU_VDDIO_20mA_3p7V_SW1")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_1P8_SW1_20mA_2V, "VDDOUT_1P8_SW1", "PMU_" + "PS_VDDOUT_1P8_SW1_20mA_2V")
+
+		    Call LimitsTool.TestLimit(PS_PMU_VDDIO_20mA_3p7V.Subtract(PS_VDDOUT_1P8_SW1_20mA_2V).Divide(20 * mA).Abs, "PS_PMU_VDDIO", "PMU_" + "PS_VDDOUT_1P8_SW1_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS_PMU_VDDIO_1mA_3p7V, "PMU_VDDIOP", "PMU_" + "PS_PMU_VDDIO_1mA_3p7V_SW2")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_1P8_SW2_1mA_2V, "VDDOUT_1P8_SW2", "PMU_" + "PS_VDDOUT_1P8_SW2_1mA_2V")
+
+		    Call LimitsTool.TestLimit(PS_PMU_VDDIO_1mA_3p7V.Subtract(PS_VDDOUT_1P8_SW2_1mA_2V).Divide(1 * mA).Abs, "PS_PMU_VDDIO", "PMU_" + "PS_VDDOUT_1P8_SW2_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BTLDO3P3_100mA_3p7V, "VDDOUT_BT3P3", "PMU_" + "PS_VDDOUT_BTLDO3P3_100mA_3p7V_SW1")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BT3P3_SW1_100mA_3p7V, "VDDOUT_BT3P3_SW1", "PMU_" + "PS_VDDOUT_BT3P3_SW1_100mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BTLDO3P3_100mA_3p7V.Subtract(PS_VDDOUT_BT3P3_SW1_100mA_3p7V).Divide(100 * mA).Abs, "PS_VDDOUT_BTLDO3P3_100mA_3p7V", "PMU_" + "PS_VDDOUT_BT3P3_SW1_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BTLDO3P3_20mA_3p7V, "VDDOUT_BT3P3", "PMU_" + "PS_VDDOUT_BTLDO3P3_20mA_3p7V_SW2")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BT3P3_SW2_20mA_3p7V, "VDDOUT_1P2_SW", "PMU_" + "PS_VDDOUT_BT3P3_SW2_20mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BTLDO3P3_20mA_3p7V.Subtract(PS_VDDOUT_BT3P3_SW2_20mA_3p7V).Divide(100 * mA).Abs, "PS_VDDOUT_BTLDO3P3_20mA_3p7V", "PMU_" + "PS_VDDOUT_BT3P3_SW2_Bypass_RON")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BTLDO3P3_20mA_3p7V, "VDDOUT_BT3P3", "PMU_" + "PS_VDDOUT_BTLDO3P3_20mA_3p7V_SW3")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BT3P3_SW3_20mA_3p7V, "VDDOUT_BT3P3_SW1", "PMU_" + "PS_VDDOUT_BT3P3_SW3_20mA_3p7V")
+
+		    Call LimitsTool.TestLimit(PS_VDDOUT_BTLDO3P3_20mA_3p7V.Subtract(PS_VDDOUT_BT3P3_SW3_20mA_3p7V).Divide(20 * mA).Abs, "PS_VDDOUT_BTLDO3P3_20mA_3p7V", "PMU_" + "PS_VDDOUT_BT3P3_SW3_Bypass_RON")
+

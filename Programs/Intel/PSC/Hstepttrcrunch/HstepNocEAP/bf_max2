@@ -1,0 +1,921 @@
+DBG>exc ex c user iF_PSC_eawp  p
+-w- globaltool [UFG_EAP_display_fail_count] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_display_fail_pins] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_display_mode] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_execute_N_patterns] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_execute_N_patterns_fail] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_execute_N_patterns_intm] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_execute_N_patterns_pass] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_log_to_screen] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_msec_pause] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_next_exec_control] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_ol_ftest_name] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_ol_levels_block_name] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_ol_pattern_list_name] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_ol_timing_block_name] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_param_config_enable] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_param_config_file] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_perpat_pd] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_perpoint_pd] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_power_down_levels] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_repeat_ftests] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_repeat_segments] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_repeat_sequences] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_script_enable] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_script_file] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_script_pret_enable] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_script_pret_file] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_script_post_enable] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_script_post_file] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_segment_name] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_summary_pats_only] should be added to this test program.
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-w- globaltool [UFG_EAP_vfshmoo_enable] should be added to this test program.
+-w- file (/tmp/out.txt) already exists...
+-w- testing new file name (/tmp/out.txt.1)...
+-w- file (/tmp/out.txt.1) already exists...
+-w- testing new file name (/tmp/out.txt.2)...
+-w- file (/tmp/out.txt.2) already exists...
+-w- testing new file name (/tmp/out.txt.3)...
+-w- file (/tmp/out.txt.3) already exists...
+-w- testing new file name (/tmp/out.txt.4)...
+-w- file (/tmp/out.txt.4) already exists...
+-w- testing new file name (/tmp/out.txt.5)...
+-w- file (/tmp/out.txt.5) already exists...
+-w- testing new file name (/tmp/out.txt.6)...
+-w- file (/tmp/out.txt.6) already exists...
+-w- testing new file name (/tmp/out.txt.7)...
+-w- file (/tmp/out.txt.7) already exists...
+-w- testing new file name (/tmp/out.txt.8)...
+-w- file (/tmp/out.txt.8) already exists...
+-w- testing new file name (/tmp/out.txt.9)...
+-w- file (/tmp/out.txt.9) already exists...
+-w- testing new file name (/tmp/out.txt.10)...
+-w- file (/tmp/out.txt.10) already exists...
+-w- testing new file name (/tmp/out.txt.11)...
+-i- eap_initialize_variables(): output file path (/tmp/out.txt.11) ...
+
+
+-------------------------------------------------------------------------------
+-i- eap() function revision: $Id: iF_PSC_eap.c9k,v 1.1.1.1 2004/10/18 05:38:33 rbmaguad Exp $
+-i- current VECTORS_DIR elements:
+-i- element [ 1] : ../local_vector_dir
+-i- element [ 2] : ../vector_dir/pat/hand
+-i- element [ 3] : ../vector_dir/pat/common_files
+-i- element [ 4] : ../vector_dir/pat/vep/vrevD5/f2/hvm/indv_bin
+-i- element [ 5] : ../vector_dir/pat/vep/vrevD5/f2/hvm/concat
+-i- element [ 6] : ../vector_dir/pat/vep/vrevD5/f2/ac/concat
+-i- element [ 7] : ../vector_dir/pat/vep/vrevD5/f2/ac/indv_bin
+-i- element [ 8] : ../vector_dir/pat/vep/vrevD5/f2/bd/concat
+-i- element [ 9] : ../vector_dir/pat/vep/vrevD5/f2/bd/indv_bin
+-i- element [10] : ../vector_dir/pat/vep/vrevD5/mm/hvm/indv_bin
+-i- element [11] : ../vector_dir/pat/special/f2/bin
+-i- element [12] : ../vector_dir/pat/special/mm/bin
+-i- current ftest     = bf_014444_maxmax_863800_0104
+-i- current levels    = bfloose_Rtten_cat04
+-i- current timings   = nrz_1_cat01
+-i- current plb       = ft_maxvcc_014444_list
+-i- common pattern    = psc_com_1M_vrevPSMIchain_014444_f2_psm_hvm_0
+-i- pre-amble plb     = none loaded at this test or pattern level
+-i- between-amble plb = none loaded at this test or pattern level
+-i- post-amble plb    = none loaded at this test or pattern level
+-i- ambles in use     = 0, none loaded at this test or pattern level
+Error: SLBMSGMessage::contextPushRaw(): rtli_program.c  rtliProgramFindBlock Line: 2958  msgKey = "rtliUnknownBlock",
+  This message pushed prior to printing previous message.
+  Remedy: always call print before pushing another message
+  to flush the previous message.
+  The previous msgKey = "rtliUnknownBlock"
+-i- current time      = 2005:08:22:10:46:36
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+P     1:1:0  28014160 28044462    30302    16418   15151    -1      0    968727     0 c-  p--i d1598099X0009636_014444_PH02dj_fbxxx_ux12m3x0xxxxxxxxx_psmi_wbugs_u202_4
+P     2:1:0    140384   143006     2622     3655    1311    -1      0    833373     0 c-  pb-i d1513667P2245058_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_drcam_mis_ld3_ft_t1
+P     3:1:0    143008   145374     2366     3527    1183    -1      0    833161     0 c-  pb-i d1513944P2245088_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_drcam_mis_st3_ft_t0
+P     4:1:0    147744   149982     2238     3463    1119    -1      0    828473     0 c-  pb-i d1510454P2245148_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_wcb
+P     5:1:0    155008   159358     4350     4519    2175    -1      0    830350     0 c-  pb-i d1513167P2245258_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_pmh_ft_rsrv_bit_modec_4_9
+P     6:1:0    168896   173406     4510     4599    2255    -1      0    830466     0 c-  pb-i d1511882P2245348_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_pmh_ft_rsrv_bit_modec_22_27
+P     7:1:0    173408   175838     2430     3559    1215    -1      0    828692     0 c-  pb-i d1511149P2245388_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ldhitld_bits15_6
+P     8:1:0    175840   179006     3166     3927    1583    -1      0    829289     0 c-  pb-i d1512410P2245398_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_exc_pf_prot_ss_prot
+P     9:1:0    437184   445246     8062     6375    4031    -1      0    831528     0 c-  pb-i d1513133P2252878_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_tag_snphitst_gotos_direct
+P    10:1:0    454176   460094     5918     5303    2959    -1      0    830394     0 c-  pb-i d1512613P2253138_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_tbt_non_branch
+P    11:1:0    470144   475614     5470     5079    2735    -1      0    831431     0 c-  pb-i d1511770P2254138_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mov_0f20_isa_ds_p_01
+P    12:1:0    527136   538686    11550     8119    5775    -1      0    833418     0 c-  pb-i d1512133P2259438_014444_PH07df_ftxxx_us1pm1x0xxxhxxxxx_gen8wmt_j
+P    13:1:0    541696   551678     9982     7335    4991    -1      0    832757     0 c-  pb-i d1514334P2259688_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_speedpath_pipex3
+P    14:1:0    587808   589982     2174     3431    1087    -1      0    828451     0 c-  pb-i d1510856P2260428_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_fp_phE_mt_rand1
+P    15:1:0    742112   776094    33982    19335   16991    -1      0    844386     0 c-  pb-i d1515143P2324998_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_flsf1
+P    16:1:0    815936   845086    29150    16919   14575    -1      0    845624     0 c-  pb-i d1518416P2325028_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__b4k_acfg_orp_000
+P    17:1:0    866816   883870    17054    10871    8527    -1      0    837228     0 c-  pb-i d1514699P2325258_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__frits_c2m_rw_crs_orp_001
+P    18:1:0    917664   918910     1246     2967     623    -1      0    828006     0 c-  pb-i d1519495P2326068_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_t3thr_nb2214_fldln2
+P    19:1:0   1067136  1071390     4254     4471    2127    -1      0    830113     0 c-  pb-i d1513923P2329388_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fspimux3
+P    20:1:0   1168704  1172414     3710     4199    1855    -1      0    830000     0 c-  pb-i d1512762P2396084_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_crevdetd_multevents_T0_4
+P    21:1:0   1193088  1212062    18974    11831    9487    -1      0    840892     0 c-  pb-i d1513240P2396184_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_irr_isr_even
+P    22:1:0   1278368  1298942    20574    12631   10287    -1      0    838947     0 c-  pb-i d1514242P2437016_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_isroutput1
+P    23:1:0   1298944  1319422    20478    12583   10239    -1      0    838916     0 c-  pb-i d1514133P2437046_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_isroutput4a
+P    24:1:0   1340032  1360702    20670    12679   10335    -1      0    838970     0 c-  pb-i d1512652P2437586_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_isroutput2
+P    25:1:0   1360704  1381214    20510    12599   10255    -1      0    838913     0 c-  pb-i d1514255P2437596_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_isroutput7
+P    26:1:0   1421024  1440254    19230    11959    9615    -1      0    838143     0 c-  pb-i d1517857P2437706_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tmrlinearchainoutput7a
+P    27:1:0   1469152  1493694    24542    14615   12271    -1      0    841156     0 c-  pb-i d1519388P2437766_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tmrchaintestoutput6
+P    28:1:0   1493696  1518526    24830    14759   12415    -1      0    841343     0 c-  pb-i d1517091P2437776_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tmrchaintestoutput6a
+P    29:1:0   1542176  1578526    36350    20519   18175    -1      0    849537     0 c-  pb-i d1515549P2442758_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_fspimux4odd
+P    30:1:0   1608256  1621214    12958     8823    6479    -1      0    835876     0 c-  pb-i d1511896P2446880_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t1__pagetable_uc_orp_001
+P    31:1:0   1784768  1788542     3774     4231    1887    -1      0    829644     0 c-  pb-i d1512808P2448630_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_modpagd_page_split_mt_4
+P    32:1:0   1838016  1844990     6974     5831    3487    -1      0    838876     0 c-  pb-i d1518646P2449080_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_exec_ft_t0__fritsfpu_gen_ext_orp_001
+P    33:1:0   1916832  1918494     1662     3175     831    -1      0    828384     0 c-  pb-i d1511450P2214978_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_bf_M4_lddqu_bp
+P    34:1:0   1953216  1960446     7230     5959    3615    -1      0    842848     0 c-  pb-i d1519416P2218838_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mtrr_modify
+P    35:1:0   1999008  2001182     2174     3431    1087    -1      0    828841     0 c-  pb-i d1519509P2401436_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_emon_mt_pmi
+P    36:1:0   2014496  2016414     1918     3303     959    -1      0    828303     0 c-  pb-i d1512298P2415932_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_bsq_alloc_active
+P    37:1:0   2055968  2057214     1246     2967     623    -1      0    828377     0 c-  pb-i d1512992P2422612_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fsb_creg_set2_t0
+P    38:1:0   2074080  2116382    42302    23495   21151    -1      0    848667     0 c-  pb-i d1514275P2429384_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_array_test_mt_233455398
+P    39:1:0   2148672  2171678    23006    13847   11503    -1      0    839126     0 c-  pb-i d1517897P2429534_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_strings_mt_097824428
+P    40:1:0   2235488  2241502     6014     5351    3007    -1      0    831667     0 c-  pb-i d1512583P2429974_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    41:1:0   2241504  2246526     5022     4855    2511    -1      0    830354     0 c-  pb-i d1511510P2429984_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    42:1:0   2347616  2352414     4798     4743    2399    -1      0    830591     0 c-  pb-i d1512350P2430284_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    43:1:0   2546176  2552318     6142     5415    3071    -1      0    832524     0 c-  pb-i d1511185P2430814_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    44:1:0   2788288  2789854     1566     3127     783    -1      0    828595     0 c-  pb-i d1513032P2433976_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ms_fg_sysenter
+P    45:1:0   3095520  3112542    17022    10855    8511    -1      0    836223     0 c-  pb-i d1513845P2445110_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dpu_ul1_rand_store_data_1
+P    46:1:0   3264768  3281598    16830    10759    8415    -1      0    836116     0 c-  pb-i d1511956P2445240_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dpu_ul1_rand_store_data_14
+P    47:1:0   3372800  3380638     7838     6263    3919    -1      0    832391     0 c-  pb-i d1510988P2446400_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_riprel_loads_stores
+P    48:1:0   3439168  3472478    33310    18999   16655    -1      0    845116     0 c-  pb-i d1514965P2449810_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_ul1_same_set_test
+P    49:1:0   3510496  3535518    25022    14855   12511    -1      0    840893     0 c-  pb-i d1513023P2452690_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_strings_mt_439643779
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+P    50:1:0   3535520  3551102    15582    10135    7791    -1      0    835325     0 c-  pb-i d1513065P2452700_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_syscall_mt_812389931
+P    51:1:0   3609536  3642238    32702    18695   16351    -1      0    843743     0 c-  pb-i d1516909P2463724_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_farcall_mt_133855825
+P    52:1:0   3698560  3732894    34334    19511   17167    -1      0    844605     0 c-  pb-i d1513480P2463754_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_farcall_mt_984397015
+P    53:1:0   4073888  4092542    18654    11671    9327    -1      0    841109     0 c-  pb-i d1514510P2468134_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_pl1_rhine_rand_000
+P    54:1:0   4178496  4198526    20030    12359   10015    -1      0    842161     0 c-  pb-i d1517651P2468224_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_rhine_rand_008
+P    55:1:0   4625536  4637886    12350     8519    6175    -1      0    833994     0 c-  pb-i d1513274P2474208_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mite_mt_call_ret_smc
+P    56:1:0   4688832  4695710     6878     5783    3439    -1      0    832202     0 c-  pb-i d1510942P2474738_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_page_memory_type
+P    57:1:0   4784672  4804606    19934    12311    9967    -1      0    841544     0 c-  pb-i d1514981P2478598_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mob_ft_pl0_rhine_rand_010
+P    58:1:0   5178752  5197886    19134    11911    9567    -1      0    840900     0 c-  pb-i d1518701P2479368_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_pl0_rhine_rand_013
+P    59:1:0   5334976  5355838    20862    12775   10431    -1      0    842233     0 c-  pb-i d1519005P2479478_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ft_pl1_rhine_rand_014
+P    60:1:0   5884960  5932734    47774    26231   23887    -1      0    852797     0 c-  pb-i d1519743P2481718_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_td_prot_mode_basic_mt
+P    61:1:0   5932736  5936478     3742     4215    1871    -1      0    831887     0 c-  pb-i d1514022P2482132_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_fsb_emon_bnr_stall_t1
+P    62:1:0   6239200  6242622     3422     4055    1711    -1      0    829264     0 c-  pb-i d1512384P2494798_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam1_hit_06_mt0
+P    63:1:0   6338400  6384510    46110    25399   23055    -1      0    850907     0 c-  pb-i d1519644P2496118_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_satagarym_la_cam_tagl_0
+P    64:1:0   6384512  6432606    48094    26391   24047    -1      0    852560     0 c-  pb-i d1518200P2496128_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_satagarym_la_cam_tagl_1
+P    65:1:0   8551264  8581662    30398    17543   15199    -1      0    843524     0 c-  pb-i d1518873P2243328_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ag_toggle
+P    66:1:0   8991328  8996222     4894     4791    2447    -1      0    829941     0 c-  pb-i d1510925P2244748_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_mmx5
+P    67:1:0   9001088  9006046     4958     4823    2479    -1      0    829976     0 c-  pb-i d1513426P2244778_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_mmx7
+P    68:1:0   9554624  9561214     6590     5639    3295    -1      0    830810     0 c-  pb-i d1512050P2246038_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_combM2_rand_KM_rm1_E_0
+P    69:1:0  11815712 11817630     1918     3303     959    -1      0    828346     0 c-  pb-i d1512292P2259638_014444_PH07df_ftxxx_us1pm1x0xxxhxxxxx_random_jumps_nop
+P    70:1:0  11819264 11821214     1950     3319     975    -1      0    828363     0 c-  pb-i d1512245P2259658_014444_PH07df_ftxxx_us1pm1x0xxxhxxxxx_random_jumps_nop
+P    71:1:0  12654656 12669822    15166     9927    7583    -1      0    836088     0 c-  pb-i d1511703P2324878_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__frits_c2m_split_suw_emons_
+P    72:1:0  13061152 13077726    16574    10631    8287    -1      0    836088     0 c-  pb-i d1513277P2387948_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_quick
+P    73:1:0  13251872 13264830    12958     8823    6479    -1      0    838513     0 c-  pb-i d1513058P2437656_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_tmr_clear_b
+P    74:1:0  13367584 13402910    35326    20007   17663    -1      0    848760     0 c-  pb-i d1519357P2442748_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_fspimux5
+P    75:1:0  13779744 13782270     2526     3607    1263    -1      0    828849     0 c-  pb-i d1512906P2216568_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_idiv_f7_7_reg_isa_fn_long_1
+P    76:1:0  13782272 13802558    20286    12487   10143    -1      0    837790     0 c-  pb-i d1513692P2217478_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_addressing_register_combinations_64bi
+P    77:1:0  13802560 13811486     8926     6807    4463    -1      0    833305     0 c-  pb-i d1512937P2218558_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_idiv_f6_7_mem_isa_ex_long_2
+P    78:1:0  13811488 13831774    20286    12487   10143    -1      0    837793     0 c-  pb-i d1513040P2218628_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_addressing_register_combinations_64bi
+P    79:1:0   1152736  1167134    14398     9543    7199    -1      0    836019     0 c-  pb-i d1513544P2345800_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_wmt_ft_dac_36_bit
+P    80:1:0    207424   208606     1182     2935     591    -1      0    827930     0 c-  pb-i d1512477P2245738_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_snoop
+P    81:1:0    519680   522206     2526     3607    1263    -1      0    828614     0 c-  pb-i d1512457P2259148_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_rrrr_lb_sab_stalls_mt
+P    82:1:0    576032   584926     8894     6791    4447    -1      0    832208     0 c-  pb-i d1513742P2260358_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_basic_pm_movs
+P    83:1:0    970848   974558     3710     4199    1855    -1      0    831079     0 c-  pb-i d1510897P2326608_014444_PH07df_fbxxx_us1xm1x0xxxhxxxxx_t3thr_DebugReg
+P    84:1:0   1103392  1118014    14622     9655    7311    -1      0    835770     0 c-  pb-i d1518509P2329738_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__frits_b4m_pwe_datasize_orp
+P    85:1:0   1627712  1628894     1182     2935     591    -1      0    828020     0 c-  pb-i d1512889P2447250_014444_PH07df_fbxxx_us1xm1x0xxxhxxxxx_func_dataerr
+P    86:1:0   2139616  2146686     7070     5879    3535    -1      0    831048     0 c-  pb-i d1511106P2429494_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_sv_st0_731660486
+P    87:1:0   2460704  2466046     5342     5015    2671    -1      0    830941     0 c-  pb-i d1510867P2430584_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    88:1:0   2579136  2585790     6654     5671    3327    -1      0    832807     0 c-  pb-i d1511292P2430904_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    89:1:0   2728352  2733918     5566     5127    2783    -1      0    831424     0 c-  pb-i d1511589P2431264_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    90:1:0   2739552  2744990     5438     5063    2719    -1      0    831427     0 c-  pb-i d1511598P2431284_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P    91:1:0   3088960  3095518     6558     5623    3279    -1      0    831093     0 c-  pb-i d1510716P2445100_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_bsu_l1l2evicts_snp_pwrdn
+P    92:1:0   3248128  3264766    16638    10663    8319    -1      0    836022     0 c-  pb-i d1514788P2445230_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dpu_ul1_rand_store_data_13
+P    93:1:0   3828608  3832094     3486     4087    1743    -1      0    829319     0 c-  pb-i d1510578P2467274_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_btb_rrsd_calls_rets_logic_1_tc_rrsd_d
+P    94:1:0   3867712  3891838    24126    14407   12063    -1      0    845240     0 c-  pb-i d1513987P2467994_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ft_rhine_rand_000
+P    95:1:0   4198528  4222718    24190    14439   12095    -1      0    845267     0 c-  pb-i d1513875P2468234_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_ft_pl1_rhine_rand_000
+P    96:1:0   4637888  4651390    13502     9095    6751    -1      0    834617     0 c-  pb-i d1515474P2474228_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mite_mt_call_ret_smc
+P    97:1:0   5238528  5257470    18942    11815    9471    -1      0    840789     0 c-  pb-i d1513112P2479408_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_pl1_rhine_rand_017
+P    98:1:0   5355840  5374974    19134    11911    9567    -1      0    840900     0 c-  pb-i d1517543P2479488_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ft_pl1_rhine_rand_015
+P    99:1:0   5612800  5619902     7102     5895    3551    -1      0    841227     0 c-  pb-i d1513266P2480018_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_saat_emon_basic_05
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+P   100:1:0   5708160  5755102    46942    25815   23471    -1      0    851371     0 c-  pb-i d1517271P2480718_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_satagarym_la_cam_highbits
+P   101:1:0   6218528  6221950     3422     4055    1711    -1      0    829276     0 c-  pb-i d1513010P2494498_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam1_hit_03_mt0
+P   102:1:0   6953952  6957886     3934     4311    1967    -1      0    831402     0 c-  pb-i d1513322P2501828_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_10_mt0
+P   103:1:0   7026656  7030846     4190     4439    2095    -1      0    831434     0 c-  pb-i d1513929P2502438_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_19_mt0
+P   104:1:0   7148800  7153374     4574     4631    2287    -1      0    831453     0 c-  pb-i d1511649P2503008_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_33_mt0
+P   105:1:0   9610656  9619806     9150     6919    4575    -1      0    832119     0 c-  pb-i d1510969P2246278_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_combM2_rand_KM_rm1_E_1
+P   106:1:0   9662144  9671230     9086     6887    4543    -1      0    832103     0 c-  pb-i d1510848P2246438_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_combM2_rand_KM_rm3_E_10
+P   107:1:0   9775136  9783742     8606     6647    4303    -1      0    831827     0 c-  pb-i d1511518P2246648_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_combM2_rand_KM_rm3_E_8
+P   108:1:0  10617632 10624350     6718     5703    3359    -1      0    830707     0 c-  pb-i d1512428P2249218_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_btc_0fbb_modrm_10_r
+P   109:1:0  10743808 10750558     6750     5719    3375    -1      0    830694     0 c-  pb-i d1510525P2249758_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_comb_mmx_dfp_wox
+P   110:1:0  12420544 12426046     5502     5095    2751    -1      0    830365     0 c-  pb-i d1513160P2262678_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_lslcheck_glob_cpl2_dpl3_rpl1
+P   111:1:0  12861216 12863934     2718     3703    1359    -1      0    828697     0 c-  pb-i d1510417P2326228_014444_PH07df_fbxxx_us1xm1x0xxxhxxxxx_t3thr_rsqrtps
+P   112:1:0  12946528 12959486    12958     8823    6479    -1      0    835877     0 c-  pb-i d1511547P2338346_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__pagetable_uc_orp_000
+P   113:1:0  13157280 13177790    20510    12599   10255    -1      0    838905     0 c-  pb-i d1514286P2437036_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_isroutput2a
+P   114:1:0    123520   129342     5822     5255    2911    -1      0    836775     0 c-  pb-i d1514129P2244938_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_drcam_hit_st3_ft_t0
+P   115:1:0    397344   400734     3390     4039    1695    -1      0    829191     0 c-  pb-i d1510676P2252708_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_sthitld_bits15_6
+P   116:1:0    429120   437182     8062     6375    4031    -1      0    831528     0 c-  pb-i d1512452P2252858_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_tag_snphitst_direct
+P   117:1:0    452576   454174     1598     3143     799    -1      0    828666     0 c-  pb-i d1511043P2252998_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_pmh_ft_pdecachehit
+P   118:1:0   1876512  1882462     5950     5319    2975    -1      0    831530     0 c-  pb-i d1512728P2211598_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_bp_8byte_LE
+P   119:1:0   2373792  2379838     6046     5367    3023    -1      0    832170     0 c-  pb-i d1513299P2430374_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P   120:1:0   2744992  2751518     6526     5607    3263    -1      0    833000     0 c-  pb-i d1514184P2431304_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P   121:1:0   2769888  2771038     1150     2919     575    -1      0    827975     0 c-  pb-i d1511193P2433766_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mite_creg_patch3_15
+P   122:1:0   2870816  2876190     5374     5031    2687    -1      0    830146     0 c-  pb-i d1511077P2434096_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_moslarym_smc_pa_cam_bits_0_04
+P   123:1:0   4222720  4241374    18654    11671    9327    -1      0    841109     0 c-  pb-i d1516801P2468244_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_ft_pl2_rhine_rand_001
+P   124:1:0   4698144  4710430    12286     8487    6143    -1      0    835315     0 c-  pb-i d1514118P2474888_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_page_tlb_flushing
+P   125:1:0   5548864  5555966     7102     5895    3551    -1      0    841227     0 c-  pb-i d1518941P2479908_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_mob_emon_basic_11
+P   126:1:0   6735232  6738110     2878     3783    1439    -1      0    830291     0 c-  pb-i d1510727P2498248_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_datagd_snp_strb_bits13_16
+P   127:1:0   6969696  6973662     3966     4327    1983    -1      0    831387     0 c-  pb-i d1512679P2501958_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_12_mt0
+P   128:1:0   8095040  8141086    46046    25367   23023    -1      0    852181     0 c-  pb-i d1516700P2513318_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tc_flush_all_ways_mt_7
+P   129:1:0   9343168  9372478    29310    16999   14655    -1      0    846632     0 c-  pb-i d1514588P2245248_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fa_rnd_renorm_all_uops
+P   130:1:0  10329920 10340446    10526     7607    5263    -1      0    833006     0 c-  pb-i d1512363P2248598_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pcmpgtd_660F66_real_opcov
+P   131:1:0  11404064 11408190     4126     4407    2063    -1      0    830060     0 c-  pb-i d1510671P2254998_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pageC4K_prot_pf_cpl1_cpl2_cr0WP_pdeSR
+P   132:1:0  12403744 12409342     5598     5143    2799    -1      0    830435     0 c-  pb-i d1512265P2262628_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_verrcheck_glob_cpl2_dpl3_rpl1
+P   133:1:0  12549152 12563774    14622     9655    7311    -1      0    835767     0 c-  pb-i d1511724P2324648_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__b4m_ad_emon_orp_002
+P   134:1:0  14010784 14022718    11934     8311    5967    -1      0    833772     0 c-  pb-i d1511308P2571102_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_CT_asize32_FS_agu_carry_specific_2_12
+P   135:1:0     88064    89342     1278     2983     639    -1      0    827998     0 c-  pb-i d1511826P2244548_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ul1_load_l0
+P   136:1:0     99328   100638     1310     2999     655    -1      0    828382     0 c-  pb-i d1511374P2244718_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_pmh_fixed_mtrr_miss_uc_4
+P   137:1:0    663488   665054     1566     3127     783    -1      0    828141     0 c-  pb-i d1511204P2324388_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_walk_addr_bit_by_bit
+P   138:1:0    677184   678558     1374     3031     687    -1      0    828112     0 c-  pb-i d1512231P2324418_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_bsq_status_dmp
+P   139:1:0   1259776  1274846    15070     9879    7535    -1      0    835805     0 c-  pb-i d1512739P2435026_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_modpagd_uc_uswc_FIX4K_D000_1
+P   140:1:0   1922144  1923742     1598     3143     799    -1      0    828378     0 c-  pb-i d1511511P2215428_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_seg_MODE_tran_prot_64_call
+P   141:1:0   1983232  1984414     1182     2935     591    -1      0    828134     0 c-  pb-i d1512021P2379840_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_creg_read_read_read_selfcheck
+P   142:1:0   3359232  3360350     1118     2903     559    -1      0    827941     0 c-  pb-i d1511851P2445500_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mite_iscreg_match0
+P   143:1:0   4510880  4512702     1822     3255     911    -1      0    829242     0 c-  pb-i d1512416P2470926_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ms_patch_match_creg
+P   144:1:0   4552608  4555358     2750     3719    1375    -1      0    828931     0 c-  pb-i d1512193P2471588_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_btb_1callret_0f0f_logic
+P   145:1:0   4775456  4777118     1662     3175     831    -1      0    828527     0 c-  pb-i d1513017P2477298_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fg_msimmd_star_cs_ss_uop1
+P   146:1:0   5476640  5477822     1182     2935     591    -1      0    828015     0 c-  pb-i d1519477P2479718_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ia32_cr_mc3_addr
+P   147:1:0   5534656  5541758     7102     5895    3551    -1      0    841227     0 c-  pb-i d1517403P2479878_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_mob_emon_basic_09
+P   148:1:0   5577280  5584382     7102     5895    3551    -1      0    841227     0 c-  pb-i d1514397P2479958_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_mob_emon_basic_15
+P   149:1:0   5664064  5671166     7102     5895    3551    -1      0    841227     0 c-  pb-i d1516897P2480118_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_saat_emon_basic_13
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+P   150:1:0   6170912  6174334     3422     4055    1711    -1      0    831032     0 c-  pb-i d1512398P2490608_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_datagd_st_strb_bits25_28
+P   151:1:0   6313088  6316702     3614     4151    1807    -1      0    829421     0 c-  pb-i d1511907P2495388_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_hit_17_mt0
+P   152:1:0   6633440  6637278     3838     4263    1919    -1      0    829498     0 c-  pb-i d1511980P2496808_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_hit_35_mt0
+P   153:1:0   6710496  6713918     3422     4055    1711    -1      0    830427     0 c-  pb-i d1511496P2498168_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_datagd_snp_ldrb_bits13_16
+P   154:1:0   6772544  6774270     1726     3207     863    -1      0    828215     0 c-  pb-i d1510523P2501218_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_tc_all_ways
+P   155:1:0   6900480  6902398     1918     3303     959    -1      0    828426     0 c-  pb-i d1511650P2501388_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_sasegarym_flashcopy_fds_highbits_
+P   156:1:0   7259936  7261630     1694     3191     847    -1      0    828227     0 c-  pb-i d1512450P2505988_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_flashcopy_read_0_t0
+P   157:1:0   7317312  7344286    26974    15831   13487    -1      0    842225     0 c-  pb-i d1518810P2508828_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_tc_all_ways_sets128_191
+P   158:1:0   8213600  8225246    11646     8167    5823    -1      0    835303     0 c-  pb-i d1511520P2242528_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ifalu_add2
+P   159:1:0   8388704  8389982     1278     2983     639    -1      0    827997     0 c-  pb-i d1511960P2242878_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_t30188_pshufhw
+P   160:1:0   8427136  8429022     1886     3287     943    -1      0    828680     0 c-  pb-i d1511601P2242958_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_cr_0063
+P   161:1:0   8462048  8468414     6366     5527    3183    -1      0    831564     0 c-  pb-i d1510911P2243098_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_ifalu_travel14
+P   162:1:0   8470496  8471550     1054     2871     527    -1      0    827896     0 c-  pb-i d1511383P2243128_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_t3_0342
+P   163:1:0   8595776  8596894     1118     2903     559    -1      0    827892     0 c-  pb-i d1512042P2243408_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ldrbhit
+P   164:1:0   8694784  8696830     2046     3367    1023    -1      0    828549     0 c-  pb-i d1511837P2243928_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_t3thr_we33_shld
+P   165:1:0   8738560  8745310     6750     5719    3375    -1      0    830990     0 c-  pb-i d1510732P2244118_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_arith1
+P   166:1:0   8996224  9001086     4862     4775    2431    -1      0    829924     0 c-  pb-i d1512537P2244768_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_mmx6
+P   167:1:0   9110592  9121598    11006     7847    5503    -1      0    836037     0 c-  pb-i d1513534P2244998_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fxwxeu
+P   168:1:0   9593056  9595038     1982     3335     991    -1      0    828564     0 c-  pb-i d1511764P2246198_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pageC4K_nonlinear_np_pf_PDE_A_iD_assi
+P   169:1:0   9693056  9701630     8574     6631    4287    -1      0    831965     0 c-  pb-i d1511027P2246498_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_lds_c5_isa_ds_p_01
+P   170:1:0   9808352  9810238     1886     3287     943    -1      0    828290     0 c-  pb-i d1511475P2246718_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_isa_int_opcov_d2_d7_cs16_r
+P   171:1:0  10012192 10015166     2974     3831    1487    -1      0    828899     0 c-  pb-i d1512081P2247548_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_shl_sal_d2_110_opcov_prefix_dbit_1_p
+P   172:1:0  10086784 10099102    12318     8503    6159    -1      0    833498     0 c-  pb-i d1512395P2247918_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_or_09_modrm_10_opcov_sib_reg_011_dbit
+P   173:1:0  10225216 10226814     1598     3143     799    -1      0    828139     0 c-  pb-i d1511578P2248278_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_xor_80_modrm_01_110_p
+P   174:1:0  10237504 10247454     9950     7319    4975    -1      0    833302     0 c-  pb-i d1511137P2248398_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_xchg_lock_86_modrm_00_p
+P   175:1:0  10588288 10590078     1790     3239     895    -1      0    828458     0 c-  pb-i d1511458P2249198_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pageA_linear_np_pf_PDE_A_iD_PTE_A_ass
+P   176:1:0  11047936 11073310    25374    15031   12687    -1      0    841146     0 c-  pb-i d1514967P2252478_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pcmpgtw_660F65_prot_opcov
+P   177:1:0  11437408 11439870     2462     3575    1231    -1      0    828672     0 c-  pb-i d1511609P2255288_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_popa_popad_61_isa_ds_p_01
+P   178:1:0  11546368 11554974     8606     6647    4303    -1      0    831790     0 c-  pb-i d1512725P2256028_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_setne_nz_0f95_modrm_00_r
+P   179:1:0  11660608 11661886     1278     2983     639    -1      0    827956     0 c-  pb-i d1511435P2258208_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_isa_int_opcov_00_0e_cs16_r
+P   180:1:0  11896032 11897918     1886     3287     943    -1      0    828702     0 c-  pb-i d1512486P2260578_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_axxxdm_pddn_2
+P   181:1:0  12142944 12146046     3102     3895    1551    -1      0    829333     0 c-  pb-i d1512552P2261288_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_vms15cs0_iasm
+P   182:1:0  12365120 12367454     2334     3511    1167    -1      0    828906     0 c-  pb-i d1512159P2262358_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pxxnem
+P   183:1:0  12374112 12388510    14398     9543    7199    -1      0    836247     0 c-  pb-i d1511872P2262478_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_busytsscheck_loc_cpl2_dpl3_rpl3
+P   184:1:0  12513632 12524446    10814     7751    5407    -1      0    834234     0 c-  pb-i d1513540P2262968_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_availabletsscheck_loc_cpl2_dpl2_rpl1
+P   185:1:0  13662688 13667358     4670     4679    2335    -1      0    834141     0 c-  pb-i d1513134P2448740_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_exec_ft_t0__fritsfpu_sqrt_orp_001
+P   186:1:0    589984   595230     5246     4967    2623    -1      0    830846     0 c-  pb-i d1511568P2260438_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fast_strings_movs
+P   187:1:0   2687008  2693374     6366     5527    3183    -1      0    832252     0 c-  pb-i d1511052P2431184_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_lockrand_mt_toggle
+P   188:1:0   5276736  5294462    17726    11207    8863    -1      0    840077     0 c-  pb-i d1512905P2479438_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_pl2_rhine_rand_020
+P   189:1:0   5627008  5634110     7102     5895    3551    -1      0    841227     0 c-  pb-i d1515316P2480038_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_saat_emon_basic_07
+P   190:1:0   6260032  6263486     3454     4071    1727    -1      0    829282     0 c-  pb-i d1513055P2494928_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam1_hit_09_mt0
+P   191:1:0   6660320  6664190     3870     4279    1935    -1      0    829518     0 c-  pb-i d1512310P2496958_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam1_hit_38_mt0
+P   192:1:0   6993728  6997822     4094     4391    2047    -1      0    831410     0 c-  pb-i d1512837P2502178_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_15_mt0
+P   193:1:0   7010080  7014206     4126     4407    2063    -1      0    831413     0 c-  pb-i d1510953P2502358_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_17_mt0
+P   194:1:0   7112800  7117246     4446     4567    2223    -1      0    831442     0 c-  pb-i d1513661P2502848_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_sphit_29_mt0
+P   195:1:0   8745312  8752094     6782     5735    3391    -1      0    831014     0 c-  pb-i d1513229P2244128_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_arith2
+P   196:1:0   9434944  9443838     8894     6791    4447    -1      0    832707     0 c-  pb-i d1513208P2245508_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_test33
+P   197:1:0   9711552  9720414     8862     6775    4431    -1      0    831967     0 c-  pb-i d1512334P2246518_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_combM2_rand_KM_rm2_E_2
+P   198:1:0   9865184  9868862     3678     4183    1839    -1      0    829296     0 c-  pb-i d1510570P2246948_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_wni8
+P   199:1:0   9898528  9905022     6494     5591    3247    -1      0    830587     0 c-  pb-i d1511311P2247218_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_btc_0fbb_modrm_00_p
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+P   200:1:0  10042944 10046686     3742     4215    1871    -1      0    829232     0 c-  pb-i d1510974P2247778_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_rand_fp_int_br_mt
+P   201:1:0  10161952 10172382    10430     7559    5215    -1      0    833456     0 c-  pb-i d1514019P2248138_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_xadd_lock_0fc0_modrm_01_r
+P   202:1:0  10750560 10756702     6142     5415    3071    -1      0    830407     0 c-  pb-i d1513384P2249768_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_comb_fp_wox_sfp_wox
+P   203:1:0  11094368 11098878     4510     4599    2255    -1      0    829602     0 c-  pb-i d1513213P2252848_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_xadd_0fc0_modrm_01_p
+P   204:1:0  11609440 11611390     1950     3319     975    -1      0    828354     0 c-  pb-i d1512105P2256898_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fp_opcode_prefix_prot_mode
+P   205:1:0  11713856 11715806     1950     3319     975    -1      0    828293     0 c-  pb-i d1511567P2259008_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_st_fwd
+P   206:1:0  12852288 12853918     1630     3159     815    -1      0    828155     0 c-  pb-i d1512125P2325908_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_shl_sal_d3_modrm_00_100_p
+P   207:1:0  13032992 13058558    25566    15127   12783    -1      0    841259     0 c-  pb-i d1512989P2387570_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_addpd_660F58_prot_opcov
+P   208:1:0  13094144 13110590    16446    10567    8223    -1      0    838682     0 c-  pb-i d1514209P2396264_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_intr_level_b
+P   209:1:0  13440192 13457246    17054    10871    8527    -1      0    837226     0 c-  pb-i d1513228P2443368_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__frits_c2m_rw_crs_orp_000
+P   210:1:0  13553952 13573214    19262    11975    9631    -1      0    838167     0 c-  pb-i d1518055P2447630_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tmrlinearchainoutput8
+P   211:1:0  13672256 13676990     4734     4711    2367    -1      0    834467     0 c-  pb-i d1511379P2448820_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_exec_ft_t0__fritsfpu_sqrt_orp_000
+P   212:1:0    307776   309534     1758     3223     879    -1      0    828439     0 c-  pb-i d1510476P2251748_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_snoop_hitbit27
+P   213:1:0    331680   333374     1694     3191     847    -1      0    828385     0 c-  pb-i d1511752P2251918_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_snoop_hitlow32
+P   214:1:0   1453248  1469150    15902    10295    7951    -1      0    841082     0 c-  pb-i d1518450P2437746_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_tmr_clear_g1
+P   215:1:0   4346848  4367838    20990    12839   10495    -1      0    843784     0 c-  pb-i d1516171P2468304_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_ft_rhine_rand_007
+F   216:1:1   4825216  4845118    19902     2759     415    -1    156    827686    15 c-  pb-I d1513199P2478628_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mob_ft_pl0_rhine_rand_013
+          fail pins:    xxD46nn[0],     xxD47nn[0],     xxD53nn[0],     xxD45nn[0],     xxD44nn[0],     xxD33nn[0],     xxD32nn[0],     xxD42nn[0],     xxD48nn[0],     xxD51nn[0], 
+          fail pins:  xxDINV2nn[0],     xxD57nn[0],     xxD56nn[0],     xxD60nn[0],     xxD59nn[0], 
+P   217:1:0   5217792  5238526    20734    12711   10367    -1      0    842744     0 c-  pb-i d1513418P2479398_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_pl1_rhine_rand_016
+P   218:1:0   5641216  5648318     7102     5895    3551    -1      0    841227     0 c-  pb-i d1516671P2480058_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_saat_emon_basic_09
+P   219:1:0   6277504  6281054     3550     4119    1775    -1      0    829381     0 c-  pb-i d1510506P2495178_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_mos_mollarym_lb_cam0_hit_12_mt0
+P   220:1:0   7420672  7430526     9854     7271    4927    -1      0    833202     0 c-  pb-i d1514916P2509378_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_tc_flush_all_ways_sets160_191
+P   221:1:0   7726592  7772670    46078    25383   23039    -1      0    852195     0 c-  pb-i d1517160P2513238_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tc_flush_all_ways_mt_3
+P   222:1:0    540192   541694     1502     3095     751    -1      0    828116     0 c-  pb-i d1512649P2259628_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_wmt_bsu_snpq_dp_fg_match_si_zeros_ent
+P   223:1:0   8953664  8958846     5182     4935    2591    -1      0    830051     0 c-  pb-i d1511693P2244508_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fsqrt_marching3s
+P   224:1:0   9846720  9855902     9182     6935    4591    -1      0    832127     0 c-  pb-i d1510772P2246818_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_combM2_rand_KM_rm2_E_4
+P   225:1:0  10830528 10861854    31326    18007   15663    -1      0    848015     0 c-  pb-i d1519498P2250228_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fec_ops_gen
+F   226:1:1  13018880 13032990    14110     5325    2981    -1      3    830447    12 c-  pb-I d1511384P2387540_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_addss_F30F58_prot_opcov
+          fail pins:  xxDINV0nn[0],      xxD7nn[0],      xxD6nn[0],     xxD23nn[0],     xxD19nn[0],     xxD30nn[0],     xxD14nn[0],     xxD15nn[0],      xxD5nn[0],     xxD25nn[0], 
+          fail pins:    xxD26nn[0],     xxD27nn[0], 
+P   227:1:0  13652384 13655038     2654     3671    1327    -1      0    829085     0 c-  pb-i d1511702P2448570_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_modpagd_page_split_mt_2
+P   228:1:0  13750208 13764926    14718     9703    7359    -1      0    835845     0 c-  pb-i d1513490P2448920_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pmh_ft_t0__frits_c2m_event_onfly_in_e
+F   229:1:1    149984   151518     1534     2803     459    -1      4    827679     1 c-  pb-I d1512781P2245188_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_meu_pmh_ft_page_attrb_lg
+          fail pins:    xxD37nn[0], 
+P   230:1:0    184608   191230     6622     5655    3311    -1      0    830910     0 c-  pb-i d1512523P2245458_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_uswc_randwb
+P   231:1:0    417952   421566     3614     4151    1807    -1      0    829461     0 c-  pb-i d1510497P2252798_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_sthitst_bits15_6
+P   232:1:0   1142336  1144126     1790     3239     895    -1      0    849139     0 c-  pb-i d1519597P2329848_014444_PH07df_fbxxx_us1xm1x0xxxhxxxxx_paging5_lo
+P   233:1:0   2938048  2943294     5246     4967    2623    -1      0    830080     0 c-  pb-i d1512848P2434256_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mos_moslarym_smc_pa_cam_bits_split_0_
+F   234:1:1   4617312  4625534     8222     2677     333    -1     45    827460     7 c-  pb-I d1512767P2474188_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_mite_mt_call_ret_smc
+          fail pins:    xxD45nn[0],     xxD35nn[0],     xxD33nn[0],     xxD32nn[0],     xxD34nn[0],     xxD40nn[0],   xxDINV2nn[0], 
+P   235:1:0   5755104  5756990     1886     3287     943    -1      0    828462     0 c-  pb-i d1512170P2480868_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_upper_mem_lip_match
+F   236:1:1   8141088  8187134    46046     2753     409    -1   7415    827586    14 c-  pb-I d1519425P2513328_014444_PH07df_ftxxx_us1xm1x2xxxhxxxxx_tc_flush_all_ways_mt_7
+          fail pins:  xxDINV0nn[0],      xxD3nn[0],      xxD2nn[0],      xxD1nn[0],     xxD31nn[0],     xxD24nn[0],     xxD30nn[0],     xxD28nn[0],     xxD25nn[0],     xxD29nn[0], 
+          fail pins:    xxD26nn[0],     xxD27nn[0],   xxDINV1nn[0],      xxD0nn[0], 
+P   237:1:0   9432800  9434942     2142     3415    1071    -1      0    828608     0 c-  pb-i d1511726P2245498_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_if_alu_allf
+P   238:1:0   9449696  9498718    49022    26855   24511    -1      0    851827     0 c-  pb-i d1516129P2245568_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_if_byp_toggle
+P   239:1:0   9652256  9662142     9886     7287    4943    -1      0    833057     0 c-  pb-i d1513405P2246428_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_fmxd_mixed3
+F   240:1:1  10228448 10230110     1662     2750     406    -1     13    827556    28 c-  pb-I d1511639P2248298_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_sar_c1_modrm_10_111_p
+          fail pins:    xxD13nn[0],     xxD21nn[0],     xxD19nn[0],     xxD46nn[0],     xxD47nn[0],     xxD55nn[0],     xxD53nn[0],     xxD58nn[0],     xxD38nn[0],     xxD35nn[0], 
+          fail pins:    xxD34nn[0],     xxD31nn[0],     xxD36nn[0],     xxD37nn[0],     xxD41nn[0],     xxD14nn[0],     xxD28nn[0],     xxD15nn[0],     xxD18nn[0],      xxD8nn[0], 
+P   241:1:0  10756704 10762270     5566     5127    2783    -1      0    830102     0 c-  pb-i d1510549P2249778_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_comb_dfp_wox_mmx
+P   242:1:0  10914784 10949822    35038    19863   17519    -1      0    848834     0 c-  pb-i d1519099P2250308_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ldst2_1
+P   243:1:0  11204672 11209694     5022     4855    2511    -1      0    830381     0 c-  pb-i d1512958P2253538_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_v86_iobmp
+P   244:1:0  11396320 11399230     2910     3799    1455    -1      0    829221     0 c-  pb-i d1511367P2254918_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_pageC4K_nonlinear_PTE_D_assist_split
+P   245:1:0  14178048 14182462     4414     4551    2207    -1      0    831056     0 c-  pb-i d1511861P2314778_014444_PH07df_ftxxx_ux1xm1x2xxxhxxxxx_pm_drx
+F   246:1:1  14321824 14339070    17246     3597    1253    -1      5    828708     7 c-  pb-I d1513400P2469776_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_yt4_dmp_t0_pwrdn
+          fail pins:    xxD23nn[0],     xxD24nn[0],     xxD16nn[0],     xxD17nn[0],     xxD26nn[0],   xxDINV1nn[0],     xxD22nn[0], 
+P   247:1:0  14348864 14418366    69502    37095   34751    -1      0    866350     0 c-  pb-i g1320137P2475818_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_kamal_test_orp_001
+P   248:1:0  14435168 14451966    16798    10743    8399    -1      0    839770     0 c-  pb-i d1517609P2478788_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_saat_ft_pl2_rhine_rand_019
+P   249:1:0  14557088 14613246    56158    30423   28079    -1      0    859216     0 c-  pb-i g1320107P2482462_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_mos_moslarym_smc_pa_cam_bits_3_00
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+P   250:1:0  14676768 14728894    52126    28407   26063    -1      0    854655     0 c-  pb-i g1317642P2496158_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_mos_satagarym_la_cam_highbits_5
+P   251:1:0  14917152 14923550     6398     5543    3199    -1      0    830702     0 c-  pb-i g1311451P2570872_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_CT_asize32_FS_agu_carry_specific
+P   252:1:0  14934208 14937470     3262     3975    1631    -1      0    829084     0 c-  pb-i d1511682P2756222_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_pde0_010
+P   253:1:0  14937472 14938046      574     2631     287    -1      0    828161     0 c-  pb-i d1512835P2756232_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_cvt_generic
+P   254:1:0  14938048 14938686      638     2663     319    -1      0    827373     0 c-  pb-i d1512640P2756242_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_cvtps2pd_pscb2_23
+P   255:1:0  14938688 14939230      542     2615     271    -1      0    827333     0 c-  pb-i d1512196P2756252_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_cvtsd2si
+P   256:1:0  14939232 14942142     2910     3799    1455    -1      0    828673     0 c-  pb-i d1511346P2756262_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_ipd_generic
+P   257:1:0  14942144 14947070     4926     4807    2463    -1      0    829736     0 c-  pb-i d1510471P2756272_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_min_pipebomb_fp_sse2
+P   258:1:0  14947072 14948382     1310     2999     655    -1      0    827881     0 c-  pb-i d1512151P2756282_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_pdc1_05_rndstrexcep
+P   259:1:0  14948384 14950558     2174     3431    1087    -1      0    828424     0 c-  pb-i d1512946P2756292_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_pdc1_07_3sc
+F   260:1:1  14950560 14958142     7582     2801     457    -1    121    828092     1 c-  pb-I d1511028P2756302_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_pde0_017
+          fail pins:    xxA28nn[0], 
+F   261:1:1  14958144 14964190     6046     2801     457    -1    121    828092     1 c-  pb-I d1513245P2756312_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_pde0_020
+          fail pins:    xxA28nn[0], 
+P   262:1:0  14964192 14965566     1374     3031     687    -1      0    828277     0 c-  pb-i g1313444P2479648_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_ms_reset_creg
+P   263:1:0  14965568 14973054     7486     6087    3743    -1      0    831122     0 c-  pb-i d1510603P2788532_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_0000913c_generic_WinXP64
+F   264:1:1  14973056 14986238    13182     2603     259    -1    345    827320    24 c-  pb-I d1512185P2788542_014444_PH07df_fbxxx_ux1xm1x0xxxhxxxxx_t3thr_d4sbev7
+          fail pins:     xxD2nn[0],      xxD6nn[0],     xxD13nn[0],     xxD23nn[0],     xxD21nn[0],     xxD38nn[0],     xxD39nn[0],     xxD32nn[0],     xxD37nn[0],     xxD28nn[0], 
+          fail pins:    xxD15nn[0],     xxD20nn[0],     xxD18nn[0],      xxD8nn[0],     xxD12nn[0],     xxD26nn[0],     xxD27nn[0],     xxD57nn[0],   xxDINV3nn[0],     xxD63nn[0], 
+P   265:1:0  14986240 15015070    28830    16759   14415    -1      0    844702     0 c-  pb-i g1276922P2325038_014444_PH00df_ftxxx_us1xm1x0xxxhxxxxx_Brazos310dc64
+F   266:1:1  15015072 15043902    28830     2910     566    -1   7692    827822    10 c-  pb-I g1281088P2243238_014444_PH00df_ftxxx_us1xm1x0xxxhxxxxx_Brazos310dc64
+          fail pins:     xxD2nn[0],      xxD1nn[0],     xxD13nn[0],     xxD46nn[0],     xxD47nn[0],     xxD45nn[0],     xxD44nn[0],     xxD14nn[0],     xxD15nn[0],      xxD0nn[0], 
+P   267:1:0  15043904 15048350     4446     4567    2223    -1      0    830719     0 c-  pb-i g1268539P2243158_014444_PH00df_ftxxx_us1xm1x0xxxhxxxxx_brazos02754833
+F   268:1:1  15048352 15056030     7678     2910     566    -1   1194    827822    10 c-  pb-I g1278585P2243198_014444_PH00df_ftxxx_us1xm1x0xxxhxxxxx_Brazos3002185
+          fail pins:     xxD2nn[0],      xxD1nn[0],     xxD13nn[0],     xxD46nn[0],     xxD47nn[0],     xxD45nn[0],     xxD44nn[0],     xxD14nn[0],     xxD15nn[0],      xxD0nn[0], 
+F   269:1:1  15056032 15064926     8894     2910     566    -1   1463    827822     4 c-  pb-I g1268807P2243218_014444_PH00df_ftxxx_us1xm1x0xxxhxxxxx_Brazos3006635
+          fail pins:    xxD46nn[0],     xxD47nn[0],     xxD45nn[0],     xxD44nn[0], 
+P   270:1:0  15064928 15068766     3838     4263    1919    -1      0    829785     0 c-  pb-i g1412352P2299208_014444_PH03df_ftxxx_us1xb1x2xxxhxxxxx_vega_fp_178988986
+F   271:1:1  15068768 15076382     7614     2883     539    -1     45    827779     2 c-  pb-I g1359482P2470186_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_stew_test_2_backward
+          fail pins:    xxD44nn[0],     xxD41nn[0], 
+F   272:1:1  15076384 15082014     5630     2948     604    -1    296    827832    16 c-  pb-I g1412408P2300158_014444_PH03df_ftxxx_us1xb1x2xxxhxxxxx_lock_fp_mt_430173610
+          fail pins:    xxD23nn[0],     xxD21nn[0],     xxD47nn[0],     xxD55nn[0],     xxD44nn[0],     xxD33nn[0],     xxD34nn[0],     xxD40nn[0],     xxD41nn[0],     xxD43nn[0], 
+          fail pins:    xxD24nn[0],     xxD18nn[0],     xxD17nn[0],     xxD25nn[0],     xxD22nn[0],     xxD54nn[0], 
+P   273:1:0  15082016 15085118     3102     3895    1551    -1      0    831539     0 c-  pb-i d1445912P2483278_014444_PH03df_ftxxx_us1xb1x2xxxhxxxxx_fc_random_mt_882975232
+P   274:1:0  14165344 14170238     4894     4791    2447    -1      0    833478     0 c-  pb-i d1513609P2448830_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_exec_ft_t0__fritsfpu_rnd_excep_orp_00
+P   275:1:0  14470208 14487934    17726    11207    8863    -1      0    840079     0 c-  pb-i g1315041P2479418_014444_PH03df_ftxxx_us1xb1x0xxxhxxxxx_pmh_ft_pl2_rhine_rand_018
+P   276:1:0  14827200 14838270    11070     7879    5535    -1      0    833128     0 c-  pb-i d1513409P2247908_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_les_c4_modrm_10_p
+P   277:1:0  14893696 14894238      542     2615     271    -1      0    827506     0 c-  pb-i d1510411P2259848_014444_PH07df_ftxxx_ux1xm1x0xxxhxxxxx_fp_fcmovb_nb
+P   278:1:0  14182464 14185278     2814     3751    1407    -1      0    829280     0 c-  pb-i d1510847P2314818_014444_PH07df_ftxxx_ux1xm1x2xxxhxxxxx_pm_segreg_wr_cs_ss
+F   279:1:1  14487936 14504734    16798     3059     715    -1     11    828294     1 c-  pb-I d1514448P2479458_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_dac_ft_pl0_rhine_rand_012
+          fail pins:    xxD49nn[0], 
+P   280:1:0  14785632 14786686     1054     2871     527    -1      0    828978     0 c-  pb-i d1511403P2242978_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_time_stamp_ctr
+P   281:1:0  14838272 14849598    11326     8007    5663    -1      0    833316     0 c-  pb-i d1511481P2248088_014444_PH07df_ftxxx_us1xm1x0xxxhxxxxx_lds_c5_modrm_01_p
+P   282:1:0  15085776 15088622     2846     2690    1423    -1      0    826419     0 c-  p--i d1510415P2323998_014444_PH07df_fbxxx_us1xm1x1xxxqxxxxx_func_evtprefq
+F   283:1:1  15405360 15408622     3262     1724     457    -1    120    824403     1 c-  p--I d1511066P2433966_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_ms_fg_sysenter
+          fail pins:    xxA28nn[0], 
+P   284:1:0  15112656 15128942    16286     9410    8143    -1      0    834172     0 c-  p--i d1513839P2324688_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_pmh_ft_t1__b4m_acf_emon_orp_003
+F   285:1:1  15704368 15721198    16830     1733     466    -1    123    824413    35 c-  p--I d1513104P2487078_014444_PH07df_ftxxx_us1xm1x2xxxqxxxxx_lb_cam_miss_11_mt
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+P   286:1:0  17200368 17205070     4702     3618    2351    -1      0    827741     0 c-  p--i d1510475P2324978_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_ul1_ft_t1_emon_enable_e45_orp_000
+F   287:1:1  15652816 15656270     3454     1733     466    -1    118    824413    35 c-  p--I d1512209P2481108_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_itlb_fault_lip
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   288:1:1  15877488 15882638     5150     1724     457    -1    120    824403     1 c-  p--I d1511854P2495168_014444_PH07df_ftxxx_us1xm1x2xxxqxxxxx_mos_mollarym_lb_cam1_hit_11_mt1
+          fail pins:    xxA28nn[0], 
+F   289:1:1  16035760 16041134     5374     1724     457    -1    123    824403     1 c-  p--I d1513528P2496438_014444_PH07df_ftxxx_us1xm1x2xxxqxxxxx_mos_mollarym_lb_cam1_hit_26_mt1
+          fail pins:    xxA28nn[0], 
+P   290:1:0  16089744 16095182     5438     3986    2719    -1      0    827864     0 c-  p--i d1511623P2496638_014444_PH07df_ftxxx_us1xm1x2xxxqxxxxx_mos_mollarym_lb_cam1_hit_31_mt1
+F   291:1:1  16518608 16524654     6046     1724     457    -1    120    824403     1 c-  p--I d1510858P2502688_014444_PH07df_ftxxx_us1xm1x2xxxqxxxxx_mos_mollarym_lb_cam0_sphit_25_mt1
+          fail pins:    xxA28nn[0], 
+F   292:1:1  17060272 17071822    11550     1733     466    -1    118    824413    35 c-  p--I d1511968P2509388_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_tc_flush_all_ways_sets160_191
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   293:1:1  17162992 17179438    16446     1742     475    -1    332    824423    35 c-  p--I d1511850P2324908_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_pmh_ft_t1__frits_c4k_suwflipbit_match
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   294:1:1  17304240 17307118     2878     1724     457    -1    120    824403     1 c-  p--I d1513016P2447320_014444_PH07df_fbxxx_us1xm1x1xxxqxxxxx_func_cache_misc2
+          fail pins:    xxA28nn[0], 
+F   295:1:1  15088624 15091662     3038     1724     457    -1    120    824403     1 c-  p--I d1510432P2324078_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_func_mca
+          fail pins:    xxA28nn[0], 
+F   296:1:1  15091664 15096366     4702     1724     457    -1    120    824403     1 c-  p--I d1510680P2324628_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_ul1_ft_t1_emon_enable_e12_orp_000
+          fail pins:    xxA28nn[0], 
+F   297:1:1  15180176 15211022    30846     1742     475    -1    266    824423    35 c-  p--I d1516149P2325058_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_pmh_ft_t1__b4k_acfg_orp_000
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   298:1:1  15211024 15218158     7134     1733     466    -1    118    824413    35 c-  p--I d1510956P2326648_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_mov_0f20_isa_ds_p_01
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+P   299:1:0  15315600 15320526     4926     3730    2463    -1      0    827578     0 c-  p--i d1510567P2380440_014444_PH07df_ftxxx_us1xm1x0xxxgxxxxx_creg_read_write_read_selfcheck
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+F   300:1:1  15371440 15383118    11678     1724     457    -1    130    824403     1 c-  p--I d1513360P2429434_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_meu_sv_st1_483116630
+          fail pins:    xxA28nn[0], 
+F   301:1:1  15411568 15415150     3582     1724     457    -1    149    824403     1 c-  p--I d1512243P2440756_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_upper_mem_call_ret
+          fail pins:    xxA28nn[0], 
+F   302:1:1  15486096 15488974     2878     1724     457    -1    120    824403     1 c-  p--I d1511056P2463294_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_mite_creg_patch3_09
+          fail pins:    xxA28nn[0], 
+F   303:1:1  15564816 15570254     5438     1724     457    -1    356    824403     1 c-  p--I d1512376P2466124_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_btb_rrsd_calls_rets_logic_tc_off
+          fail pins:    xxA28nn[0], 
+F   304:1:1  15642448 15645998     3550     1733     466    -1    150    824413    35 c-  p--I d1511264P2480878_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_upper_mem_lip_match
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+P   305:1:0  16728080 16739534    11454     6994    5727    -1      0    831100     0 c-  p--i d1513292P2503698_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_mos_sasegarym_flashcopy_fds_highbits_
+F   306:1:1  17071824 17083374    11550     1742     475    -1    116    824423    35 c-  p--I d1511154P2509408_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_tc_flush_all_ways_sets192_223
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   307:1:1  16928144 16956782    28638     1733     466    -1    118    824413    35 c-  p--I d1516825P2508818_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_tc_all_ways_sets64_127
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   308:1:1  17268816 17285102    16286     1724     457    -1    150    824403     1 c-  p--I d1513526P2338356_014444_PH07df_ftxxx_us1xm1x1xxxqxxxxx_pmh_ft_t1__frits_b4m_pwe_datasize_orp
+          fail pins:    xxA28nn[0], 
+F   309:1:1  16278512 16283982     5470     1742     475    -1    116    824423    35 c-  p--I d1512107P2501468_014444_PH07df_ftxxx_us1xm1x2xxxqxxxxx_mos_mollarym_lb_cam0_sphit_04_mt1
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   310:1:1  17449008 17452046     3038     1722     455    -1    121    824403     1 c-  p--I g1313364P2479698_014444_PH03df_ftxxx_us1xb1x1xxxqxxxxx_ms_reset_creg
+          fail pins:    xxA28nn[0], 
+F   311:1:1  17452048 17473934    21886     1742     475    -1    113    824423    35 c-  p--I g1541905P6013449_014444_PH08df_fbxxx_ux1xm1x0xxxxxxxxx_t3thr_0000913c_generic_WinXP64_rev2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+P   312:1:0  17473936 17497134    23198    12866   11599    -1      0    836372     0 c-  p--i g1548327P6013451_014444_PH08df_fbxxx_ux1xm1x0xxxxxxxxx_t3thr_CT_add
+F   313:1:1  17500672 17504830     4158     1724     457    -1    121    824403     1 c-  p--I d1512233P2247438_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_apic_pri1_fixed
+          fail pins:    xxA28nn[0], 
+F   314:1:1  17563008 17565822     2814     1724     457    -1    121    824403     1 c-  p--I d1512712P2222608_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_snoop_hitm2
+          fail pins:    xxA28nn[0], 
+P   315:1:0  17675520 17685022     9502     6018    4751    -1      0    830266     0 c-  p--i d1513258P2397504_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_no_apic_BTM_smi
+F   316:1:1  17689920 17700606    10686     1733     466    -1    136    824413    34 c-  p--I d1519797P2397524_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_intr_pmon_smi
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   317:1:1  17718880 17723006     4126     1733     466    -1    131    824413    34 c-  p--I d1519508P2400070_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_local_1
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+P   318:1:0  17726208 17731774     5566     4050    2783    -1      0    828196     0 c-  p--i d1519548P2400090_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_local_2
+F   319:1:1  17731776 17739774     7998     1724     457    -1    121    824403     1 c-  p--I d1519634P2400150_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_2
+          fail pins:    xxA28nn[0], 
+F   320:1:1  17739776 17743902     4126     1724     457    -1    121    824403     1 c-  p--I d1519566P2400170_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_3
+          fail pins:    xxA28nn[0], 
+P   321:1:0  17875040 17884094     9054     5794    4527    -1      0    830386     0 c-  p--i d1519671P2415862_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_2
+F   322:1:1  17884096 17888734     4638     1724     457    -1    121    824403     1 c-  p--I d1519529P2415882_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_3
+          fail pins:    xxA28nn[0], 
+F   323:1:1  17992480 18015998    23518     1724     457    -1    168    824403     1 c-  p--I d1518919P2463424_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bus_bav_apic_intr_rw_irr4_irr5_fg_3
+          fail pins:    xxA28nn[0], 
+P   324:1:0  18027520 18030526     3006     2770    1503    -1      0    837012     0 c-  p--i d1518825P2467724_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_a20m_WBINVD
+P   325:1:0  18357472 18360190     2718     2626    1359    -1      0    826297     0 c-  p--i d1512524P2223158_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_snoop_hit3_poc_ioq1d
+F   326:1:1  18418144 18422462     4318     1724     457    -1    121    824403     1 c-  p--I d1519521P2251068_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_eoi
+          fail pins:    xxA28nn[0], 
+F   327:1:1  18422464 18426078     3614     1742     475    -1    113    824423    35 c-  p--I d1519553P2251158_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_tpr
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   328:1:1  18429536 18432222     2686     1724     457    -1    121    824403     1 c-  p--I d1511122P2251248_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_apic_mp_init_poc_1
+          fail pins:    xxA28nn[0], 
+F   329:1:1  18435680 18439902     4222     1733     466    -1    118    824413    34 c-  p--I d1519510P2251338_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_3
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   330:1:1  17801344 17811806    10462     1724     457    -1    175    824403     1 c-  p--I d1511248P2401210_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_no_apic_rnd_tmpl_init
+          fail pins:    xxA28nn[0], 
+F   331:1:1  17862848 17867550     4702     1733     466    -1    123    824413    34 c-  p--I d1511221P2404740_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_reg_ppr
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   332:1:1  17920864 17925438     4574     1724     457    -1    205    824403     1 c-  p--I d1512531P2429084_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_retry_write_partial_uc
+          fail pins:    xxA28nn[0], 
+F   333:1:1  18229760 18232478     2718     1724     457    -1    121    824403     1 c-  p--I d1511267P2222628_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_req_bnr_ws6
+          fail pins:    xxA28nn[0], 
+F   334:1:1  18253216 18256094     2878     1733     466    -1    118    824413    34 c-  p--I d1512760P2222708_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_wmt_ws2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   335:1:1  18264320 18267038     2718     1724     457    -1    121    824403     1 c-  p--I d1511285P2222748_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_wrong_resp
+          fail pins:    xxA28nn[0], 
+F   336:1:1  18305120 18307870     2750     1724     457    -1    121    824403     1 c-  p--I d1510886P2222878_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_cache_lock
+          fail pins:    xxA28nn[0], 
+F   337:1:1  18323104 18325918     2814     1751     484    -1    111    824432    35 c-  p--I d1511299P2222978_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_retry_split_read_trans
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   338:1:1  18367648 18370718     3070     1742     475    -1    115    824423    35 c-  p--I d1510580P2246448_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_io_read_pipe_5
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   339:1:1  18426080 18429534     3454     1724     457    -1    139    824403     1 c-  p--I d1512470P2251198_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_no_apic_df_stpclk_nmi
+          fail pins:    xxA28nn[0], 
+F   340:1:1  17589984 17598974     8990     1733     466    -1    126    824413    34 c-  p--I d1513430P2396884_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_bus_icr
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   341:1:1  17952320 17959006     6686     1733     466    -1    142    824413    34 c-  p--I d1510684P2443048_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_intr_single_fixed
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   342:1:1  18250496 18253214     2718     1733     466    -1    118    824413    34 c-  p--I d1511295P2222698_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_wmt_ws_uc
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+P   343:1:0  18289216 18292158     2942     2738    1471    -1      0    826390     0 c-  p--i d1511802P2222828_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_partial_write_1
+F   344:1:1  18311904 18314654     2750     1733     466    -1    121    824413    34 c-  p--I d1512259P2222938_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_retry_read_trans
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   345:1:1  18317504 18320222     2718     1724     457    -1    123    824403     1 c-  p--I d1511298P2222958_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_ssnoop_bug
+          fail pins:    xxA28nn[0], 
+F   346:1:1  18121248 18125854     4606     1724     457    -1    120    824403     1 c-  p--I d1511097P2251598_014444_PH07dv_ftxxx_us1xm1x1xxxqxxxxx_bav_apic_pri4_fixed
+          fail pins:    xxA28nn[0], 
+F   347:1:1  18238208 18241086     2878     1724     457    -1    121    824403     1 c-  p--I d1512203P2222658_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_implicit_wb5
+          fail pins:    xxA28nn[0], 
+F   348:1:1  18320224 18323102     2878     1724     457    -1    125    824403     1 c-  p--I d1511103P2222968_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_defered_read_trans1
+          fail pins:    xxA28nn[0], 
+F   349:1:1  17763424 17770846     7422     1724     457    -1    121    824403     1 c-  p--I d1510786P2400980_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_no_apic_smi4
+          fail pins:    xxA28nn[0], 
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+F   350:1:1  17944800 17952318     7518     1724     457    -1    121    824403     1 c-  p--I d1510765P2442818_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_rand_bsu_cycles
+          fail pins:    xxA28nn[0], 
+F   351:1:1  18016000 18027518    11518     1724     457    -1    145    824403     1 c-  p--I d1511182P2463434_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bus_bav_no_apic_intr_rw_irr0
+          fail pins:    xxA28nn[0], 
+P   352:1:0  18439904 18451326    11422     6978    5711    -1      0    831805     0 c-  p--i d1511505P2397234_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_double_isr_diff_groups
+F   353:1:1  18469440 18477854     8414     1733     466    -1    121    824413    34 c-  p--I d1519598P2404870_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   354:1:1  18499296 18507454     8158     1724     457    -1    134    824403     1 c-  p--I d1513382P2443058_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bav_apic_init_reg_2
+          fail pins:    xxA28nn[0], 
+F   355:1:1  18585184 18588350     3166     1722     455    -1    125    824403     1 c-  p--I g1411893P2401300_014444_PH03dv_ftxxx_us1xb1x0xxxhxxxxx_bav_poc_no_apic_disable_data_bus_pari
+          fail pins:    xxA28nn[0], 
+F   356:1:1  18588352 18591102     2750     1742     475    -1    113    824423    35 c-  p--I d1535241P2223118_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_poc_arb_sym1_agent
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   357:1:1  18591104 18593950     2846     1724     457    -1    121    824403     1 c-  p--I d1535242P2223148_014444_PH07dv_ftxxx_us1xm1x0xxxhxxxxx_bav_req_full_poc_ioq1d
+          fail pins:    xxA28nn[0], 
+P   358:1:0  18593952 18597598     3646     3090    1823    -1      0    826983     0 c-  p--i g1412092P2401360_014444_PH03dv_ftxxx_us1xb1x0xxxhxxxxx_bav_poc_no_apic_binit_basic
+F   359:1:1  18533984 18550206    16222     1724     457    -1    124    824403     1 c-  p--I d1516563P2463464_014444_PH07dv_ftxxx_us1xm1x2xxxhxxxxx_bus_bav_no_apic_intr_rw_irr7
+          fail pins:    xxA28nn[0], 
+F   360:1:1  18597600 18600318     2718     1722     455    -1    121    824403     1 c-  p--I g1310716P2222568_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_jnz_bug
+          fail pins:    xxA28nn[0], 
+F   361:1:1  18600320 18603038     2718     1722     455    -1    121    824403     1 c-  p--I g1307164P2222578_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_check_reg
+          fail pins:    xxA28nn[0], 
+F   362:1:1  18603040 18605758     2718     1722     455    -1    121    824403     1 c-  p--I g1307166P2222588_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_stream_exec_bug
+          fail pins:    xxA28nn[0], 
+F   363:1:1  18605760 18608638     2878     1722     455    -1    121    824403     1 c-  p--I g1307149P2222598_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_crit_order_read6
+          fail pins:    xxA28nn[0], 
+F   364:1:1  18608640 18611454     2814     1722     455    -1    121    824403     1 c-  p--I g1307155P2222608_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_snoop_hitm2
+          fail pins:    xxA28nn[0], 
+F   365:1:1  18611456 18614142     2686     1722     455    -1    121    824403     1 c-  p--I g1307112P2222618_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_invd_s
+          fail pins:    xxA28nn[0], 
+F   366:1:1  18614144 18616862     2718     1722     455    -1    121    824403     1 c-  p--I g1307115P2222628_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_req_bnr_ws6
+          fail pins:    xxA28nn[0], 
+F   367:1:1  18616864 18619774     2910     1722     455    -1    134    824403     1 c-  p--I g1307168P2222638_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_wmt_pw_check_all_be
+          fail pins:    xxA28nn[0], 
+F   368:1:1  18619776 18622558     2782     1731     464    -1    118    824413    34 c-  p--I g1307152P2222648_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_part_rd_be3
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   369:1:1  18622560 18625438     2878     1722     455    -1    121    824403     1 c-  p--I g1307153P2222658_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_implicit_wb5
+          fail pins:    xxA28nn[0], 
+F   370:1:1  18625440 18628382     2942     1722     455    -1    153    824403     1 c-  p--I g1307207P2222668_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_split_partial_write
+          fail pins:    xxA28nn[0], 
+F   371:1:1  18628384 18631070     2686     1722     455    -1    121    824403     1 c-  p--I g1307157P2222678_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_wmt_wr
+          fail pins:    xxA28nn[0], 
+F   372:1:1  18631072 18634814     3742     1722     455    -1    121    824403     1 c-  p--I g1307309P2222688_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_req_full_ioq
+          fail pins:    xxA28nn[0], 
+F   373:1:1  18634816 18637534     2718     1731     464    -1    118    824413    34 c-  p--I g1307194P2222698_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_wmt_ws_uc
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   374:1:1  18637536 18640414     2878     1740     473    -1    113    824423    35 c-  p--I g1307123P2222708_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_wmt_ws2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   375:1:1  18640416 18643102     2686     1722     455    -1    121    824403     1 c-  p--I g1307201P2222718_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_wmt_invalid2
+          fail pins:    xxA28nn[0], 
+F   376:1:1  18643104 18645790     2686     1722     455    -1    121    824403     1 c-  p--I g1307197P2222728_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_clock_bug
+          fail pins:    xxA28nn[0], 
+F   377:1:1  18645792 18648606     2814     1731     464    -1    118    824413    34 c-  p--I g1307118P2222738_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_split_uc_drd2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+P   378:1:0  18648608 18651326     2718     2626    1359    -1      0    826293     0 c-  p--i g1307174P2222748_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_wrong_resp
+F   379:1:1  18651328 18654750     3422     1722     455    -1    121    824403     1 c-  p--I g1307202P2222758_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_split_crd1
+          fail pins:    xxA28nn[0], 
+F   380:1:1  18654752 18657438     2686     1722     455    -1    121    824403     1 c-  p--I g1307210P2222768_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_arb_sym_agent_no_owner
+          fail pins:    xxA28nn[0], 
+F   381:1:1  18657440 18660126     2686     1740     473    -1    113    824423    35 c-  p--I g1307169P2222778_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_arb_sym_agent_no_owner2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   382:1:1  18660128 18662814     2686     1722     455    -1    121    824403     1 c-  p--I g1307114P2222788_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_arb_sym_agent_no_owner3
+          fail pins:    xxA28nn[0], 
+F   383:1:1  18662816 18665918     3102     1722     455    -1    121    824403     1 c-  p--I g1307141P2222798_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_lck_rmw_x1
+          fail pins:    xxA28nn[0], 
+F   384:1:1  18665920 18670654     4734     1722     455    -1    126    824403     1 c-  p--I g1307237P2222808_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_partial1
+          fail pins:    xxA28nn[0], 
+F   385:1:1  18670656 18673374     2718     1740     473    -1    113    824423    35 c-  p--I g1307196P2222818_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hit
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+F   386:1:1  18673376 18676318     2942     1722     455    -1    144    824403     1 c-  p--I g1307162P2222828_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_partial_write_1
+          fail pins:    xxA28nn[0], 
+F   387:1:1  18676320 18679038     2718     1722     455    -1    121    824403     1 c-  p--I g1307119P2222838_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_arb_sym_agent
+          fail pins:    xxA28nn[0], 
+F   388:1:1  18679040 18681790     2750     1722     455    -1    121    824403     1 c-  p--I g1307189P2222848_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_arb_pri_agent
+          fail pins:    xxA28nn[0], 
+F   389:1:1  18681792 18686430     4638     1722     455    -1    121    824403     1 c-  p--I g1307235P2222858_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_arb_pri_agent2
+          fail pins:    xxA28nn[0], 
+F   390:1:1  18686432 18689246     2814     1722     455    -1    127    824403     1 c-  p--I g1307122P2222868_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_split_cache_lock
+          fail pins:    xxA28nn[0], 
+F   391:1:1  18689248 18691998     2750     1722     455    -1    121    824403     1 c-  p--I g1307160P2222878_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_cache_lock
+          fail pins:    xxA28nn[0], 
+F   392:1:1  18692000 18695998     3998     1731     464    -1    141    824413    34 c-  p--I g1307188P2222888_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_lck_pri_arb2
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   393:1:1  18696000 18698686     2686     1731     464    -1    118    824413    34 c-  p--I g1307182P2222898_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hitm
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   394:1:1  18698688 18701374     2686     1722     455    -1    121    824403     1 c-  p--I g1307116P2222908_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hitm_defer
+          fail pins:    xxA28nn[0], 
+P   395:1:0  18701376 18704094     2718     2626    1359    -1      0    826300     0 c-  p--i g1307209P2222918_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snooped_hitm
+F   396:1:1  18704096 18706814     2718     1722     455    -1    121    824403     1 c-  p--I g1307171P2222928_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snooped_hitm_defer
+          fail pins:    xxA28nn[0], 
+F   397:1:1  18706816 18709534     2718     1722     455    -1    121    824403     1 c-  p--I g1307161P2222938_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_retry_read_trans
+          fail pins:    xxA28nn[0], 
+F   398:1:1  18709536 18712350     2814     1722     455    -1    121    824403     1 c-  p--I g1307170P2222948_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_defered_read_trans
+          fail pins:    xxA28nn[0], 
+F   399:1:1  18712352 18715070     2718     1740     473    -1    113    824423    35 c-  p--I g1307173P2222958_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_ssnoop_bug
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],      xxA5nn[0],     xxA17nn[0], 
+_______________________________________________________________________________________________________________________________________________________________________________________________
+P      Order  Pattern  Pattern  Pattern Absolute Pattern  Subr Tester    Tester  Fail CI Amble Individual Pattern Name                                                                         |
+F   Idx:S:It    Start     Stop   Memory  Execute   F=RMA F=RMA   Fail Pass/Fail   Pin OG  Stat                                                                                                 |
+              Address  Address     Size      RMA   P=RMA P= -1 Cycles Clk Cycle Count MN                                                                                                       |
+_______________________________________________________________________________________________________________________________________________________________________________________________|
+F   400:1:1  18715072 18717918     2846     1722     455    -1    121    824403     1 c-  p--I g1307125P2222968_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_defered_read_trans1
+          fail pins:    xxA28nn[0], 
+F   401:1:1  18717920 18720702     2782     1722     455    -1    121    824403     1 c-  p--I g1307159P2222978_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_retry_split_read_trans
+          fail pins:    xxA28nn[0], 
+F   402:1:1  18720704 18723486     2782     1722     455    -1    121    824403     1 c-  p--I g1307158P2222988_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_retry_few_read_trans
+          fail pins:    xxA28nn[0], 
+F   403:1:1  18723488 18726302     2814     1722     455    -1    121    824403     1 c-  p--I g1307134P2222998_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_retry_few_split_read_trans
+          fail pins:    xxA28nn[0], 
+F   404:1:1  18726304 18729150     2846     1722     455    -1    121    824403     1 c-  p--I g1307154P2223018_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_defered_split_read_trans
+          fail pins:    xxA28nn[0], 
+F   405:1:1  18729152 18731838     2686     1722     455    -1    121    824403     1 c-  p--I g1307124P2223028_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hit2
+          fail pins:    xxA28nn[0], 
+F   406:1:1  18731840 18734686     2846     1722     455    -1    121    824403     1 c-  p--I g1307198P2223038_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_defered_split_read_trans1
+          fail pins:    xxA28nn[0], 
+F   407:1:1  18734688 18737438     2750     1722     455    -1    121    824403     1 c-  p--I g1307175P2223048_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hit6
+          fail pins:    xxA28nn[0], 
+F   408:1:1  18737440 18740126     2686     1722     455    -1    121    824403     1 c-  p--I g1307172P2223058_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_test_write_to_Mline_IWB
+          fail pins:    xxA28nn[0], 
+F   409:1:1  18740128 18742846     2718     1722     455    -1    121    824403     1 c-  p--I g1307117P2223068_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_stall_hitm3
+          fail pins:    xxA28nn[0], 
+F   410:1:1  18742848 18745822     2974     1722     455    -1    121    824403     1 c-  p--I g1307214P2223078_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_defered_full_bsq
+          fail pins:    xxA28nn[0], 
+F   411:1:1  18745824 18748638     2814     1722     455    -1    131    824403     1 c-  p--I g1307151P2223088_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_store_split_mtrr_1
+          fail pins:    xxA28nn[0], 
+F   412:1:1  18748640 18751806     3166     1722     455    -1    121    824403     1 c-  p--I g1307192P2223108_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_xunit_36_bit_address
+          fail pins:    xxA28nn[0], 
+F   413:1:1  18751808 18754494     2686     1722     455    -1    121    824403     1 c-  p--I g1310784P2223138_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hit1_poc_ioq1d
+          fail pins:    xxA28nn[0], 
+F   414:1:1  18754496 18757246     2750     1722     455    -1    121    824403     1 c-  p--I g1310782P2223198_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_snoop_hit6_poc_ioq1d
+          fail pins:    xxA28nn[0], 
+F   415:1:1  18757248 18761278     4030     1722     455    -1    127    824403     1 c-  p--I g1307231P2246368_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_part_split_wt1
+          fail pins:    xxA28nn[0], 
+F   416:1:1  18761280 18764702     3422     1722     455    -1    128    824403     1 c-  p--I g1307150P2246408_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_lck_part_comb_4
+          fail pins:    xxA28nn[0], 
+F   417:1:1  18764704 18767774     3070     1722     455    -1    121    824403     1 c-  p--I g1307179P2246448_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_io_read_pipe_5
+          fail pins:    xxA28nn[0], 
+F   418:1:1  18767776 18771774     3998     1722     455    -1    162    824403     1 c-  p--I g1307246P2246528_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_branch_trace_message
+          fail pins:    xxA28nn[0], 
+F   419:1:1  18771776 18775166     3390     1722     455    -1    122    824403     1 c-  p--I g1307135P2246568_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_BTM_stpclk
+          fail pins:    xxA28nn[0], 
+F   420:1:1  18775168 18778142     2974     1722     455    -1    124    824403     1 c-  p--I g1307183P2246618_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_write_rsp_stpclk
+          fail pins:    xxA28nn[0], 
+F   421:1:1  18778144 18781150     3006     1722     455    -1    121    824403     1 c-  p--I g1307133P2246668_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_read_rsp_stpclk
+          fail pins:    xxA28nn[0], 
+F   422:1:1  18781152 18785054     3902     1722     455    -1    141    824403     1 c-  p--I g1307229P2246708_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_hit_STPCLK
+          fail pins:    xxA28nn[0], 
+F   423:1:1  18785056 18788286     3230     1722     455    -1    127    824403     1 c-  p--I g1307186P2246748_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_HLT_stpclk_hit
+          fail pins:    xxA28nn[0], 
+F   424:1:1  18788288 18791518     3230     1722     455    -1    126    824403     1 c-  p--I g1307219P2246828_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_halt_stpclk_init
+          fail pins:    xxA28nn[0], 
+F   425:1:1  18791520 18795742     4222     1722     455    -1    121    824403     1 c-  p--I g1307312P2246908_014444_PH03dv_ftxxx_us12b1x2xxxaxxxxx_bav_nwmt7
+          fail pins:    xxA28nn[0], 
+F   426:1:1  18795744 18801822     6078     1731     464    -1    153    824413    34 c-  p--I g1307295P2246958_014444_PH03dv_ftxxx_us12b1x2xxxaxxxxx_bav_lock
+          fail pins:   xxREQ1nn[0],     xxA29nn[0],     xxA24nn[0],     xxA25nn[0],     xxA28nn[0],  xxADSTB1nn[0],     xxADSnn[0],     xxA16nn[0],     xxA13nn[0],      xxA9nn[0], 
+          fail pins:    xxA15nn[0],     xxA22nn[0],     xxA10nn[0],     xxA30nn[0],     xxA20nn[0],     xxA12nn[0],  xxADSTB0nn[0],      xxA8nn[0],     xxA17nn[0],     xxA18nn[0], 
+F   427:1:1  18801824 18806974     5150     1722     455    -1    201    824403     1 c-  p--I g1307274P2246998_014444_PH03dv_ftxxx_us12b1x2xxxaxxxxx_bav_no_data
+          fail pins:    xxA28nn[0], 
+F   428:1:1  18806976 18810078     3102     1722     455    -1    127    824403     1 c-  p--I g1307130P2247038_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_poc_tristate_output
+          fail pins:    xxA28nn[0], 
+F   429:1:1  18810080 18815134     5054     1722     455    -1    153    824403     1 c-  p--I g1307328P2247078_014444_PH03dv_ftxxx_us12b1x2xxxaxxxxx_bav_write_resv3
+          fail pins:    xxA28nn[0], 
+F   430:1:1  18815136 18818558     3422     1722     455    -1    146    824403     1 c-  p--I g1310830P2251198_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_no_apic_df_stpclk_nmi
+          fail pins:    xxA28nn[0], 
+F   431:1:1  18818560 18821982     3422     1722     455    -1    121    824403     1 c-  p--I g1307140P2251288_014444_PH03dv_ftxxx_us12b1x0xxxaxxxxx_bav_no_apic_inta
+          fail pins:    xxA28nn[0], 
+P   432:1:0  18822272 18822814      542     1538     271    -1      0    823648     0 c-  p--i g1272020P2395498_014040_PH00dt_ftxxx_ux1xm1x0xxxxxxxxx_tap_idcode_tms
+P   433:1:0  18822816 18823422      606     1570     303    -1      0    823685     0 c-  p--i g1272137P2325308_014040_PH00dt_ftxxx_ux1xm1x0xxxxxxxxx_fsb_tap_public_bypass
+-------------------------------------------------------------------
+-i- number of patterns encountered   =    433
+-i- number of patterns executed      =    433
+-i- number of patterns passing       =    284
+-i- number of patterns failing       =    149
+-i- number of patterns intermittent  =      0
+-i- passing patterns clock cycle sum = 236938387
+-i- execution time for user function = 10.2549 seconds
+-i- execution time per pattern (ave) = 0.0237 seconds
+-i- current time                     = 2005:08:22:10:46:47
+-------------------------------------------------------------------
+
+
+Function execute status: iF_PSC_eap PASS
+DBG>exit
+Exiting device debugging session

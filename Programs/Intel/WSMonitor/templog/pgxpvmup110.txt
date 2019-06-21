@@ -1,0 +1,3 @@
+Status=Down
+Server=pgxpvmup110
+Team=TM

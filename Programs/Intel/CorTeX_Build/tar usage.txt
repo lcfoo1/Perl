@@ -1,0 +1,3 @@
+P:\tpapps>archive_targz.pl -s P:/tpapps/IDC_CorTeX -d P:\tpapps\IDC_CorTeX\OASIS\Rev3.7.0v8p0e1 -o P:\tpapps\Lcfoo1.tar.gz
+
+P:\tpapps>archive_targz.pl -s P:/tpapps/IDC_CorTeX -o P:\tpapps\Lcfoo.tar.gz -i P:/tpapps/setup.txt

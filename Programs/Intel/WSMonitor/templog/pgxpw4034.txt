@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4034
+Team=TP
+User=alim4
+Logon=3/7/2007 5:22:00 PM
+LastActive=3/7/2007 10:08:00 PM
+Active=Yes(IDLE=0days, 4hrs, 46mins)

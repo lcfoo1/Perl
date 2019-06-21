@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4032
+Team=TP
+User=steoh4
+Logon=3/5/2007 11:42:00 AM
+LastActive=3/7/2007 10:08:00 PM
+Active=No(IDLE=2days, 10hrs, 26mins)

@@ -1,0 +1,24 @@
+#
+# Filename : cwma_com_vrevR5_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_regunf_0.pxr
+#
+Version 1.0;
+
+PxrFile
+{
+	TimingMap	"cwma_com_vrevR5_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_regunf_0.tmap:cwma_com_vrevR5_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_regunf_0";
+
+	Subroutine	"cwma_sub_vrevR5_P_010606_c_N_G0_647a_j_f_x_0_I_1_f1_regunf_0.pobj";
+
+        TSModeSelect	{ CTV;MTV;}
+
+       Domain default
+       {
+	   SourceSelectionTable
+	   {
+	 	   SourceSelector SR
+		   {
+		 	     ALLPINs =  SUBR;
+		   }
+           }
+       }
+}

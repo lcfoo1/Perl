@@ -1,0 +1,362 @@
+
+COMPOSITE LRB_MultiCores_UF
+{
+	DEF (SEGNAME = $name,
+		 whichSocketFile = "",                        			#Datatype=STRING, OPTIONAL
+    		 globalDebugMode = "",	                         		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    		 globalDatalogMode = "FALSE",                       		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 engineeringMode = "",		                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, GET_USER_INPUT, SILENT
+		 productName = "",				                #Datatype=STRING, OPTIONAL
+		 locationCode = "",                             			#Datatype=INTEGER, OPTIONAL
+		 testTemp = "",		                               		#Datatype=DOUBLE, OPTIONAL
+		 corrWaferLot = "",			                        #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 verifyAllInstances = "",	                     		#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 engLocnGlobalName = "",                      			#Datatype=STRING, OPTIONAL
+		 staticInstanceFilename = "",					#Datatype=STRING, OPTIONAL
+
+		 # Common Test Class Parameters
+	         debugMode = VERBOSE,
+		 datalogMode = "ON",                              #Datatype=STRING, OPTIONAL  #Choices : ON, DISABLED, CAPTURE_ONLY
+		 serialMode = "FALSE",                           #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 bypassGlobal = "",                              #Datatype=STRING, OPTIONAL
+		 preinstance = "",                               #Datatype=STRING, OPTIONAL
+		 preplist = "",                                  #Datatype=STRING, OPTIONAL
+		 postplist = "",                                 #Datatype=STRING, OPTIONAL
+		 preburst = "",                                  #Datatype=STRING, OPTIONAL
+		 postburst = "",                                 #Datatype=STRING, OPTIONAL
+		 eotPowerDown = "FALSE",                         #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 maskPins = "",                                  #Datatype=STRING, OPTIONAL
+		 thermalMonitorMode = "DISABLED",                #Datatype=STRING, OPTIONAL  #Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+		 thermalMonitorOffsetCheck = "CHECK_LIMITS",     #Datatype=STRING, OPTIONAL  #Choices : CHECK_LIMITS, MEASURE_ONLY
+		 thermalMonitorItuffTname = "",                  #Datatype=STRING, OPTIONAL
+		 instanceProfile = "FALSE",                      #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 plistCheck = "EMPTY_DISABLED",          #Datatype=STRING, OPTIONAL  #Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+		 ignoreAlarm = "NONE",                           #Datatype=STRING, OPTIONAL  #Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+		 relayToken = "",                                #Datatype=STRING, OPTIONAL
+	 	 captureResult = CLEAR,	#Choices : DO_NOT_CLEAR, CLEAR
+        
+        	postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+        	patlist = basic_func_list_pass,
+        	timings = iValTimings50MHz,
+        	secondPassTimings = "",
+        	maxCaptureFails = 1,
+        	level = iValLevelFuncPass,
+        	eapMode = EAP_OFF
+        	ssidESequence = "",
+        	ssidERecovery = "",
+        	ssidGPwrdwn = NO,
+        	ssidGRestore = "",
+        	ssidOExecute = "FIRST_FAIL",
+
+		binMatrixFilePath = "", 
+		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+		operatingMode = "CLEAR_DUT_DATA",
+		loopMode = "VLOOP",
+		activeTestDomain = "",
+		portToTestValue = "",
+		invalidFlows = "",
+		dffTokenName = "",
+		dffTokenValue = "",
+		defaultHardBin = 1,
+		enableextendedbinning = "DISABLED",
+
+        );
+
+	DEF (TEMPLATENAME = LRBMultiCoresUF, 
+	TESTTYPE = EXECUTE, 
+	TESTITEM = "", 
+	TESTMODE = LRBMultiCoresUF, 
+	DEBUGMODE = $debugMode,
+	DESIREDOUT = "");
+  	DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$TESTMODE_$DEBUGMODE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = SSID,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_GLOBAL^CorTeXGlobals.iCGL_SSIDSetupName-./LRB_MultiCores_UF_SSID.cfg!iVal_LRB_32Core,SET_GLOBAL^CTSCVars.SC_LOCN-7721"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = MULTICORES, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = 7721,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+		debugMode = "OBNOXIOUS",
+		#postinstance = "LRB_MultiCores!GetTXMapping"
+		postinstance="Misc.dll!Call LRB_MultiCores!GetTXMapping[SETUP]+iVal_utilityfunc!GenerateInstanceResults[Capture]"
+
+	)
+    	0?NEXT,
+    	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = GSDSINIT,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_GSDS^CR_DI-00000000000000000000000000000000,SET_GSDS^TX_DI-00000000"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = ClearDUTData,
+	TESTITEM = BFMC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = "LRB_MultiCores_UF/BMFC.xml", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	loopMode = "VLOOP",
+	activeTestDomain = "core_freq",
+	defaultHardBin = 1,
+	operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetFlowInfo,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = "LRB_MultiCores_UF/BMFC.xml", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_FLOW_INFO",
+	activeTestDomain = "core_freq",
+	invalidFlows = "",
+	dffTokenName = "",
+	dffTokenValue = ""
+	)
+	0?NEXT,
+	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = DisableExtraCores,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_MultiCores!DisableExtraCores",
+		functionParameter = "FINAL_CR-CR_DI FINAL_TX-TX_DI PF_CR-PFCR_DI PF_TX-PFTX_DI FLOW-2",
+	)
+	0?NEXT,
+	1?NEXT;
+
+	tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASIC,
+		TESTMODE = FUNC, 
+      		DESIREDOUT = P1,
+		patlist = "basic_func_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C28T7^0,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C28T7^0,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_basic"
+	)
+        0?NEXT,
+        1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = Display,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "DISPLAY",
+		preinstance = "",
+	)
+	0?NEXT,
+	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = GSDSCRDI31,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_GSDS^CR_DI-00000000000000000000000000000001,SET_GSDS^TX_DI-00000000"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetFlowInfoF3,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = "LRB_MultiCores_UF/BMFC.xml", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_FLOW_INFO",
+	activeTestDomain = "core_freq",
+	invalidFlows = "1,2",
+	dffTokenName = "",
+	dffTokenValue = ""
+	)
+	0?NEXT,
+	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = DisableExtraCoresF3,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_MultiCores!DisableExtraCores",
+		functionParameter = "FINAL_CR-CR_DI FINAL_TX-TX_DI PF_CR-PFCR_DI PF_TX-PFTX_DI FLOW-3",
+	)
+	0?NEXT,
+	1?NEXT;
+
+	tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASICF3,
+		TESTMODE = FUNC, 
+      		DESIREDOUT = F0,
+		patlist = "basic_func_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C31T8^0,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C31T8^0,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_basic"
+	)
+        0?NEXT,
+        1?NEXT;
+
+
+	tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASICF3,
+		TESTMODE = FUNC, 
+      		DESIREDOUT = P1,
+		patlist = "basic_func_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C30T8^2,C28T7^0,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C30T8^2,C28T7^0,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_basic"
+	)
+        0?NEXT,
+        1?NEXT;
+
+	tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASICF3,
+		TESTMODE = FUNC, 
+      		DESIREDOUT = P2,
+		patlist = "basic_func_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C28T7^0,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C28T7^0,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_basic"
+	)
+        0?NEXT,
+        1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = DisplayF3,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "DISPLAY",
+		preinstance = "",
+	)
+	0?NEXT,
+	1?NEXT;
+	
+        tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASIC,
+		TESTMODE = TXMULTICORE, 
+      		DESIREDOUT = F0,
+		patlist = "basic_func_tx_multi_core_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C31T8^0,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C31T8^0,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_tx_multi_core"
+	)
+        0?NEXT,
+        1?NEXT;
+
+        tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASIC,
+		TESTMODE = TXMULTICORE, 
+      		DESIREDOUT = P1,
+		patlist = "basic_func_tx_multi_core_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C30T8^2,C28T8^3,C24T7^4,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C30T8^2,C28T8^3,C24T7^4,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_tx_multi_core"
+	)
+        0?NEXT,
+        1?NEXT;
+
+
+        tt_func (
+		TEMPLATENAME = LRBMULTICORESUF,
+		TESTITEM = BASIC,
+		TESTMODE = TXMULTICORE, 
+      		DESIREDOUT = P2,
+		patlist = "basic_func_tx_multi_core_list",
+		#postinstance = "LRB_MultiCores!SetPortAndGSDSVars FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C28T8^3,C24T7^4,C0T0",
+		postinstance="Misc.dll!Call LRB_MultiCores!SetPortAndGSDSVars[FINAL_CR-CR_DI FINAL_TX-TX_DI PORTS-1,C32T8^2,C28T8^3,C24T7^4,C0T0]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+		ssidESequence = "Exec_tx_multi_core"
+	)
+        0?NEXT,
+        1?NEXT;
+
+
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBMULTICORESUF,
+		TESTMODE = DisplayTXSMultiCoreF3,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "DISPLAY",
+		preinstance = "",
+	)
+	0?NEXT,
+	1?NEXT;
+	
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetDUTFinalData,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = "LRB_MultiCores_UF/BMFC.xml", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_DUT_FINAL_DATA",
+	activeTestDomain = "core_freq",
+	loopMode = "VLOOP",
+	defaultHardBin = 1,
+	enableextendedbinning = "ENABLED",
+	defaultHardBin = 6901
+	)
+	0?1,
+	1?1;
+
+
+
+}

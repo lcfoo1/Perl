@@ -1,0 +1,48 @@
+
+Microsoft (R) Visual Studio Version 8.0.50727.762.
+Copyright (C) Microsoft Corp 1984-2005. All rights reserved.
+1>------ Rebuild All started: Project: FUSE, Configuration: Release Win32 ------
+2>------ Rebuild All started: Project: DS10, Configuration: Release Win32 ------
+2>Deleting intermediate and output files for project 'DS10', configuration 'Release|Win32'
+1>Deleting intermediate and output files for project 'FUSE', configuration 'Release|Win32'
+1>Compiling...
+2>DS10 : warning PRJ0009 : Build log could not be opened for writing.
+2>Make sure that the file is not open by another process and is not write-protected.
+2>Compiling...
+2>DS10.cpp
+1>cl : Command line error D8022 : cannot open 'p:\tpapps\CorTeX\UFs\Rev4.9.1_PG1\cktm\src\Release\RSP00000132922456.rsp'
+1>Could not delete temporary file. Make sure that you do not have it open and that the file is not protected.
+1>
+1>Build log was saved at "file://p:\tpapps\CorTeX\UFs\Rev4.9.1_PG1\cktm\src\Release\BuildLog.htm"
+1>FUSE - 1 error(s), 0 warning(s)
+3>------ Skipped Rebuild All: Project: CKT_IDLEPOWER_CHECK, Configuration: Release Win32 ------
+3>Project not selected to build for this solution configuration 
+4>------ Skipped Rebuild All: Project: CKT_SETBINBYFMAX, Configuration: Release Win32 ------
+4>Project not selected to build for this solution configuration 
+5>------ Skipped Rebuild All: Project: CWMA_JITTER, Configuration: Release Win32 ------
+5>Project not selected to build for this solution configuration 
+6>------ Skipped Rebuild All: Project: CKT_THERMAL, Configuration: Release Win32 ------
+6>Project not selected to build for this solution configuration 
+7>------ Skipped Rebuild All: Project: DFFSUPPORT, Configuration: Release Win32 ------
+7>Project not selected to build for this solution configuration 
+8>------ Skipped Rebuild All: Project: CWMA_MISC, Configuration: Release Win32 ------
+8>Project not selected to build for this solution configuration 
+9>------ Skipped Rebuild All: Project: CKT, Configuration: Release Win32 ------
+9>Project not selected to build for this solution configuration 
+10>------ Skipped Rebuild All: Project: CKT_KILLLIMIT, Configuration: Release Win32 ------
+10>Project not selected to build for this solution configuration 
+11>------ Skipped Rebuild All: Project: CKT_AVID, Configuration: Release Win32 ------
+11>Project not selected to build for this solution configuration 
+12>------ Skipped Rebuild All: Project: CKT_NGREMAPBIN, Configuration: Release Win32 ------
+12>Project not selected to build for this solution configuration 
+13>------ Skipped Rebuild All: Project: CKT_L2MAP, Configuration: Release Win32 ------
+13>Project not selected to build for this solution configuration 
+14>------ Skipped Rebuild All: Project: ACCESSULTFORDFF, Configuration: Release Win32 ------
+14>Project not selected to build for this solution configuration 
+2>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+2>Linking...
+2>   Creating library ..\lib\DS10.lib and object ..\lib\DS10.exp
+2>Embedding manifest...
+2>Build log was saved at "file://p:\tpapps\CorTeX\UFs\Rev4.9.1_PG1\cktm\src\Release\BuildLog.htm"
+2>DS10 - 0 error(s), 1 warning(s)
+========== Rebuild All: 1 succeeded, 1 failed, 12 skipped ==========

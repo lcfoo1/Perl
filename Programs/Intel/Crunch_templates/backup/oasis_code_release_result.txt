@@ -1,0 +1,50 @@
+
+Microsoft (R) Visual Studio Version 8.0.50727.762.
+Copyright (C) Microsoft Corp 1984-2005. All rights reserved.
+1>------ Rebuild All started: Project: OASIS_code, Configuration: Release Win32 ------
+1>Deleting intermediate and output files for project 'OASIS_code', configuration 'Release|Win32'
+1>Compiling...
+1>OASIS_CallbackMgr.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>OASIS_AlarmHandler.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>OASIS_global.cpp
+1>p:\tpapps\cortex\oasis\rev4.9.1_pg1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>C:\T2000\Root\UserSDK\inc\OAI/datalog/IDatalogStream.h (121) : NOTE: init() is deprecated.
+1>C:\T2000\Root\UserSDK\inc\OAI/datalog/IDatalogStream.h (137) : NOTE: getInitProperties() is deprecated.
+1>OASIS_core.cpp
+1>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+1>C:\T2000\Root\UserSDK\inc\OAI/datalog/IDatalogStream.h (121) : NOTE: init() is deprecated.
+1>C:\T2000\Root\UserSDK\inc\OAI/datalog/IDatalogStream.h (137) : NOTE: getInitProperties() is deprecated.
+1>C:\T2000\Root\UserSDK\inc\OAI/core/SynchronizationGroup.h (234) : TODO: SynchronizationGroup::setCoherentSynchGroup() is obsolete method.
+1>C:\T2000\Root\UserSDK\inc\OAI/core/SynchronizationGroup.h (235) : TODO: Please replace setCoherentSynchGroup() with setSynchronousSynchGroup().
+1>.\OASIS_core.cpp(26070) : warning C4189: 'tStpStatus' : local variable is initialized but not referenced
+1>.\OASIS_core.cpp(30244) : warning C4018: '<' : signed/unsigned mismatch
+1>.\OASIS_core.cpp(30268) : warning C4018: '<' : signed/unsigned mismatch
+1>.\OASIS_core.cpp(30286) : warning C4018: '<' : signed/unsigned mismatch
+1>Generating Code...
+1>p:\tpapps\cortex\oasis\rev4.9.1_pg1\code\oasis_global.cpp(2997) : warning C4701: potentially uninitialized local variable 'pSpecSetCollectionMgr' used
+1>Compiling resources...
+1>Linking...
+1>   Creating library ..\lib\OASIS_code.lib and object ..\lib\OASIS_code.exp
+1>LCMPeriodHelper.lib(LCMPeriodHelperImpl.obj) : warning LNK4099: PDB 'vc80.pdb' was not found with 'C:\T2000\Root\/UserSDK/lib/AT\LCMPeriodHelper.lib' or at 'p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\Release\vc80.pdb'; linking object as if no debug info
+1>LCMPeriodHelper.lib(libLCMCalc1.obj) : warning LNK4099: PDB 'vc80.pdb' was not found with 'C:\T2000\Root\/UserSDK/lib/AT\LCMPeriodHelper.lib' or at 'p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\Release\vc80.pdb'; linking object as if no debug info
+1>LCMPeriodHelper.lib(libLCMCalcSpecTable1.obj) : warning LNK4099: PDB 'vc80.pdb' was not found with 'C:\T2000\Root\/UserSDK/lib/AT\LCMPeriodHelper.lib' or at 'p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\Release\vc80.pdb'; linking object as if no debug info
+1>LCMPeriodHelper.lib(licLCMCalcMath1.obj) : warning LNK4099: PDB 'vc80.pdb' was not found with 'C:\T2000\Root\/UserSDK/lib/AT\LCMPeriodHelper.lib' or at 'p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\Release\vc80.pdb'; linking object as if no debug info
+1>Embedding manifest...
+1>Build log was saved at "file://p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\Release\BuildLog.htm"
+1>OASIS_code - 0 error(s), 9 warning(s)
+2>------ Rebuild All started: Project: OASIS_65GDM_code, Configuration: Release Win32 ------
+2>Deleting intermediate and output files for project 'OASIS_65GDM_code', configuration 'Release|Win32'
+2>Compiling...
+2>OASIS_65GDMCallbacks.cpp
+2>p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\OASIS_global.h (592) : TODO: HSD 3329:Re-architect m_zPopulateDCTesterSpecData() to handle multiple modules thru callback functions.
+2>C:\T2000\Root\UserSDK\inc\OAI/core/SynchronizationGroup.h (234) : TODO: SynchronizationGroup::setCoherentSynchGroup() is obsolete method.
+2>C:\T2000\Root\UserSDK\inc\OAI/core/SynchronizationGroup.h (235) : TODO: Please replace setCoherentSynchGroup() with setSynchronousSynchGroup().
+2>Compiling resources...
+2>Linking...
+2>   Creating library ..\lib\OASIS_65GDM_code.lib and object ..\lib\OASIS_65GDM_code.exp
+2>Embedding manifest...
+2>Build log was saved at "file://p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\code\Release\BuildLog.htm"
+2>OASIS_65GDM_code - 0 error(s), 0 warning(s)
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========

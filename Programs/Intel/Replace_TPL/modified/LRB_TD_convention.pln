@@ -1,0 +1,42 @@
+#C:\intel\tpapps\Greenlane\OASIS\GLN_Rev4.12.4_TSS208D_PG18.2\templates\OASIS_userFunc_tt.ph
+#Import C:\intel\tpapps\Greenlane\OASIS\GLN_Rev4.12.4_TSS208D_PG18.2\templates\OASIS_tt.ph
+INST tt_lrb_td_userfunc {
+	NAME                                    $name;
+	TEMPLATE                                iCUserFuncTest;
+	function_name                           $functionName;                           #Datatype=STRING, REQUIRED
+	function_parameter                     $functionParameter;                      #Datatype=STRING, OPTIONAL
+	datalog_mode                            $datalogMode;                             #Datatype=STRING, OPTIONAL  #Choices : ON, DISABLED, CAPTURE_ONLY
+	debug_mode                             $debugMode;                              #Datatype=STRING, OPTIONAL  #Choices : DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	#serial_mode                            $serialMode;                             #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	#bypass_global                          $bypassGlobal;                           #Datatype=STRING, OPTIONAL
+	preinstance                            $preinstance;                            #Datatype=STRING, OPTIONAL
+	postinstance                           $postinstance;                           #Datatype=STRING, OPTIONAL
+	#preplist                               $preplist;                               #Datatype=STRING, OPTIONAL
+	#postplist                              $postplist;                              #Datatype=STRING, OPTIONAL
+	#preburst                               $preburst;                               #Datatype=STRING, OPTIONAL
+	#postburst                              $postburst;                              #Datatype=STRING, OPTIONAL
+	#EOT_power_down                         $eotPowerDown;                           #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	#mask_pins                              $maskPins;                               #Datatype=STRING, OPTIONAL
+	#thermal_monitor_mode                   $thermalMonitorMode;                     #Datatype=STRING, OPTIONAL  #Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	#thermal_monitor_offset_check           $thermalMonitorOffsetCheck;              #Datatype=STRING, OPTIONAL  #Choices : CHECK_LIMITS, MEASURE_ONLY
+	#thermal_monitor_ituff_tname            $thermalMonitorItuffTname;               #Datatype=STRING, OPTIONAL
+	#instance_profile                       $instanceProfile;                        #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	#plist_check                       $plistCheck;                         #Datatype=STRING, OPTIONAL  #Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+	#ignore_alarm                           $ignoreAlarm;                            #Datatype=STRING, OPTIONAL  #Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+	#ssid_e_sequence                  $ssidESequence;                    #Datatype=STRING, OPTIONAL
+	#ssid_e_recovery                 $ssidERecovery;                   #Datatype=STRING, OPTIONAL
+	#ssid_g_restore                     $ssidGRestore;                       #Datatype=STRING, OPTIONAL
+	#ssid_g_pwrdwn          $ssidGPwrdwn;             #Datatype=STRING, OPTIONAL  #Choices : NO, YES
+	#relay_token                            $relayToken;                             #Datatype=STRING, OPTIONAL
+	#ssid_o_execute                   $ssidOExecute;                     #Datatype=STRING, OPTIONAL  #Choices : FORCE_ALL, FIRST_FAIL
+	#capture_result                   $captureResult;                     #Datatype=STRING, OPTIONAL  #Choices : DO_NOT_CLEAR, CLEAR
+	#viewPLL_mode                           $viewpllMode;                            #Datatype=STRING, OPTIONAL  #Choices : HVM, DV, DISABLED
+	#monitor_setup_id                       $monitorSetupId;                         #Datatype=STRING, OPTIONAL
+	#reference_temperature                  $referenceTemperature;                   #Datatype=STRING, OPTIONAL  #Choices : PRETEST, POSTTEST, STARTOFTEST, DEFAULT
+	#thermal_test_name_datalog_format       $thermalTestNameDatalogFormat;           #Datatype=STRING, OPTIONAL
+	#PListParam                             $plistparam;                             #Datatype=OFCSTRING, OPTIONAL
+	#TestConditionParam                     $testconditionparam;                     #Datatype=OFCSTRING, OPTIONAL
+	#DebugMode                              $debugmode;                              #Datatype=INTEGER, OPTIONAL  #Choices : 0, 1
+}
+
+

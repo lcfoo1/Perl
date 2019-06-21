@@ -1,0 +1,252 @@
+COMPOSITE LRB_SHMOO
+{
+
+	DEF (SEGNAME = $name,
+		 whichSocketFile = "",                        			#Datatype=STRING, OPTIONAL
+    		 globalDebugMode = "",	                         		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    		 globalDatalogMode = "FALSE",                       		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 engineeringMode = "",		                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, GET_USER_INPUT, SILENT
+		 productName = "",				                #Datatype=STRING, OPTIONAL
+		 locationCode = "",                             			#Datatype=INTEGER, OPTIONAL
+		 testTemp = "",		                               		#Datatype=DOUBLE, OPTIONAL
+		 corrWaferLot = "",			                        #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 verifyAllInstances = "",	                     		#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 engLocnGlobalName = "",                      			#Datatype=STRING, OPTIONAL
+		 staticInstanceFilename = "",					#Datatype=STRING, OPTIONAL
+
+		 searchSets = "",								 #Datatype=STRING, OPTIONAL
+		 searchRepeats = 1,                          	 #Datatype=INTEGER, OPTIONAL
+		 preSearchsetUserfunc = "",                   	 #Datatype=STRING, OPTIONAL
+		 postSearchsetUserfunc = "",                  	 #Datatype=STRING, OPTIONAL
+		 searchConfigFile = "",                      	 #Datatype=STRING, OPTIONAL
+		 searchType = "FMAX",                            #Datatype=STRING, OPTIONAL  #Choices : FMIN, FMAX, VMIN, VMAX
+		 parallelPerPin = "DISABLED",                    #Datatype=STRING, OPTIONAL  #Choices : ENABLED, DISABLED
+		 searchPins = "",                                #Datatype=STRING, OPTIONAL
+		 searchMethod = "BINARY",                        #Datatype=STRING, OPTIONAL  #Choices : LINEAR, BINARY
+		 searchDirection = "PASS_TO_FAIL",               #Datatype=STRING, OPTIONAL  #Choices : PASS_TO_FAIL, FAIL_TO_PASS
+		 patlist = "LRB_list",         #Datatype=STRING, OPTIONAL
+		 timings = "iValTimings50MHz",	                 #Datatype=STRING, OPTIONAL
+		 level = "iValLevelNom",                   #Datatype=STRING, OPTIONAL
+		 searchParameter = "tper",                           #Datatype=STRING, OPTIONAL
+		 lowSearchValue = 8.0,                           #Datatype=DOUBLE, OPTIONAL
+		 highSearchValue = 10.0,                         #Datatype=DOUBLE, OPTIONAL
+		 binNumberGlobal = "",                           #Datatype=STRING, OPTIONAL
+		 binsValuesGlobal = "",                          #Datatype=STRING, OPTIONAL
+		 resolution = 0.5,                               #Datatype=DOUBLE, OPTIONAL
+		 limit = -99,                                    #Datatype=DOUBLE, OPTIONAL
+		 refInstance = "",                               #Datatype=STRING, OPTIONAL
+		 ituffName = "Test_ituff",                       #Datatype=STRING, OPTIONAL
+		 ituffAddInstanceName = "DISABLED",              #Datatype=STRING, OPTIONAL  #Choices : ENABLED, DISABLED
+		 ituff3dsearch = "DISABLED",                     #Datatype=STRING, OPTIONAL  #Choices : ENABLED, DISABLED
+		 failDataMode = "ENABLED",                       #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 scrbrdFirstfail = "DISABLED",                   #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 execMode = "ALL_PAT",                           #Datatype=STRING, OPTIONAL  #Choices : ALL_PAT, PER_PAT
+		 perPatternSearchMode = "PER_PAT_FAST",          #Datatype=STRING, OPTIONAL  #Choices : PER_PAT_FAST, PER_PAT_SLOW_WITH_PWRDN, PER_PAT_SLOW_PER_TEST_COND
+		 perPatDlogAllpats = "DISABLED",                 #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 enableWindowSearch = "DISABLED",                #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 windowSearchWidth = -99,                        #Datatype=INTEGER, OPTIONAL
+		 sampleRate = -99,                               #Datatype=INTEGER, OPTIONAL
+		 smartSearchValue = -99,                         #Datatype=DOUBLE, OPTIONAL
+		 tempRangeLo = -99,                              #Datatype=DOUBLE, OPTIONAL
+		 tempRangeHi = -99,                              #Datatype=DOUBLE, OPTIONAL
+		 tempTimeout = -99,                              #Datatype=DOUBLE, OPTIONAL
+		 allPassValue = -99,                             #Datatype=DOUBLE, OPTIONAL
+		 offsetEnable = "DISABLED",                      #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 offsetSlope = -99,                              #Datatype=DOUBLE, OPTIONAL
+		 offsetConstant = -99,                           #Datatype=DOUBLE, OPTIONAL
+		 testPointDelay = -99,                           #Datatype=INTEGER, OPTIONAL
+		 testPointStability = 1,                         #Datatype=INTEGER, OPTIONAL
+		 searchDelay = -99,                              #Datatype=INTEGER, OPTIONAL
+		 prebuildSearchPoints = "ENABLED",               #Datatype=STRING, OPTIONAL  #Choices : ENABLED, DISABLED
+		 skipEdgeCheck = "ENABLED",                     #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 powerDownBetweenSets = "DISABLED",              #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+		 periodFormat = "PERIOD",                        #Datatype=STRING, OPTIONAL  #Choices : PERIOD, FREQ
+		 freqMode = "FSB",                              #Datatype=STRING, OPTIONAL  #Choices : FSB, CORE, UNDEFINED
+		 busRatio = 30.0,                                   #Datatype=DOUBLE, OPTIONAL
+		 paramTosetPresearch = "",                       #Datatype=STRING, OPTIONAL
+		 paramTosetValue = -99,                          #Datatype=DOUBLE, OPTIONAL
+		 vccspec = "",                                   #Datatype=STRING, OPTIONAL
+		 vccStart = -99.0,                                 #Datatype=DOUBLE, OPTIONAL
+		 vccEnd = -99.0,                                   #Datatype=DOUBLE, OPTIONAL
+		 vccResolution = -99,                            #Datatype=DOUBLE, OPTIONAL
+		 resultGlobal = "",                              #Datatype=STRING, OPTIONAL
+
+		# Common Test Class Parameters
+		 datalogMode = "ON",                              #Datatype=STRING, OPTIONAL  #Choices : ON, DISABLED, CAPTURE_ONLY
+		 debugMode = "VERBOSE",                                #Datatype=STRING, OPTIONAL  #Choices : DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+		 serialMode = "FALSE",                           #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 bypassGlobal = "",                              #Datatype=STRING, OPTIONAL
+		 preinstance = "",                               #Datatype=STRING, OPTIONAL
+		 #postinstance = "",                             #Datatype=STRING, OPTIONAL
+		 preplist = "",                                  #Datatype=STRING, OPTIONAL
+		 postplist = "",                                 #Datatype=STRING, OPTIONAL
+		 preburst = "",                                  #Datatype=STRING, OPTIONAL
+		 postburst = "",                                 #Datatype=STRING, OPTIONAL
+		 eotPowerDown = "FALSE",                         #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 maskPins = "",                                  #Datatype=STRING, OPTIONAL
+		 thermalMonitorMode = "DISABLED",                #Datatype=STRING, OPTIONAL  #Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+		 thermalMonitorOffsetCheck = "CHECK_LIMITS",     #Datatype=STRING, OPTIONAL  #Choices : CHECK_LIMITS, MEASURE_ONLY
+		 thermalMonitorItuffTname = "",                  #Datatype=STRING, OPTIONAL
+		 instanceProfile = "FALSE",                      #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+		 plistCheck = "EMPTY_DISABLED",          #Datatype=STRING, OPTIONAL  #Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+		 ignoreAlarm = "NONE",                           #Datatype=STRING, OPTIONAL  #Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+		 relayToken = "",                                #Datatype=STRING, OPTIONAL
+		 ssidESequence = "",                       #Datatype=STRING, OPTIONAL
+		 ssidERecovery = "",                      #Datatype=STRING, OPTIONAL
+		 ssidGPwrdwn = "NO"               #Datatype=STRING, OPTIONAL  #Choices : NO, YES
+	 	 relayToken = "",
+	 	 ssidOExecute = FIRST_FAIL,	#Choices : FORCE_ALL, FIRST_FAIL
+	 	 captureResult = CLEAR,	#Choices : DO_NOT_CLEAR, CLEAR
+        );
+  
+	DEF (TEMPLATENAME = LRBSHMOO, 
+	TESTTYPE = EXECUTE, 
+	TESTITEM = "", 
+	TESTMODE = LRBSHMOO, 
+	DEBUGMODE = $debugMode,
+	DESIREDOUT = "");
+  	DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$TESTMODE_$DEBUGMODE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+ 
+        DEF (preBuildShmooPoints = "DISABLED");
+
+
+	tt_userfunc (
+		TEMPLATENAME = UF, 
+		TESTITEM = LRBSHMOO,
+		TESTMODE = SSID,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_GLOBAL^CorTeXGlobals.iCGL_SSIDSetupName-./LRB_Shmoo_SSID.cfg!iVal_DualCore"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTITEM = LRBSHMOO,
+		TESTMODE = MULTICORES, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = 7721,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+		debugMode = "OBNOXIOUS",
+	)
+    	0?NEXT,
+    	1?NEXT;
+
+
+  
+   LRB_SHMOO_ALL_PIN (COMPNAME = LRB_SHMOO_ALL_PIN)
+   0?NEXT,
+   1?NEXT;
+}
+
+COMPOSITE LRB_SHMOO_ALL_PIN
+{
+
+   DEF (ExecMode = "ALL_PIN");		#Choices : ALL_PIN, PER_PIN, PER_PAT, REPEAT_N
+   
+   
+   LRB_Shmoo_2D_Execute_$ExecMode (COMPNAME = LRB_Shmoo_2D_Execute_$ExecMode)
+   0?NEXT,
+   1?NEXT;
+   
+}
+
+
+COMPOSITE LRB_Shmoo_2D_Execute_$ExecMode
+#Composite Name: Shmoo_2D_Execute
+#Composite Description: Contains all test cases for shmoo template, 2D shmoo usage mode.
+{
+   DEF (SEGNAME = $name,
+   		patlist = "lrb_basic_func_list",
+   		timings = "iValTimings20_search",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+   		level = "iValLevelMin",
+   		execMode = $ExecMode,
+   		xaxisMax = 1.5,
+   		xaxisMin = 0.5,
+   		xaxisParameter = "vforce",
+   		xaxisResolution = 0.5,
+   		xaxisSteps = 2,
+   		yaxisMax = 9.0,
+   		yaxisMin = 4.0,
+   		yaxisParameter = "input_E1",
+   		yaxisSteps = 2,
+   		yaxisResolution = 2.5,
+   		zaxisMax = 0.0,
+   		zaxisMin = 0.0,
+   		zaxisParameter = "",
+   		zaxisSteps = 0,
+   		zaxisResolution = 0.0,
+   		regionalkillLimits="",
+   		datalogType = ARIES,
+   		shmooPins = "P002 P006 P008",
+   		repeatNumber = 2,
+		repeatThreshold = 1,   		
+   		powerDownBetweenPoints = "DISABLED",
+   		debugMode = DISABLED,
+   		bypassGlobal = "");
+   	
+   DEF (TEMPLATENAME = Shmoo, 
+	TESTTYPE = Execute, 
+	TESTMODE = 2D, 
+	TESTITEM = "", 
+	DESIREDOUT = "");
+   DEF (INSTANCENAME = $TEMPLATENAME_$TESTMODE_$ExecMode_$TESTTYPE_$TESTITEM_$DESIREDOUT);
+   DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME);
+   DEF (PASSBIN = 1, FAILBIN = 120);
+
+   
+   	   ################################################################################
+	   #Test Name: Shmoo_2D_Execute_ALL_PASS_P1 
+	   #Test Description: This test case attempts to run a 3D Shmoo and pass all points
+	   #HSDs: 1449 
+	   #Expected Behavior: Test case should be able to run basic 2D shmoo. The 
+	   #                   test case should exit at port # 1.
+	   #Collateral Req: None
+	   ################################################################################
+   	   tt_shmoo (TESTITEM = ALL_PASS,
+  		         DESIREDOUT = P1,
+  		   		 TESTINDEX = 01,
+  		   		 powerDownBetweenPoints = "ENABLED")
+   	   1?NEXT,
+   	   2?NEXT,
+	   0?NEXT ;	
+	   
+	   
+	   #HSD5235
+	   tt_shmoo_ssid (TESTITEM = DMEM,
+			 DESIREDOUT = P2,
+				 TESTINDEX = 03,
+				 patlist = "shmoo_DMEM_pat_list",
+				 xaxisParameter = "vil",
+				 xaxisMin = 0.5,
+				 xaxisMax = 1.5,
+				 xaxisResolution = 0.2,
+   				 xaxisSteps = 5,
+   				 yaxisSteps = 5,
+   				 yaxisResolution = 1,
+				 debugMode = BRIEF,
+				 preplist = "LRB_32Cores!tGenerateUniqueShmooFailure",
+				 postplist = "LRB_32Cores!tExtractShmooSymbolUF",
+				 ssidESequence = "EXEC_LRB_SHMOO_BASIC")
+	   1?NEXT,
+	   2?NEXT,
+	   0?NEXT ;
+
+}
+
+
+##########################################
+##		END OF FILE		##
+##					##
+##########################################

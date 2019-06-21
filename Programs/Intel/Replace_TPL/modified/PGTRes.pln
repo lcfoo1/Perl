@@ -1,0 +1,2965 @@
+####Avator will give warnings for the user-vars GL_Bypass_PGTRes_0 and GL_Bypass_PGTRes_1 not being present.
+####These user-vars are defined in iVal_PGTRes.usrv.  Avator has no knowledge of this file at this time.
+
+COMPOSITE PGTRes_Disabled
+{
+	PGTRes_Disabled_Verify (COMPNAME = PGTRes_Disabled_Verify)
+	0?NEXT,
+	1?NEXT;
+
+	PGTRes_Disabled_Execute (COMPNAME = PGTRes_Disabled_Execute)
+	0?NEXT,
+	1?NEXT;
+}
+
+
+COMPOSITE PGTRes_Obnoxious
+{
+	PGTRes_Obnoxious_Verify (COMPNAME = PGTRes_Obnoxious_Verify)
+	0?NEXT,
+	1?NEXT;
+
+	PGTRes_Obnoxious_Execute (COMPNAME = PGTRes_Obnoxious_Execute)
+	0?NEXT,
+	1?NEXT;
+}
+
+
+COMPOSITE PGTRes
+{
+	PGTRes_Verify (COMPNAME = PGTRes_Verify)
+	0?NEXT,
+	1?NEXT;
+
+	PGTRes_Execute (COMPNAME = PGTRes_Execute)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTRes_Disabled_Verify
+{
+        tt_pgtresistance_XML(name = PGTResVerify_DEBUG_Disabled_TestBypass_BadBypassVar_FNeg1,
+       		bypassGlobal = "Kookla_Fran_and_Ollie",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+#  	PGTResVerify_DEBUG_OBNOXIOUS (COMPNAME = PGTResVerify_DEBUG_OBNOXIOUS)
+#  	0?NEXT,
+#  	1?NEXT;
+
+#   	PGTResVerify_DEBUG_VERBOSE (COMPNAME = PGTResVerify_DEBUG_VERBOSE)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#   	PGTResVerify_DEBUG_BRIEF (COMPNAME = PGTResVerify_DEBUG_BRIEF)
+#   	0?NEXT,
+#   	1?NEXT;
+
+	PGTResVerify_DEBUG_DISABLED (COMPNAME = PGTResVerify_DEBUG_DISABLED)
+	0?NEXT,
+	1?NEXT;
+
+        PGTResVerify_PARAM_MOD (COMPNAME = PGTResVerify_PARAM_MOD)
+ 	0?NEXT,
+ 	1?NEXT;
+}
+
+COMPOSITE PGTRes_Obnoxious_Verify
+{
+        tt_pgtresistance_XML(name = PGTResVerify_DEBUG_Obnoxious_TestBypass_BadBypassVar_FNeg1,
+       		bypassGlobal = "Kookla_Fran_and_Ollie",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+  	PGTResVerify_DEBUG_OBNOXIOUS (COMPNAME = PGTResVerify_DEBUG_OBNOXIOUS)
+  	0?NEXT,
+  	1?NEXT;
+
+#   	PGTResVerify_DEBUG_VERBOSE (COMPNAME = PGTResVerify_DEBUG_VERBOSE)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#   	PGTResVerify_DEBUG_BRIEF (COMPNAME = PGTResVerify_DEBUG_BRIEF)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#	PGTResVerify_DEBUG_DISABLED (COMPNAME = PGTResVerify_DEBUG_DISABLED)
+#	0?NEXT,
+#	1?NEXT;
+
+        PGTResVerify_PARAM_MOD (COMPNAME = PGTResVerify_PARAM_MOD)
+ 	0?NEXT,
+ 	1?NEXT;
+}
+
+
+COMPOSITE PGTRes_Verify
+{
+        tt_pgtresistance_XML(name = PGTResVerify_DEBUG_TestBypass_BadBypassVar_FNeg1,
+       		bypassGlobal = "Kookla_Fran_and_Ollie",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+  	PGTResVerify_DEBUG_OBNOXIOUS (COMPNAME = PGTResVerify_DEBUG_OBNOXIOUS)
+  	0?NEXT,
+  	1?NEXT;
+
+#   	PGTResVerify_DEBUG_VERBOSE (COMPNAME = PGTResVerify_DEBUG_VERBOSE)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#   	PGTResVerify_DEBUG_BRIEF (COMPNAME = PGTResVerify_DEBUG_BRIEF)
+#   	0?NEXT,
+#   	1?NEXT;
+
+	PGTResVerify_DEBUG_DISABLED (COMPNAME = PGTResVerify_DEBUG_DISABLED)
+	0?NEXT,
+	1?NEXT;
+
+        PGTResVerify_PARAM_MOD (COMPNAME = PGTResVerify_PARAM_MOD)
+ 	0?NEXT,
+ 	1?NEXT;
+}
+
+COMPOSITE PGTRes_Disabled_Execute
+{
+        tt_pgtresistance_XML(name = PGTResExecute_DEBUG_Disabled_TestBypass_Bypass0_P1,
+       		bypassGlobal = "GL_Bypass_PGTRes_0",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+        tt_pgtresistance_XML(name = PGTResExecute_DEBUG_Disabled_TestBypass_Bypass1_P1,
+       		bypassGlobal = "GL_Bypass_PGTRes_1",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+    Gen_Bypass_Test ( COMPNAME = GEN_BYPASS_DISABLED_TEST,
+                      BypassInstName = "PGTResExecute_Bypass_Disabled_Test_P2",
+                      BypassVarName = "SEDCBPG1",
+                      ExpectedPort = "P1",  
+                      NewBypassVal = "2"  
+                    )
+                     0?NEXT,
+                     1?NEXT;
+        tt_pgtresistance_XML(name = PGTResExecute_Bypass_Disabled_Test_P2,
+       		bypassGlobal = "SEDCBPG1",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+#  	PGTResExecute_DEBUG_OBNOXIOUS (COMPNAME = PGTResExecute_DEBUG_OBNOXIOUS)
+#  	0?NEXT,
+#  	1?NEXT;
+
+#   	PGTResExecute_DEBUG_VERBOSE (COMPNAME = PGTResExecute_DEBUG_VERBOSE)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#   	PGTResExecute_DEBUG_BRIEF (COMPNAME = PGTResExecute_DEBUG_BRIEF)
+#   	0?NEXT,
+#   	1?NEXT;
+
+	PGTResExecute_DEBUG_DISABLED (COMPNAME = PGTResExecute_DEBUG_DISABLED)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTRes_Obnoxious_Execute
+{
+        tt_pgtresistance_XML(name = PGTResExecute_DEBUG_OBNOXIOUS_TestBypass_Bypass0_P1,
+       		bypassGlobal = "GL_Bypass_PGTRes_0",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+        tt_pgtresistance_XML(name = PGTResExecute_DEBUG_OBNOXIOUS_TestBypass_Bypass1_P1,
+       		bypassGlobal = "GL_Bypass_PGTRes_1",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+    Gen_Bypass_Test ( COMPNAME = GEN_BYPASS_OBNOXIOUS_TEST,
+                      BypassInstName = "PGTResExecute_Bypass_Obnoxious_Test_P2",
+                      BypassVarName = "SEDCBPG1",
+                      ExpectedPort = "P1",  
+                      NewBypassVal = "2"  
+                    )
+                     0?NEXT,
+                     1?NEXT;
+        tt_pgtresistance_XML(name = PGTResExecute_Bypass_Obnoxious_Test_P2,
+       		bypassGlobal = "SEDCBPG1",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+  	PGTResExecute_DEBUG_OBNOXIOUS (COMPNAME = PGTResExecute_DEBUG_OBNOXIOUS)
+  	0?NEXT,
+  	1?NEXT;
+
+#   	PGTResExecute_DEBUG_VERBOSE (COMPNAME = PGTResExecute_DEBUG_VERBOSE)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#   	PGTResExecute_DEBUG_BRIEF (COMPNAME = PGTResExecute_DEBUG_BRIEF)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#	PGTResExecute_DEBUG_DISABLED (COMPNAME = PGTResExecute_DEBUG_DISABLED)
+#	0?NEXT,
+#	1?NEXT;
+}
+
+COMPOSITE PGTRes_Execute
+{
+        tt_pgtresistance_XML(name = PGTResExecute_TestBypass_Bypass0_P1,
+       		bypassGlobal = "GL_Bypass_PGTRes_0",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+        tt_pgtresistance_XML(name = PGTResExecute_TestBypass_Bypass1_P1,
+       		bypassGlobal = "GL_Bypass_PGTRes_1",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+    Gen_Bypass_Test ( COMPNAME = GEN_BYPASS_TEST,
+                      BypassInstName = "PGTResExecute_Bypass_Test_P2",
+                      BypassVarName = "SEDCBPG1",
+                      ExpectedPort = "P1",  
+                      NewBypassVal = "2"  
+                    )
+                     0?NEXT,
+                     1?NEXT;
+        tt_pgtresistance_XML(name = PGTResExecute_Bypass_Test_P2,
+       		bypassGlobal = "SEDCBPG1",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON",
+                debugMode = "OBNOXIOUS",
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+  	PGTResExecute_DEBUG_OBNOXIOUS (COMPNAME = PGTResExecute_DEBUG_OBNOXIOUS)
+  	0?NEXT,
+  	1?NEXT;
+
+#   	PGTResExecute_DEBUG_VERBOSE (COMPNAME = PGTResExecute_DEBUG_VERBOSE)
+#   	0?NEXT,
+#   	1?NEXT;
+
+#   	PGTResExecute_DEBUG_BRIEF (COMPNAME = PGTResExecute_DEBUG_BRIEF)
+#   	0?NEXT,
+#   	1?NEXT;
+
+	PGTResExecute_DEBUG_DISABLED (COMPNAME = PGTResExecute_DEBUG_DISABLED)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResVerify_DEBUG_DISABLED
+{
+	DEF (	debugMode = "DISABLED");
+
+	PGTResVerify_$debugMode_Invalid_Params (COMPNAME = PGTResVerify_$debugMode_Invalid_Params)
+	0?NEXT,
+	1?NEXT;
+
+ 	PGTResVerify_$debugMode_Required_Params (COMPNAME = PGTResVerify_$debugMode_Required_Params)
+ 	0?NEXT,
+ 	1?NEXT;
+ 
+ 	PGTResVerify_$debugMode_XML (COMPNAME = PGTResVerify_$debugMode_XML)
+ 	0?NEXT,
+ 	1?NEXT;
+}
+
+COMPOSITE PGTResVerify_DEBUG_BRIEF
+{
+	DEF (	debugMode = "BRIEF");
+
+	PGTResVerify_$debugMode_Invalid_Params (COMPNAME = PGTResVerify_$debugMode_Invalid_Params)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResVerify_$debugMode_Required_Params (COMPNAME = PGTResVerify_$debugMode_Required_Params)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResVerify_$debugMode_XML (COMPNAME = PGTResVerify_$debugMode_XML)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResVerify_DEBUG_VERBOSE
+{
+	DEF (	debugMode = "VERBOSE");
+
+	PGTResVerify_$debugMode_Invalid_Params (COMPNAME = PGTResVerify_$debugMode_Invalid_Params)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResVerify_$debugMode_Required_Params (COMPNAME = PGTResVerify_$debugMode_Required_Params)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResVerify_$debugMode_XML (COMPNAME = PGTResVerify_$debugMode_XML)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResVerify_DEBUG_OBNOXIOUS
+{
+	DEF (	debugMode = "OBNOXIOUS");
+
+	PGTResVerify_$debugMode_Invalid_Params (COMPNAME = PGTResVerify_$debugMode_Invalid_Params)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResVerify_$debugMode_Required_Params (COMPNAME = PGTResVerify_$debugMode_Required_Params)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResVerify_$debugMode_XML (COMPNAME = PGTResVerify_$debugMode_XML)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResVerify_$debugMode_Invalid_Params
+{
+	DEF (	SEGNAME = $name,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_list",
+                restoreLevel = "iValIccNom",
+                powerPinMaskPins = "all_pins",
+                powerPinPinsToDisconnect = "P003",
+                measurePinMaskPins = "all_pins",
+                measurePinPinsToDisconnect = "P003",
+                equation = "1/((1/icc[0]/P001[0])+(1/icc[0]/P002[0])+(1/icc[0]/P003[0])),1/((1/icc[0]/P001[1])+(1/icc[0]/P002[1])+(1/icc[0]/P003[1])),1/((1/icc[0]/P001[2])+(1/icc[0]/P002[2])+(1/icc[0]/P003[2]))"
+		powerPin= "Hdps",
+		powerPinTriggerType = "SNDT",
+		powerPinForceValue = "1.25",
+		powerPinMeasureMode = "VSIM",
+		powerPinLowLimit = "0.50"
+		powerPinHighLimit = "100.0",
+		powerPinLowClamp = "0.0",
+		powerPinHighClamp = "150.0",
+		statisticType = "AVERAGE",
+		powerPinManualMeasureRange = "AUTO"
+		powerPinSettlingTime = "0.15",
+		powerPinSlewRate = "-99.0",
+		powerPinRelayState = "CLOSE",
+		powerPinOutputPinRelay = "OPEN",
+		powerPinPowerRaiseSequence = "-99",
+		powerPinPowerLowerSequence = "-99",
+		powerPinTriggerPin = "PMTrig001",
+		powerPinStartTrigger = "FREE"
+		powerPinStopTrigger = "COUNTER",
+		powerPinTriggerBit = "0",
+		powerPinSampleMode = "TRACE",
+		powerPinSampleSize = "1",
+		powerPinSamplingInterval = "25US",
+		powerPinShutdownMode = "FOLD",
+		powerPinShutdownDelay = "0.015",
+		measurePins = "P001,P002,P003",
+		measurePinTriggerType = "SNDC",
+		measurePinForceValue = "0.025",
+		measurePinMeasureMode = "ISVM",
+		measurePinLowLimit = "-0.010"
+		measurePinHighLimit = "1.5",
+		measurePinLowClamp = "-0.5",
+		measurePinHighClamp = "2.0",
+		measurePinMeasureLoop = "1",
+		measurePinMeasureDelay = "0",
+		measurePinManualMeasureRange = "AUTO",
+		measurePinSettlingTime = "0.015",
+		measurePinRelayState = "CLOSE",
+		measurePinOutputPinRelay = "OPEN",
+		measurePinSlewRate = "-99.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                dvMode = "DISABLED",
+		resultsUserVar = "UFG_PGTResC0,UFG_PGTResC1,UFG_PGTResC2",
+		ituffTname = "PGT_ResC0,PGT_ResC1,PGT_ResC2",
+		lowLimitUserVar = "UFG_PGTRes_LowLimitC0,UFG_PGTRes_LowLimitC1,UFG_PGTRes_LowLimitC2",
+		highLimitUserVar = "UFG_PGTRes_HighLimitC0,UFG_PGTRes_HighLimitC1,UFG_PGTRes_HighLimitC2",
+                useDff = "TRUE",
+                dffToken = "PGTResC0,PGTResC1,PGTResC2",
+                dffSsidType = "WFR",
+                datalogMode = "ON",
+                datalogType = "console,ituff",
+                vbumpMode = "DISABLED",
+                vbumpForce = "1.3",
+		bypassGlobal = "",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_lowLimitUserVar_$debugMode_FNeg1,
+		lowLimitUserVar = "the,quickred,fox")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_highLimitUserVar_$debugMode_FNeg1,
+		highLimitUserVar = "the,quickred,fix")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_PowerPinlevel_$debugMode_FNeg1,
+		powerPinLevel = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_PowerPintimings_$debugMode_FNeg1,
+		powerPinTimings = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_PowerPinpatlist_$debugMode_FNeg1,
+		powerPinPatlist = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_PowerPin_$debugMode_FNeg1,
+		powerPin = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_PowerPinforce_$debugMode_FNeg1,
+		powerPinForceValue = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_PowerPinlowLimit_$debugMode_FNeg1,
+		powerPinLowLimit = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_PowerPinhighLimit_$debugMode_FNeg1,
+		powerPinHighLimit = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_PowerPinlowClamp_$debugMode_FNeg1,
+		powerPinLowClamp = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_PowerPinhighClamp_$debugMode_FNeg1,
+		powerPinHighClamp = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_MeasurePinlevel_$debugMode_FNeg1,
+		measurePinLevel = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_MeasurePintimings_$debugMode_FNeg1,
+		measurePinTimings = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_MeasurePinpatlist_$debugMode_FNeg1,
+		measurePinPatlist = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_MeasurePin_$debugMode_FNeg1,
+		measurePins = "some kind of levles")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_MeasurePinforce_$debugMode_FNeg1,
+		measurePinForceValue = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_MeasurePinlowLimit_$debugMode_FNeg1,
+		measurePinLowLimit = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_MeasurePinhighLimit_$debugMode_FNeg1,
+		measurePinHighLimit = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_MeasurePinlowClamp_$debugMode_FNeg1,
+		measurePinLowClamp = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_value_MeasurePinhighClamp_$debugMode_FNeg1,
+		measurePinHighClamp = "5000.0")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_MeasurePinmeasureLoop_$debugMode_FNeg1,
+		measurePinMeasureLoop = "-5")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_MeasurePinmeasureDelay_$debugMode_FNeg1,
+		measurePinMeasureDelay = "-5")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_userVar_$debugMode_FNeg1,
+		resultsUserVar = "the,quick,.red,fox")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_negative_VBump_Level_$debugMode_FNeg1,
+                vbumpMode = "ENABLED",
+                vbumpForce = "-11.3")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_Invalid_tooLarge_VBump_Level_$debugMode_FNeg1,
+                vbumpMode = "ENABLED",
+                vbumpForce = "110.3")
+	0?NEXT,
+	1?NEXT;
+	
+
+}
+
+COMPOSITE PGTResVerify_$debugMode_Required_Params
+{
+	DEF (	SEGNAME = $name,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_list",
+                restoreLevel = "iValIccNom",
+                powerPinMaskPins = "all_pins",
+                powerPinPinsToDisconnect = "P003",
+                measurePinMaskPins = "all_pins",
+                measurePinPinsToDisconnect = "P003",
+		equation = "0.2",
+		powerPin= "Hdps",
+		powerPinTriggerType = "SNDT",
+		powerPinForceValue = "1.25",
+		powerPinMeasureMode = "VSIM",
+		powerPinLowLimit = "0.50"
+		powerPinHighLimit = "100.0",
+		powerPinLowClamp = "0.0",
+		powerPinHighClamp = "150.0",
+		statisticType = "AVERAGE",
+		powerPinManualMeasureRange = "AUTO"
+		powerPinSettlingTime = "0.15",
+		powerPinSlewRate = "-99.0",
+		powerPinRelayState = "CLOSE",
+		powerPinOutputPinRelay = "OPEN",
+		powerPinPowerRaiseSequence = "-99",
+		powerPinPowerLowerSequence = "-99",
+		powerPinTriggerPin = "PMTrig001",
+		powerPinStartTrigger = "FREE"
+		powerPinStopTrigger = "COUNTER",
+		powerPinTriggerBit = "0",
+		powerPinSampleMode = "TRACE",
+		powerPinSampleSize = "1",
+		powerPinSamplingInterval = "25US",
+		powerPinShutdownMode = "FOLD",
+		powerPinShutdownDelay = "0.015",
+		measurePins = "P001,P002,P003",
+		measurePinTriggerType = "SNDC",
+		measurePinForceValue = "0.025",
+		measurePinMeasureMode = "ISVM",
+		measurePinLowLimit = "-0.010"
+		measurePinHighLimit = "1.5",
+		measurePinLowClamp = "-0.5",
+		measurePinHighClamp = "2.0",
+		measurePinMeasureLoop = "1",
+		measurePinMeasureDelay = "0",
+		measurePinManualMeasureRange = "AUTO",
+		measurePinSettlingTime = "0.015",
+		measurePinRelayState = "CLOSE",
+		measurePinOutputPinRelay = "OPEN",
+		measurePinSlewRate = "-99.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                dvMode = "DISABLED",
+		resultsUserVar = "UFG_PGTResC0,UFG_PGTResC1,UFG_PGTResC2",
+		ituffTname = "PGT_ResC0,PGT_ResC1,PGT_ResC2",
+		lowLimitUserVar = "UFG_PGTRes_LowLimitC0,UFG_PGTRes_LowLimitC1,UFG_PGTRes_LowLimitC2",
+		highLimitUserVar = "UFG_PGTRes_HighLimitC0,UFG_PGTRes_HighLimitC1,UFG_PGTRes_HighLimitC2",
+                datalogType = "console,ituff",
+                useDff = "TRUE",
+                dffToken = "PGTResC0,PGTResC1,PGTResC2",
+                dffSsidType = "WFR",
+                vbumpMode = "DISABLED",
+                vbumpForce = "1.3",
+                datalogMode = "ON"
+		bypassGlobal = "",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+
+	tt_pgtresistance_noXML(name = PGTResVerify_No_PowerPinlevel_$debugMode_FNeg1,
+		powerPinLevel = "")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_No_MeasurePinlevel_$debugMode_FNeg1,
+		measurePinLevel = "")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_No_powerPin_timing_$debugMode_FNeg1,
+		powerPinTimings = "")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResVerify_No_measurePin_timing_$debugMode_FNeg1,
+		measurePinTimings = "")
+	0?NEXT,
+	1?NEXT;
+
+}
+
+COMPOSITE PGTResVerify_$debugMode_XML
+{
+	DEF (	SEGNAME = $name,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                inputFile = "./PGTRes/PGT-Resistance.xml",
+                datalogMode = "ON"
+		bypassGlobal = "",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadFileName_XML_$debugMode_FNeg1,
+			inputFile = "./LFilesGT-Resistance-BadSyntax.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadSyntax_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadSyntax.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadLowLimitUserVar_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadLowLimitUserVar.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadHighLimitUserVar_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadHighLimitUserVar.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadOutputUserVar_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadOutputUserVar.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadPin_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadPin.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadLevels_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadLevels.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadTiming_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadTiming.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_BadPlist_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadPlist.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_DFFOpCodeType_XML_$debugMode_FNeg1,
+			inputFile = "./PGTRes/PGT-Resistance-BadDffOpType.xml")
+	0?NEXT,
+	1?NEXT;
+	
+######jpd, new measureOperand params added
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_measurePinoperandValue_XML_$debugMode_FNeg1,
+                        inputFile = "./PGTRes/PGT-Resistance-BadmeasurePinoperandValue.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_measurePinoperandType_XML_$debugMode_FNeg1,
+                        inputFile = "./PGTRes/PGT-Resistance-BadmeasurePinoperandType.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResVerify_Invalid_measurePinoperandZero_XML_$debugMode_FNeg1,
+                        inputFile = "./PGTRes/PGT-Resistance-BadmeasurePinoperandZero.xml")
+	0?NEXT,
+	1?NEXT;
+
+}
+
+COMPOSITE PGTResVerify_PARAM_MOD
+{
+	DEF (	SEGNAME = $name,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_list",
+                restoreLevel = "iValIccNom",
+                powerPinMaskPins = "all_pins",
+                powerPinPinsToDisconnect = "P003",
+                measurePinMaskPins = "all_pins",
+                measurePinPinsToDisconnect = "P003",
+		equation = "0.2",
+		powerPin= "HDPS",
+		powerPinTriggerType = "SNDT",
+		powerPinForceValue = "1.25",
+		powerPinMeasureMode = "VSIM",
+		powerPinLowLimit = "0.50"
+		powerPinHighLimit = "10.0",
+		powerPinLowClamp = "0.0",
+		powerPinHighClamp = "15.0",
+		statisticType = "AVERAGE",
+		powerPinManualMeasureRange = "AUTO"
+		powerPinSettlingTime = "0.15",
+		powerPinSlewRate = "-99.0",
+		powerPinRelayState = "CLOSE",
+		powerPinOutputPinRelay = "OPEN",
+		powerPinPowerRaiseSequence = "-99",
+		powerPinPowerLowerSequence = "-99",
+		powerPinTriggerPin = "PMTrig001",
+		powerPinStartTrigger = "FREE"
+		powerPinStopTrigger = "COUNTER",
+		powerPinTriggerBit = "0",
+		powerPinSampleMode = "TRACE",
+		powerPinSampleSize = "1",
+		powerPinSamplingInterval = "25US",
+		powerPinShutdownMode = "FOLD",
+		powerPinShutdownDelay = "0.015",
+		measurePins = "P001,P002,P003",
+		measurePinTriggerType = "SNDC",
+		measurePinForceValue = "0.025",
+		measurePinMeasureMode = "ISVM",
+		measurePinLowLimit = "-0.010"
+		measurePinHighLimit = "1.5",
+		measurePinLowClamp = "-0.5",
+		measurePinHighClamp = "2.0",
+		measurePinMeasureLoop = "1",
+		measurePinMeasureDelay = "0",
+		measurePinManualMeasureRange = "AUTO",
+		measurePinSettlingTime = "0.015",
+		measurePinRelayState = "CLOSE",
+		measurePinOutputPinRelay = "OPEN",
+		measurePinSlewRate = "-99.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                dvMode = "DISABLED",
+		resultsUserVar = "UFG_PGTResC0,UFG_PGTResC1,UFG_PGTResC2",
+		ituffTname = "PGT_ResC0,PGT_ResC1,PGT_ResC2",
+		lowLimitUserVar = "UFG_PGTRes_LowLimitC0,UFG_PGTRes_LowLimitC1,UFG_PGTRes_LowLimitC2",
+		highLimitUserVar = "UFG_PGTRes_HighLimitC0,UFG_PGTRes_HighLimitC1,UFG_PGTRes_HighLimitC2",
+                datalogType = "console,ituff",
+                useDff = "TRUE",
+                dffToken = "PGTResC0,PGTResC1,PGTResC2",
+                dffSsidType = "WFR",
+                vbumpMode = "DISABLED",
+                vbumpForce = "1.3",
+                datalogMode = "ON"
+		bypassGlobal = "",
+                debugMode = "DISABLED",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_input_file_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_input_file_DISABLED_FNeg1 input_file IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_DISABLED_FNeg1 power_pin IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pins_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pins_DISABLED_FNeg1 measure_pins IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_level_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_level_DISABLED_FNeg1 power_pin_level IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_timings_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_timings_DISABLED_FNeg1 power_pin_timings IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_patlist_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_patlist_DISABLED_FNeg1 power_pin_patlist IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_level_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_level_DISABLED_FNeg1 measure_pin_level IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_timings_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_timings_DISABLED_FNeg1 measure_pin_timings IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_patlist_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_patlist_DISABLED_FNeg1 measure_pin_patlist IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_restore_level_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_restore_level_DISABLED_FNeg1 restore_level IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_DV_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_DV_mode_DISABLED_FNeg1 DV_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_trigger_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_trigger_type_DISABLED_FNeg1 power_pin_trigger_type IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_trigger_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_trigger_type_DISABLED_FNeg1 measure_pin_trigger_type IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_force_value_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_force_value_DISABLED_FNeg1 power_pin_force_value IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_force_value_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_force_value_DISABLED_FNeg1 measure_pin_force_value IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_measure_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_measure_mode_DISABLED_FNeg1 power_pin_measure_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_measure_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_measure_mode_DISABLED_FNeg1 measure_pin_measure_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_low_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_low_limit_DISABLED_FNeg1 power_pin_low_limit IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_high_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_high_limit_DISABLED_FNeg1 power_pin_high_limit IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_low_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_low_clamp_DISABLED_FNeg1 power_pin_low_clamp IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_high_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_high_clamp_DISABLED_FNeg1 power_pin_high_clamp IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_low_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_low_limit_DISABLED_FNeg1 measure_pin_low_limit IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_high_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_high_limit_DISABLED_FNeg1 measure_pin_high_limit IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_low_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_low_clamp_DISABLED_FNeg1 measure_pin_low_clamp IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_high_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_high_clamp_DISABLED_FNeg1 measure_pin_high_clamp IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_measure_loop_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_measure_loop_DISABLED_FNeg1 power_pin_measure_loop IT_UNDEFINED_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_measure_loop_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_measure_loop_DISABLED_FNeg1 measure_pin_measure_loop IT_UNDEFINED_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_equation_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_equation_DISABLED_FNeg1 equation IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_manual_measure_range_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_manual_measure_range_DISABLED_FNeg1 power_pin_manual_measure_range IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_manual_measure_range_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_manual_measure_range_DISABLED_FNeg1 measure_pin_manual_measure_range IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_statistic_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_statistic_type_DISABLED_FNeg1 statistic_type IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_measure_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_measure_delay_DISABLED_FNeg1 power_pin_measure_delay IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_measure_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_measure_delay_DISABLED_FNeg1 measure_pin_measure_delay IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_settling_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_settling_time_DISABLED_FNeg1 power_pin_settling_time IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_slew_rate_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_slew_rate_DISABLED_FNeg1 power_pin_slew_rate IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_settling_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_settling_time_DISABLED_FNeg1 measure_pin_settling_time IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_slew_rate_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_slew_rate_DISABLED_FNeg1 measure_pin_slew_rate IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_relay_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_relay_state_DISABLED_FNeg1 power_pin_relay_state IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_output_pin_relay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_output_pin_relay_DISABLED_FNeg1 power_pin_output_pin_relay IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_power_raise_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_power_raise_sequence_DISABLED_FNeg1 power_pin_power_raise_sequence IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_power_lower_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_power_lower_sequence_DISABLED_FNeg1 power_pin_power_lower_sequence IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_relay_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_relay_state_DISABLED_FNeg1 measure_pin_relay_state IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_output_pin_relay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_output_pin_relay_DISABLED_FNeg1 measure_pin_output_pin_relay IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_power_raise_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_power_raise_sequence_DISABLED_FNeg1 measure_pin_power_raise_sequence IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_power_lower_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_power_lower_sequence_DISABLED_FNeg1 measure_pin_power_lower_sequence IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_results_user_var_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_results_user_var_DISABLED_FNeg1 results_user_var IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_ituff_tname_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_ituff_tname_DISABLED_FNeg1 ituff_tname IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_trigger_pin_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_trigger_pin_DISABLED_FNeg1 power_pin_trigger_pin IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_filter_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_filter_state_DISABLED_FNeg1 power_pin_filter_state IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_bypass_cap_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_bypass_cap_DISABLED_FNeg1 power_pin_bypass_cap IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_phase_comp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_phase_comp_DISABLED_FNeg1 power_pin_phase_comp IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_trigger_pin_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_trigger_pin_DISABLED_FNeg1 measure_pin_trigger_pin IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_filter_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_filter_state_DISABLED_FNeg1 measure_pin_filter_state IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_bypass_cap_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_bypass_cap_DISABLED_FNeg1 measure_pin_bypass_cap IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_phase_comp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_phase_comp_DISABLED_FNeg1 measure_pin_phase_comp IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_start_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_start_trigger_DISABLED_FNeg1 power_pin_start_trigger IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_stop_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_stop_trigger_DISABLED_FNeg1 power_pin_stop_trigger IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_trigger_bit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_trigger_bit_DISABLED_FNeg1 power_pin_trigger_bit IT_UNDEFINED_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_sample_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_sample_mode_DISABLED_FNeg1 power_pin_sample_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_sample_size_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_sample_size_DISABLED_FNeg1 power_pin_sample_size IT_UNDEFINED_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_sampling_interval_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_sampling_interval_DISABLED_FNeg1 power_pin_sampling_interval IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_start_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_start_trigger_DISABLED_FNeg1 measure_pin_start_trigger IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_stop_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_stop_trigger_DISABLED_FNeg1 measure_pin_stop_trigger IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_trigger_bit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_trigger_bit_DISABLED_FNeg1 measure_pin_trigger_bit IT_UNDEFINED_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_sample_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_sample_mode_DISABLED_FNeg1 measure_pin_sample_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_sample_size_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_sample_size_DISABLED_FNeg1 measure_pin_sample_size IT_UNDEFINED_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_sampling_interval_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_sampling_interval_DISABLED_FNeg1 measure_pin_sampling_interval IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_shutdown_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_shutdown_mode_DISABLED_FNeg1 power_pin_shutdown_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_shutdown_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_shutdown_delay_DISABLED_FNeg1 power_pin_shutdown_delay IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_free_drive_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_free_drive_time_DISABLED_FNeg1 power_pin_free_drive_time IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_measure_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_measure_sequence_DISABLED_FNeg1 power_pin_measure_sequence IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_shutdown_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_shutdown_mode_DISABLED_FNeg1 measure_pin_shutdown_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_shutdown_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_shutdown_delay_DISABLED_FNeg1 measure_pin_shutdown_delay IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_free_drive_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_free_drive_time_DISABLED_FNeg1 measure_pin_free_drive_time IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_measure_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_measure_sequence_DISABLED_FNeg1 measure_pin_measure_sequence IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_pre_cond_force_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_pre_cond_force_DISABLED_FNeg1 power_pin_pre_cond_force IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_pre_cond_duration_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_pre_cond_duration_DISABLED_FNeg1 power_pin_pre_cond_duration IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_pre_cond_force_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_pre_cond_force_DISABLED_FNeg1 measure_pin_pre_cond_force IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_pre_cond_duration_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_pre_cond_duration_DISABLED_FNeg1 measure_pin_pre_cond_duration IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_load_cond_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_load_cond_DISABLED_FNeg1 power_pin_load_cond IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_pins_to_disconnect_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_pins_to_disconnect_DISABLED_FNeg1 power_pin_pins_to_disconnect IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_power_pin_mask_pins_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_power_pin_mask_pins_DISABLED_FNeg1 power_pin_mask_pins IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_load_cond_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_load_cond_DISABLED_FNeg1 measure_pin_load_cond IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_pins_to_disconnect_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_pins_to_disconnect_DISABLED_FNeg1 measure_pin_pins_to_disconnect IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_measure_pin_mask_pins_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_measure_pin_mask_pins_DISABLED_FNeg1 measure_pin_mask_pins IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_vbump_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_vbump_mode_DISABLED_FNeg1 vbump_mode IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_vbump_force_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_vbump_force_DISABLED_FNeg1 vbump_force IT_UNDEFINED_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_low_limit_user_var_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_low_limit_user_var_DISABLED_FNeg1 low_limit_user_var IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_high_limit_user_var_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_high_limit_user_var_DISABLED_FNeg1 high_limit_user_var IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_datalog_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_datalog_type_DISABLED_FNeg1 datalog_type IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_use_dff_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_use_dff_DISABLED_FNeg1 use_dff IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_dff_token_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_dff_token_DISABLED_FNeg1 dff_token IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Undefined_DFF_SSID_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Undefined_DFF_SSID_type_DISABLED_FNeg1 DFF_SSID_type IT_UNDEFINED_STR")
+	0?NEXT,
+	1?NEXT;
+
+######jpd, new measureOperand params added
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measurePinoperandValue_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measurePinoperandValue_DISABLED_FNeg1 measure_pin_measurement_operand 900")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_powerPinoperandValue_DISABLED_FNeg1,
+	                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_powerPinoperandValue_DISABLED_FNeg1 power_pin_measurement_operand 910")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measurePinoperandType_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measurePinoperandType_DISABLED_FNeg1 measure_pin_measurement_operand A")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_powerPinoperandType_DISABLED_FNeg1,
+	                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_powerPinoperandType_DISABLED_FNeg1 power_pin_measurement_operand B")
+	0?NEXT,
+	1?NEXT;	
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measurePinoperandZero_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measurePinoperandZero_DISABLED_FNeg1 measure_pin_measurement_operand 0")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_powerPinoperandZero_DISABLED_FNeg1,
+	                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_powerPinoperandZero_DISABLED_FNeg1 power_pin_measurement_operand 0")
+	0?NEXT,
+	1?NEXT;		
+	
+	
+
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_input_file_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_input_file_DISABLED_FNeg1 input_file IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_DISABLED_FNeg1 power_pin IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pins_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pins_DISABLED_FNeg1 measure_pins IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_level_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_level_DISABLED_FNeg1 power_pin_level IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_timings_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_timings_DISABLED_FNeg1 power_pin_timings IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_patlist_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_patlist_DISABLED_FNeg1 power_pin_patlist IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_level_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_level_DISABLED_FNeg1 measure_pin_level IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_timings_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_timings_DISABLED_FNeg1 measure_pin_timings IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_patlist_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_patlist_DISABLED_FNeg1 measure_pin_patlist IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_restore_level_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_restore_level_DISABLED_FNeg1 restore_level IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_DV_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_DV_mode_DISABLED_FNeg1 DV_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_trigger_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_trigger_type_DISABLED_FNeg1 power_pin_trigger_type IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_trigger_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_trigger_type_DISABLED_FNeg1 measure_pin_trigger_type IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_force_value_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_force_value_DISABLED_FNeg1 power_pin_force_value IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_force_value_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_force_value_DISABLED_FNeg1 measure_pin_force_value IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_measure_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_measure_mode_DISABLED_FNeg1 power_pin_measure_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_measure_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_measure_mode_DISABLED_FNeg1 measure_pin_measure_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_low_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_low_limit_DISABLED_FNeg1 power_pin_low_limit IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_high_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_high_limit_DISABLED_FNeg1 power_pin_high_limit IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_low_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_low_clamp_DISABLED_FNeg1 power_pin_low_clamp IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_high_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_high_clamp_DISABLED_FNeg1 power_pin_high_clamp IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_low_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_low_limit_DISABLED_FNeg1 measure_pin_low_limit IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_high_limit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_high_limit_DISABLED_FNeg1 measure_pin_high_limit IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_low_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_low_clamp_DISABLED_FNeg1 measure_pin_low_clamp IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_high_clamp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_high_clamp_DISABLED_FNeg1 measure_pin_high_clamp IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_measure_loop_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_measure_loop_DISABLED_FNeg1 power_pin_measure_loop IT_INVALID_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_measure_loop_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_measure_loop_DISABLED_FNeg1 measure_pin_measure_loop IT_INVALID_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_equation_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_equation_DISABLED_FNeg1 equation IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_manual_measure_range_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_manual_measure_range_DISABLED_FNeg1 power_pin_manual_measure_range IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_manual_measure_range_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_manual_measure_range_DISABLED_FNeg1 measure_pin_manual_measure_range IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_statistic_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_statistic_type_DISABLED_FNeg1 statistic_type IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_measure_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_measure_delay_DISABLED_FNeg1 power_pin_measure_delay IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_measure_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_measure_delay_DISABLED_FNeg1 measure_pin_measure_delay IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_settling_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_settling_time_DISABLED_FNeg1 power_pin_settling_time IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_slew_rate_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_slew_rate_DISABLED_FNeg1 power_pin_slew_rate IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_settling_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_settling_time_DISABLED_FNeg1 measure_pin_settling_time IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_slew_rate_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_slew_rate_DISABLED_FNeg1 measure_pin_slew_rate IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_relay_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_relay_state_DISABLED_FNeg1 power_pin_relay_state IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_output_pin_relay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_output_pin_relay_DISABLED_FNeg1 power_pin_output_pin_relay IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_power_raise_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_power_raise_sequence_DISABLED_FNeg1 power_pin_power_raise_sequence IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_power_lower_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_power_lower_sequence_DISABLED_FNeg1 power_pin_power_lower_sequence IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_relay_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_relay_state_DISABLED_FNeg1 measure_pin_relay_state IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_output_pin_relay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_output_pin_relay_DISABLED_FNeg1 measure_pin_output_pin_relay IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_power_raise_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_power_raise_sequence_DISABLED_FNeg1 measure_pin_power_raise_sequence IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_power_lower_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_power_lower_sequence_DISABLED_FNeg1 measure_pin_power_lower_sequence IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_results_user_var_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_results_user_var_DISABLED_FNeg1 results_user_var IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_ituff_tname_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_ituff_tname_DISABLED_FNeg1 ituff_tname IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_trigger_pin_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_trigger_pin_DISABLED_FNeg1 power_pin_trigger_pin IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_filter_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_filter_state_DISABLED_FNeg1 power_pin_filter_state IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_bypass_cap_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_bypass_cap_DISABLED_FNeg1 power_pin_bypass_cap IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_phase_comp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_phase_comp_DISABLED_FNeg1 power_pin_phase_comp IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_trigger_pin_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_trigger_pin_DISABLED_FNeg1 measure_pin_trigger_pin IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_filter_state_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_filter_state_DISABLED_FNeg1 measure_pin_filter_state IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_bypass_cap_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_bypass_cap_DISABLED_FNeg1 measure_pin_bypass_cap IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_phase_comp_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_phase_comp_DISABLED_FNeg1 measure_pin_phase_comp IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_start_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_start_trigger_DISABLED_FNeg1 power_pin_start_trigger IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_stop_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_stop_trigger_DISABLED_FNeg1 power_pin_stop_trigger IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_trigger_bit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_trigger_bit_DISABLED_FNeg1 power_pin_trigger_bit IT_INVALID_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_sample_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_sample_mode_DISABLED_FNeg1 power_pin_sample_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_sample_size_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_sample_size_DISABLED_FNeg1 power_pin_sample_size IT_INVALID_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_sampling_interval_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_sampling_interval_DISABLED_FNeg1 power_pin_sampling_interval IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_start_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_start_trigger_DISABLED_FNeg1 measure_pin_start_trigger IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_stop_trigger_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_stop_trigger_DISABLED_FNeg1 measure_pin_stop_trigger IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_trigger_bit_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_trigger_bit_DISABLED_FNeg1 measure_pin_trigger_bit IT_INVALID_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_sample_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_sample_mode_DISABLED_FNeg1 measure_pin_sample_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_sample_size_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_sample_size_DISABLED_FNeg1 measure_pin_sample_size IT_INVALID_INT")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_sampling_interval_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_sampling_interval_DISABLED_FNeg1 measure_pin_sampling_interval IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_shutdown_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_shutdown_mode_DISABLED_FNeg1 power_pin_shutdown_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_shutdown_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_shutdown_delay_DISABLED_FNeg1 power_pin_shutdown_delay IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_free_drive_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_free_drive_time_DISABLED_FNeg1 power_pin_free_drive_time IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_measure_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_measure_sequence_DISABLED_FNeg1 power_pin_measure_sequence IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_shutdown_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_shutdown_mode_DISABLED_FNeg1 measure_pin_shutdown_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_shutdown_delay_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_shutdown_delay_DISABLED_FNeg1 measure_pin_shutdown_delay IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_free_drive_time_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_free_drive_time_DISABLED_FNeg1 measure_pin_free_drive_time IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_measure_sequence_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_measure_sequence_DISABLED_FNeg1 measure_pin_measure_sequence IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_pre_cond_force_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_pre_cond_force_DISABLED_FNeg1 power_pin_pre_cond_force IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_pre_cond_duration_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_pre_cond_duration_DISABLED_FNeg1 power_pin_pre_cond_duration IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_pre_cond_force_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_pre_cond_force_DISABLED_FNeg1 measure_pin_pre_cond_force IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_pre_cond_duration_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_pre_cond_duration_DISABLED_FNeg1 measure_pin_pre_cond_duration IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_load_cond_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_load_cond_DISABLED_FNeg1 power_pin_load_cond IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_pins_to_disconnect_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_pins_to_disconnect_DISABLED_FNeg1 power_pin_pins_to_disconnect IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_power_pin_mask_pins_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_power_pin_mask_pins_DISABLED_FNeg1 power_pin_mask_pins IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_load_cond_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_load_cond_DISABLED_FNeg1 measure_pin_load_cond IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_pins_to_disconnect_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_pins_to_disconnect_DISABLED_FNeg1 measure_pin_pins_to_disconnect IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_measure_pin_mask_pins_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_measure_pin_mask_pins_DISABLED_FNeg1 measure_pin_mask_pins IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_vbump_mode_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_vbump_mode_DISABLED_FNeg1 vbump_mode IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_vbump_force_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_vbump_force_DISABLED_FNeg1 vbump_force IT_INVALID_DBL")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_low_limit_user_var_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_low_limit_user_var_DISABLED_FNeg1 low_limit_user_var IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_high_limit_user_var_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_high_limit_user_var_DISABLED_FNeg1 high_limit_user_var IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_datalog_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_datalog_type_DISABLED_FNeg1 datalog_type IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_use_dff_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_use_dff_DISABLED_FNeg1 use_dff IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_dff_token_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_dff_token_DISABLED_FNeg1 dff_token IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_ParamMod(name = PGTResVerify_Invalid_DFF_SSID_type_DISABLED_FNeg1,
+                        preinstance = "iVal_utilityfunc!SetTestInstanceParamValue PGTResVerify_Invalid_DFF_SSID_type_DISABLED_FNeg1 DFF_SSID_type IT_INVALID_STR")
+	0?NEXT,
+	1?NEXT;
+
+}
+
+
+COMPOSITE PGTResExecute_DEBUG_OBNOXIOUS
+{
+	DEF (	debugMode = "OBNOXIOUS",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON"
+		bypassGlobal = ""
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_P1,
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_SIMULTANEOUS_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MIN (COMPNAME = PGTResExecute_$debugMode_statisticType_MIN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MAX (COMPNAME = PGTResExecute_$debugMode_statisticType_MAX)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MEDIAN (COMPNAME = PGTResExecute_$debugMode_statisticType_MEDIAN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_AVERAGE (COMPNAME = PGTResExecute_$debugMode_statisticType_AVERAGE)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_DEBUG_VERBOSE
+{
+	DEF (	debugMode = "VERBOSE",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON"
+		bypassGlobal = ""
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_P1,
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_SIMULTANEOUS_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MIN (COMPNAME = PGTResExecute_$debugMode_statisticType_MIN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MAX (COMPNAME = PGTResExecute_$debugMode_statisticType_MAX)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MEDIAN (COMPNAME = PGTResExecute_$debugMode_statisticType_MEDIAN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_AVERAGE (COMPNAME = PGTResExecute_$debugMode_statisticType_AVERAGE)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_DEBUG_BRIEF
+{
+	DEF (	debugMode = "BRIEF",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON"
+		bypassGlobal = ""
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_P1,
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_SIMULTANEOUS_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MIN (COMPNAME = PGTResExecute_$debugMode_statisticType_MIN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MAX (COMPNAME = PGTResExecute_$debugMode_statisticType_MAX)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MEDIAN (COMPNAME = PGTResExecute_$debugMode_statisticType_MEDIAN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_AVERAGE (COMPNAME = PGTResExecute_$debugMode_statisticType_AVERAGE)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_DEBUG_DISABLED
+{
+	DEF (	debugMode = "DISABLED",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                restoreLevel = "iValIccNom",
+                datalogMode = "ON"
+		bypassGlobal = ""
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_P1,
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+	
+
+
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_SIMULTANEOUS_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		inputFile = "./PGTRes/PGT-Resistance.xml")
+	0?NEXT,
+	1?NEXT;
+	
+	
+#########jpd, hsd 7490, new measureOperand param
+	tt_pgtresistance_XML(name = PGTResExecute_XML_$debugMode_1SHOT_SIMULTANEOUS_OPERAND_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_SIMULTANEOS_list",	
+		inputFile = "./PGTRes/PGT-Resistance-Operand.xml")
+	0?NEXT,
+	1?NEXT;
+	
+
+	PGTResExecute_$debugMode_statisticType_MIN (COMPNAME = PGTResExecute_$debugMode_statisticType_MIN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MAX (COMPNAME = PGTResExecute_$debugMode_statisticType_MAX)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_MEDIAN (COMPNAME = PGTResExecute_$debugMode_statisticType_MEDIAN)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_statisticType_AVERAGE (COMPNAME = PGTResExecute_$debugMode_statisticType_AVERAGE)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_$debugMode_statisticType_MIN{
+	DEF (	statisticType = "MIN",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED)
+	0?NEXT,
+	1?NEXT;
+}
+COMPOSITE PGTResExecute_$debugMode_statisticType_MAX{
+	DEF (	statisticType = "MAX",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_$debugMode_statisticType_MEDIAN{
+	DEF (	statisticType = "MEDIAN",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_$debugMode_statisticType_AVERAGE{
+	DEF (	statisticType = "AVERAGE",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED)
+	0?NEXT,
+	1?NEXT;
+
+	PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED (COMPNAME = PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED)
+	0?NEXT,
+	1?NEXT;
+}
+COMPOSITE PGTResExecute_$debugMode_$statisticType_DVMode_DISABLED {
+	DEF (	dvMode = "DISABLED",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	PGTResExecute_$debugMode_$statisticType_$dvMode (COMPNAME = PGTResExecute_$debugMode_$statisticType_$dvMode )
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_$debugMode_$statisticType_DVMode_ENABLED {
+	DEF (	dvMode = "ENABLED",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+	PGTResExecute_$debugMode_$statisticType_$dvMode (COMPNAME = PGTResExecute_$debugMode_$statisticType_$dvMode )
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE PGTResExecute_$debugMode_$statisticType_$dvMode {
+	DEF (	powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_list",
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "DCParam_Multi_SNDCs_NHM_list",
+                restoreLevel = "iValIccNom",
+                powerPinMaskPins = "all_pins",
+                powerPinPinsToDisconnect = "P003",
+                measurePinMaskPins = "all_pins",
+                measurePinPinsToDisconnect = "P003",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults"
+		powerPin= "HDPS",
+		powerPinTriggerType = "SNDT",
+		powerPinForceValue = "-99.0",
+		powerPinMeasureMode = "VSIM",
+		powerPinLowLimit = "-235mA"
+		powerPinHighLimit = "239mA",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "1.0",
+		powerPinSettlingTime = "0.00",
+		powerPinSlewRate = "-99.0",
+		powerPinRelayState = "CLOSE",
+		powerPinOutputPinRelay = "CLOSE",
+		powerPinPowerRaiseSequence = "-99",
+		powerPinPowerLowerSequence = "-99",
+		powerPinTriggerPin = "PMTrig001",
+		powerPinStartTrigger = "EXTERNAL"
+		powerPinStopTrigger = "EXTERNAL",
+		powerPinTriggerBit = "1",
+		powerPinSampleMode = "TRACE",
+		powerPinSampleSize = "-99",
+		powerPinSamplingInterval = "25US",
+		powerPinShutdownMode = "FOLD",
+		powerPinShutdownDelay = "-99.0",
+		measurePins = "P001,P002,P003",
+		measurePinTriggerType = "SNDC",
+		measurePinForceValue = "0.025",
+		measurePinMeasureMode = "ISVM",
+		measurePinLowLimit = "-0.010"
+		measurePinHighLimit = "1.5",
+		measurePinLowClamp = "-0.5",
+		measurePinHighClamp = "2.0",
+		measurePinMeasureLoop = "1",
+		measurePinMeasureDelay = "0",
+		measurePinSettlingTime = "0.0",
+		measurePinRelayState = "CLOSE",
+		measurePinOutputPinRelay = "OPEN",
+		measurePinSlewRate = "-99.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+                useDff = "TRUE",
+                dffToken = "PGTResC0,PGTResC1,PGTResC2",
+                dffSsidType = "WFR",
+                datalogMode = "ON",
+                datalogType = "console,ituff",
+		resultsUserVar = "UFG_PGTResC0,UFG_PGTResC1,UFG_PGTResC2",
+		ituffTname = "PGT_ResC0,PGT_ResC1,PGT_ResC2",
+		lowLimitUserVar = "UFG_PGTRes_LowLimitC0,UFG_PGTRes_LowLimitC1,UFG_PGTRes_LowLimitC2",
+		highLimitUserVar = "UFG_PGTRes_HighLimitC0,UFG_PGTRes_HighLimitC1,UFG_PGTRes_HighLimitC2",
+                equation = "1/(1/(P001[0]/ICC[0])+1/(P002[0]/ICC[0])+1/(P003[0]/ICC[0]))+DriveDurationRatio,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC)),1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))",
+                vbumpMode = "DISABLED",
+                vbumpForce = "1.3");
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_P1,
+		measurePinMeasureLoop = "9")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_DivZero_F0,
+                equation = "1/(1/(P001[0]/ICC[0]*0.0)+1/(P002[0]/ICC[0])+1/(P003[0]/ICC[0]))+DriveDurationRatio,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC)),1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_onShot_Wrong_Timing_FNeg1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",				
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValBasicTimings100MHz",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_onShot_Wrong_Level_FNeg1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		measurePinLevel = "iValLevelMin",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_onShot_P1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+                equation = "1/(1/(P001[0]/ICC[0])+1/(P002[0]/ICC[0])+1/(P003[0]/ICC[0]))+DriveDurationRatio*1e-01,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))+1e+01,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_onShot_MeasurePinLimitToLow_FNeg1,
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_TRACE_bursted_Multi_SNDCs_NHM_list",
+		measurePinHighLimit = "0.1",
+                equation = "1/(1/(P001[0]/ICC[0])+1/(P002[0]/ICC[0])+1/(P003[0]/ICC[0]))+DriveDurationRatio*1e-01,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))+1e+01,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_DFF_OFF_VSIM_AUTO_P1,
+                useDff = "FALSE",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+		powerPinSlewRate = "-25.0",
+		measurePinSlewRate = "-25.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_FAIL_LOW_LIMIT_SIM_AUTO_F0,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+		powerPinSlewRate = "-25.0",
+		measurePinSlewRate = "-25.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		lowLimitUserVar = "UFG_PGTRes_HighLimitC0,UFG_PGTRes_HighLimitC1,UFG_PGTRes_HighLimitC2",
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_FAIL_HIGH_LIMIT_SIM_AUTO_F0,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+		powerPinSlewRate = "-25.0",
+		measurePinSlewRate = "-25.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		highLimitUserVar = "UFG_PGTRes_LowLimitC0,UFG_PGTRes_LowLimitC1,UFG_PGTRes_LowLimitC2",
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_zero_slew_rate_pin_VSIM_AUTO_P1,
+                useDff = "FALSE",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+		powerPinSlewRate = "-0.0",
+		measurePinSlewRate = "-0.0",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		lowLimitUserVar = "UFG_PGTRes_IntLowLimitC0,UFG_PGTRes_IntLowLimitC1,UFG_PGTRes_IntLowLimitC2",
+		highLimitUserVar = "UFG_PGTRes_IntHighLimitC0,UFG_PGTRes_IntHighLimitC1,UFG_PGTRes_IntHighLimitC2",
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_AUTO_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		lowLimitUserVar = "UFG_PGTRes_StrLowLimitC0,UFG_PGTRes_StrLowLimitC1,UFG_PGTRes_StrLowLimitC2",
+		highLimitUserVar = "UFG_PGTRes_StrHighLimitC0,UFG_PGTRes_StrHighLimitC1,UFG_PGTRes_StrHighLimitC2",
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_6uA_FNeg1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "6uA",
+                measurePinManualMeasureRange = "6uA")
+
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_60uA_FNeg1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "60uA",
+                measurePinManualMeasureRange = "60uA")
+
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_600uA_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.0025",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.0005",
+		powerPinLowClamp = "-0.0001",
+		powerPinHighClamp = "0.0006",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.0025",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.0005",
+		measurePinLowClamp = "-0.0001",
+		measurePinHighClamp = "0.0006",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "600uA",
+                measurePinManualMeasureRange = "600uA")
+
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_6mA_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.006",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.004",
+		powerPinLowClamp = "-0.001",
+		powerPinHighClamp = "0.005",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.006",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.004",
+		measurePinLowClamp = "-0.001",
+		measurePinHighClamp = "0.005",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "6mA",
+                measurePinManualMeasureRange = "6mA")
+
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_95mA_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "95mA",
+                measurePinManualMeasureRange = "95mA")
+
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_128mA_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "128mA",
+                measurePinManualMeasureRange = "128mA")
+
+	0?NEXT,
+	1?NEXT;
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_4A_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "4A",
+                measurePinManualMeasureRange = "4A")
+
+	0?NEXT,
+	1?NEXT;
+	
+#########jpd HSD 7490, adding measurepinOperand and powerpinOperand #################
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_pin_VSIM_4A_OPERAND_P1,
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "P001",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "0.025",
+		powerPinLowClamp = "-0.05",
+		powerPinHighClamp = "0.05",
+		powerPinOutputPinRelay = "OPEN",
+		measurePinRelayState = "CLOSE",
+		measurePins = "P001,P002,P003",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "0.025",
+		measurePinLowClamp = "-0.05",
+		measurePinHighClamp = "0.05",
+	      measurePinMeasurementOperand = "2",
+	      powerPinMeasurementOperand = "3",
+	                useDff = "TRUE",
+	                #dffToken = "PGTResC0,PGTResC1,PGTResC2",
+	                dffToken = "PGTResC0",
+	                dffSsidType = "WFR",
+	                datalogMode = "ON",
+	                datalogType = "console,ituff",
+	      		#resultsUserVar = "UFG_PGTResC0,UFG_PGTResC1,UFG_PGTResC2",
+	      		resultsUserVar = "UFG_PGTResC0",
+	      		#ituffTname = "PGT_ResC0,PGT_ResC1,PGT_ResC2",
+	      		ituffTname = "PGT_ResC0",
+	      		#lowLimitUserVar = "UFG_PGTRes_LowLimitC0,UFG_PGTRes_LowLimitC1,UFG_PGTRes_LowLimitC2",
+	      		lowLimitUserVar = "UFG_PGTRes_LowLimitC0",
+	      		#highLimitUserVar = "UFG_PGTRes_HighLimitC0,UFG_PGTRes_HighLimitC1,UFG_PGTRes_HighLimitC2",
+                	highLimitUserVar = "UFG_PGTRes_HighLimitC0",
+                	#equation = "1/(1/(P001[0]/ICC[0])+1/(P002[0]/ICC[0])+1/(P003[0]/ICC[0]))+DriveDurationRatio,1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC)),1/(1/(P001/ICC)+1/(P002/ICC)+1/(P003/ICC))",
+                	equation = "1/(1/(P001[0]/ICC[0])+1/(P002[0]/ICC[0])+1/(P003[0]/ICC[0]))+DriveDurationRatio",
+		powerPinManualMeasureRange = "4A",
+                measurePinManualMeasureRange = "4A")
+
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_hcdps_VSIM_AUTO_FNeg1,
+                equation = "1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "HDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "HDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_hcdps_VSIM_50mA_FNeg1,
+                equation = "1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "HDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "HDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "50mA",
+                measurePinManualMeasureRange = "50mA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_hcdps_VSIM_500mA_FNeg1,
+                equation = "1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "HDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "HDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "500mA",
+                measurePinManualMeasureRange = "500mA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_hcdps_VSIM_16A_FNeg1,
+                equation = "1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "HDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "HDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "16A",
+                measurePinManualMeasureRange = "16A")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_hcdps_VSIM_128mA_FNeg1,
+                equation = "1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0]),1/(1/HDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "HDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "HDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "128mA",
+                measurePinManualMeasureRange = "128mA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_AUTO_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "5uA",
+                measurePinManualMeasureRange = "5uA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "50uA",
+                measurePinManualMeasureRange = "50uA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "500uA",
+                measurePinManualMeasureRange = "500uA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "5mA",
+                measurePinManualMeasureRange = "5mA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "50mA",
+                measurePinManualMeasureRange = "50mA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "500mA",
+                measurePinManualMeasureRange = "500mA")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "4A",
+                measurePinManualMeasureRange = "4A")
+	0?NEXT,
+	1?NEXT;
+
+	tt_pgtresistance_noXML(name = PGTResExecute_Param_$debugMode_$statisticType_$dvMode_$powerPinManualMeasureRange_$measurePinManualMeasureRange_lcdps_VSIM_FNeg1,
+                equation = "1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0]),1/(1/LDPS[0]/ICC[0])",
+		powerPinLevel = "iValIccNom",
+		powerPinTimings = "iValTimingsIcc",
+		powerPinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinLevel = "iValIccNom",
+		measurePinTimings = "iValTimingsIcc",
+		measurePinPatlist = "icc_PAT_TRIG_SNDTs_list",
+		measurePinMeasureMode = "VSIM",
+		powerPinMeasureMode = "VSIM",
+		powerPinRelayState = "CLOSE",
+		powerPin = "LDPS",
+		powerPinForceValue = "0.100",
+		powerPinLowLimit = "-0.00",
+		powerPinHighLimit = "2.0",
+		powerPinLowClamp = "-1.0",
+		powerPinHighClamp = "2.5",
+		measurePinRelayState = "CLOSE",
+		measurePins = "LDPS",
+		measurePinForceValue = "0.100",
+		measurePinLowLimit = "-0.00",
+		measurePinHighLimit = "2.0",
+		measurePinLowClamp = "-1.0",
+		measurePinHighClamp = "2.5",
+	      measurePinMeasurementOperand = "",
+	      powerPinMeasurementOperand = "",		
+		powerPinManualMeasureRange = "AUTO",
+                measurePinManualMeasureRange = "AUTO")
+	0?NEXT,
+	1?NEXT;
+	
+}

@@ -1,0 +1,11 @@
+Version 1.0;
+
+GlobalPList cpuid_16161616_list    {
+
+   GlobalPList cpuid_hfmmin_16161616_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask allpins_wo_TDO]  {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+      Pat g0047846N4954094_16161616a2x18_MA0cA01NxB_2bxx2eC_4x0xxxpxx0xxx_tapserial_cpuid;
+   } # end of cpuid_hfmmin_16161616_list
+
+} # end of cpuid_16161616_list
+

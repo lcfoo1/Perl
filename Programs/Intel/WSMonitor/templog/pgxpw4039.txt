@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4039
+Team=TP
+User=kwong16
+Logon=3/6/2007 8:29:00 PM
+LastActive=3/7/2007 10:08:00 PM
+Active=No(IDLE=1days, 1hrs, 39mins)

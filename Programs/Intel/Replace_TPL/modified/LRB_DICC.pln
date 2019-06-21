@@ -1,0 +1,1540 @@
+COMPOSITE LRB_DICC_Execute
+{
+
+########################################################################################
+#  TM_PAT_TRIG multi pin, multi trigger pins test cases
+########################################################################################
+
+    DEF (
+	# Common Test Class Parmaeters
+	 debugMode = "BRIEF",
+         bypassGlobal = "",                                                 #Datatype=STRING, OPTIONAL
+         postinstance = "iVal_utilityfunc!GenerateInstanceResults",         #Datatype=STRING, OPTIONAL
+         preinstance = "",
+         ssidESequence = "Exec_LRB_DICC",
+         ssidERecovery = "Exec_LRB_DICC_RECOVERY", 
+         datalogMode = "ON",               
+         
+         space = " ",
+         
+         # From Icc_TM_PAT_TRIG_NoMod_$debugMode_$userMode
+         userMode = "ENG",
+         token = "NoMod",
+         inputFile = "",                                                    #Datatype=STRING, OPTIONAL
+         iccToken = "",                                                     #Datatype=STRING, OPTIONAL
+         samplingInterval = "25US",                                         #Datatype=DOUBLE, OPTIONAL
+         profileOutputFile = "Icc/IccOutput.txt",                           #Datatype=STRING, OPTIONAL
+         ituffTname = "",                                                   #Datatype=STRING, OPTIONAL
+         ituffLevel = "MIN_MAX",                                            #Datatype=STRING, OPTIONAL  #Choices : MIN_MAX, AVE, MEDIAN, ALL
+         levelsParamItuff = "",                                             #Datatype=STRING, OPTIONAL
+         flownumToItuff = "-99",                                            #Datatype=INTEGER, OPTIONAL
+         instanceName = "",                                                 #Datatype=STRING, OPTIONAL
+         offsetEnable = "DISABLED",                                         #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+         offsetSlope = "",                                                  #Datatype=STRING, OPTIONAL
+         offsetConstant = "",                                               #Datatype=STRING, OPTIONAL
+         powerRaiseSequence = "0.0",                                        #Datatype=DOUBLE, OPTIONAL
+         powerLowerSequence = "0.0",                                        #Datatype=DOUBLE, OPTIONAL
+         settlingTime = "0.0",                                              #Datatype=DOUBLE, OPTIONAL
+         dcFocusCal = "OFF",                                                #Datatype=STRING, OPTIONAL  #Choices : OFF, ON
+         vccStart = "1.0",                                                  #Datatype=DOUBLE, OPTIONAL
+         vccEnd = "1.2",                                                    #Datatype=DOUBLE, OPTIONAL
+         vccResolution = ".1",                                              #Datatype=DOUBLE, OPTIONAL
+         downbinEnable = "DISABLED",                                        #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+         downbinFrequencyGuardband = "-99"                                  #Datatype=DOUBLE, OPTIONAL
+         downbinDfDv = "-99",                                               #Datatype=DOUBLE, OPTIONAL
+         downbinVoltageOffset = "-99",                                      #Datatype=DOUBLE, OPTIONAL
+         coreSpeedGlobal = "",                                              #Datatype=STRING, OPTIONAL
+         inputGlobal = "",                                                  #Datatype=STRING, OPTIONAL
+         updateGlobal = "",                                                 #Datatype=STRING, OPTIONAL
+         fqaGlobal = "",                                                    #Datatype=STRING, OPTIONAL
+         maxBinFlows = "-99",                                               #Datatype=INTEGER, OPTIONAL
+         forcePowerDown = "FALSE",                                          #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+         traceGSDSResults = "",
+	 patDomainName = "default",
+
+
+         # From Test Name: Icc_Execute_Multi_NoFile_auto_TM_PAT_TRIG_NoMod_MultiDPSTrig_$debugMode_$userMode_$port1
+         # Icc_Execute_Multi_NoFile_auto_TM_PAT_TRIG_NoMod_MultiDPSTrig_OBNOXIOUS_ENG_P1
+         templateMode = "TM_PAT_TRIG",                                      #Datatype=STRING, REQUIRED  #Choices : TM_PAT_TRIG, TM_MEASURE
+         timings = "iValTimingsIcc",
+         level = "iValIccNom",
+         patlist = "LRB_icc_PAT_TRIG_SNDTs_list",
+         patName = "LRB_icc_PAT_TRIG_SNDTs",
+         powerPin2 = "LDPS1"
+         powerPin3 = "HDPS2"
+         powerPin = $powerPin2$space$powerPin3,
+         triggerPin = "PMTrig002 PMTrig003",
+         triggerBit = "1",
+         returnPortArray = "1 1",
+         lowSpec = "235mA 235mA",           
+         highSpec = "",                                                     #Datatype=STRING, REQUIRED
+         manualMeasureRange = "auto auto",
+         measureResultGlobal = "GL_Meas_Result2 GL_Meas_Result3",
+         clamplo = "-2.2 -2.2",
+         clamphi = "2.0 2.0",
+         vccspec = "vih vih",
+         multiplePinSpec = "245mA 245mA",
+         startPra = "2",
+         stopPra = "20",
+         stepSize = "6",                                                    #Datatype=INTEGER, OPTIONAL
+ 
+         # LRB_DICC specific
+         crdiString = "00000000000000000000000000000000",    	# Initial core bits to be set in CR_DI.  
+         crdiStringOut = "00000000000000000000000000000000",    # Final core bits updated into CR_DI.         
+  	 coreDemand = "32",					# No. of core needed for each DICC test instance. Eg. 32 or 28
+ 	 coreRecoveryMode = "SwapCore",   	    		# Core Recovery Mode
+         crdiUpdateMode = "FailedCoresOnly",  			# Type of update into CR_DI_GSDS.
+         failCores = "0",					# Number of cores to fail
+         
+         DICCPreInstanceUF = "LRB_DICC!DICCPreInstance",
+         GSDSPrefixStr = " GSDS_Prefix-",
+         PrefixStr = "DICC1",
+         GSDSPrefix = $GSDSPrefixStr$PrefixStr,                 # Prefix for GSDS Keys (one for each DICC test instance.  Eg. DICC1)
+         crdiGSDSStr = " CR_DI_GSDS-",
+         crdiStr = "CR_DI",
+	 crdi = $crdiGSDSStr$crdiStr,                   	# GSDS for available good cores.         
+         coreDemandStr = " coreDemand-",			# No. of core needed for each DICC test instance. Eg. 32 or 28
+ 	 coreRecoveryModeStr = " coreRecoveryMode-",   	    	# Core Recovery Mode
+         crdiUpdateModeStr = " CR_DI_UpdateMode-",  		# Type of update into CR_DI_GSDS.
+         failCoresStr = " failCores-",				# Number of cores to fail
+         cr = "_CR",
+         dicc = "_DICC_",
+         DICCresult = "0.24 0.24 0.24 0.24",
+	 dmemsize = " DMEM_SIZE-32"
+         );
+
+
+     	tt_userfunc_lrbicc(name = SetTPGlobal_LRB_DICC_SSID_Per_Pin_P1,
+     				  functionName = "iVal_utilityfunc!SetTPGlobal",
+     				  functionParameter = "CorTeXGlobals.iCGL_SSIDSetupName LRB_DICC_SSID.cfg!LRB_DICC_Setup"
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+
+        Init_Common(COMPNAME = Init_LRB_DICC)
+     	0? NEXT,
+     	1? NEXT;
+        
+	LRB_DICC_Subroutine(COMPNAME = LRB_DICC_Subroutine)
+     	0? NEXT,
+     	1? NEXT;
+     	
+	LRB_DICC_PerPin(COMPNAME = LRB_DICC_PerPin)
+     	0? NEXT,
+     	1? NEXT;	
+}
+
+
+COMPOSITE LRB_DICC_PerPin
+{
+    	DEF(
+         	patlist = "LRB_Dicc_Multi_PAT_TRIG_SNDTs_list",
+         	patName = "LRB_Dicc_Multi_PAT_TRIG_SNDTs",
+        	ssidESequence = "Exec_LRB_DICC_PERPIN",
+	        ssidERecovery = "Exec_LRB_DICC_PERPIN_RECOVERY"
+	);
+
+     	
+     	DICC_PerPin_Verify (COMPNAME = DICC_PerPin_Verify)
+     	0? NEXT,
+     	1? NEXT;	
+     	
+     	DICC_PerPin_32_Cores (COMPNAME = DICC_PerPin_32_Cores)
+     	0? NEXT,
+     	1? NEXT;	
+     	
+     	DICC_PerPin_28_Cores (COMPNAME = DICC_PerPin_28_Cores)
+     	0? NEXT,
+     	1? NEXT;
+     	
+     	Fail_DICC_PerPin_Limits (COMPNAME = Fail_DICC_PerPin_Limits)
+     	0? NEXT,
+     	1? NEXT;	
+     	
+     	Function_PerPin_Test_Execute (COMPNAME = Function_PerPin_Test_Execute)
+     	0? NEXT,
+     	1? NEXT;
+}
+
+COMPOSITE LRB_DICC_Subroutine
+{
+    	DEF(
+         	patlist = "LRB_icc_PAT_TRIG_SNDTs_list",
+         	patName = "LRB_icc_PAT_TRIG_SNDTs",
+         	ssidESequence = "Exec_LRB_DICC",
+         	ssidERecovery = "Exec_LRB_DICC_RECOVERY"
+	);
+     	
+     	DICC_Verify (COMPNAME = DICC_Verify)
+     	0? NEXT,
+     	1? NEXT;	
+     	
+     	DICC_32_Cores (COMPNAME = DICC_32_Cores)
+     	0? NEXT,
+     	1? NEXT;	
+     	
+     	DICC_28_Cores (COMPNAME = DICC_28_Cores)
+     	0? NEXT,
+     	1? NEXT;
+     	
+     	Fail_DICC_Limits (COMPNAME = Fail_DICC_Limits)
+     	0? NEXT,
+     	1? NEXT;	
+     	
+     	Function_Test_Execute (COMPNAME = Function_Test_Execute)
+     	0? NEXT,
+     	1? NEXT;
+}
+
+
+COMPOSITE DICC_Verify
+{     	
+
+     tt_icc_lrbicc(
+        name = DICC_Verify_coreDemand_F0,
+       	coreDemand = "a",
+	coreRecoveryMode = "MaxCore",
+        crdiUpdateMode = "FailedCoresOnly",  
+        failCores = "0",															
+        crdiString    = "00000000000000000000000000000000",
+        crdiStringOut = "00000000000000000000000000000000",
+        goodCoreQty = "32",
+	#postinstance = "LRB_DICC!DICCPostInstance",
+	postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+        functionName = "LRB_DICC!DICCPreInstance",
+      	preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize        
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+
+    tt_icc_lrbicc(
+       name = DICC_Verify_coreRecoveryMode_F0,
+       coreDemand = "32",
+       coreRecoveryMode = "MaxCoreJunk",
+       crdiUpdateMode = "FailedCoresOnly",  
+       failCores = "0",															
+       crdiString    = "00000000000000000000000000000000",
+       crdiStringOut = "00000000000000000000000000000000",
+       goodCoreQty = "32",
+       #postinstance = "LRB_DICC!DICCPostInstance",
+       postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+       functionName = "LRB_DICC!DICCPreInstance",
+       preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize        
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+
+    tt_icc_lrbicc(
+         name = DICC_Verify_crdiUpdateMode_F0,
+	 coreDemand = "32",
+	 coreRecoveryMode = "MaxCore",
+         crdiUpdateMode = "FailedCoresOnlyJunk",  
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "32",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize  
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+    tt_icc_lrbicc(
+         name = DICC_Verify_GSDSPrefix_F0,
+	 coreDemand = "32",
+	 coreRecoveryMode = "MaxCore",
+         crdiUpdateMode = "FailedCoresOnly",  
+         GSDSPrefix = " ",           
+         crdi = " CR_DI_GSDS-CR_DI",                      
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "32",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+    tt_icc_lrbicc(
+         name = DICC_Verify_GSDSCRDI_F0,
+	 coreDemand = "32",
+	 coreRecoveryMode = "MaxCore",
+         crdiUpdateMode = "FailedCoresOnly",  
+         GSDSPrefix = " GSDS_Prefix-DICC1",           
+         crdi = " ",                      
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "32",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize       
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+
+    tt_icc_lrbicc(
+         name = DICC_Verify_MultiErrors_F0,
+	 coreDemand = "b",
+	 coreRecoveryMode = "MaxCore1",
+         crdiUpdateMode = "FailedCoresOnly1",  
+         GSDSPrefix = " ",           
+         crdi = " ",                      
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "0",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize 
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+}
+
+
+
+COMPOSITE DICC_32_Cores
+{     	
+
+	DEF (coreDemand = "32");
+			
+      	DICC_32_MaxCore (coreRecoveryMode = "MaxCore")
+     	0? NEXT,
+     	1? NEXT;	
+
+     	DICC_32_SwapCore (coreRecoveryMode = "SwapCore")
+     	0? NEXT,
+     	1? NEXT;
+
+     	DICC_32_Both (coreRecoveryMode = "Both")
+     	0? NEXT,
+     	1? NEXT;
+
+      	DICC_32_None (coreRecoveryMode = "None")
+     	0? NEXT,
+     	1? NEXT;
+
+}
+
+COMPOSITE DICC_28_Cores
+{     	
+	DEF (coreDemand = "28");
+
+      	DICC_28_MaxCore (coreRecoveryMode = "MaxCore")
+     	0? NEXT,
+     	1? NEXT;	
+
+     	DICC_28_SwapCore (coreRecoveryMode = "SwapCore")
+     	0? NEXT,
+     	1? NEXT;
+
+     	DICC_28_Both (coreRecoveryMode = "Both")
+     	0? NEXT,
+     	1? NEXT;
+
+      	DICC_28_None (coreRecoveryMode = "None")
+     	0? NEXT,
+     	1? NEXT;
+			
+}
+
+
+			
+				
+COMPOSITE DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port
+{
+#################################################################################################
+# Composite Description: Contains execute DICC test cases while in templateMode TM_PAT_TRIG with 
+#                        multi power pins and multi trigger pins.
+# 
+#	  Note that most of the parameters had been setup in LRB_DICC_Execute composites.   Only the preinstance
+#   UF parameters and port number is modified here.
+#
+#   Description of Preinstance User Function Arguments as follow:-
+#       coreDemand :  No. of core needed for each DICC test instance. Eg. 32 or 28
+#       coreRecoveryMode : 
+#       	SwapCore : Swap core if good core were dynamically disabled early.
+#       	MaxCore : Continue to test even when core_demand < number of active cores available. Eg. CONTINUE
+#         Both : Swapcore follow by MaxCore.
+#       	None: No core recovery.
+#       GSDS_Prefix : Prefix for GSDS Keys (one for each DICC test instance.  Eg. DICC1).
+#       CR_DI_GSDS : GSDS for available good cores.
+#       crdiUpdateMode:
+#       	FailedCoresOnly: Update only the actual failed cores into CR_DI_GSDS.
+#       	DisabledCores: Updated all cores which had been disabled during ICC measurement.
+#       	None:  Do not update.
+#
+#################################################################################################
+
+
+     tt_userfunc_lrbicc(name = SetGSDSVars_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+				functionName = "LRB_DICC!SetGSDSVars",
+  				functionParameter = CR_DI$space$crdiString
+      )
+     -1? NEXT, 
+      0? NEXT,
+      1? NEXT;
+	
+    #################################################################################################
+    # Test Name: DICC_$coreDemand_$coreRecoveryMode$crdiUpdateMode_PASS_$port
+    # Test Description: TM_PAT_TRIG mode passing execution with multiple trigger pins (HCDPS and LCDPS).
+    # Expected Behavior: DC Measurement within limit since 235mA < 240mA < 245mA.
+    #################################################################################################
+    #eg.  
+    #preinstance = "LRB_DICC!DICCPreInstance coreDemand-32 coreRecoveryMode-SwapCore GSDS_Prefix-DICC1 CR_DI_GSDS-CR_DI_1600 crdiUpdateMode-FailedCoresOnly failCores-0"
+
+    tt_icc_lrbicc(
+         name = DICC_Execute_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port,
+ 	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize       
+        # preinstance = $functionName$space$coreDemand
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+    tt_userfunc_lrbicc(name = CompareGSDSVars_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+  				functionName = "LRB_DICC!CompareGSDSVars",
+  				functionParameter = $crdiStr$space$crdiStringOut$space$PrefixStr$cr$space$goodCoreQty
+    )
+     -1? NEXT, 
+      0? NEXT,
+      1? NEXT;
+    
+#    tt_userfunc_lrbicc(name = CheckDICCResult_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+#  				functionName = "LRB_DICC!CheckDICCResult",
+#  			 	functionParameter = $PrefixStr$dicc$powerPin2$space$DICCresult$space$PrefixStr$dicc$powerPin3$space$DICCresult
+#    )
+#     -1? NEXT, 
+#      0? NEXT,
+#      1? NEXT;
+
+}
+
+COMPOSITE DICC_32_MaxCore
+{
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+               
+         # Simulating 2 core fails.  As number of cores < coreDemand, continue testing and exit port 5.
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",
+               goodCoreQty = "30",
+               port = "P5"
+               );                                  						 
+}
+
+COMPOSITE DICC_32_SwapCore
+{
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+
+         # Simulating 2 core fails.  Exit port 6 because MaxCore recovery is not turned on.
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",   
+               goodCoreQty = "0",																		
+               port = "P6"
+               ); 
+                                                						                                   						 
+         # If initial crdi is less than coreDemand and MaxCore recovery is not turned on, exit port 6 immediately without plist execution.
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001111000000000000000000000000",
+               crdiStringOut = "00001111000000000000000000000000",  
+               goodCoreQty = "0",																	
+               port = "P6"
+               ); 
+}
+
+COMPOSITE DICC_32_Both
+{
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+
+         # Simulating 2 core fails (CR2 and CR3).  As number of cores < coreDemand, continue testing in SwapCore mode and exit port 5.
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",
+               goodCoreQty = "30",
+               port = "P5"
+               );                                  						                                   						 
+
+         # If crdi is less than coreDemand but with MaxCore recovery is turned on, continue testing and exit port 5.
+         # Simulating 2 core fails (CR2 and CR3).
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001111000000000000000000000000",
+               crdiStringOut = "00001111000000000000000000000011",
+               goodCoreQty = "26",
+               port = "P5"
+               );              
+}
+
+COMPOSITE DICC_32_None
+{
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+        # Simulating 2 core fails.
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",
+               goodCoreQty = "0",  
+               port = "P6"
+               );
+
+         # As number of cores < coreDemand and MaxCore Recovery is not turned on,  exit port 6 immediately without plist execution.
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001111000000000000000000000000",
+               crdiStringOut = "00001111000000000000000000000000",
+               goodCoreQty = "0",  
+               port = "P6"
+               );
+                               						                                   						                                                 						                                   						 
+}
+
+# The basic behaviour for 28 core is the same as 32 core.
+# Only the following additional features are tested in the following 28 cores test cases :
+# 1) Turning off additional cores to meet coreDemand 
+# 2) CRDI Update modes 
+
+COMPOSITE DICC_28_Both
+{
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "0",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000011",
+               goodCoreQty = "28",
+               port = "P1"
+               );             
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000000",
+               goodCoreQty = "28",
+               port = "P1"
+               );
+                              
+                # Simulating 1 core fails
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "1",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000101",
+               goodCoreQty = "28",
+               port = "P4"
+               );               
+
+               # Simulating 1 core fails
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "1",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000100",
+               goodCoreQty = "28",
+               port = "P4"
+               ); 
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000001100",
+               goodCoreQty = "28",
+               port = "P4"
+               );               
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "None",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000000",
+               goodCoreQty = "28",
+               port = "P4"
+               );
+               
+                                           
+               # Simulating 5 core fails       
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "5",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000111110000",
+               goodCoreQty = "27",
+               port = "P5"
+               );               
+
+}
+
+COMPOSITE DICC_28_MaxCore
+{
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000111111",
+               goodCoreQty = "26",
+               port = "P5"
+               );    
+               
+              DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000001111",
+               goodCoreQty = "26",
+               port = "P5"
+               );     
+
+                         
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00001100000000000111000000000000",
+               crdiStringOut = "00001100000000000111000000000011",
+               goodCoreQty = "25",
+               port = "P5"
+               );               
+}
+
+COMPOSITE DICC_28_SwapCore
+{
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000001100",
+               goodCoreQty = "28",
+               port = "P4"
+               );               
+}
+
+COMPOSITE DICC_28_None
+{
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "0",															
+               crdiString    = "00111100000000000000000000000011",
+               crdiStringOut = "00111100000000000000000000000011",   
+               goodCoreQty = "0",  																
+               port = "P6"
+               );               
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00110000000000000000000000000011",
+               crdiStringOut = "00110000000000000000000000001111",    
+               goodCoreQty = "0",  																	
+               port = "P6"
+               );               
+}
+
+
+COMPOSITE Fail_DICC_Limits
+{
+	DEF(
+	       powerPin3 = "HDPS"
+	       powerPin = $powerPin2$space$powerPin3,
+	       triggerPin = "PMTrig002 PMTrig001",
+               multiplePinSpec = "238mA 238mA",
+               measureResultGlobal = "GL_Meas_Result2 GL_Meas_Result1",
+         );
+
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "MaxCore",
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001111",   
+               goodCoreQty = "27",  																
+               port = "F2"
+               );         
+               
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "SwapCore",
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001011",   
+               goodCoreQty = "28",  																
+               port = "F2"
+               );         
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "MaxCore",
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001000",   
+               goodCoreQty = "27",  																
+               port = "F2"
+               );         
+
+         DICC_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "SwapCore",
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001000",   
+               goodCoreQty = "28",  																
+               port = "F2"
+               );         
+
+}
+
+
+COMPOSITE Function_Test_Execute
+{
+
+########################################################################################
+#  TM_PAT_TRIG multi pin, multi trigger pins test cases
+########################################################################################
+
+    DEF (
+	 # Common Test Class Parmaeters
+	 debugMode = "OBNOXIOUS",
+         bypassGlobal = "",                                                 #Datatype=STRING, OPTIONAL
+         postinstance = "iVal_utilityfunc!GenerateInstanceResults",          #Datatype=STRING, OPTIONAL
+         preinstance = "",
+         datalogMode = "ON",               
+         
+         # LRB_DICC specific
+         crdiString = "00000000000000000000000000000000",    						
+         crdiStringOut = "00000000000000000000000000000000",    						
+         space = " ",
+ 	 coreDemand = "32",		 	  	# No. of core needed for each DICC test instance. Eg. 32 or 28
+ 	 coreRecoveryMode = "SwapCore",   	    	# Core Recovery Mode
+         crdiUpdateMode = "FailedCoresOnly",  		# Type of update into CR_DI_GSDS.
+         failCores = "0",				# Number of cores to fail
+         
+         DICCPreInstanceUF = "LRB_DICC!DICCPreInstance",
+         GSDSPrefix = " GSDS_Prefix-DICC1",             # Prefix for GSDS Keys (one for each DICC test instance.  Eg. DICC1)
+	 crdi = " CR_DI_GSDS-CR_DI",                   	# GSDS for available good cores.         
+         coreDemandStr = " coreDemand-",		# No. of core needed for each DICC test instance. Eg. 32 or 28
+ 	 coreRecoveryModeStr = " coreRecoveryMode-",   	# Core Recovery Mode
+         crdiUpdateModeStr = " crdiUpdateMode-",  	# Type of update into CR_DI_GSDS.
+         failCoresStr = " failCores-",			# Number of cores to fail
+         functionParameter = "",     					
+         );
+
+         
+     	tt_userfunc_lrbicc(name = "TestReserveMSBToLSB_P1",
+     				functionName = "LRB_DICC!TestReserveMSBToLSB",
+     				functionParameter = CR_DI$space$crdiString     					
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+     	
+
+     	tt_userfunc_lrbicc(name = "TestAddFailBits_P1",
+     				functionName = "LRB_DICC!TestAddFailBits"
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+
+     	tt_userfunc_lrbicc(name = "TestAnyAdditionalCoresFailure_P1",
+     				functionName = "LRB_DICC!TestAnyAdditionalCoresFailure"
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+   	     		
+}
+
+################################################################################################
+COMPOSITE DICC_PerPin_Verify
+{     	
+
+     tt_icc_lrbicc(
+        name = DICC_PerPin_Verify_coreDemand_F0,
+       	coreDemand = "a",
+	coreRecoveryMode = "MaxCore",
+        crdiUpdateMode = "FailedCoresOnly",  
+        failCores = "0",															
+        crdiString    = "00000000000000000000000000000000",
+        crdiStringOut = "00000000000000000000000000000000",
+        goodCoreQty = "32",
+	#postinstance = "LRB_DICC!DICCPostInstance",
+        postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+        functionName = "LRB_DICC!DICCPreInstance",
+      	preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize        
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+
+    tt_icc_lrbicc(
+       name = DICC_PerPin_Verify_coreRecoveryMode_F0,
+       coreDemand = "32",
+       coreRecoveryMode = "MaxCoreJunk",
+       crdiUpdateMode = "FailedCoresOnly",  
+       failCores = "0",															
+       crdiString    = "00000000000000000000000000000000",
+       crdiStringOut = "00000000000000000000000000000000",
+       goodCoreQty = "32",
+       #postinstance = "LRB_DICC!DICCPostInstance",
+       postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+       functionName = "LRB_DICC!DICCPreInstance",
+       preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize        
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+
+    tt_icc_lrbicc(
+         name = DICC_PerPin_Verify_crdiUpdateMode_F0,
+	 coreDemand = "32",
+	 coreRecoveryMode = "MaxCore",
+         crdiUpdateMode = "FailedCoresOnlyJunk",  
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "32",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize  
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+    tt_icc_lrbicc(
+         name = DICC_PerPin_Verify_GSDSPrefix_F0,
+	 coreDemand = "32",
+	 coreRecoveryMode = "MaxCore",
+         crdiUpdateMode = "FailedCoresOnly",  
+         GSDSPrefix = " ",           
+         crdi = " CR_DI_GSDS-CR_DI",                      
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "32",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+    tt_icc_lrbicc(
+         name = DICC_PerPin_Verify_GSDSCRDI_F0,
+	 coreDemand = "32",
+	 coreRecoveryMode = "MaxCore",
+         crdiUpdateMode = "FailedCoresOnly",  
+         GSDSPrefix = " GSDS_Prefix-DICC1",           
+         crdi = " ",                      
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "32",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize       
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+
+    tt_icc_lrbicc(
+         name = DICC_PerPin_Verify_MultiErrors_F0,
+	 coreDemand = "b",
+	 coreRecoveryMode = "MaxCore1",
+         crdiUpdateMode = "FailedCoresOnly1",  
+         GSDSPrefix = " ",           
+         crdi = " ",                      
+         failCores = "0",															
+         crdiString    = "00000000000000000000000000000000",
+         crdiStringOut = "00000000000000000000000000000000",
+         goodCoreQty = "0",
+         port = "FNeg1"
+	 #postinstance = "LRB_DICC!DICCPostInstance",
+         postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+         functionName = "LRB_DICC!DICCPreInstance",
+	 preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize 
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+}
+
+
+
+COMPOSITE DICC_PerPin_32_Cores
+{     	
+
+	DEF (coreDemand = "32");
+			
+      	DICC_PerPin_32_MaxCore (coreRecoveryMode = "MaxCore")
+     	0? NEXT,
+     	1? NEXT;	
+
+     	DICC_PerPin_32_SwapCore (coreRecoveryMode = "SwapCore")
+     	0? NEXT,
+     	1? NEXT;
+
+     	DICC_PerPin_32_Both (coreRecoveryMode = "Both")
+     	0? NEXT,
+     	1? NEXT;
+
+      	DICC_PerPin_32_None (coreRecoveryMode = "None")
+     	0? NEXT,
+     	1? NEXT;
+
+}
+
+COMPOSITE DICC_PerPin_28_Cores
+{     	
+	DEF (coreDemand = "28");
+
+      	DICC_PerPin_28_MaxCore (coreRecoveryMode = "MaxCore")
+     	0? NEXT,
+     	1? NEXT;	
+
+     	DICC_PerPin_28_SwapCore (coreRecoveryMode = "SwapCore")
+     	0? NEXT,
+     	1? NEXT;
+
+     	DICC_PerPin_28_Both (coreRecoveryMode = "Both")
+     	0? NEXT,
+     	1? NEXT;
+
+      	DICC_PerPin_28_None (coreRecoveryMode = "None")
+     	0? NEXT,
+     	1? NEXT;
+			
+}
+
+
+			
+				
+COMPOSITE DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port
+{
+#################################################################################################
+# Composite Description: Contains execute DICC test cases while in templateMode TM_PAT_TRIG with 
+#                        multi power pins and multi trigger pins.
+# 
+#	  Note that most of the parameters had been setup in LRB_DICC_PerPin_Execute composites.   Only the preinstance
+#   UF parameters and port number is modified here.
+#
+#   Description of Preinstance User Function Arguments as follow:-
+#       coreDemand :  No. of core needed for each DICC test instance. Eg. 32 or 28
+#       coreRecoveryMode : 
+#       	SwapCore : Swap core if good core were dynamically disabled early.
+#       	MaxCore : Continue to test even when core_demand < number of active cores available. Eg. CONTINUE
+#         Both : Swapcore follow by MaxCore.
+#       	None: No core recovery.
+#       GSDS_Prefix : Prefix for GSDS Keys (one for each DICC test instance.  Eg. DICC1).
+#       CR_DI_GSDS : GSDS for available good cores.
+#       crdiUpdateMode:
+#       	FailedCoresOnly: Update only the actual failed cores into CR_DI_GSDS.
+#       	DisabledCores: Updated all cores which had been disabled during ICC measurement.
+#       	None:  Do not update.
+#
+#################################################################################################
+
+
+     tt_userfunc_lrbicc(name = SetGSDSVars_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+				functionName = "LRB_DICC!SetGSDSVars",
+  				functionParameter = CR_DI$space$crdiString
+      )
+     -1? NEXT, 
+      0? NEXT,
+      1? NEXT;
+	
+    #################################################################################################
+    # Test Name: DICC_PerPin_$coreDemand_$coreRecoveryMode$crdiUpdateMode_PASS_$port
+    # Test Description: TM_PAT_TRIG mode passing execution with multiple trigger pins (HCDPS and LCDPS).
+    # Expected Behavior: DC Measurement within limit since 235mA < 240mA < 245mA.
+    #################################################################################################
+    #eg.  
+    #preinstance = "LRB_DICC!DICCPreInstance coreDemand-32 coreRecoveryMode-SwapCore GSDS_Prefix-DICC1 CR_DI_GSDS-CR_DI_1600 crdiUpdateMode-FailedCoresOnly failCores-0"
+
+    tt_icc_lrbicc(
+       name = DICC_PerPin_Execute_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port,
+       #postinstance = "LRB_DICC!DICCPostInstance",
+       postinstance="Misc.dll!Call LRB_DICC!DICCPostInstance[Test]+iVal_utilityfunc!GenerateInstanceResults[Capture]",
+       functionName = "LRB_DICC!DICCPreInstance",
+       preinstance = $functionName$coreDemandStr$coreDemand$coreRecoveryModeStr$coreRecoveryMode$failCoresStr$failCores$crdiUpdateModeStr$crdiUpdateMode$GSDSPrefix$crdi$dmemsize 
+       # preinstance = $functionName$space$coreDemand
+           )
+   -1?NEXT,
+   -2?NEXT,
+    0?NEXT,
+    1?NEXT,
+    2?NEXT,
+    3?NEXT,
+    4?NEXT,
+    5?NEXT,
+    6?NEXT;
+
+    tt_userfunc_lrbicc(name = CompareGSDSVars_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+  				functionName = "LRB_DICC!CompareGSDSVars",
+  				functionParameter = $crdiStr$space$crdiStringOut$space$PrefixStr$cr$space$goodCoreQty
+    )
+     -1? NEXT, 
+      0? NEXT,
+      1? NEXT;
+    
+#    tt_userfunc_lrbicc(name = CheckDICCResult_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+#  				functionName = "LRB_DICC!CheckDICCResult",
+#  			 	functionParameter = $PrefixStr$dicc$powerPin2$space$DICCresult$space$PrefixStr$dicc$powerPin3$space$DICCresult
+#    )
+#     -1? NEXT, 
+#      0? NEXT,
+#      1? NEXT;
+
+    tt_userfunc_lrbicc(name = PatternReadOut_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_P1,
+  				functionName = "GLN_DEBUG!PatternReadOut",
+  			 	functionParameter = "P001^LRB_Dicc_Multi_preamble_main^default^FUSE_CFG_DATA_STR^203"
+    )
+     -1? NEXT, 
+      0? NEXT,
+      1? NEXT;
+
+}
+
+COMPOSITE DICC_PerPin_32_MaxCore
+{
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+               
+         # Simulating 2 core fails.  As number of cores < coreDemand, continue testing and exit port 5.
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",
+               goodCoreQty = "30",
+               port = "P5"
+               );                                  						 
+}
+
+COMPOSITE DICC_PerPin_32_SwapCore
+{
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+
+         # Simulating 2 core fails.  Exit port 6 because MaxCore recovery is not turned on.
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",   
+               goodCoreQty = "0",																		
+               port = "P6"
+               ); 
+                                                						                                   						 
+         # If initial crdi is less than coreDemand and MaxCore recovery is not turned on, exit port 6 immediately without plist execution.
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001111000000000000000000000000",
+               crdiStringOut = "00001111000000000000000000000000",  
+               goodCoreQty = "0",																	
+               port = "P6"
+               ); 
+}
+
+COMPOSITE DICC_PerPin_32_Both
+{
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+
+         # Simulating 2 core fails (CR2 and CR3).  As number of cores < coreDemand, continue testing in SwapCore mode and exit port 5.
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",
+               goodCoreQty = "30",
+               port = "P5"
+               );                                  						                                   						 
+
+         # If crdi is less than coreDemand but with MaxCore recovery is turned on, continue testing and exit port 5.
+         # Simulating 2 core fails (CR2 and CR3).
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001111000000000000000000000000",
+               crdiStringOut = "00001111000000000000000000000011",
+               goodCoreQty = "26",
+               port = "P5"
+               );              
+}
+
+COMPOSITE DICC_PerPin_32_None
+{
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000000",
+               goodCoreQty = "32",
+               port = "P1"
+               );
+        # Simulating 2 core fails.
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000000011",
+               goodCoreQty = "0",  
+               port = "P6"
+               );
+
+         # As number of cores < coreDemand and MaxCore Recovery is not turned on,  exit port 6 immediately without plist execution.
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001111000000000000000000000000",
+               crdiStringOut = "00001111000000000000000000000000",
+               goodCoreQty = "0",  
+               port = "P6"
+               );
+                               						                                   						                                                 						                                   						 
+}
+
+# The basic behaviour for 28 core is the same as 32 core.
+# Only the following additional features are tested in the following 28 cores test cases :
+# 1) Turning off additional cores to meet coreDemand 
+# 2) CRDI Update modes 
+
+COMPOSITE DICC_PerPin_28_Both
+{
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "0",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000011",
+               goodCoreQty = "28",
+               port = "P1"
+               );             
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "0",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000000",
+               goodCoreQty = "28",
+               port = "P1"
+               );
+                              
+                # Simulating 1 core fails
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "1",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000101",
+               goodCoreQty = "28",
+               port = "P4"
+               );               
+
+               # Simulating 1 core fails
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "1",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000100",
+               goodCoreQty = "28",
+               port = "P4"
+               ); 
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000001100",
+               goodCoreQty = "28",
+               port = "P4"
+               );               
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "None",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000000000",
+               goodCoreQty = "28",
+               port = "P4"
+               );
+               
+                                           
+               # Simulating 5 core fails       
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "5",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000111110000",
+               goodCoreQty = "27",
+               port = "P5"
+               );               
+
+}
+
+COMPOSITE DICC_PerPin_28_MaxCore
+{
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00000000000000000000000000000000",
+               crdiStringOut = "00000000000000000000000000111111",
+               goodCoreQty = "26",
+               port = "P5"
+               );    
+               
+              DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000001111",
+               goodCoreQty = "26",
+               port = "P5"
+               );     
+
+                         
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00001100000000000111000000000000",
+               crdiStringOut = "00001100000000000111000000000011",
+               goodCoreQty = "25",
+               port = "P5"
+               );               
+}
+
+COMPOSITE DICC_PerPin_28_SwapCore
+{
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00001100000000000000000000000000",
+               crdiStringOut = "00001100000000000000000000001100",
+               goodCoreQty = "28",
+               port = "P4"
+               );               
+}
+
+COMPOSITE DICC_PerPin_28_None
+{
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "0",															
+               crdiString    = "00111100000000000000000000000011",
+               crdiStringOut = "00111100000000000000000000000011",   
+               goodCoreQty = "0",  																
+               port = "P6"
+               );               
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "2",															
+               crdiString    = "00110000000000000000000000000011",
+               crdiStringOut = "00110000000000000000000000001111",    
+               goodCoreQty = "0",  																	
+               port = "P6"
+               );               
+}
+
+
+COMPOSITE Fail_DICC_PerPin_Limits
+{
+	 DEF(
+               powerPin3 = "HDPS"
+	       powerPin = $powerPin2$space$powerPin3,
+               triggerPin = "PMTrig002 PMTrig001",
+               multiplePinSpec = "238mA 238mA",
+               measureResultGlobal = "GL_Meas_Result2 GL_Meas_Result1",
+         );
+
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "MaxCore",
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001111",   
+               goodCoreQty = "27",  																
+               port = "F2"
+               );         
+               
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "SwapCore",
+               crdiUpdateMode = "DisabledCores",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001011",   
+               goodCoreQty = "28",  																
+               port = "F2"
+               );         
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "MaxCore",
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001000",   
+               goodCoreQty = "27",  																
+               port = "F2"
+               );         
+
+         DICC_PerPin_$coreDemand_$coreRecoveryMode_$crdiString_$failCores_$crdiUpdateMode_$port(
+	       coreDemand = "28",
+	       coreRecoveryMode = "SwapCore",
+               crdiUpdateMode = "FailedCoresOnly",  
+               failCores = "1",															
+               crdiString    = "00100000000000000000000000000000",
+               crdiStringOut = "00100000000000000000000000001000",   
+               goodCoreQty = "28",  																
+               port = "F2"
+               );         
+
+}
+
+
+COMPOSITE Function_PerPin_Test_Execute
+{
+
+########################################################################################
+#  TM_PAT_TRIG multi pin, multi trigger pins test cases
+########################################################################################
+
+    DEF (
+	 # Common Test Class Parmaeters
+	 debugMode = "OBNOXIOUS",
+         bypassGlobal = "",                                                 #Datatype=STRING, OPTIONAL
+         postinstance = "iVal_utilityfunc!GenerateInstanceResults",          #Datatype=STRING, OPTIONAL
+         preinstance = "",
+         datalogMode = "ON",               
+         
+         # LRB_DICC specific
+         crdiString = "00000000000000000000000000000000",    						
+         crdiStringOut = "00000000000000000000000000000000",    						
+         space = " ",
+ 	 coreDemand = "32",		 	  	# No. of core needed for each DICC test instance. Eg. 32 or 28
+ 	 coreRecoveryMode = "SwapCore",   	    	# Core Recovery Mode
+         crdiUpdateMode = "FailedCoresOnly",  		# Type of update into CR_DI_GSDS.
+         failCores = "0",				# Number of cores to fail
+         
+         DICCPreInstanceUF = "LRB_DICC!DICCPreInstance",
+         GSDSPrefix = " GSDS_Prefix-DICC1",             # Prefix for GSDS Keys (one for each DICC test instance.  Eg. DICC1)
+	 crdi = " CR_DI_GSDS-CR_DI",                   	# GSDS for available good cores.         
+         coreDemandStr = " coreDemand-",		# No. of core needed for each DICC test instance. Eg. 32 or 28
+ 	 coreRecoveryModeStr = " coreRecoveryMode-",   	# Core Recovery Mode
+         crdiUpdateModeStr = " crdiUpdateMode-",  	# Type of update into CR_DI_GSDS.
+         failCoresStr = " failCores-",			# Number of cores to fail
+         functionParameter = "",     					
+         );
+
+         
+     	tt_userfunc_lrbicc(name = "TestReserveMSBToLSB_P1",
+     				functionName = "LRB_DICC!TestReserveMSBToLSB",
+     				functionParameter = CR_DI$space$crdiString     					
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+     	
+
+     	tt_userfunc_lrbicc(name = "TestAddFailBits_P1",
+     				functionName = "LRB_DICC!TestAddFailBits"
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+
+     	tt_userfunc_lrbicc(name = "TestAnyAdditionalCoresFailure_P1",
+     				functionName = "LRB_DICC!TestAnyAdditionalCoresFailure"
+     	) 
+	-1?0,
+	0?0,
+	1?NEXT;		
+   	     		
+}
+
+

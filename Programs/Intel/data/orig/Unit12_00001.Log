@@ -1,0 +1,2246 @@
+IC_GEN_INFO:: Class: iCUserFuncTest Instance: ST_ON_DATALOG Function: "m_tSetDffData File: GEN_global.cpp Line: 5872
+Running Multi-SSID mode, PKG detected
+Instance sicc_AVID_ref_0110c_nom1401400_0201  iCIccTest::execute is running....
+iCGENIccTest::iC_tExecute of instance "sicc_AVID_ref_0110c_nom1401400_0201" is running
+iCGenInfo:: Global "BYPASSVars.BYPASS_AVID_sicc" successfully resolved to type "IT_INTEGER" and value "-1"..
+
+o INFO: Parameters passed: (SICC_DSPT_C0_MA, sicc_deepsleep_cmp_0110c_list)
+o INFO: Raw data: SICC_DSPT_C0_MA^sicc_deepsleep_cmp_0110c_list
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label *JTAG_WRITE_FUSE_CFR_A*
+Processing PatternList "sicc_deepsleep_cmp_0110c_list"....
+     Index 0     Status Enable     Pattern "d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1"
+PATTERN LIST sicc_deepsleep_cmp_0110c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "sicc_deepsleep_cmp_0110c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "260" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2679"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1462 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2679 Opcode JSR  Operand 1462
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "259" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2678"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1462 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2678 Opcode JSR  Operand 1462
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "258" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2677"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1462 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2677 Opcode JSR  Operand 1462
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "257" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2676"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2676 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "256" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2675"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2675 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "134" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2553"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2553 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "85" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2504"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1472 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2504 Opcode JSR  Operand 1472
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_10
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "84" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_10"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2503"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_10 1482 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2503 Opcode JSR  Operand 1482
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "83" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2502"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2502 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "82" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2501"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2501 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start1
+Processing PatternList "sicc_deepsleep_cmp_0110c_list"....
+     Index 0     Status Enable     Pattern "d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1"
+PATTERN LIST sicc_deepsleep_cmp_0110c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1
+      d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "sicc_deepsleep_cmp_0110c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2141"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2141 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2140"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2140 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2139"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1462 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2139 Opcode JSR  Operand 1462
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2138"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1472 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2138 Opcode JSR  Operand 1472
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2137"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2137 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start2
+Processing PatternList "sicc_deepsleep_cmp_0110c_list"....
+     Index 0     Status Enable     Pattern "d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1"
+PATTERN LIST sicc_deepsleep_cmp_0110c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1
+      d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1
+      d1854718M005296_011004c_MB2619bj_0fwxxx0xhhcx7xxxxxPfrxQ0_deep_sleep_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "sicc_deepsleep_cmp_0110c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4291"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4291 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4290"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4290 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4289"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1462 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4289 Opcode JSR  Operand 1462
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4288"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1472 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4288 Opcode JSR  Operand 1472
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4287"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1452 Subr cwma_sub_vrevQ0_P_011010_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4287 Opcode JSR  Operand 1452
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+iCGENINFO: Clearing Mask Pins before executing SSID sequence
+iCGENINFO: Adding BPM_2_3t0nn_3 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_3 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_3, channel=3615
+
+iCGENINFO: Adding BPM_2_3t0nn_2 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_2 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_2, channel=3425
+
+iCGENINFO: Adding BPM_2_3t0nn_1 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_1 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_1, channel=3606
+
+iCGENINFO: Adding BPM_2_3t0nn_0 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_0 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_0, channel=3408
+
+iCOASISInfo:: sicc_AVID_ref_0110c_nom1401400_0201:Getting release OASIS_GEN_NGThermalDiode_tt dll
+
+iCOASISInfo:: Instance "sicc_AVID_ref_0110c_nom1401400_0201" uses previously loaded DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+
+CORTEX_OASIS_INFO:: iC_tGetTpObject File OASIS_core.cpp Line 1483
+Function "gThermalMeasureExecute" was successfully resolved in DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+IC_GEN_ERROR:: Class: iCIccTest Instance: sicc_AVID_ref_0110c_nom1401400_0201 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_ON
+Clamp Low:               -4.9920000000000009
+Clamp High:              99.984000000000009
+Force Value:             0
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              90
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: -99
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.01
+Slew rate:            49999.999999999993
+Free drive time:      0.001
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_OFF
+Clamp Low:               -3.984
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              90
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: 1
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+iCOASISInfo:: Pattern List "sicc_deepsleep_cmp_0110c_list" executed with 1 Bursts...
+
+Pin VCC	PASS
+
+
+2_lsep
+2_tname_sicc_AVID_ref_0110c_nom1401400_0201_max
+2_mrslt_30.304000000000
+2_msunit_A
+2_lsep
+2_tname_sicc_AVID_ref_0110c_nom1401400_0201_min
+2_mrslt_30.248000000000
+2_msunit_A
+2_lsep
+2_tname_sicc_AVID_ref_0110c_nom1401400_0201_avg
+2_mrslt_30.272800000000
+2_msunit_A
+2_lsep
+2_tname_sicc_AVID_ref_0110c_nom1401400_0201_med
+2_mrslt_30.272000000000
+2_msunit_A
+CORTEX_OASIS_WARNING:: iC_tPrint2Datalog File OASIS_core.cpp Line 7213
+ITUFF stream is closed... Skipping Datalogging!
+Result global: 30.247999999999998 30.272799999999997 30.303999999999995 30.271999999999995
+Icc measurement value - Max = 30.304000000000
+                      - Min = 30.248000000000
+                      - Average = 30.272800000000
+                      - Median = 30.272000000000
+IC_GEN_ERROR:: Class: iCIccTest Instance: sicc_AVID_ref_0110c_nom1401400_0201 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+AVIDThermalCapture UF Arguments are << iCGL_STR_calculated_die1_diode_temp^AVID.TPG_SICC_Temp_Global_1 >>
+iCGenInfo:: Global "iCGL_STR_calculated_die1_diode_temp" successfully resolved to type "IT_STRING" and value "80.095953999999949"..
+
+iCGenWarning:: m_tSetTpGlobal::Forcing m_tEvaluateTpGlobals() to execute. This needs to be done prior to set verification for the global "AVID.TPG_SICC_Temp_Global_1"...
+iCGenInfo:: m_tSetTpGlobal::Global "AVID.TPG_SICC_Temp_Global_1" of type "IT_STRING" was successfully set to the value "80.095953999999949".Input Value is "80.095953999999949" and Input Expr is "80.095953999999949".
+
+
+
+Instance sicc_AVID_ref_0110c_nom1401400_0201 Executed in   301.1970 milliSeconds
+
+iCOASISInfo:: Instance "sicc_AVID_ref_0110c_nom1401400_0201" exiting on Port 1...
+Port Status "PASS" Port Info:- "PASS PORT"
+
+Instance dicc_AVID1_ref_0118c_nom1041867_0301  iCIccTest::execute is running....
+iCGENIccTest::iC_tExecute of instance "dicc_AVID1_ref_0118c_nom1041867_0301" is running
+iCGenInfo:: Global "BYPASSVars.BYPASS_AVID1_Dicc" successfully resolved to type "IT_INTEGER" and value "-1"..
+
+o INFO: Parameters passed: (SICC_DSPT_C0_MA, dicc_powervirus_modea_0118c_list)
+o INFO: Raw data: SICC_DSPT_C0_MA^dicc_powervirus_modea_0118c_list
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label *JTAG_WRITE_FUSE_CFR_A*
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "260" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2679"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2679 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "259" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2678"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2678 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "258" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2677"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2677 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "257" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2676"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2676 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "256" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2675"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2675 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "134" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2553"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2553 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "85" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2504"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2504 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_10
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "84" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_10"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2503"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_10 1368 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2503 Opcode JSR  Operand 1368
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "83" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2502"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2502 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "82" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2501"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2501 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start1
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2141"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2141 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2140"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2140 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2139"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2139 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2138"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2138 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2137"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2137 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start2
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4291"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4291 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4290"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4290 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4289"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4289 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4288"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4288 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4287"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4287 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+iCGENINFO: Clearing Mask Pins before executing SSID sequence
+iCGENINFO: Adding BPM_2_3t0nn_3 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_3 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_3, channel=3615
+
+iCGENINFO: Adding BPM_2_3t0nn_2 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_2 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_2, channel=3425
+
+iCGENINFO: Adding BPM_2_3t0nn_1 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_1 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_1, channel=3606
+
+iCGENINFO: Adding BPM_2_3t0nn_0 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_0 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_0, channel=3408
+
+iCOASISInfo:: dicc_AVID1_ref_0118c_nom1041867_0301:Getting release OASIS_GEN_NGThermalDiode_tt dll
+
+iCOASISInfo:: Instance "dicc_AVID1_ref_0118c_nom1041867_0301" uses previously loaded DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+
+CORTEX_OASIS_INFO:: iC_tGetTpObject File OASIS_core.cpp Line 1483
+Function "gThermalMeasureExecute" was successfully resolved in DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+IC_GEN_ERROR:: Class: iCIccTest Instance: dicc_AVID1_ref_0118c_nom1041867_0301 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_ON
+Clamp Low:               -4.9920000000000009
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              125
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: -99
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_OFF
+Clamp Low:               -3.984
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              125
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: 1
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+iCOASISInfo:: Pattern List "dicc_powervirus_modea_0118c_list" executed with 1 Bursts...
+
+Pin VCC	PASS
+
+
+2_lsep
+2_tname_dicc_AVID1_ref_0118c_nom1041867_0301_max
+2_mrslt_84.672000000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID1_ref_0118c_nom1041867_0301_min
+2_mrslt_84.544000000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID1_ref_0118c_nom1041867_0301_avg
+2_mrslt_84.620800000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID1_ref_0118c_nom1041867_0301_med
+2_mrslt_84.648000000000
+2_msunit_A
+CORTEX_OASIS_WARNING:: iC_tPrint2Datalog File OASIS_core.cpp Line 7213
+ITUFF stream is closed... Skipping Datalogging!
+Result global: 84.543999999999997 84.620799999999974 84.671999999999983 84.647999999999982
+Icc measurement value - Max = 84.672000000000
+                      - Min = 84.544000000000
+                      - Average = 84.620800000000
+                      - Median = 84.648000000000
+IC_GEN_ERROR:: Class: iCIccTest Instance: dicc_AVID1_ref_0118c_nom1041867_0301 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+AVIDThermalCapture UF Arguments are << iCGL_STR_calculated_die1_diode_temp^AVID.TPG_DICC_Temp_Global_1 >>
+iCGenInfo:: Global "iCGL_STR_calculated_die1_diode_temp" successfully resolved to type "IT_STRING" and value "82.549817999999959"..
+
+iCGenWarning:: m_tSetTpGlobal::Forcing m_tEvaluateTpGlobals() to execute. This needs to be done prior to set verification for the global "AVID.TPG_DICC_Temp_Global_1"...
+iCGenInfo:: m_tSetTpGlobal::Global "AVID.TPG_DICC_Temp_Global_1" of type "IT_STRING" was successfully set to the value "82.549817999999959".Input Value is "82.549817999999959" and Input Expr is "82.549817999999959".
+
+
+
+Instance dicc_AVID1_ref_0118c_nom1041867_0301 Executed in   240.0250 milliSeconds
+
+iCOASISInfo:: Instance "dicc_AVID1_ref_0118c_nom1041867_0301" exiting on Port 1...
+Port Status "PASS" Port Info:- "PASS PORT"
+
+Instance dicc_AVID2_ref_0118c_nom1192133_0401  iCIccTest::execute is running....
+iCGENIccTest::iC_tExecute of instance "dicc_AVID2_ref_0118c_nom1192133_0401" is running
+iCGenInfo:: Global "BYPASSVars.BYPASS_AVID2_Dicc" successfully resolved to type "IT_INTEGER" and value "-1"..
+
+o INFO: Parameters passed: (SICC_DSPT_C0_MA, dicc_powervirus_modea_0118c_list)
+o INFO: Raw data: SICC_DSPT_C0_MA^dicc_powervirus_modea_0118c_list
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label *JTAG_WRITE_FUSE_CFR_A*
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "260" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2679"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2679 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "259" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2678"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2678 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "258" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2677"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2677 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "257" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2676"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2676 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "256" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2675"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2675 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "134" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2553"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2553 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "85" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2504"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2504 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_10
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "84" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_10"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2503"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_10 1368 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2503 Opcode JSR  Operand 1368
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "83" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2502"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2502 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "82" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2501"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2501 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start1
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2141"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2141 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2140"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2140 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2139"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2139 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2138"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2138 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2137"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2137 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start2
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4291"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4291 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4290"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4290 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4289"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4289 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4288"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4288 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4287"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4287 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+iCGENINFO: Clearing Mask Pins before executing SSID sequence
+iCGENINFO: Adding BPM_2_3t0nn_3 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_3 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_3, channel=3615
+
+iCGENINFO: Adding BPM_2_3t0nn_2 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_2 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_2, channel=3425
+
+iCGENINFO: Adding BPM_2_3t0nn_1 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_1 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_1, channel=3606
+
+iCGENINFO: Adding BPM_2_3t0nn_0 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_0 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_0, channel=3408
+
+iCOASISInfo:: dicc_AVID2_ref_0118c_nom1192133_0401:Getting release OASIS_GEN_NGThermalDiode_tt dll
+
+iCOASISInfo:: Instance "dicc_AVID2_ref_0118c_nom1192133_0401" uses previously loaded DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+
+CORTEX_OASIS_INFO:: iC_tGetTpObject File OASIS_core.cpp Line 1483
+Function "gThermalMeasureExecute" was successfully resolved in DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+IC_GEN_ERROR:: Class: iCIccTest Instance: dicc_AVID2_ref_0118c_nom1192133_0401 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_ON
+Clamp Low:               -4.9920000000000009
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              125
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: -99
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_OFF
+Clamp Low:               -3.984
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              125
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: 1
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+iCOASISInfo:: Pattern List "dicc_powervirus_modea_0118c_list" executed with 1 Bursts...
+
+Pin VCC	PASS
+
+
+2_lsep
+2_tname_dicc_AVID2_ref_0118c_nom1192133_0401_max
+2_mrslt_91.968000000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID2_ref_0118c_nom1192133_0401_min
+2_mrslt_91.776000000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID2_ref_0118c_nom1192133_0401_avg
+2_mrslt_91.888400000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID2_ref_0118c_nom1192133_0401_med
+2_mrslt_91.872000000000
+2_msunit_A
+CORTEX_OASIS_WARNING:: iC_tPrint2Datalog File OASIS_core.cpp Line 7213
+ITUFF stream is closed... Skipping Datalogging!
+Result global: 91.77600000000001 91.888400000000019 91.968000000000004 91.872000000000014
+Icc measurement value - Max = 91.968000000000
+                      - Min = 91.776000000000
+                      - Average = 91.888400000000
+                      - Median = 91.872000000000
+IC_GEN_ERROR:: Class: iCIccTest Instance: dicc_AVID2_ref_0118c_nom1192133_0401 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+AVIDThermalCapture UF Arguments are << iCGL_STR_calculated_die1_diode_temp^AVID.TPG_DICC_Temp_Global_2 >>
+iCGenInfo:: Global "iCGL_STR_calculated_die1_diode_temp" successfully resolved to type "IT_STRING" and value "82.549817999999959"..
+
+iCGenWarning:: m_tSetTpGlobal::Forcing m_tEvaluateTpGlobals() to execute. This needs to be done prior to set verification for the global "AVID.TPG_DICC_Temp_Global_2"...
+iCGenInfo:: m_tSetTpGlobal::Global "AVID.TPG_DICC_Temp_Global_2" of type "IT_STRING" was successfully set to the value "82.549817999999959".Input Value is "82.549817999999959" and Input Expr is "82.549817999999959".
+
+
+
+Instance dicc_AVID2_ref_0118c_nom1192133_0401 Executed in   227.8960 milliSeconds
+
+iCOASISInfo:: Instance "dicc_AVID2_ref_0118c_nom1192133_0401" exiting on Port 1...
+Port Status "PASS" Port Info:- "PASS PORT"
+
+Instance dicc_AVID3_ref_0118c_nom1332400_0501  iCIccTest::execute is running....
+iCGENIccTest::iC_tExecute of instance "dicc_AVID3_ref_0118c_nom1332400_0501" is running
+iCGenInfo:: Global "BYPASSVars.BYPASS_AVID3_Dicc" successfully resolved to type "IT_INTEGER" and value "-1"..
+
+o INFO: Parameters passed: (SICC_DSPT_C0_MA, dicc_powervirus_modea_0118c_list)
+o INFO: Raw data: SICC_DSPT_C0_MA^dicc_powervirus_modea_0118c_list
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label *JTAG_WRITE_FUSE_CFR_A*
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "260" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2679"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2679 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "259" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2678"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2678 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "258" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2677"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2677 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "257" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2676"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2676 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "256" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2675"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2675 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "134" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2553"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2553 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "85" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2504"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2504 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_10
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "84" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_10"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2503"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_10 1368 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2503 Opcode JSR  Operand 1368
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "83" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2502"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2502 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "82" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAG_WRITE_FUSE_CFR_A"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2501"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2501 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start1
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2141"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2141 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2140"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2140 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2139"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2139 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2138"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2138 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start1"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "2137"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 2137 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+o INFO: Plist label JTAGDieCtrl_Start2
+Processing PatternList "dicc_powervirus_modea_0118c_list"....
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+     Index 0     Status Enable     Pattern "d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1"
+PATTERN LIST dicc_powervirus_modea_0118c_list
+   PAT_COUNT 1    ENABLED_PAT_COUNT 1    IS_ANY_EMPTY   TRUE IS_ANY_ALL_DISABLED   TRUE
+   PrePlist  cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+   PostPlist 
+   PrePat    
+   PostPat   
+   PLIST CONTENT
+
+          PATTERN   d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1 ENABLE    
+
+
+   ORDERED NESTED PLISTS
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+      d1854732M005314_011804c_MB2619bj_0fwxxx0xhhcx0xxxxxPfrxQ0_Power_Virus_mrm4_cmp_OBR1
+
+
+   NESTED PLISTS and NESTING LEVELS
+
+
+Done Processing Plist "dicc_powervirus_modea_0118c_list"
+
+
+o INFO: Pre-amble cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "4" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4291"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4291 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "3" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4290"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4290 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_1
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "2" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_1"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4289"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_1 1348 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4289 Opcode JSR  Operand 1348
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_01
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "1" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_01"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4288"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_01 1358 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4288 Opcode JSR  Operand 1358
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Pattern data IT_CALL TAP_DR_0
+iCOASISInfo:: Running iC_tModifyPat with the parameters Pattern "cwma_pre_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0_x" Site "0" OffSet "0" NumVectors "1"
+ IT_PAT_OPCODE  IT_MAIN_PAT Data "IT_CALL TAP_DR_0"  Label "JTAGDieCtrl_Start2"
+
+
+iCOASISInfo:: Effective Address where modify will happen is "4287"
+
+iCOASISInfo:: Subroutine Pattern is "cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0"
+
+iCOASISInfo:: # of whitespace separated tokens in sData is "2"
+
+iCOASISInfo:: JSR TAP_DR_0 1338 Subr cwma_sub_vrevQ0_P_011818_c_M_B2_619b_j_f_w_0_h_x_f1_reg_0
+
+iCOASISInfo:: Addr 4287 Opcode JSR  Operand 1338
+
+CORTEX_OASIS_INFO:: iC_tModifyPat File OASIS_core.cpp Line 24200
+IT_PAT_OPCODE/OPERAND modify passed...
+o INFO: Found the key SICC_DSPT_C0_MA from memory
+iCGENINFO: Clearing Mask Pins before executing SSID sequence
+iCGENINFO: Adding BPM_2_3t0nn_3 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_3 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_3, channel=3615
+
+iCGENINFO: Adding BPM_2_3t0nn_2 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_2 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_2, channel=3425
+
+iCGENINFO: Adding BPM_2_3t0nn_1 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_1 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_1, channel=3606
+
+iCGENINFO: Adding BPM_2_3t0nn_0 into the mask pin list
+iCGENINFO: Successfully add BPM_2_3t0nn_0 pin into mask pin list
+Successfully set mask from UF
+o INFO: Pin to mask=BPM_2_3t0nn_0, channel=3408
+
+iCOASISInfo:: dicc_AVID3_ref_0118c_nom1332400_0501:Getting release OASIS_GEN_NGThermalDiode_tt dll
+
+iCOASISInfo:: Instance "dicc_AVID3_ref_0118c_nom1332400_0501" uses previously loaded DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+
+CORTEX_OASIS_INFO:: iC_tGetTpObject File OASIS_core.cpp Line 1483
+Function "gThermalMeasureExecute" was successfully resolved in DLL "OASIS_GEN_NGThermalDiode_tt.dll"
+IC_GEN_ERROR:: Class: iCIccTest Instance: dicc_AVID3_ref_0118c_nom1332400_0501 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_ON
+Clamp Low:               -4.9920000000000009
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              125
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: -99
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+Measurement mode: IT_VSIM
+RelayState: IT_RELAY_CLOSE
+Output (Driver) RelayState: IT_DC_RS_UNDEFINED
+FilterState: IT_DC_FILTER_OFF
+Clamp Low:               -3.984
+Clamp High:              189.98400000000001
+Force Value:             1.1910000000000001
+Measurement range low::  -192
+Measurement range high:: 192
+Source range low::       0
+Source range high::      1.8
+Low Limit:               0.10000000000000001
+High Limit:              125
+Trigger start control: IT_TRIGGER_START_EXTERNAL
+Trigger stop control: IT_TRIGGER_STOP_COUNTER
+Output bit: 1
+Sample mode (Average or trace): IT_SAMPLE_AVERAGE
+Sampling count:      20
+Sampling interval:   2.5000000000000001e-005
+Settling time:       0
+Power raise sequence:0
+Power lower sequence:0
+Bypass Capacitor: IT_DC_BC_UNDEFINED
+Phase compensate: IT_HIGHCAP
+VBump: IT_VBUMP_DISABLED
+Shut down mode: IT_FOLD_SHUTDOWN
+Shut down delay time: 0.0050000000000000001
+Slew rate:            5000
+Free drive time:      0.001
+iCOASISInfo:: Pattern List "dicc_powervirus_modea_0118c_list" executed with 1 Bursts...
+
+Pin VCC	PASS
+
+
+2_lsep
+2_tname_dicc_AVID3_ref_0118c_nom1332400_0501_max
+2_mrslt_99.248000000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID3_ref_0118c_nom1332400_0501_min
+2_mrslt_99.008000000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID3_ref_0118c_nom1332400_0501_avg
+2_mrslt_99.152800000000
+2_msunit_A
+2_lsep
+2_tname_dicc_AVID3_ref_0118c_nom1332400_0501_med
+2_mrslt_99.176000000000
+2_msunit_A
+CORTEX_OASIS_WARNING:: iC_tPrint2Datalog File OASIS_core.cpp Line 7213
+ITUFF stream is closed... Skipping Datalogging!
+Result global: 99.007999999999996 99.152799999999971 99.248000000000019 99.176000000000002
+Icc measurement value - Max = 99.248000000000
+                      - Min = 99.008000000000
+                      - Average = 99.152800000000
+                      - Median = 99.176000000000
+IC_GEN_ERROR:: Class: iCIccTest Instance: dicc_AVID3_ref_0118c_nom1332400_0501 Function: "iCGENThermalMeasure::m_tExecute File: cortex.cpp Line: 1859
+Thermal Monitor Initialization is not complete! 
+AVIDThermalCapture UF Arguments are << iCGL_STR_calculated_die1_diode_temp^AVID.TPG_DICC_Temp_Global_3 >>
+iCGenInfo:: Global "iCGL_STR_calculated_die1_diode_temp" successfully resolved to type "IT_STRING" and value "82.549817999999959"..
+
+iCGenWarning:: m_tSetTpGlobal::Forcing m_tEvaluateTpGlobals() to execute. This needs to be done prior to set verification for the global "AVID.TPG_DICC_Temp_Global_3"...
+iCGenInfo:: m_tSetTpGlobal::Global "AVID.TPG_DICC_Temp_Global_3" of type "IT_STRING" was successfully set to the value "82.549817999999959".Input Value is "82.549817999999959" and Input Expr is "82.549817999999959".
+
+
+
+Instance dicc_AVID3_ref_0118c_nom1332400_0501 Executed in   261.8560 milliSeconds
+
+iCOASISInfo:: Instance "dicc_AVID3_ref_0118c_nom1332400_0501" exiting on Port 1...
+Port Status "PASS" Port Info:- "PASS PORT"
+

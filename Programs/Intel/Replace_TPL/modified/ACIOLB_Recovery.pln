@@ -1,0 +1,294 @@
+###############################################################################################
+# Template Name: ACIOLB_Recovery.pln
+# Description: Contains execute test cases for ACIOLB user function
+# Date: 10 March 2010
+# TP Base: revC0005W06A0_class_lfd
+###############################################################################################
+
+COMPOSITE ACIOLB_Recovery
+{	
+	ACIOLB_Recovery_Execute_$Product (COMPNAME = ACIOLB_Recovery_Execute_$Product, Product = "LFD", debugMode = "VERBOSE", $FuncParam = "SET_GLOBAL^CTSCVars.SC_PACKAGE-EH")
+	0?NEXT,
+	1?NEXT;
+	
+	ACIOLB_Recovery_Execute_$Product (COMPNAME = ACIOLB_Recovery_Execute_$Product, Product = "CFD", debugMode = "VERBOSE", $FuncParam = "SET_GLOBAL^CTSCVars.SC_PACKAGE-CE")
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE ACIOLB_Recovery_Execute_$Product
+{	
+	DEF (
+	TEMPLATENAME = "ACIOLB_Recovery", 
+	TESTTYPE = EXECUTE, 
+	PRODUCT = $Product,
+	DEBUGMODE = $debugMode,
+	datalogMode = "ON",
+	DESIREDOUT = P1,
+	bypassGlobal = "",
+	postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+	);
+  	DEF (INSTANCENAME = $TEMPLATENAME_$PRODUCT_$TESTTYPE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+	  
+	  
+	###############################################################################
+	# Test Description: Set product as LFD or CFD in Globals
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Set_Globals_Product"
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = $FuncParam,
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	###############################################################################
+	# Test Description: Set failing L_high_limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail L_high_limit, exit port 0.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Set_L_high_limit_fail",
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = "SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_high_limit-300, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_low_limit-100"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "L_high_limit_fail"
+	DESIREDOUT = F0,
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Set failing L_low_limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail L_low_limit, exit port 0.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Set_L_low_limit_fail",
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = "SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_high_limit-999, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_low_limit-200"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "L_low_limit_fail",
+	DESIREDOUT = F0,
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	###############################################################################
+	# Test Description: Set failing (R-L) low_limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail (R-L) low_limit, exit port 0.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Set_low_limit_fail",
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = "SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_high_limit-999, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_low_limit-0,SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_high_limit-150, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_low_limit-110"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "low_limit_fail",
+	DESIREDOUT = F0,
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Set failing (R-L) high_limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail (R-L) high_limit, exit port 0.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Set_high_limit_fail",
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = "SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_high_limit-90, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_low_limit-10"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "high_limit_fail",
+	DESIREDOUT = F0,
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Set pin to negative value and set failing negative (R-L) low_limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail negative (R-L) low_limit, exit port 0.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Setup_neg_low_limit_fail",
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = "SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_high_limit-150, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_low_limit-90, SET_GLOBAL^usrv_IODDR_Comp.IOLB_DQ_Ch1_R_r16-300, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_neg_high_limit-0"
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	tt_userfunc (
+	TEMPLATENAME = "Set_neg_low_limit_fail",
+	functionName = "iVal_utilityfunc!SetTPGlobal",
+	functionParameter = "usrv_IODDR_Comp.ACIOLB_recovery_neg_low_limit -7"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "neg_low_limit_fail",
+	DESIREDOUT = F0,
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	###############################################################################
+	# Test Description: Set pin to negative value and set failing negative (R-L) high_limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail negative (R-L) high_limit, exit port 0.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Setup_neg_high_limit_fail",
+	functionName = "iVal_utilityfunc!SetTPGlobal",
+	functionParameter = "usrv_IODDR_Comp.ACIOLB_recovery_neg_low_limit -100"
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	tt_userfunc (
+	TEMPLATENAME = "Set_neg_high_limit_fail",
+	functionName = "iVal_utilityfunc!SetTPGlobal",
+	functionParameter = "usrv_IODDR_Comp.ACIOLB_recovery_neg_high_limit -50"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "neg_high_limit_fail",
+	DESIREDOUT = F0,
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Delete TP global for limit
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail global lookup, exit port 0.
+	# Test Description: Restore the TP global for limit
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	#tt_userfunc (
+	#TEMPLATENAME = "Delete_global_limit",
+	#functionName = "iVal_utilityfunc!DeleteTPGlobal",
+	#functionParameter = "usrv_IODDR_Comp.ACIOLB_recovery_L_high_limit"
+	#)
+  	#0?NEXT,
+  	#1?NEXT;
+
+	#tt_userfunc (
+	#TEMPLATENAME = "Missing_global_limit",
+	#functionName = "ACIOLB_Recovery!Recover_Test",
+	#functionParameter = "",
+	#DESIREDOUT = F0,
+	#)
+  	#0?NEXT,
+  	#1?NEXT;
+	
+	#tt_userfunc (
+	#TEMPLATENAME = "Restore_global_limit",
+	#functionName = "iVal_utilityfunc!AddTPGlobal",
+	#functionParameter = "usrv_IODDR_Comp.ACIOLB_recovery_L_high_limit 999"
+	#
+  	#0?NEXT,
+  	#1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Delete TP global for pin
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Fail global lookup, exit port 0.
+	# Test Description: Restore the TP global for pin
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	#tt_userfunc (
+	#TEMPLATENAME = "Delete_global_pin",
+	#functionName = "iVal_utilityfunc!DeleteTPGlobal",
+	#functionParameter = "usrv_IODDR_Comp.IOLB_DQ_Ch1_L_r5"
+	#)
+  	#0?NEXT,
+  	#1?NEXT;
+
+	#tt_userfunc (
+	#TEMPLATENAME = "Missing_global_pin",
+	#functionName = "ACIOLB_Recovery!Recover_Test",
+	#functionParameter = "",
+	#DESIREDOUT = F0,
+	#)
+  	#0?NEXT,
+  	#1?NEXT;
+	
+	#tt_userfunc (
+	#TEMPLATENAME = "Restore_global_pin",
+	#functionName = "iVal_utilityfunc!AddTPGlobal",
+	#functionParameter = "usrv_IODDR_Comp.IOLB_DQ_Ch1_L_r5 305"
+	#)
+  	#0?NEXT,
+  	#1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Set passing limits and restore pin value
+	# Expected Behavior: Pass, exit port 1.
+	# Test Description: ACIOLB_Recovery execute
+	# Expected Behavior: Pass all pins, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = "Set_passing_limits",
+	functionName = "IDT!DFF_GSDS",
+	functionParameter = "SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_high_limit-999, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_L_low_limit-10, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_high_limit-150, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_low_limit-50, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_neg_high_limit-0, SET_GLOBAL^usrv_IODDR_Comp.ACIOLB_recovery_neg_low_limit-0, SET_GLOBAL^usrv_IODDR_Comp.IOLB_DQ_Ch1_R_r16-416"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+	TEMPLATENAME = "passing_limits",
+	functionName = "ACIOLB_Recovery!Recover_Test",
+	functionParameter = "",
+	)
+  	0?NEXT,
+  	1?NEXT;
+}

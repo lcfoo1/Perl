@@ -1,0 +1,25 @@
+ Volume in drive Z is samba
+ Volume Serial Number is 13B0-0405
+
+ Directory of Z:\
+
+08/20/2007  08:58 AM    <DIR>          evg250-e-winxp-ctx4100-tss206f-2007082000
+08/13/2007  10:48 AM    <DIR>          evg242-e-winxp-ctx4100-tss206f-2007081300
+08/10/2007  12:44 AM    <DIR>          evg241-e-winxp-ctx4100-tss206f-2007080901
+08/03/2007  12:16 PM    <DIR>          evg240-e-winxp-ctx4100-tss206f-2007080301
+07/23/2007  11:09 AM    <DIR>          evg221-e-winxp-ctx4100-tss206f-2007072300
+06/27/2007  12:45 PM    <DIR>          evg220-e-winxp-ctx4100-tss206f-2007062700
+06/23/2007  04:23 PM    <DIR>          evg214-e-winxp-ctx491-tss206f-2007062300
+06/13/2007  05:31 PM    <DIR>          evg215-e-winxp-ctx490-tss206a-2007061301
+06/13/2007  01:04 PM    <DIR>          evg215-e-winxp-ctx490-tss206a-2007061300
+06/05/2007  09:42 AM    <DIR>          evg214-p-winxp-ctx491-tss206f-2007060400
+05/29/2007  10:56 PM    <DIR>          evg214-e-winxp-ctx491-tss206a-2007052900
+05/10/2007  12:47 PM    <DIR>          evg214-e-winxp-ctx490-tss206a-2007051000
+04/27/2007  11:35 AM    <DIR>          evg214-e-winxp-ctx490e17.4-1-tss206a-2007042700
+04/16/2007  11:03 AM    <DIR>          evg213-p-winxp-ctx481-tss205a-2007041600
+04/11/2007  11:01 PM    <DIR>          evg213-e-winxp-ctx490e14.2-2-tss206-2007041100
+04/06/2007  05:35 PM    <DIR>          evg213-e-winxp-ctx481-tss205a-2007040600
+03/17/2007  11:06 PM    <DIR>          evg213-e-winxp-ctx481-tss205a-2007031700
+02/26/2007  10:41 PM    <DIR>          evg213-e-winxp-ctx481-tss205a-2007022600
+               0 File(s)              0 bytes
+              18 Dir(s)     737,611,776 bytes free

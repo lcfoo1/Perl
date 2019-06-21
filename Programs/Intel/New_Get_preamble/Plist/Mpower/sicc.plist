@@ -1,0 +1,67 @@
+Version 1.0;
+
+GlobalPList sicc_list    {
+
+   GlobalPList siccuncore_16161616_list    {
+
+      GlobalPList siccuncore_hfmnom_16161616_list [PreBurst sicc_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+         Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+      } # end of siccuncore_hfmnom_16161616_list
+
+   } # end of siccuncore_16161616_list
+
+
+   GlobalPList siccpercore_16161616_list    {
+
+      GlobalPList sicc_core0_16161616_list [PreBurst sicc_core0_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0][Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+         Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+      } # end of sicc_core0_16161616_list
+
+
+      GlobalPList sicc_core1_16161616_list [PreBurst sicc_core1_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+         Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+      } # end of sicc_core1_16161616_list
+
+
+      GlobalPList sicc_core2_16161616_list [PreBurst sicc_core2_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+         Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+      } # end of sicc_core2_16161616_list
+
+
+      GlobalPList sicc_core3_16161616_list [PreBurst sicc_core3_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#      LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+         Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+      } # end of sicc_core3_16161616_list
+
+   } # end of siccpercore_16161616_list
+
+
+   GlobalPList sicc_core0123_16161616_list [PreBurst sicc_core0123_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+      Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+   } # end of sicc_core0123_16161616_list
+
+
+   GlobalPList sicc_ddr_hfmnom_16161616_list [PreBurst sicc_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+      Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+   } # end of sicc_ddr_hfmnom_16161616_list
+
+
+   GlobalPList sicc_nohighz_ddr_hfmnom_16161616_list [PreBurst sicc_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+      Pat g0047820N4957585_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_ddr_csi_cfgrestart_TDO;
+   } # end of sicc_nohighz_ddr_hfmnom_16161616_list
+
+
+   GlobalPList sicc_sfr_hfmnom_16161616_list [PreBurst sicc_lfd_pre_2M_vrevA2_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, PRDY_N, TDO, VIEWDIGS_0, VIEWDIGS_1, ocp_data, ocp_stb, XDPRDYREQN_N, pcie_txp, dmi_txp, IIOTDO, THERMTRIP_N, TAPPWRGOOD, CPU_RESETO_N] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=slowst
+      Pat g0047844N4955845_16161616a2x18_MA0cA01NxB_2bxa2eC_4x0xxxpxx0xxx_sicc_uncore_csi_cfgrestart_TDO;
+   } # end of sicc_sfr_hfmnom_16161616_list
+
+} # end of sicc_list
+

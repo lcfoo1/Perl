@@ -1,0 +1,401 @@
+################################################################################################
+9/3/2012 2:56:02 PM
+Sender: GreenlaneTeam
+Subject: SVN revision: 5598 - http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/KNCMultiCores
+You are receiving this e-mail because you are a member of a subscription that alerts users when a Subversion repository changes.  See details below for information on the change made:
+
+
+Repository URL: http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/KNCMultiCores
+Commit Author: lfoo1
+Commit Revision: 5598
+Commit Date: 2012-09-03 14:55:39 +0800 (Mon, 03 Sep 2012)
+
+Commit Message:
+   Revision: 1.19
+Added setname = 612 for MPT Vmin Class Cache DBOX Tag Directory
+
+Clickable paths to new/updated/delete files: 
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/KNCMultiCores/knc_multicores.xml
+
+
+
+
+    --- Please do not reply this email ---
+                Thank you...
+
+
+With regards,
+Foo Lye Cheung
+Test Method Manufacturing (TMM)
+MDG PRMD PG PDE
+
+################################################################################################
+8/30/2012 6:55:57 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08302012_185529
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/29/2012 12:43:32 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08292012_004316
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/29/2012 3:24:35 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08292012_032425
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/29/2012 4:50:41 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08292012_045026
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/28/2012 1:00:39 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08282012_005944
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/28/2012 1:05:46 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08282012_010440
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/28/2012 3:09:01 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08282012_030728
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/22/2012 1:43:31 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08222012_134016
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/18/2012 9:04:47 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08182012_210301
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/18/2012 3:16:04 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08182012_031502
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/18/2012 1:14:58 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08182012_011446
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/18/2012 1:14:09 AM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08182012_011354
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/6/2012 11:23:02 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08062012_232252
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/6/2012 11:40:18 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08062012_233712
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+8/7/2012 8:58:21 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 08072012_003925
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+7/13/2012 11:24:02 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 07132012_232345
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+7/15/2012 6:41:39 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 07152012_184128
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+7/15/2012 6:51:50 PM
+Sender: GreenlaneTeam
+Subject: Greenlane Build GLN_Rev4.12.4_TSS21102_PG2.30.0 run at 07152012_185136
+Found error at C:\intel\tpapps\Greenlane\GEN\GLN_Rev4.12.4_TSS21102_PG2.30.0\Greenlane_Details:
+
+
+Evergreen_UF_Release_result.txt
+5>FlowErrorCheck.cpp
+
+
+
+
+
+		                  	 * * * PLEASE DO NOT REPLY TO THIS MAIL * * *
+################################################################################################
+7/18/2012 10:39:44 AM
+Sender: Choong, Nicholas
+Subject: RE: SVN revision: 5568 - In http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release
+Should remove Yew Meng since he is no longer part of PG TMM team.
+
+
+Regards,
+Choong, Nicholas
+
+-----Original Message-----
+From: GreenlaneTeam
+Sent: Thursday, July 12, 2012 10:54 PM
+To: Foo, Lye Cheung; Ooi, Shin Yee; Choong, Nicholas; Wong, Yew Meng; Thung, Phek Lan
+Subject: SVN revision: 5568 - In http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release
+
+You are receiving this e-mail because you are a member of a subscription that alerts users when a Subversion repository changes.  See details below for information on the change made:
+
+Repository URL: http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release Commit Author: lfoo1 Commit Revision: 5568 Commit Date: 2012-07-12 22:53:33 +0800 (Thu, 12 Jul 2012)
+
+Commit Message:
+   Move KNC_TSS21102_KNC_HSW_trunk to release for archive.
+(No longer used)
+Previously used for GLN_Rev4.12.4_TSS21102_PG2.29.0 release
+
+Clickable paths to new/updated/delete files: 
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/Release/KNC_TSS21102_KNC_HSW_trunk/
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/KNC_TSS21102_KNC_HSW_trunk/
+
+
+
+
+    --- Please do not reply this email ---
+                Thank you...
+
+
+With regards,
+Foo Lye Cheung
+Test Method Manufacturing (TMM)
+MDG PRMD PG PDE
+
+################################################################################################
+7/12/2012 10:29:47 PM
+Sender: GreenlaneTeam
+Subject: SVN revision: 5566 - In http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release
+You are receiving this e-mail because you are a member of a subscription that alerts users when a Subversion repository changes.  See details below for information on the change made:
+
+
+Repository URL: http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release Commit Author: lfoo1 Commit Revision: 5566 Commit Date: 2012-07-12 22:29:12 +0800 (Thu, 12 Jul 2012)
+
+Commit Message:
+   Move TSS209D_trunk to release for archive.
+(No longer used)
+
+Clickable paths to new/updated/delete files: 
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/Release/KNC_TSS209D_trunk/
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/KNC_TSS209D_trunk/
+
+
+
+
+    --- Please do not reply this email ---
+                Thank you...
+
+
+With regards,
+Foo Lye Cheung
+Test Method Manufacturing (TMM)
+MDG PRMD PG PDE
+
+################################################################################################
+7/12/2012 10:54:09 PM
+Sender: GreenlaneTeam
+Subject: SVN revision: 5568 - In http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release
+You are receiving this e-mail because you are a member of a subscription that alerts users when a Subversion repository changes.  See details below for information on the change made:
+
+
+Repository URL: http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane: . Release Commit Author: lfoo1 Commit Revision: 5568 Commit Date: 2012-07-12 22:53:33 +0800 (Thu, 12 Jul 2012)
+
+Commit Message:
+   Move KNC_TSS21102_KNC_HSW_trunk to release for archive.
+(No longer used)
+Previously used for GLN_Rev4.12.4_TSS21102_PG2.29.0 release
+
+Clickable paths to new/updated/delete files: 
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/Release/KNC_TSS21102_KNC_HSW_trunk/
+   http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/KNC_TSS21102_KNC_HSW_trunk/
+
+
+
+
+    --- Please do not reply this email ---
+                Thank you...
+
+
+With regards,
+Foo Lye Cheung
+Test Method Manufacturing (TMM)
+MDG PRMD PG PDE
+

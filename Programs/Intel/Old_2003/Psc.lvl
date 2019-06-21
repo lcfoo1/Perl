@@ -1,0 +1,8775 @@
+# TimeStamp <Wed Jun 15 17:02:21 2005> 
+# Avator Version: Rev2.1e08p01 
+
+
+Version 1.0;
+
+
+Import OASISResources.rsc;
+Import Psc.usrv;
+Import psc.pin;
+
+#Block Created By "PLT"
+Levels  FT_aciolb_Rtten 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+
+NonSequential 
+{
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+}
+     
+
+NonSequential 
+{
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels FT_aciolb_Rtten
+
+#Block Created By "PLT"
+Levels  ST_bfloose_Rtten 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_rttdis;
+		VIL = asyncgtl_vil_rttdis;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp2
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_rttdis;
+		VIL = asyncgtl_vil_rttdis;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels ST_bfloose_Rtten
+
+#Block Created By "PLT"
+Levels  aciolb_Rtten 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	 
+
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp2
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	} #End of NonSequential Block
+} #End of Levels aciolb_Rtten
+
+#Block Created By "PLT"
+Levels  aploose_Rtten 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels aploose_Rtten
+
+#Block Created By "PLT"
+Levels  aploose_Rtten_Rampage_one 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	
+	}
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels aploose_Rtten_Rampage_one
+
+#Block Created By "PLT"
+Levels  aploose_Rtten_Rampage_two 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels aploose_Rtten_Rampage_two
+
+#Block Created By "PLT"
+Levels  aploose_Rtten_minvcc 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	
+
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	} #End of NonSequential Block
+} #End of Levels aploose_Rtten_minvcc
+
+#Block Created By "PLT"
+Levels  bfloose_Rggen 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	 }
+	NonSequential 
+	{
+
+	
+
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels bfloose_Rggen
+
+#Block Created By "PLT"
+Levels  bfloose_Rtten 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+	all_agtl_lvl
+	 {
+		TermVRef = vcct_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_prog;
+		VOL = gtl_vol_prog;
+	 }
+	all_async_lvl
+	 {
+		TermVRef = vcct_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_prog;
+		VOL = asyncgtl_vol_prog;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcct_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	all_tap_lvl
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcct_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_prog;
+		VOL = asyncgtl_vol_prog;
+	 }
+	all_agtl_rttdis_lvl
+	 {
+		TermVRef = vcc_prog;
+		VIH = rttdis_vih_prog;
+		VIL = rttdis_vil_prog;
+		VOH = gtl_voh_prog;
+		VOL = gtl_vol_prog;
+	 }
+	xxBCLK1t0
+	 {
+		VIH = bclk_vih_prog;
+		VIL = bclk_vil_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcct_prog;
+		VIH = vccvid_prog;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_others_lvl
+	 {
+		TermVRef = vcct_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_prog;
+		VOL = asyncgtl_vol_prog;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+} #End of NonSequential Block
+} #End of Levels bfloose_Rtten
+
+#Block Created By "PLT"
+Levels  fusexxx_Rtten 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+}
+	NonSequential 
+	{
+
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_off
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_rttdis;
+		VIL = asyncgtl_vil_rttdis;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels fusexxx_Rtten
+
+#Block Created By "PLT"
+Levels  icc_Rtten 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	 
+	}
+	NonSequential 
+	{
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp2
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels icc_Rtten
+
+#Block Created By "PLT"
+Levels  leakhix_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	 
+		}
+	NonSequential 
+	{
+
+	agtl
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_rttdis;
+		VIL = asyncgtl_vil_rttdis;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	jtag
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxBYPASSENnn
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxPWRGOOD
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels leakhix_Rttdis
+
+#Block Created By "PLT"
+Levels  leaklox_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 1.35V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+	agtl
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	jtag
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxBYPASSENnn
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcx_gtl;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxTCK
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxTDI
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxTMS
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxTRSTnn
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxBPM5t0nn
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels leaklox_Rttdis
+
+#Block Created By "PLT"
+Levels  opensft_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCC
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 30A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VForce = vpwrdn;
+		VSRange = 1.8V;
+	 }
+	 
+	xxVCCT
+	 {
+		VForce = vpwrdn;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCA
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref_dps;
+	 }
+	}
+	NonSequential 
+	{
+	shops_all_pins
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		VCH = 3V;
+		VCL = -0.75V;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = 4V;
+		VOL = -1V;
+		VRef = 0mV;
+	 }
+	shops_ft_nongtl
+	 {
+		IOH = shops_nongtl_ioh;
+		IOL = shops_nongtl_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_nongtl_voh;
+		VOL = shops_nongtl_vol;
+		VRef = shops_nongtl_vref;
+	 }
+	shops_ft_gtl
+	 {
+		IOH = shops_gtl_ioh;
+		IOL = shops_gtl_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_gtl_voh;
+		VOL = shops_gtl_vol;
+		VRef = shops_gtl_vref;
+	 }
+	xxTDO
+	 {
+		IOH = shops_tdo_ioh;
+		IOL = shops_tdo_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_tdo_voh;
+		VOL = shops_tdo_vol;
+		VRef = shops_tdo_vref;
+	 }
+	jtag_in
+	 {
+		IOH = shops_jtag_in_ioh;
+		IOL = shops_jtag_in_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_jtag_in_voh;
+		VOL = shops_jtag_in_vol;
+		VRef = shops_jtag_in_vref;
+	 }
+	xxRESETnn
+	 {
+		IOH = shops_reset_ioh;
+		IOL = shops_reset_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_reset_voh;
+		VOL = shops_reset_vol;
+		VRef = shops_reset_vref;
+	 }
+	xxPWRGOOD
+	 {
+		IOH = shops_pwrgood_ioh;
+		IOL = shops_pwrgood_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_pwrgood_voh;
+		VOL = shops_pwrgood_vol;
+		VRef = shops_pwrgood_vref;
+	 }
+	xxVID5t0
+	 {
+		IOH = shops_vid_ioh;
+		IOL = shops_vid_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_vid_voh;
+		VOL = shops_vid_vol;
+		VRef = shops_vid_vref;
+	 }
+	xxFSBSEL1t0
+	 {
+		IOH = shops_fsbsel_ioh;
+		IOL = shops_fsbsel_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_fsbsel_voh;
+		VOL = shops_fsbsel_vol;
+		VRef = shops_fsbsel_vref;
+	 }
+	xxFORCEPRnn
+	 {
+		IOH = shops_forcepr_ioh;
+		IOL = shops_forcepr_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_forcepr_voh;
+		VOL = shops_forcepr_vol;
+		VRef = shops_forcepr_vref;
+	 }
+	xxDPSLPnn
+	 {
+		IOH = shops_DPSLP_ioh;
+		IOL = shops_DPSLP_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_DPSLP_voh;
+		VOL = shops_DPSLP_vol;
+		VRef = shops_DPSLP_vref;
+	 }
+	new_shops_opens
+	 {
+		IOH = shops_new_ioh;
+		IOL = shops_new_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_new_voh;
+		VOL = shops_new_vol;
+		VRef = shops_new_vref;
+	 }
+	xxGTLREF
+	 {
+		IOH = shops_gtlref_ioh;
+		IOL = shops_gtlref_iol;
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_gtlref_voh;
+		VOL = shops_gtlref_vol;
+		VRef = shops_gtlref_vref;
+	 }
+	xxMCLK2
+	 {
+		IOH = shops_mclk2_ioh;
+		IOL = shops_mclk2_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_mclk2_voh;
+		VOL = shops_mclk2_vol;
+		VRef = shops_mclk2_vref;
+	 }
+	xxMCLK3
+	 {
+		IOH = shops_mclk3_ioh;
+		IOL = shops_mclk3_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_mclk3_voh;
+		VOL = shops_mclk3_vol;
+		VRef = shops_mclk3_vref;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		IOH = shops_slew_ioh;
+		IOL = shops_slew_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_slew_voh;
+		VOL = shops_slew_vol;
+		VRef = shops_slew_vref;
+	 }
+	floated_shops
+	 {
+		IOH = shops_floated_ioh;
+		IOL = shops_floated_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_floated_voh;
+		VOL = shops_floated_vol;
+		VRef = shops_floated_vref;
+	 }
+	xxTHRMDA
+	 {
+		IOH = shops_THRMDA_ioh;
+		IOL = shops_THRMDA_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_THRMDA_voh;
+		VOL = shops_THRMDA_vol;
+		VRef = shops_THRMDA_vref;
+	 }
+	xxTHRMDC
+	 {
+		IOH = shops_THRMDC_ioh;
+		IOL = shops_THRMDC_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_THRMDC_voh;
+		VOL = shops_THRMDC_vol;
+		VRef = shops_THRMDC_vref;
+	 }
+	RSVD_shops
+	 {
+		IOH = shops_RSVD_ioh;
+		IOL = shops_RSVD_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_RSVD_voh;
+		VOL = shops_RSVD_vol;
+		VRef = shops_RSVD_vref;
+	 }
+	xxA39t36nn
+	 {
+		IOH = shops_A39t36_ioh;
+		IOL = shops_A39t36_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_A39t36_voh;
+		VOL = shops_A39t36_vol;
+		VRef = shops_A39t36_vref;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = shops_vccsense_ioh;
+		IOL = shops_vccsense_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_vccsense_voh;
+		VOL = shops_vccsense_vol;
+		VRef = shops_vccsense_vref;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = shops_vsssense_ioh;
+		IOL = shops_vsssense_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_vsssense_voh;
+		VOL = shops_vsssense_vol;
+		VRef = shops_vsssense_vref;
+	 }
+	xxSKTOCCnn
+	 {
+		IOH = shops_sktocc_ioh;
+		IOL = shops_sktocc_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_sktocc_voh;
+		VOL = shops_sktocc_vol;
+		VRef = shops_sktocc_vref;
+	 }
+	xxSMB_PRT_VTT_SEL
+	 {
+		IOH = shops_smbprt_ioh;
+		IOL = shops_smbprt_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_smbprt_voh;
+		VOL = shops_smbprt_vol;
+		VRef = shops_smbprt_vref;
+	 }
+	xxRSVD_PID_VTT_OUT
+	 {
+		IOH = shops_rsvdpid_ioh;
+		IOL = shops_rsvdpid_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_rsvdpid_voh;
+		VOL = shops_rsvdpid_vol;
+		VRef = shops_rsvdpid_vref;
+	 }
+	xxADSTBN0nn
+	 {
+		IOH = shops_adstbn_ioh;
+		IOL = shops_adstbn_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_adstbn_voh;
+		VOL = shops_adstbn_vol;
+		VRef = shops_adstbn_vref;
+	 }
+	xxFSBSEL2
+	 {
+		IOH = shops_fsbsel2_ioh;
+		IOL = shops_fsbsel2_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_fsbsel2_voh;
+		VOL = shops_fsbsel2_vol;
+		VRef = shops_fsbsel2_vref;
+	 }
+	xxMS_ID1t0nn
+	 {
+		IOH = shops_msid_ioh;
+		IOL = shops_msid_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_msid_voh;
+		VOL = shops_msid_vol;
+		VRef = shops_msid_vref;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels opensft_Rttdis
+
+#Block Created By "PLT"
+Levels  pwrdwn 
+{
+	ALLPINs
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 0V;
+	 }
+	xxVCCT
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	xxVCC
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	NonSequential 
+	{
+	xxVCCA
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	xxVCCIOPLL
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	xxVCCPLL
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	xxVCCFUSEPRG
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		DpsRelay = OPEN;
+		PowerSequence = OFF;
+	 }
+	
+} #End of NonSequential Block
+} #End of Levels pwrdwn
+
+#Block Created By "PLT"
+Levels  scloose_Rtten 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels scloose_Rtten
+
+#Block Created By "PLT"
+Levels  scloose_Rtten_Rampage_one 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+	
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels scloose_Rtten_Rampage_one
+
+#Block Created By "PLT"
+Levels  scloose_Rtten_Rampage_two 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels scloose_Rtten_Rampage_two
+
+#Block Created By "PLT"
+Levels  scloose_Rtten_minvcc 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels scloose_Rtten_minvcc
+
+#Block Created By "PLT"
+Levels  shopsdc_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCC
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 30A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VForce = vpwrdn;
+		VSRange = 1.8V;
+	 }
+	 
+	xxVCCT
+	 {
+		VForce = vpwrdn;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCA
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	}
+
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref_dps;
+	 }
+	}
+
+	NonSequential 
+	{
+
+	ALLPINs
+	 {
+		VIH = shops_vih;
+		VIL = shops_vil;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels shopsdc_Rttdis
+
+#Block Created By "PLT"
+Levels  shortsft_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCC
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 30A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VForce = vpwrdn;
+		VSRange = 1.8V;
+	 }
+	 
+	xxVCCT
+	 {
+		VForce = vpwrdn;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCA
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref_dps;
+	 }
+	}
+	NonSequential 
+	{
+	shops_all_pins
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		VCH = 3V;
+		VCL = -0.75V;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = 4V;
+		VOL = -1V;
+		VRef = 0mV;
+	 }
+	shops_ft_nongtl
+	 {
+		IOH = shops_nongtl_ioh;
+		IOL = shops_nongtl_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_nongtl_voh;
+		VOL = shops_nongtl_vol;
+		VRef = shops_nongtl_vref;
+	 }
+	shops_ft_gtl
+	 {
+		IOH = shops_gtl_ioh;
+		IOL = shops_gtl_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_gtl_voh;
+		VOL = shops_gtl_vol;
+		VRef = shops_gtl_vref;
+	 }
+	xxTDO
+	 {
+		IOH = shops_tdo_ioh;
+		IOL = shops_tdo_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_tdo_voh;
+		VOL = shops_tdo_vol;
+		VRef = shops_tdo_vref;
+	 }
+	jtag_in
+	 {
+		IOH = shops_jtag_in_ioh;
+		IOL = shops_jtag_in_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_jtag_in_voh;
+		VOL = shops_jtag_in_vol;
+		VRef = shops_jtag_in_vref;
+	 }
+	xxRESETnn
+	 {
+		IOH = shops_reset_ioh;
+		IOL = shops_reset_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_reset_voh;
+		VOL = shops_reset_vol;
+		VRef = shops_reset_vref;
+	 }
+	xxPWRGOOD
+	 {
+		IOH = shops_pwrgood_ioh;
+		IOL = shops_pwrgood_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_pwrgood_voh;
+		VOL = shops_pwrgood_vol;
+		VRef = shops_pwrgood_vref;
+	 }
+	xxVID5t0
+	 {
+		IOH = shops_vid_ioh;
+		IOL = shops_vid_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_vid_voh;
+		VOL = shops_vid_vol;
+		VRef = shops_vid_vref;
+	 }
+	xxFSBSEL1t0
+	 {
+		IOH = shops_fsbsel_ioh;
+		IOL = shops_fsbsel_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_fsbsel_voh;
+		VOL = shops_fsbsel_vol;
+		VRef = shops_fsbsel_vref;
+	 }
+	xxFORCEPRnn
+	 {
+		IOH = shops_forcepr_ioh;
+		IOL = shops_forcepr_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_forcepr_voh;
+		VOL = shops_forcepr_vol;
+		VRef = shops_forcepr_vref;
+	 }
+	xxDPSLPnn
+	 {
+		IOH = shops_DPSLP_ioh;
+		IOL = shops_DPSLP_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_DPSLP_voh;
+		VOL = shops_DPSLP_vol;
+		VRef = shops_DPSLP_vref;
+	 }
+	new_shops_shorts
+	 {
+		IOH = shops_new_ioh;
+		IOL = shops_new_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_new_voh;
+		VOL = shops_new_vol;
+		VRef = shops_new_vref;
+	 }
+	xxGTLREF
+	 {
+		IOH = shops_gtlref_ioh;
+		IOL = shops_gtlref_iol;
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_gtlref_voh;
+		VOL = shops_gtlref_vol;
+		VRef = shops_gtlref_vref;
+	 }
+	xxMCLK2
+	 {
+		IOH = shops_mclk2_ioh;
+		IOL = shops_mclk2_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_mclk2_voh;
+		VOL = shops_mclk2_vol;
+		VRef = shops_mclk2_vref;
+	 }
+	xxMCLK3
+	 {
+		IOH = shops_mclk3_ioh;
+		IOL = shops_mclk3_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_mclk3_voh;
+		VOL = shops_mclk3_vol;
+		VRef = shops_mclk3_vref;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		IOH = shops_slew_ioh;
+		IOL = shops_slew_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_slew_voh;
+		VOL = shops_slew_vol;
+		VRef = shops_slew_vref;
+	 }
+	floated_shops
+	 {
+		IOH = shops_floated_ioh;
+		IOL = shops_floated_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_floated_voh;
+		VOL = shops_floated_vol;
+		VRef = shops_floated_vref;
+	 }
+	xxTHRMDA
+	 {
+		IOH = shops_THRMDA_ioh;
+		IOL = shops_THRMDA_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_THRMDA_voh;
+		VOL = shops_THRMDA_vol;
+		VRef = shops_THRMDA_vref;
+	 }
+	xxTHRMDC
+	 {
+		IOH = shops_THRMDC_ioh;
+		IOL = shops_THRMDC_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_THRMDC_voh;
+		VOL = shops_THRMDC_vol;
+		VRef = shops_THRMDC_vref;
+	 }
+	RSVD_shops
+	 {
+		IOH = shops_RSVD_ioh;
+		IOL = shops_RSVD_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_RSVD_voh;
+		VOL = shops_RSVD_vol;
+		VRef = shops_RSVD_vref;
+	 }
+	xxA39t36nn
+	 {
+		IOH = shops_A39t36_ioh;
+		IOL = shops_A39t36_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_A39t36_voh;
+		VOL = shops_A39t36_vol;
+		VRef = shops_A39t36_vref;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = shops_vccsense_ioh;
+		IOL = shops_vccsense_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_vccsense_voh;
+		VOL = shops_vccsense_vol;
+		VRef = shops_vccsense_vref;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = shops_vsssense_ioh;
+		IOL = shops_vsssense_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_vsssense_voh;
+		VOL = shops_vsssense_vol;
+		VRef = shops_vsssense_vref;
+	 }
+	xxSKTOCCnn
+	 {
+		IOH = shops_sktocc_ioh;
+		IOL = shops_sktocc_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_sktocc_voh;
+		VOL = shops_sktocc_vol;
+		VRef = shops_sktocc_vref;
+	 }
+	xxSMB_PRT_VTT_SEL
+	 {
+		IOH = shops_smbprt_ioh;
+		IOL = shops_smbprt_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_smbprt_voh;
+		VOL = shops_smbprt_vol;
+		VRef = shops_smbprt_vref;
+	 }
+	xxRSVD_PID_VTT_OUT
+	 {
+		IOH = shops_rsvdpid_ioh;
+		IOL = shops_rsvdpid_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_rsvdpid_voh;
+		VOL = shops_rsvdpid_vol;
+		VRef = shops_rsvdpid_vref;
+	 }
+	xxADSTBN0nn
+	 {
+		IOH = shops_adstbn_ioh;
+		IOL = shops_adstbn_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_adstbn_voh;
+		VOL = shops_adstbn_vol;
+		VRef = shops_adstbn_vref;
+	 }
+	xxFSBSEL2
+	 {
+		IOH = shops_fsbsel2_ioh;
+		IOL = shops_fsbsel2_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_fsbsel2_voh;
+		VOL = shops_fsbsel2_vol;
+		VRef = shops_fsbsel2_vref;
+	 }
+	xxMS_ID1t0nn
+	 {
+		IOH = shops_msid_ioh;
+		IOL = shops_msid_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_msid_voh;
+		VOL = shops_msid_vol;
+		VRef = shops_msid_vref;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxMCLKIO1t0
+	 {
+		IOH = shops_mclkio1t0_ioh;
+		IOL = shops_mclkio1t0_iol;
+		VIH = shops_vih;
+		VIL = shops_vil;
+		VOH = shops_mclkio1t0_voh;
+		VOL = shops_mclkio1t0_vol;
+		VRef = shops_mclkio1t0_vref;
+	 }
+} #End of NonSequential Block
+} #End of Levels shortsft_Rttdis
+
+#Block Created By "PLT"
+Levels  thermdc_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	NonSequential 
+	{
+	xxVCCIOPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCFUSEPRG
+	 {
+		VForce = vpwrdn;
+	 }
+	
+	xxVCCA
+	 {
+		VForce = vpwrdn;
+	 }
+	
+
+	xxVCC
+	 {
+		VForce = vpwrdn;
+	 }
+	xxVCCT
+	 {
+		VForce = vpwrdn;
+	 }
+
+	}
+	NonSequential 
+	{
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref_dps;
+	 }
+	 
+	}
+	NonSequential 
+	{
+
+	xxTHRMDC
+	 {
+		IOH = -1mA;
+		IOL = 1mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VCH = 10mV;
+		VCL = 0V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+		VRef = 0V;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels thermdc_Rttdis
+
+#Block Created By "PLT"
+Levels  vcccontinuity_Rttdis 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0.0V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCT
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+	xxVCC
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+	xxVCCPLL
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+	xxVCCA
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+	xxVCCIOPLL
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		DpsRelay = CLOSE;
+		PowerSequence = ON;
+	 }
+
+	} #End of NonSequential Block
+} #End of Levels vcccontinuity_Rttdis
+
+#Block Created By "PLT"
+Levels  vccminsearch_lvl 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	 
+	}
+
+	NonSequential 
+	{
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels vccminsearch_lvl
+
+#Block Created By "PLT"
+Levels  vih_Rttdis 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	 
+	}
+	NonSequential 
+	{
+
+
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = bootselect_vih_vixvox;
+		VIL = bootselect_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_vixvox;
+		VIL = pscnwd_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels vih_Rttdis
+
+#Block Created By "PLT"
+Levels  vil_Rttdis 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	 
+	}
+	NonSequential 
+	{
+
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = bootselect_vih_vixvox;
+		VIL = bootselect_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_vixvox;
+		VIL = pscnwd_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	} #End of NonSequential Block
+
+} #End of Levels vil_Rttdis
+
+#Block Created By "PLT"
+Levels  vix_Rttdis 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	
+	}
+	NonSequential 
+	{
+
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = bootselect_vih_vixvox;
+		VIL = bootselect_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_vixvox;
+		VIL = pscnwd_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels vix_Rttdis
+
+#Block Created By "PLT"
+Levels  vixvox_Rttdis 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = bootselect_vih_vixvox;
+		VIL = bootselect_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_vixvox;
+		VIL = pscnwd_vil_vixvox;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels vixvox_Rttdis
+
+#Block Created By "PLT"
+Levels  vox_Rttdis 
+{
+	ActivePins
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	xxVCCSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	xxVSSSENSE
+	 {
+		IOH = 0mA;
+		IOL = 0mA;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+	}
+	NonSequential 
+	{
+	 
+	agtl_odt_on
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in2
+	{
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLK3t2
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLK1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = vcc_prog;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels vox_Rttdis
+
+#Block Created By "PLT"
+Levels  xicc_Rtten 
+{
+	ALLPINs
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		TermVRef = 0V;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+	all_hcdps
+	 {
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 150A;
+		IClampLo = -4A;
+		PhaseCompensation = HighCapacitance;
+		PowerSequence = ON;
+		ShutdownDelayTime = 5mS;
+		ShutdownMode = FoldShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 1.8V;
+	 }
+	all_lcdps
+	 {
+		BypassCapacitor = OPEN;
+		DpsRelay = CLOSE;
+		Filter = OFF;
+		FreeDriveTime = 1mS;
+		IClampHi = 4A;
+		IClampLo = -4A;
+		PhaseCompensation = HighSpeed;
+		PowerSequence = ON;
+		ShutdownMode = NormalShutdown;
+		SlewRate = 30000.00;
+		VBumpMode = Disable;
+		VSRange = 6V;
+	 }
+	xxVCCT
+	 {
+		VForce = vccvid_prog;
+	 }
+	xxVCC
+	 {
+		VForce = vcc_prog;
+	 }
+	NonSequential 
+	{
+	xxVCCFUSEPRG
+	 {
+		VForce = vcc_fuse_prog;
+	 }
+	xxVCCPLL
+	 {
+		VForce = vccpll_prog;
+	 }
+	xxVCCA
+	 {
+		VForce = vcca_prog;
+	 }
+	xxVCCIOPLL
+	 {
+		VForce = vcciopll_prog;
+	 }
+	}
+	NonSequential 
+	{
+
+	xxGTLREF_dps
+	 {
+		IClampLo = -1A;
+		VForce = gtlref;
+	 }
+		}
+	NonSequential 
+	{
+ 
+	
+
+	agtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	agtl_odt_on
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	jtag_in
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBOOTSELECT
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxBCLK0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk0_vih_prog;
+		VIL = bclk0_vil_prog;
+	 }
+	xxBCLK1
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = bclk1_vih_prog;
+		VIL = bclk1_vil_prog;
+	 }
+	xxBYPASSENnn
+	 {
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxMCLK3t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxTDO
+	 {
+		TermVRef = vcct_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	async_gtl_odton_DFT
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp2
+	 {
+		TermVRef = vterm;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxPWRGOOD
+	 {
+		TermVRef = vterm;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxRESETnn
+	 {
+		TermVRef = vterm;
+		VIH = gtl_vih_rttdis;
+		VIL = gtl_vil_rttdis;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxTHRMDA
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	async_gtl_in
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_vih_prog;
+		VIL = asyncgtl_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	async_gtl_grp3
+	 {
+		TermVRef = vcc_prog;
+		VIH = asyncgtl_rev2_vih_prog;
+		VIL = asyncgtl_rev2_vil_prog;
+		VOH = asyncgtl_rev2_voh_prog;
+		VOL = asyncgtl_rev2_vol_prog;
+	 }
+	xxODT
+	 {
+		TermVRef = vcc_prog;
+		VIH = odt_vih_prog;
+		VIL = odt_vil_prog;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxMCLKIO1t0
+	 {
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxPROCHOTnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = prochot_vih_vixvox;
+		VIL = prochot_vil_vixvox;
+		VOH = prochot_voh_vixvox;
+		VOL = prochot_vol_vixvox;
+	 }
+	xxFORCEPRnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = forcepr_vih_vixvox;
+		VIL = forcepr_vil_vixvox;
+		VOH = forcepr_voh_vixvox;
+		VOL = forcepr_vol_vixvox;
+	 }
+	xxPSMInn
+	 {
+		TermVRef = vcc_prog;
+		VIH = psmi_vih_vixvox;
+		VIL = psmi_vil_vixvox;
+		VOH = psmi_voh_vixvox;
+		VOL = psmi_vol_vixvox;
+	 }
+	xxPSCNWDnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = pscnwd_vih_prog;
+		VIL = pscnwd_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	ScopeSync
+	 {
+		TermVRef = vcc_prog;
+		VIH = tap_vih_prog;
+		VIL = tap_vil_prog;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	xxSLEW_CONTROLnn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_prog;
+		VIL = gtl_vil_prog;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxVIDPWRGOOD
+	 {
+		TermVRef = vcc_prog;
+		VIH = vidpwrgood_vih;
+		VIL = vidpwrgood_vil;
+		VOH = tap_voh_prog;
+		VOL = tap_vol_prog;
+	 }
+	hvtol
+	 {
+		IOH = hvtol_ioh;
+		IOL = hvtol_iol;
+		PinOutRelay = CLOSE;
+		PowerSequence = ON;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = hvtol_spec;
+		VOL = hvtol_spec;
+		VRef = hvtol_vref;
+	 }
+	sktT_only_pins
+	 {
+		TermVRef = vcc_prog;
+		VIH = 300mV;
+		VIL = 0V;
+		VOH = asyncgtl_voh_rttdis;
+		VOL = asyncgtl_vol_rttdis;
+	 }
+	xxA39t36nn
+	 {
+		TermVRef = vcc_prog;
+		VIH = gtl_vih_rtten;
+		VIL = gtl_vil_rtten;
+		VOH = gtl_voh_rttdis;
+		VOL = gtl_vol_rttdis;
+	 }
+	xxCOMP1t0
+	 {
+		TermVRef = comp_vbias;
+		VIH = vcomp_vih_prog;
+		VIL = vcomp_prog;
+		VOH = vcomp_prog;
+		VOL = vcomp_prog;
+	 }
+	xxGTLREF
+	 {
+		PinOutRelay = OPEN;
+		PowerSequence = OFF;
+		TermVRef = 1.2V;
+		VIH = 0V;
+		VIL = 0V;
+		VOH = 0V;
+		VOL = 0V;
+	 }
+} #End of NonSequential Block
+} #End of Levels xicc_Rtten
+

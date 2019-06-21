@@ -1,0 +1,980 @@
+###############################################################################################
+# Template Name: LRB_L2Map
+# Composite Description: Contains execute test cases for Extended Binning turned on 
+###############################################################################################
+
+COMPOSITE LRB_L2Map
+{
+	DEF (
+	BMFCFILE = "LRB_L2Map/BMFC.xml",
+
+	whichSocketFile = "",                        			#Datatype=STRING, OPTIONAL
+    	globalDebugMode = "",	                         		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    	globalDatalogMode = "FALSE",                       		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	engineeringMode = "",		                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, GET_USER_INPUT, SILENT
+	productName = "",				                #Datatype=STRING, OPTIONAL
+	locationCode = "",                             			#Datatype=INTEGER, OPTIONAL
+	testTemp = "",		                               		#Datatype=DOUBLE, OPTIONAL
+	corrWaferLot = "",			                        #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	verifyAllInstances = "",	                     		#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	engLocnGlobalName = "",                      			#Datatype=STRING, OPTIONAL
+	staticInstanceFilename = "",					#Datatype=STRING, OPTIONAL
+
+	# Common Test Class Parmaeters
+	preinstance = "",
+	preplist = "",
+	postplist = "",
+	preburst = "",
+	postburst = "",
+	eotPowerDown = FALSE,						#Choices : FALSE, TRUE
+	maskPins = "",
+	thermalMonitorMode = DISABLED,					#Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermalMonitorOffsetCheck = CHECK_LIMITS,			#Choices : CHECK_LIMITS, MEASURE_ONLY
+	thermalMonitorItuffTname = "",
+	instanceProfile = FALSE,					#Choices : FALSE, TRUE
+	plistCheck = EMPTY_DISABLED,				#Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+	ignoreAlarm = NONE,						#Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+	ssidESequence = "",
+	ssidERecovery = "",
+	ssidGPwrdwn = NO,				#Choices : NO, YES
+	relayToken = "",
+	ssidOExecute = FIRST_FAIL,	#Choices : FORCE_ALL, FIRST_FAIL
+	captureResult = CLEAR,	#Choices : DO_NOT_CLEAR, CLEAR
+
+	debugMode = "VERBOSE",						#DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+   	datalogMode = ON,						#Choices : ON, DISABLED
+	binMatrixFilePath = "", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "CLEAR_DUT_DATA",
+	loopMode = "VLOOP",
+	activeTestDomain = "",
+	portToTestValue = "",
+	invalidFlows = "",
+	dffTokenName = "",
+	dffTokenValue = "",
+	defaultHardBin = 1,
+	enableextendedbinning = "DISABLED",
+	bypassGlobal = "",
+	postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+	preinstance = "",
+	setl2mapstr = "SET_GLOBAL^_UserVars.UFG_FUSE_L2NAME_MAP_FILE-.\\LRB_L2Map\\L2Map.txt",
+	setcomma =",",
+	setctsclocn = "SET_GLOBAL^CTSCVars.SC_LOCN-",
+	sclocn = "7757",
+	setsspec = "SET_GLOBAL^CTSCVars.SC_SSPEC-Q3TU",
+	setpackage = "SET_GLOBAL^CTSCVars.SC_PACKAGE-EF",
+	setdevice = "SET_GLOBAL^CTSCVars.SC_DEVICE-4LDHAV",
+	setrev = "SET_GLOBAL^CTSCVars.SC_REV-_",
+	setstep = "SET_GLOBAL^CTSCVars.SC_STEP-B"
+
+        );
+
+	DEF (TEMPLATENAME = LRBL2MAP, 
+	TESTTYPE = EXECUTE, 
+	TESTITEM = "", 
+	TESTMODE = QA, 
+	DEBUGMODE = $debugMode,
+	DESIREDOUT = "");
+  	DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$TESTMODE_$DEBUGMODE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+
+   	LRB_L2MAP_PBIC_$sclocn ( COMPNAME = LRB_L2MAP_PBIC_$sclocn, sclocn = "7721")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_QA_$sclocn ( COMPNAME = LRB_L2MAP_QA_$sclocn, sclocn = "7757")
+   	0?NEXT,
+   	1?NEXT;
+}
+
+COMPOSITE LRB_L2MAP_PBIC_$sclocn
+{
+   	LRB_L2MAP_PBIC_$debugMode ( COMPNAME = LRB_L2MAP_PBIC_$debugMode, Mode = "NOXSHIP", debugMode = "DISABLED")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_PBIC_$debugMode ( COMPNAME = LRB_L2MAP_PBIC_$debugMode, Mode = "NOXSHIP", debugMode = "BRIEF")
+   	0?NEXT,
+   	1?NEXT;
+
+	LRB_L2MAP_PBIC_$debugMode ( COMPNAME = LRB_L2MAP_PBIC_$debugMode, Mode = "NOXSHIP", debugMode = "VERBOSE")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_PBIC_$debugMode ( COMPNAME = LRB_L2MAP_PBIC_$debugMode, Mode = "NOXSHIP", debugMode = "OBNOXIOUS")
+   	0?NEXT,
+   	1?NEXT;
+}
+
+COMPOSITE LRB_L2MAP_QA_$sclocn
+{
+	# NOXSHIP mode
+   	LRB_L2MAP_NOXSHIP_$debugMode ( COMPNAME = LRB_L2MAP_NOXSHIP_$debugMode, Mode = "NOXSHIP", debugMode = "DISABLED")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_NOXSHIP_$debugMode ( COMPNAME = LRB_L2MAP_NOXSHIP_$debugMode, Mode = "NOXSHIP", debugMode = "BRIEF")
+   	0?NEXT,
+   	1?NEXT;
+
+	LRB_L2MAP_NOXSHIP_$debugMode ( COMPNAME = LRB_L2MAP_NOXSHIP_$debugMode, Mode = "NOXSHIP", debugMode = "VERBOSE")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_NOXSHIP_$debugMode ( COMPNAME = LRB_L2MAP_NOXSHIP_$debugMode, Mode = "NOXSHIP", debugMode = "OBNOXIOUS")
+   	0?NEXT,
+   	1?NEXT;
+
+	# XSHIP mode
+   	LRB_L2MAP_XSHIP_$debugMode ( COMPNAME = LRB_L2MAP_XSHIP_$debugMode, Mode = "", debugMode = "DISABLED")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_XSHIP_$debugMode ( COMPNAME = LRB_L2MAP_XSHIP_$debugMode, Mode = "", debugMode = "BRIEF")
+   	0?NEXT,
+   	1?NEXT;
+
+	LRB_L2MAP_XSHIP_$debugMode ( COMPNAME = LRB_L2MAP_XSHIP_$debugMode, Mode = "", debugMode = "VERBOSE")
+   	0?NEXT,
+   	1?NEXT;
+
+   	LRB_L2MAP_XSHIP_$debugMode ( COMPNAME = LRB_L2MAP_XSHIP_$debugMode, Mode = "", debugMode = "OBNOXIOUS")
+   	0?NEXT,
+   	1?NEXT; 
+}
+ 
+COMPOSITE LRB_L2MAP_XSHIP_$debugMode
+{ 
+	tt_userfunc (
+		TEMPLATENAME = GLOBAL, 
+		TESTMODE = XSHIP, 
+		TESTITEM = SETUP,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setl2mapstr$setcomma$setctsclocn$sclocn$setcomma$setsspec$setcomma$setpackage$setcomma$setdevice$setcomma$setrev$setcomma$setstep
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTTYPE = LRB,
+		TESTITEM = L2Map,
+		TESTMODE = XSHIP, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = $sclocn,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+	)
+	        
+    	0?NEXT,
+    	1?NEXT;
+	
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = ClearDUTData,
+		TESTITEM = BFMC,
+		TESTMODE = XSHIP, 
+      		DESIREDOUT = P1,
+       	       	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+		loopMode = "VLOOP",
+  		activeTestDomain = "core_freq",
+		defaultHardBin = 1,
+    		operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+
+	tt_userfunc (
+		TEMPLATENAME = PARSEL2MAPANDSSPECFILE,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!ParseL2MapAndSSpecFile",
+		functionParameter = $Mode
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SETMQDF,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^MQDF-EF4LDHAV_B_1003-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = CHECKLDB,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!CheckLDB",
+		functionParameter = "MQDF-NONE"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SETBADMQDF,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^MQDF-EF4LDHZV_B_1003-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = CHECKLDB,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = F0,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!CheckLDB",
+		functionParameter = "MQDF-NONE"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = IDT,
+		TESTITEM = CRP1TXP1,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01*00*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XSHIP,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XCRF0,
+		TESTITEM = IDT,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*0000000F*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-00*00*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XCRF0,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = F2,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXF0,
+		TESTITEM = IDT,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-00*01*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXF0,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = F3,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = DUMP,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "GET_DFF^XCR_DI-PKG,GET_DFF^XTX_DI-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XTXEMPTY,
+		TESTITEM = IDT,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-000000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-10**08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXF0,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = F4,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = SINGLEPFCRDITWOFLOW,
+		TESTITEM = IDT,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000000,SET_DFF^PFTX_DI-00*00*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SINGLEPFCRDITWOFLOW,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = F0,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = TWOPFCRDITWOFLOW,
+		TESTITEM = IDT,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-0000000F*00000000,SET_DFF^PFTX_DI-01*00"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = TWOPFCRDITWOFLOW,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+    	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetFlowInfo,
+		TESTITEM = BMFC,
+		TESTMODE = XSHIP, 
+    		DESIREDOUT = P1,
+       	       	binMatrixFilePath = $BMFCFILE,
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+  		operatingMode = "SET_FLOW_INFO",
+  		activeTestDomain = "core_freq",
+  		invalidFlows = "1",
+  		dffTokenName = "",
+  		dffTokenValue = ""
+        )
+     	0?NEXT,
+     	1?NEXT;
+
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetDUTFinalData,
+		TESTITEM = BMFC,
+		TESTMODE = XSHIP, 
+      		DESIREDOUT = P1,
+               	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+    		operatingMode = "SET_DUT_FINAL_DATA",
+  		activeTestDomain = "core_freq",
+		loopMode = "VLOOP",
+		defaultHardBin = 1,
+    		enableextendedbinning = "ENABLED",
+    		defaultHardBin = 6901
+	)
+  	0?NEXT,
+  	1?NEXT; 
+
+	tt_userfunc (
+		TEMPLATENAME = MQDFFLWD,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = XSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!DffTokenWriteFLWDAndMQDF",
+		functionParameter = ""
+	)
+  	0?1,
+  	1?1;
+
+	tt_librarymgr (
+		TEMPLATENAME = LRBL2MAPLibManager,
+		TESTITEM = Unload,
+		TESTMODE = XSHIP, 
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		debugMode = "DISABLED")
+   	-2?1,
+   	-1?1,
+   	0?1,
+   	1?1;
+
+}
+
+
+COMPOSITE LRB_L2MAP_NOXSHIP_$debugMode
+{ 
+	tt_userfunc (
+		TEMPLATENAME = GLOBAL, 
+		TESTMODE = NOXSHIP, 
+		TESTITEM = SETUP,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setl2mapstr$setcomma$setctsclocn$sclocn$setcomma$setsspec$setcomma$setpackage$setcomma$setdevice$setcomma$setrev$setcomma$setstep
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTTYPE = LRB,
+		TESTITEM = L2Map,
+		TESTMODE = NOXSHIP, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = 7757,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+	)
+	        
+    	0?NEXT,
+    	1?NEXT;
+	
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = ClearDUTData,
+		TESTITEM = BFMC,
+		TESTMODE = NOXSHIP, 
+      		DESIREDOUT = P1,
+       	       	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+		loopMode = "VLOOP",
+  		activeTestDomain = "core_freq",
+		defaultHardBin = 1,
+    		operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+
+	tt_userfunc (
+		TEMPLATENAME = PARSEL2MAPANDSSPECFILE,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!ParseL2MapAndSSpecFile",
+		functionParameter = $Mode
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SETMQDF,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^MQDF-EF4LDHAV_B_1003-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = CHECKLDB,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!CheckLDB",
+		functionParameter = "MQDF-NONE"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SETBADMQDF,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^MQDF-EF4LDHZV_B_1003-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = CHECKLDB,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = F0,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!CheckLDB",
+		functionParameter = "MQDF-NONE"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = IDT,
+		TESTITEM = CRP1TXP1,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01*00*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XSHIP,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XCRF0,
+		TESTITEM = IDT,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000004*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01*00*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XCRF0,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXF0,
+		TESTITEM = IDT,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01*0F*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXF0,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = DUMP,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = F0,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "GET_DFF^XCR_DI-PKG,GET_DFF^XTX_DI-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXEMPTY,
+		TESTITEM = IDT,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01**08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = XTXEMPTY,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SINGLEPFCRDI,
+		TESTITEM = IDT,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000000,SET_DFF^PFTX_DI-01**08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SINGLEPFCRDI,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+
+    	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetFlowInfo,
+		TESTITEM = BMFC,
+		TESTMODE = NOXSHIP, 
+    		DESIREDOUT = P1,
+       	       	binMatrixFilePath = $BMFCFILE,
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+  		operatingMode = "SET_FLOW_INFO",
+  		activeTestDomain = "core_freq",
+  		invalidFlows = "1",
+  		dffTokenName = "",
+  		dffTokenValue = ""
+        )
+     	0?NEXT,
+     	1?NEXT;
+
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetDUTFinalData,
+		TESTITEM = BMFC,
+		TESTMODE = NOXSHIP, 
+      		DESIREDOUT = P1,
+               	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+    		operatingMode = "SET_DUT_FINAL_DATA",
+  		activeTestDomain = "core_freq",
+		loopMode = "VLOOP",
+		defaultHardBin = 1,
+    		enableextendedbinning = "ENABLED",
+    		defaultHardBin = 6901
+	)
+  	0?NEXT,
+  	1?NEXT; 
+
+	tt_userfunc (
+		TEMPLATENAME = MQDFFLWD,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = NOXSHIP, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!DffTokenWriteFLWDAndMQDF",
+		functionParameter = ""
+	)
+  	0?1,
+  	1?1;
+
+	tt_librarymgr (
+		TEMPLATENAME = LRBL2MAPLibManager,
+		TESTITEM = Unload,
+		TESTMODE = NOXSHIP, 
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		debugMode = "DISABLED")
+   	-2?1,
+   	-1?1,
+   	0?1,
+   	1?1;
+
+}
+
+
+COMPOSITE LRB_L2MAP_PBIC_$debugMode
+{ 
+
+	tt_userfunc (
+		TEMPLATENAME = GLOBAL, 
+		TESTMODE = PBIC, 
+		TESTITEM = SETUP,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setl2mapstr$setcomma$setctsclocn$sclocn$setcomma$setsspec$setcomma$setpackage$setcomma$setdevice$setcomma$setrev$setcomma$setstep
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTTYPE = LRB,
+		TESTITEM = L2Map,
+		TESTMODE = PBIC, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = $sclocn,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+	)
+	        
+    	0?NEXT,
+    	1?NEXT;
+	
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = ClearDUTData,
+		TESTITEM = BFMC,
+		TESTMODE = PBIC, 
+      		DESIREDOUT = P1,
+       	       	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+		loopMode = "VLOOP",
+  		activeTestDomain = "core_freq",
+		defaultHardBin = 1,
+    		operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+
+	tt_userfunc (
+		TEMPLATENAME = PARSEL2MAPANDSSPECFILE,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!ParseL2MapAndSSpecFile",
+		functionParameter = $Mode
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SETMQDF,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^MQDF-EF4LDHAV_B_1003-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = CHECKLDB,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!CheckLDB",
+		functionParameter = "MQDF-NONE"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = SETBADMQDF,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^MQDF-EF4LDHZV_B_1003-PKG"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = IDT,
+		TESTITEM = CRP1TXP1,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*00000000*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01*00*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XSHIP,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TEMPLATENAME = IDT,
+		TESTITEM = CRF2TXF3,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_DFF^PFCR_DI-00000001*000000FF*0000000F*000000FF*AFFEFFFF,SET_DFF^PFTX_DI-01*01*08*07*06"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+	tt_userfunc (
+		TEMPLATENAME = XSHIP,
+		TESTITEM = CRF2TXF3,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!XShip",
+		functionParameter = "DFF_MAPCR_DI-PFCR_DI+XCR_DI,DFF_MAPTX_DI-PFTX_DI+XTX_DI"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+
+    	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetFlowInfo,
+		TESTITEM = BMFC,
+		TESTMODE = PBIC, 
+    		DESIREDOUT = P1,
+       	       	binMatrixFilePath = $BMFCFILE,
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+  		operatingMode = "SET_FLOW_INFO",
+  		activeTestDomain = "core_freq",
+  		invalidFlows = "1",
+  		dffTokenName = "",
+  		dffTokenValue = ""
+        )
+     	0?NEXT,
+     	1?NEXT;
+
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetDUTFinalData,
+		TESTITEM = BMFC,
+		TESTMODE = PBIC, 
+      		DESIREDOUT = P1,
+               	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+    		operatingMode = "SET_DUT_FINAL_DATA",
+  		activeTestDomain = "core_freq",
+		loopMode = "VLOOP",
+		defaultHardBin = 1,
+    		enableextendedbinning = "ENABLED",
+    		defaultHardBin = 6901
+	)
+  	0?NEXT,
+  	1?NEXT; 
+
+	tt_userfunc (
+		TEMPLATENAME = MQDFFLWD,
+		TESTITEM = LRBL2MAP,
+		TESTMODE = PBIC, 
+		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "LRB_L2Map.dll!DffTokenWriteFLWDAndMQDF",
+		functionParameter = ""
+	)
+  	0?1,
+  	1?1;
+
+
+}
+

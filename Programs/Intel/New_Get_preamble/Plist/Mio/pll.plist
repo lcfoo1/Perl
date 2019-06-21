@@ -1,0 +1,155 @@
+Version 1.0;
+
+GlobalPList pll_16161616_list    {
+
+   GlobalPList plllockuncore1612_lfmmin_16161616_list [PreBurst pll1612xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047449N4956334_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_lock;
+   } # end of plllockuncore1612_lfmmin_16161616_list
+
+
+   GlobalPList plllockuncore1612_hfmmin_16161616_list [PreBurst pll1612xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047449N4956334_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_lock;
+   } # end of plllockuncore1612_hfmmin_16161616_list
+
+
+   GlobalPList plllockuncore1612_tfmmax_16161616_list [PreBurst pll1612xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047449N4956334_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_lock;
+   } # end of plllockuncore1612_tfmmax_16161616_list
+
+
+   GlobalPList plllockuncore3215_tfmmax_16161616_list [PreBurst pll3215xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047449N4956334_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_lock;
+   } # end of plllockuncore3215_tfmmax_16161616_list
+
+
+   GlobalPList plllockuncore3215_hfmmin_16161616_list [PreBurst pll3215xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047449N4956334_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_lock;
+   } # end of plllockuncore3215_hfmmin_16161616_list
+
+
+   GlobalPList plllockcore12_hfmmin_16161616_list [PreBurst pll161212xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047453N4956328_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_lock;
+   } # end of plllockcore12_hfmmin_16161616_list
+
+
+   GlobalPList plllockcore12_tfmmax_16161616_list [PreBurst pll161212xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047453N4956328_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_lock;
+   } # end of plllockcore12_tfmmax_16161616_list
+
+
+   GlobalPList plllockcore28_hfmmin_16161616_list [PreBurst pll161228xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047453N4956328_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_lock;
+   } # end of plllockcore28_hfmmin_16161616_list
+
+
+   GlobalPList plllockcore28_tfmmax_16161616_list [PreBurst pll161228xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047453N4956328_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_lock;
+   } # end of plllockcore28_tfmmax_16161616_list
+
+
+   GlobalPList plllockcore12_lfmmin_16161616_list [PreBurst pll161212xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047453N4956328_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_lock;
+   } # end of plllockcore12_lfmmin_16161616_list
+
+
+   GlobalPList plllockio1808_tfmmax_16161616_list [PreBurst pll1612xx184_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047458N4956332_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_lock;
+   } # end of plllockio1808_tfmmax_16161616_list
+
+
+   GlobalPList plllockio1808_lfmmin_16161616_list [PreBurst pll1612xx184_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047458N4956332_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_lock;
+   } # end of plllockio1808_lfmmin_16161616_list
+
+
+   GlobalPList plllockio1808_hfmmin_16161616_list [PreBurst pll1612xx184_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047458N4956332_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_lock;
+   } # end of plllockio1808_hfmmin_16161616_list
+
+
+   GlobalPList plllockio1810_hfmmin_16161616_list [PreBurst pll1612xx185_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047458N4956332_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_lock;
+   } # end of plllockio1810_hfmmin_16161616_list
+
+
+   GlobalPList plllockio1810_tfmmax_16161616_list [PreBurst pll1612xx185_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047458N4956332_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_lock;
+   } # end of plllockio1810_tfmmax_16161616_list
+
+
+   GlobalPList pll_pwrgood_pf_16161616_list [PreBurst lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047452N4956336_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_powergood;
+   } # end of pll_pwrgood_pf_16161616_list
+
+
+   GlobalPList plllocktimeuncore15_hfmmin_16161616_list [PreBurst pll3215xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047456N4956335_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_time;
+   } # end of plllocktimeuncore15_hfmmin_16161616_list
+
+
+   GlobalPList plllocktimeuncore12_hfmmin_16161616_list [PreBurst pll1612xxxxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047456N4956335_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_uncore_time;
+   } # end of plllocktimeuncore12_hfmmin_16161616_list
+
+
+   GlobalPList plllocktimecore12_hfmmin_16161616_list [PreBurst pll16xx12xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047462N4956329_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_time;
+   } # end of plllocktimecore12_hfmmin_16161616_list
+
+
+   GlobalPList plllocktimecore28_hfmmin_16161616_list [PreBurst pll16xx28xxx_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047462N4956329_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_core_group_time;
+   } # end of plllocktimecore28_hfmmin_16161616_list
+
+
+   GlobalPList plllocktimeio1808_hfmmin_16161616_list [PreBurst pll16xxxx184_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047455N4956333_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_time;
+   } # end of plllocktimeio1808_hfmmin_16161616_list
+
+
+   GlobalPList plllocktimeio1810_hfmmin_16161616_list [PreBurst pll16xxxx185_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047455N4956333_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_io_group_time;
+   } # end of plllocktimeio1810_hfmmin_16161616_list
+
+
+   GlobalPList dlllock08_hfmmin_16161616_list [PreBurst pllxxxxxx184_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047464N4956324_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_all_dll_sic;
+   } # end of dlllock08_hfmmin_16161616_list
+
+
+   GlobalPList dlllock10_hfmmin_16161616_list [PreBurst pllxxxxxx185_xxxxxxxx_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0][Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0047464N4956324_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_all_dll_sic;
+   } # end of dlllock10_hfmmin_16161616_list
+
+
+GlobalPList pllbgtrim_hfmmin_16161616_list [PreBurst pll_bgtrim_lfd_pre_2M_vrevA2_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask vid_bus, pcie_txp, BCLK_ITP_N, BCLK_ITP_P, dmi_txp, PEG_OBS_0] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA2 mode=6g8m vectype=sdr
+      Pat d0056680N4956326_16161616a2x18_MA0eA01Rxg_2txx22C_4x0xxxpxx0xxx_bg_trim_walk;
+   } # end of pllbgtrim_hfmmin_16161616_list
+
+} # end of pll_16161616_list
+

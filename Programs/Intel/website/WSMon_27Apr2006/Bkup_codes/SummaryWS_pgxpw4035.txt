@@ -1,0 +1,7 @@
+Status=In Active
+Server=pgxpw4035
+Team=TV
+User=kwong7
+Logon=05/15/2006 17:13:26
+LastActive=Mon Jun  5 17:09:11 2006
+Active=Yes(IDLE=0days, 9hours, 14mins)

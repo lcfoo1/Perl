@@ -1,0 +1,28 @@
+INST tt_COT {
+        NAME                                    $name;
+        TEMPLATE                                iCChipOnTiuTest;
+        mode                                    $mode;
+        debug_mode                              $debugMode;
+        patlist                                 $patlist;
+        level                                   $level;
+        timings                                 $timings;
+        pin_name                                $pinName;
+        ideality_global                         $idealityGlobal;
+        ideality_label                          $idealityLabel;
+        beta_global                             $betaGlobal;
+        beta_label                              $betaLabel;
+        sot_input_global                        $sotInputGlobal;
+        min_limit_global                        $minLimitGlobal;
+        max_limit_global                        $maxLimitGlobal;
+        min_limit_diff_global                   $minLimitDiffGlobal;
+        max_limit_diff_global                   $maxLimitDiffGlobal;
+        dff_token_name_global                   $dffTokenNameGlobal;
+        ack_bit                                 $ackBit;
+        temp_corr_factor                        $tempCorrFactor;
+        dff_global                              $dffGlobal;
+       bypass_global                           $bypassGlobal;                        #Datatype=STRING, OPTIONAL
+    #preinstance                             $preinstance;                            #Datatype=STRING, OPTIONAL
+         postinstance                           $postinstance;                           #Datatype=STRING, OPTIONAL
+        sample_global                           $sampleGlobal;
+}
+

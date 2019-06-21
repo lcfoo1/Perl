@@ -1,0 +1,393 @@
+###############################################################################################
+# Template Name: Multicycles_IPO
+###############################################################################################
+
+COMPOSITE Multicycles_IPO
+{
+   
+   DEF (SEGNAME = $name, 
+   	datalogMode = ON,		#Choices : ON, DISABLED      	
+   	postinstance = "gVal_utilityfunc!GenerateInstanceResults",
+        preinstance = "",
+        bypassGlobal = "",
+	debugMode = "VERBOSE",
+	overwriteMethod = "AUTO"
+	);
+   	
+   DEF (TEMPLATENAME = Multicycles_IPO, 
+	TESTTYPE = Execute,
+	TESTITEM = "", 
+	PIVOT = Basic,
+	DEBUGMODE = $debugMode, 
+	DESIREDOUT = "");
+   DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$PIVOT_$DEBUGMODE_$DESIREDOUT);
+   DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME);  
+  
+
+	Multicycles_IPO_Execute_$debugMode ( COMPNAME = Multicycles_IPO_Execute_$debugMode, debugMode = "DISABLED")
+	0?NEXT,
+	1?NEXT;
+
+	Multicycles_IPO_Execute_$debugMode ( COMPNAME = Multicycles_IPO_Execute_$debugMode, debugMode = "BRIEF")
+	0?NEXT,
+	1?NEXT;
+
+	Multicycles_IPO_Execute_$debugMode ( COMPNAME = Multicycles_IPO_Execute_$debugMode, debugMode = "VERBOSE")
+	0?NEXT,
+	1?NEXT;
+
+	Multicycles_IPO_Execute_$debugMode ( COMPNAME = Multicycles_IPO_Execute_$debugMode, debugMode = "OBNOXIOUS")
+	0?NEXT,
+	1?NEXT;
+}
+
+
+
+
+COMPOSITE Multicycles_IPO_Execute_$debugMode
+{
+
+	Multicycles_IPO_Execute_$overwriteMethod_$debugMode ( COMPNAME = Multicycles_IPO_Execute_$overwriteMethod_$debugMode, overwriteMethod = "AUTO")
+	0?NEXT,
+	1?NEXT;
+
+	Multicycles_IPO_Execute_$overwriteMethod_$debugMode ( COMPNAME = Multicycles_IPO_Execute_$overwriteMethod_$debugMode, overwriteMethod = "MANUAL")
+	0?NEXT,
+	1?NEXT;
+}
+
+
+
+COMPOSITE Multicycles_IPO_Execute_$overwriteMethod_$debugMode
+{
+	Multicycles_IPO_Execute_SingleCycle_$overwriteMethod_$debugMode ( COMPNAME = Multicycles_IPO_Execute_SingleCycle_$overwriteMethod_$debugMode)
+	0?NEXT,
+	1?NEXT;
+
+	Multicycles_IPO_Execute_MultiCycles_$overwriteMethod_$debugMode ( COMPNAME = Multicycles_IPO_Execute_MultiCycles_$overwriteMethod_$debugMode)
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE Multicycles_IPO_Execute_SingleCycle_$overwriteMethod_$debugMode
+{
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycle,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycle.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleOffset,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycleoffset.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleTwoSame,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycletwosamepat.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleTwoDiff,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycletwodiffpat.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleIter,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycleiter.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleOffsetIter,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycleoffsetiter.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleOffsetIter2Same,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycleoffsetiter2samepat.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = OneCycleOffsetIter2Diff,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/onecycleoffsetiter2diffpat.xml",
+		configSet = "ONE",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "1",
+    )
+   1?1,
+   0?1;
+
+
+
+   tt_userfunc (
+		TEMPLATENAME = OneCycle,
+		PIVOT = $overwriteMethod,
+		TESTITEM = ReadPattern1,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+    		functionName = "GLN_DEBUG.dll!PatternReadOut",
+		functionParameter = "P001^singlecycle_fuse_config_init^default^FUSE_CFG_DATA_STR^51",
+		debugMode = "DISABLED")
+   -2?1,   
+   -1?1,   
+   1?1,   
+   0?1;
+
+	tt_userfunc (
+		TEMPLATENAME = OneCycle,
+		PIVOT = $overwriteMethod,
+		TESTITEM = ReadPattern2,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+    		functionName = "GLN_DEBUG.dll!PatternReadOut",
+		functionParameter = "P001^variablesingle_fuse_config_init^default^FUSE_CFG_DATA_STR^51",
+		debugMode = "DISABLED")
+   -2?1,   
+   -1?1,   
+   1?1,   
+   0?1;
+
+
+
+
+   tt_librarymgr (
+		TEMPLATENAME = OneCycleLibManager,
+		PIVOT = $overwriteMethod,
+		TESTITEM = Unload,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		debugMode = "DISABLED")
+   -2?1,
+   -1?1,
+   0?1,
+   1?1;
+
+}
+
+COMPOSITE Multicycles_IPO_Execute_MultiCycles_$overwriteMethod_$debugMode
+{
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCycles,
+   	        DESIREDOUT = P1,
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycle.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesOffset,
+   	        DESIREDOUT = P1,
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycleoffset.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesTwoSame,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycletwosamepat.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesTwoDiff,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycletwodiffpat.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesIter,
+   	        DESIREDOUT = P1,
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycleiter.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesOffsetIter,
+   	        DESIREDOUT = P1,
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycleoffsetiter.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesOffsetIter2Same,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycleoffsetiter2samepat.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?NEXT,
+   0?NEXT;
+
+   tt_Multicycles_IPO (
+		TESTITEM = $overwriteMethod,
+		PIVOT = TwoCyclesOffsetIter2Diff,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		configFile = "./Multicycles_IPO/twocycleoffsetiter2samepat.xml",
+		configSet = "TWO",
+		execMode = "EXEC_ALL",
+		dataRestore = "ON",
+		cycleMultiplier = "2",
+    )
+   1?1,
+   0?1;
+
+   tt_userfunc (
+		TEMPLATENAME = TwoCycles,
+		PIVOT = $overwriteMethod,
+		TESTITEM = ReadPattern1,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+    		functionName = "GLN_DEBUG.dll!PatternReadOut",
+		functionParameter = "P001^twocycles_fuse_config_init^default^FUSE_CFG_DATA_STR^51",
+		debugMode = "DISABLED")
+   -2?1,   
+   -1?1,   
+   1?1,   
+   0?1;
+
+   tt_userfunc (
+		TEMPLATENAME = TwoCycles,
+		PIVOT = $overwriteMethod,
+		TESTITEM = ReadPattern2,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+    		functionName = "GLN_DEBUG.dll!PatternReadOut",
+		functionParameter = "P001^variabletwo_fuse_config_init^default^FUSE_CFG_DATA_STR^51",
+		debugMode = "DISABLED")
+   -2?1,   
+   -1?1,   
+   1?1,   
+   0?1;
+
+   tt_librarymgr (
+		TEMPLATENAME = TwoCyclesLibManager,
+		PIVOT = $overwriteMethod,
+		TESTITEM = Unload,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		debugMode = "DISABLED")
+   -2?1,
+   -1?1,
+   0?1,
+   1?1;
+
+}
+
+
+

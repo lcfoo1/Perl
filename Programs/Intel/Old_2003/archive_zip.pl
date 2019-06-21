@@ -1,0 +1,12 @@
+   use Archive::Zip qw( :ERROR_CODES :CONSTANTS );
+   my $zip = Archive::Zip->new();
+#   my $member = $zip->addDirectory( 'dirname/' );
+#   $member = $zip->addString( 'This is a test', 'stringMember.txt' );
+#   $member->desiredCompressionMethod( COMPRESSION_DEFLATED );
+   $member = $zip->addFile( 'files.tar');
+   die 'write error' unless $zip->writeToFileNamed( 'someZip.tar.gz' ) == AZ_OK;
+#   $zip = Archive::Zip->new();
+#   die 'read error' unless $zip->read( 'someZip.tar.gz' ) == AZ_OK;
+#   $member = $zip->memberNamed( 'stringMember.txt' );
+#   $member->desiredCompressionMethod( COMPRESSION_STORED );
+#   die 'write error' unless $zip->writeToFileNamed( 'someOtherZip.zip' ) == AZ_OK;

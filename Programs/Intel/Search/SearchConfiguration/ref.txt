@@ -1,0 +1,8 @@
+IND_SEARCH_SET          VminSearch_Core1_bf_cmp_sym_0110c_bf119_list
+common_set_name         "CKT_ComSetVmin_bf119"
+patlist                 "bf_cmp_sym_c_011004_list"
+sample_rate             1
+search_repeats          0
+pre_searchset_userfunc  "CKT_PatModify.dll!SetPlistDieCore:1,bf_cmp_sym_c_011004_list,./input_files/CKT_SearchBits.txt"
+ituff_name              "Vmin_core1_bf_cmp_sym_0110c_bf119_list"
+END_IND_SEARCH_SET

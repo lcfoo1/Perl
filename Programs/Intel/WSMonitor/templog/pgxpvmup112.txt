@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpvmup112
+Team=NH
+User=jgong6
+Logon=2/28/2007 12:09:00 AM
+LastActive=3/7/2007 6:12:00 AM
+Active=No(IDLE=7days, 6hrs, 3mins)

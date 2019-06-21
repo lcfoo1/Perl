@@ -1,0 +1,47 @@
+
+Microsoft (R) Visual Studio Version 8.0.50727.762.
+Copyright (C) Microsoft Corp 1984-2005. All rights reserved.
+1>------ Rebuild All started: Project: cortex_utility, Configuration: Release Win32 ------
+1>Deleting intermediate and output files for project 'cortex_utility', configuration 'Release|Win32'
+1>Compiling...
+1>regex.c
+1>Compiling...
+1>MD5Checksum.cpp
+1>..\third_party\RSA_DataSecurity_MD5\MD5Checksum.cpp(123) : warning C4189: 'nLength' : local variable is initialized but not referenced
+1>cortex_utility.cpp
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/dom/DOMDocument.hpp(841) : warning C4100: 'systemId' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/dom/DOMDocument.hpp(840) : warning C4100: 'publicId' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/framework/psvi/PSVIHandler.hpp(133) : warning C4100: 'elementInfo' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/framework/psvi/PSVIHandler.hpp(132) : warning C4100: 'uri' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/framework/psvi/PSVIHandler.hpp(131) : warning C4100: 'localName' : unreferenced formal parameter
+1>CorTeXObjects.cpp
+1>cortex_legacy_defs.cpp
+1>cortex_extern.cpp
+1>CorTeXBaseUtility.cpp
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/dom/DOMDocument.hpp(841) : warning C4100: 'systemId' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/dom/DOMDocument.hpp(840) : warning C4100: 'publicId' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/framework/psvi/PSVIHandler.hpp(133) : warning C4100: 'elementInfo' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/framework/psvi/PSVIHandler.hpp(132) : warning C4100: 'uri' : unreferenced formal parameter
+1>p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\third_party\xerces-c\include\xercesc/framework/psvi/PSVIHandler.hpp(131) : warning C4100: 'localName' : unreferenced formal parameter
+1>Generating Code...
+1>Compiling resources...
+1>Linking...
+1>   Creating library ..\lib\OASIS_cortex_utility.lib and object ..\lib\OASIS_cortex_utility.exp
+1>Embedding manifest...
+1>Build log was saved at "file://p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\code\cortex_utility_Release\BuildLog.htm"
+1>cortex_utility - 0 error(s), 11 warning(s)
+2>------ Rebuild All started: Project: GEN_code, Configuration: Release Win32 ------
+2>Deleting intermediate and output files for project 'GEN_code', configuration 'Release|Win32'
+2>Compiling...
+2>GEN_global.cpp
+2>GEN_core.cpp
+2>Fuse_cortex.cpp
+2>cortex.cpp
+2>Generating Code...
+2>Compiling resources...
+2>Linking...
+2>   Creating library ..\lib\OASIS_GEN_code.lib and object ..\lib\OASIS_GEN_code.exp
+2>Embedding manifest...
+2>Build log was saved at "file://p:\tpapps\CorTeX\GEN\Rev4.9.1_PG1\code\Release\BuildLog.htm"
+2>GEN_code - 0 error(s), 0 warning(s)
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========

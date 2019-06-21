@@ -1,0 +1,3296 @@
+# TimeStamp <Wed Dec 27 17:43:58 2006> 
+# Avator Version: Rev2.2e32 
+
+
+Version 1.0;
+
+
+Import cwma.pin;
+Import kfddtbze0mc10xdx.usrv;
+
+#Block Created By "PLT"
+Timing bypass_timing {
+    CommonSection  {
+      Domain default  [DataRate 1]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0 { D@bclk_drv,E1;  } }
+	      { 1 { U@bclk_drv,E1;  } }
+	      { C { U@bclk_drv,E2; D@(bclk_drv+Dcyc/2),E3;  } }
+	      { c { D@bclk_drv,E2; U@(bclk_drv+Dcyc/2),E3;  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0 { D@cc_drv,E1;  } }
+	      { 1 { U@cc_drv,E1;  } }
+	      { Z { Z@cc_x,E2;  } }
+	      { L { L@cc_stb,E6;  } }
+	      { H { H@cc_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0 { D@asyn_cmos_drv,E1;  } }
+	      { 1 { U@asyn_cmos_drv,E1;  } }
+	      { Z { Z@asyn_cmos_x,E2;  } }
+	      { L { L@asyn_cmos_stb,E6;  } }
+	      { H { H@asyn_cmos_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0 { D@asyn_od_drv,E1;  } }
+	      { 1 { U@asyn_od_drv,E1;  } }
+	      { Z { Z@asyn_od_x,E2;  } }
+	      { L { L@asyn_od_stb,E6;  } }
+	      { H { H@asyn_od_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0 { D@reset_drv,E1;  } }
+	      { 1 { U@reset_drv,E1;  } }
+	      { Z { Z@adstb_x,E3;  } }
+	      { L { L@reset_stb,E6;  } }
+	      { H { H@reset_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0 { D@adstb_drv,E1;  } }
+	      { 1 { U@adstb_drv,E1;  } }
+	      { Z { Z@adstb_x,E3;  } }
+	      { L { L@adstb_stb,E5; X@(adstb_stb+Dcyc/2),E6;  } }
+	      { H { H@adstb_stb,E5; X@(adstb_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@adstb_drv,E1; D@(adstb_drv+Dcyc/2),E2;  } }
+	      { 1 { D@adstb_drv,E1; U@(adstb_drv+Dcyc/2),E2;  } }
+	      { 2 { U@adstb_drv,E1; D@(adstb_drv+Dcyc/2),E2;  } }
+	      { 3 { U@adstb_drv,E1; U@(adstb_drv+Dcyc/2),E2;  } }
+	      { 4 { L@adstb_stb,E5; L@(adstb_stb+Dcyc/2),E6;  } }
+	      { 5 { L@adstb_stb,E5; H@(adstb_stb+Dcyc/2),E6;  } }
+	      { 6 { H@adstb_stb,E5; L@(adstb_stb+Dcyc/2),E6;  } }
+	      { 7 { H@adstb_stb,E5; H@(adstb_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page1 {
+	      { 0 { D@addr_lower_drv,E1;  } }
+	      { 1 { U@addr_lower_drv,E1;  } }
+	      { Z { Z@addr_x,E3;  } }
+	      { L { L@addr_lower_stb,E5; X@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { H { H@addr_lower_stb,E5; X@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@addr_lower_drv,E1; D@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 1 { D@addr_lower_drv,E1; U@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 2 { U@addr_lower_drv,E1; D@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 3 { U@addr_lower_drv,E1; U@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 4 { L@addr_lower_stb,E5; L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { 5 { L@addr_lower_stb,E5; H@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { 6 { H@addr_lower_stb,E5; L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { 7 { H@addr_lower_stb,E5; H@(addr_lower_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page1 {
+	      { 0 { D@addr_upper_drv,E1;  } }
+	      { 1 { U@addr_upper_drv,E1;  } }
+	      { Z { Z@addr_x,E3;  } }
+	      { L { L@addr_upper_stb,E5; X@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { H { H@addr_upper_stb,E5; X@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@addr_upper_drv,E1; D@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 1 { D@addr_upper_drv,E1; U@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 2 { U@addr_upper_drv,E1; D@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 3 { U@addr_upper_drv,E1; U@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 4 { L@addr_upper_stb,E5; L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { 5 { L@addr_upper_stb,E5; H@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { 6 { H@addr_upper_stb,E5; L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { 7 { H@addr_upper_stb,E5; H@(addr_upper_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { 0 { D@dstbn_drv,E1;  } }
+	      { 1 { U@dstbn_drv,E1;  } }
+	      { Z { Z@dstbn_x,E3;  } }
+	      { L { L@dstbn_stb,E5; X@(dstbn_stb+Dcyc/2),E6;  } }
+	      { H { H@dstbn_stb,E5; X@(dstbn_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@dstbn_drv,E1; D@(dstbn_drv+data_quarter),E2;  } }
+	      { 1 { D@dstbn_drv,E1; U@(dstbn_drv+data_quarter),E2;  } }
+	      { 2 { U@dstbn_drv,E1; D@(dstbn_drv+data_quarter),E2;  } }
+	      { 3 { U@dstbn_drv,E1; U@(dstbn_drv+data_quarter),E2;  } }
+	      { 4 { L@dstbn_stb,E5; L@(dstbn_stb+data_quarter),E6;  } }
+	      { 5 { L@dstbn_stb,E5; H@(dstbn_stb+data_quarter),E6;  } }
+	      { 6 { H@dstbn_stb,E5; L@(dstbn_stb+data_quarter),E6;  } }
+	      { 7 { H@dstbn_stb,E5; H@(dstbn_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { 0 { D@dstbp_drv,E1;  } }
+	      { 1 { U@dstbp_drv,E1;  } }
+	      { Z { Z@dstbp_x,E3;  } }
+	      { L { L@dstbp_stb,E5; X@(dstbp_stb+Dcyc/2),E6;  } }
+	      { H { H@dstbp_stb,E5; X@(dstbp_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@dstbp_drv,E1; D@(dstbp_drv+data_quarter),E2;  } }
+	      { 1 { D@dstbp_drv,E1; U@(dstbp_drv+data_quarter),E2;  } }
+	      { 2 { U@dstbp_drv,E1; D@(dstbp_drv+data_quarter),E2;  } }
+	      { 3 { U@dstbp_drv,E1; U@(dstbp_drv+data_quarter),E2;  } }
+	      { 4 { L@dstbp_stb,E5; L@(dstbp_stb+data_quarter),E6;  } }
+	      { 5 { L@dstbp_stb,E5; H@(dstbp_stb+data_quarter),E6;  } }
+	      { 6 { H@dstbp_stb,E5; L@(dstbp_stb+data_quarter),E6;  } }
+	      { 7 { H@dstbp_stb,E5; H@(dstbp_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q0_stb,E5; X@(data_q0_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q0_stb,E5; X@(data_q0_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q0_stb,E5; L@(data_q0_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q0_stb,E5; H@(data_q0_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q0_stb,E5; L@(data_q0_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q0_stb,E5; H@(data_q0_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q1_stb,E5; X@(data_q1_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q1_stb,E5; X@(data_q1_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q1_stb,E5; L@(data_q1_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q1_stb,E5; H@(data_q1_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q1_stb,E5; L@(data_q1_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q1_stb,E5; H@(data_q1_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q2_stb,E5; X@(data_q2_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q2_stb,E5; X@(data_q2_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q2_stb,E5; L@(data_q2_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q2_stb,E5; H@(data_q2_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q2_stb,E5; L@(data_q2_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q2_stb,E5; H@(data_q2_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q3_stb,E5; X@(data_q3_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q3_stb,E5; X@(data_q3_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q3_stb,E5; L@(data_q3_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q3_stb,E5; H@(data_q3_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q3_stb,E5; L@(data_q3_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q3_stb,E5; H@(data_q3_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0 { D@tapclk_drv,E1;  } }
+	      { 1 { U@tapclk_drv,E1;  } }
+	      { C { U@tapclk_drv,E2; D@(tapclk_drv+Dcyc/2),E3;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0 { D@taprst_drv,E1;  } }
+	      { 1 { U@taprst_drv,E1;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0 { D@tapin_drv,E1;  } }
+	      { 1 { U@tapin_drv,E1;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { 0 { L@tapout_stb,E6;  } }
+	      { 1 { H@tapout_stb,E5;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+	      { L { L@tapout_stb,E6;  } }
+	      { H { H@tapout_stb,E5;  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0 { D@dft_drv,E1;  } }
+	      { 1 { U@dft_drv,E1;  } }
+	      { Z { Z@dft_x,E2;  } }
+	      { L { L@dft_stb,E6;  } }
+	      { H { H@dft_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0 { D@misc_drv,E1;  } }
+	      { 1 { U@misc_drv,E1;  } }
+	      { Z { Z@misc_x,E2;  } }
+	      { L { L@misc_stb,E6;  } }
+	      { H { H@misc_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0 { D@misc_drv,E1;  } }
+	      { 1 { U@misc_drv,E1;  } }
+	      { Z { Z@misc_x,E2;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block bypass_timing
+
+
+#Block Created By "PLT"
+Timing ddr_1_ac_timing {
+    CommonSection  {
+      Domain default  [DataRate 2]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0[1] { D@bclk_drv,E1;  } }
+	      { 0[2] { D@bclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@bclk_drv,E1;  } }
+	      { 1[2] { U@bclk_drv+Dcyc/2,E3;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0[1] { D@cc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@cc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@cc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@cc_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_cmos_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_cmos_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_cmos_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_cmos_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_cmos_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_od_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_od_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_od_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_od_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_od_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0[1] { D@reset_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@reset_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@reset_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@reset_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0[1] { D@adstb_drv,E1;  } }
+	      { 0[2] { D@(adstb_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@adstb_drv,E1;  } }
+	      { 1[2] { U@(adstb_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@adstb_stb,E5;  } }
+	      { L[2] { L@(adstb_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@adstb_stb,E5;  } }
+	      { H[2] { H@(adstb_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_lower_drv,E1;  } }
+	      { 0[2] { D@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_lower_drv,E1;  } }
+	      { 1[2] { U@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_lower_stb,E5;  } }
+	      { L[2] { L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_lower_stb,E5;  } }
+	      { H[2] { H@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_upper_drv,E1;  } }
+	      { 0[2] { D@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_upper_drv,E1;  } }
+	      { 1[2] { U@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_upper_stb,E5;  } }
+	      { L[2] { L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_upper_stb,E5;  } }
+	      { H[2] { H@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbp_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbp_drv_a,E1;  } }
+	      { 0[2] { D@dstbp_drv_c,E3;  } }
+	      { 1[1] { U@dstbp_drv_a,E1;  } }
+	      { 1[2] { U@dstbp_drv_c,E3;  } }
+	      { L[1] { L@dstbp_stb_a,E5;  } }
+	      { L[2] { L@dstbp_stb_c,E6;  } }
+	      { H[1] { H@dstbp_stb_a,E5;  } }
+	      { H[2] { H@dstbp_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 0[2] { D@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 1[1] { D@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 1[2] { D@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 2[1] { U@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 2[2] { U@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 3[1] { U@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 3[2] { U@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 4[1] { L@dstbp_stb_a,E5;  } }
+	      { 4[2] { L@dstbp_stb_c,E6;  } }
+	      { 5[1] { L@dstbp_stb_a,E5;  } }
+	      { 5[2] { L@dstbp_stb_c,E6;  } }
+	      { 6[1] { H@dstbp_stb_a,E5;  } }
+	      { 6[2] { H@dstbp_stb_c,E6;  } }
+	      { 7[1] { H@dstbp_stb_a,E5;  } }
+	      { 7[2] { H@dstbp_stb_c,E6;  } }
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbn_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbn_drv_a,E1;  } }
+	      { 0[2] { D@dstbn_drv_c,E3;  } }
+	      { 1[1] { U@dstbn_drv_a,E1;  } }
+	      { 1[2] { U@dstbn_drv_c,E3;  } }
+	      { L[1] { L@dstbn_stb_a,E5;  } }
+	      { L[2] { L@dstbn_stb_c,E6;  } }
+	      { H[1] { H@dstbn_stb_a,E5;  } }
+	      { H[2] { H@dstbn_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 0[2] { D@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 1[1] { D@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 1[2] { D@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 2[1] { U@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 2[2] { U@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 3[1] { U@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 3[2] { U@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 4[1] { L@dstbn_stb_a,E5;  } }
+	      { 4[2] { L@dstbn_stb_c,E6;  } }
+	      { 5[1] { L@dstbn_stb_a,E5;  } }
+	      { 5[2] { L@dstbn_stb_c,E6;  } }
+	      { 6[1] { H@dstbn_stb_a,E5;  } }
+	      { 6[2] { H@dstbn_stb_c,E6;  } }
+	      { 7[1] { H@dstbn_stb_a,E5;  } }
+	      { 7[2] { H@dstbn_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q0_stb_a,E5;  } }
+	      { L[2] { L@data_q0_stb_c,E6;  } }
+	      { H[1] { H@data_q0_stb_a,E5;  } }
+	      { H[2] { H@data_q0_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q0_stb_a,E5;  } }
+	      { 4[2] { L@data_q0_stb_c,E6;  } }
+	      { 5[1] { L@data_q0_stb_a,E5;  } }
+	      { 5[2] { L@data_q0_stb_c,E6;  } }
+	      { 6[1] { H@data_q0_stb_a,E5;  } }
+	      { 6[2] { H@data_q0_stb_c,E6;  } }
+	      { 7[1] { H@data_q0_stb_a,E5;  } }
+	      { 7[2] { H@data_q0_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q1_stb_a,E5;  } }
+	      { L[2] { L@data_q1_stb_c,E6;  } }
+	      { H[1] { H@data_q1_stb_a,E5;  } }
+	      { H[2] { H@data_q1_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q1_stb_a,E5;  } }
+	      { 4[2] { L@data_q1_stb_c,E6;  } }
+	      { 5[1] { L@data_q1_stb_a,E5;  } }
+	      { 5[2] { L@data_q1_stb_c,E6;  } }
+	      { 6[1] { H@data_q1_stb_a,E5;  } }
+	      { 6[2] { H@data_q1_stb_c,E6;  } }
+	      { 7[1] { H@data_q1_stb_a,E5;  } }
+	      { 7[2] { H@data_q1_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q2_stb_a,E5;  } }
+	      { L[2] { L@data_q2_stb_c,E6;  } }
+	      { H[1] { H@data_q2_stb_a,E5;  } }
+	      { H[2] { H@data_q2_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q2_stb_a,E5;  } }
+	      { 4[2] { L@data_q2_stb_c,E6;  } }
+	      { 5[1] { L@data_q2_stb_a,E5;  } }
+	      { 5[2] { L@data_q2_stb_c,E6;  } }
+	      { 6[1] { H@data_q2_stb_a,E5;  } }
+	      { 6[2] { H@data_q2_stb_c,E6;  } }
+	      { 7[1] { H@data_q2_stb_a,E5;  } }
+	      { 7[2] { H@data_q2_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q3_stb_a,E5;  } }
+	      { L[2] { L@data_q3_stb_c,E6;  } }
+	      { H[1] { H@data_q3_stb_a,E5;  } }
+	      { H[2] { H@data_q3_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q3_stb_a,E5;  } }
+	      { 4[2] { L@data_q3_stb_c,E6;  } }
+	      { 5[1] { L@data_q3_stb_a,E5;  } }
+	      { 5[2] { L@data_q3_stb_c,E6;  } }
+	      { 6[1] { H@data_q3_stb_a,E5;  } }
+	      { 6[2] { H@data_q3_stb_c,E6;  } }
+	      { 7[1] { H@data_q3_stb_a,E5;  } }
+	      { 7[2] { H@data_q3_stb_c,E6;  } }
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapclk_drv,E1;  } }
+	      { 0[2] { D@tapclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@tapclk_drv,E1;  } }
+	      { 1[2] { U@tapclk_drv+Dcyc/2,E3;  } }
+	      { Z[1] { Z@tapclk_drv,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0[1] { D@taprst_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@taprst_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapin_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@tapin_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { 0[1] { L@tapout_stb,E5;  } }
+	      { 0[2] {  } }
+	      { 1[1] { H@tapout_stb,E5;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] { L@tapout_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@tapout_stb,E5;  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@dft_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dft_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { L[1] { L@dft_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dft_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@misc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@misc_stb,E5;  } }
+	      { H[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block ddr_1_ac_timing
+
+
+#Block Created By "PLT"
+Timing ddr_1_timing {
+    CommonSection  {
+      Domain default  [DataRate 2]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0[1] { D@bclk_drv,E1;  } }
+	      { 0[2] { D@bclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@bclk_drv,E1;  } }
+	      { 1[2] { U@bclk_drv+Dcyc/2,E3;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0[1] { D@cc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@cc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@cc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@cc_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] {  } }
+	      { O[1] { L@cc_stb,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@cc_stb,E5;  } }
+	      { I[2] {  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_cmos_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_cmos_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_cmos_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_cmos_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_cmos_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_od_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_od_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_od_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_od_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_od_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0[1] { D@reset_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@reset_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@reset_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@reset_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0[1] { D@adstb_drv,E1;  } }
+	      { 0[2] { D@(adstb_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@adstb_drv,E1;  } }
+	      { 1[2] { U@(adstb_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@adstb_stb,E5;  } }
+	      { L[2] { L@(adstb_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@adstb_stb,E5;  } }
+	      { H[2] { H@(adstb_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_lower_drv,E1;  } }
+	      { 0[2] { D@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_lower_drv,E1;  } }
+	      { 1[2] { U@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_lower_stb,E5;  } }
+	      { L[2] { L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_lower_stb,E5;  } }
+	      { H[2] { H@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_upper_drv,E1;  } }
+	      { 0[2] { D@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_upper_drv,E1;  } }
+	      { 1[2] { U@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_upper_stb,E5;  } }
+	      { L[2] { L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_upper_stb,E5;  } }
+	      { H[2] { H@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbp_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbp_drv_a,E1;  } }
+	      { 0[2] { D@dstbp_drv_c,E3;  } }
+	      { 1[1] { U@dstbp_drv_a,E1;  } }
+	      { 1[2] { U@dstbp_drv_c,E3;  } }
+	      { L[1] { L@dstbp_stb_a,E5;  } }
+	      { L[2] { L@dstbp_stb_c,E6;  } }
+	      { H[1] { H@dstbp_stb_a,E5;  } }
+	      { H[2] { H@dstbp_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] { L@dstbp_stb_a,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@dstbp_stb_a,E5;  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 0[2] { D@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 1[1] { D@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 1[2] { D@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 2[1] { U@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 2[2] { U@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 3[1] { U@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 3[2] { U@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 4[1] { L@dstbp_stb_a,E5;  } }
+	      { 4[2] { L@dstbp_stb_c,E6;  } }
+	      { 5[1] { L@dstbp_stb_a,E5;  } }
+	      { 5[2] { L@dstbp_stb_c,E6;  } }
+	      { 6[1] { H@dstbp_stb_a,E5;  } }
+	      { 6[2] { H@dstbp_stb_c,E6;  } }
+	      { 7[1] { H@dstbp_stb_a,E5;  } }
+	      { 7[2] { H@dstbp_stb_c,E6;  } }
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbn_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbn_drv_a,E1;  } }
+	      { 0[2] { D@dstbn_drv_c,E3;  } }
+	      { 1[1] { U@dstbn_drv_a,E1;  } }
+	      { 1[2] { U@dstbn_drv_c,E3;  } }
+	      { L[1] { L@dstbn_stb_a,E5;  } }
+	      { L[2] { L@dstbn_stb_c,E6;  } }
+	      { H[1] { H@dstbn_stb_a,E5;  } }
+	      { H[2] { H@dstbn_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] { L@dstbn_stb_a,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@dstbn_stb_a,E5;  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 0[2] { D@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 1[1] { D@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 1[2] { D@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 2[1] { U@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 2[2] { U@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 3[1] { U@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 3[2] { U@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 4[1] { L@dstbn_stb_a,E5;  } }
+	      { 4[2] { L@dstbn_stb_c,E6;  } }
+	      { 5[1] { L@dstbn_stb_a,E5;  } }
+	      { 5[2] { L@dstbn_stb_c,E6;  } }
+	      { 6[1] { H@dstbn_stb_a,E5;  } }
+	      { 6[2] { H@dstbn_stb_c,E6;  } }
+	      { 7[1] { H@dstbn_stb_a,E5;  } }
+	      { 7[2] { H@dstbn_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q0_stb_a,E5;  } }
+	      { L[2] { L@data_q0_stb_c,E6;  } }
+	      { H[1] { H@data_q0_stb_a,E5;  } }
+	      { H[2] { H@data_q0_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] { L@data_q0_stb_a,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@data_q0_stb_a,E5;  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q0_stb_a,E5;  } }
+	      { 4[2] { L@data_q0_stb_c,E6;  } }
+	      { 5[1] { L@data_q0_stb_a,E5;  } }
+	      { 5[2] { L@data_q0_stb_c,E6;  } }
+	      { 6[1] { H@data_q0_stb_a,E5;  } }
+	      { 6[2] { H@data_q0_stb_c,E6;  } }
+	      { 7[1] { H@data_q0_stb_a,E5;  } }
+	      { 7[2] { H@data_q0_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q1_stb_a,E5;  } }
+	      { L[2] { L@data_q1_stb_c,E6;  } }
+	      { H[1] { H@data_q1_stb_a,E5;  } }
+	      { H[2] { H@data_q1_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] { L@data_q1_stb_a,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@data_q1_stb_a,E5;  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q1_stb_a,E5;  } }
+	      { 4[2] { L@data_q1_stb_c,E6;  } }
+	      { 5[1] { L@data_q1_stb_a,E5;  } }
+	      { 5[2] { L@data_q1_stb_c,E6;  } }
+	      { 6[1] { H@data_q1_stb_a,E5;  } }
+	      { 6[2] { H@data_q1_stb_c,E6;  } }
+	      { 7[1] { H@data_q1_stb_a,E5;  } }
+	      { 7[2] { H@data_q1_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q2_stb_a,E5;  } }
+	      { L[2] { L@data_q2_stb_c,E6;  } }
+	      { H[1] { H@data_q2_stb_a,E5;  } }
+	      { H[2] { H@data_q2_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] { L@data_q2_stb_a,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@data_q2_stb_a,E5;  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q2_stb_a,E5;  } }
+	      { 4[2] { L@data_q2_stb_c,E6;  } }
+	      { 5[1] { L@data_q2_stb_a,E5;  } }
+	      { 5[2] { L@data_q2_stb_c,E6;  } }
+	      { 6[1] { H@data_q2_stb_a,E5;  } }
+	      { 6[2] { H@data_q2_stb_c,E6;  } }
+	      { 7[1] { H@data_q2_stb_a,E5;  } }
+	      { 7[2] { H@data_q2_stb_c,E6;  } }
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] { D@data_drv_c,E3;  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] { U@data_drv_c,E3;  } }
+	      { L[1] { L@data_q3_stb_a,E5;  } }
+	      { L[2] { L@data_q3_stb_c,E6;  } }
+	      { H[1] { H@data_q3_stb_a,E5;  } }
+	      { H[2] { H@data_q3_stb_c,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] { L@data_q3_stb_a,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@data_q3_stb_a,E5;  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q3_stb_a,E5;  } }
+	      { 4[2] { L@data_q3_stb_c,E6;  } }
+	      { 5[1] { L@data_q3_stb_a,E5;  } }
+	      { 5[2] { L@data_q3_stb_c,E6;  } }
+	      { 6[1] { H@data_q3_stb_a,E5;  } }
+	      { 6[2] { H@data_q3_stb_c,E6;  } }
+	      { 7[1] { H@data_q3_stb_a,E5;  } }
+	      { 7[2] { H@data_q3_stb_c,E6;  } }
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapclk_drv,E1;  } }
+	      { 0[2] { D@tapclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@tapclk_drv,E1;  } }
+	      { 1[2] { U@tapclk_drv+Dcyc/2,E3;  } }
+	      { Z[1] { Z@tapclk_drv,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0[1] { D@taprst_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@taprst_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapin_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@tapin_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { 0[1] { L@tapout_stb,E5;  } }
+	      { 0[2] {  } }
+	      { 1[1] { H@tapout_stb,E5;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] { L@tapout_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@tapout_stb,E5;  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@dft_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dft_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { L[1] { L@dft_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dft_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@misc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@misc_stb,E5;  } }
+	      { H[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block ddr_1_timing
+
+
+#Block Created By "PLT"
+Timing ddr_2_ac_timing {
+    CommonSection  {
+      Domain default  [DataRate 2]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0[1] { D@bclk_drv,E1;  } }
+	      { 0[2] { D@bclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@bclk_drv,E1;  } }
+	      { 1[2] { U@bclk_drv+Dcyc/2,E3;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0[1] { D@cc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@cc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@cc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@cc_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_cmos_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_cmos_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_cmos_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_cmos_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_cmos_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_od_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_od_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_od_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_od_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_od_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0[1] { D@reset_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@reset_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@reset_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@reset_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0[1] { D@adstb_drv,E1;  } }
+	      { 0[2] { D@(adstb_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@adstb_drv,E1;  } }
+	      { 1[2] { U@(adstb_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@adstb_stb,E5;  } }
+	      { L[2] { L@(adstb_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@adstb_stb,E5;  } }
+	      { H[2] { H@(adstb_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_lower_drv,E1;  } }
+	      { 0[2] { D@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_lower_drv,E1;  } }
+	      { 1[2] { U@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_lower_stb,E5;  } }
+	      { L[2] { L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_lower_stb,E5;  } }
+	      { H[2] { H@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_upper_drv,E1;  } }
+	      { 0[2] { D@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_upper_drv,E1;  } }
+	      { 1[2] { U@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_upper_stb,E5;  } }
+	      { L[2] { L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_upper_stb,E5;  } }
+	      { H[2] { H@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbp_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbp_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dstbp_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@dstbp_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dstbp_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 0[2] { D@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 1[1] { D@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 1[2] { D@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 2[1] { U@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 2[2] { U@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 3[1] { U@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 3[2] { U@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 4[1] { L@dstbp_stb_b,E5;  } }
+	      { 4[2] { L@dstbp_stb_d,E6;  } }
+	      { 5[1] { H@dstbp_stb_b,E5;  } }
+	      { 5[2] { H@dstbp_stb_d,E6;  } }
+	      { 6[1] { L@dstbp_stb_b,E5;  } }
+	      { 6[2] { L@dstbp_stb_d,E6;  } }
+	      { 7[1] { H@dstbp_stb_b,E5;  } }
+	      { 7[2] { H@dstbp_stb_d,E6;  } }
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbn_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbn_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dstbn_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@dstbn_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dstbn_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 0[2] { D@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 1[1] { D@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 1[2] { D@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 2[1] { U@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 2[2] { U@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 3[1] { U@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 3[2] { U@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 4[1] { L@dstbn_stb_b,E5;  } }
+	      { 4[2] { L@dstbn_stb_d,E6;  } }
+	      { 5[1] { H@dstbn_stb_b,E5;  } }
+	      { 5[2] { H@dstbn_stb_d,E6;  } }
+	      { 6[1] { L@dstbn_stb_b,E5;  } }
+	      { 6[2] { L@dstbn_stb_d,E6;  } }
+	      { 7[1] { H@dstbn_stb_b,E5;  } }
+	      { 7[2] { H@dstbn_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q0_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q0_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q0_stb_b,E5;  } }
+	      { 4[2] { L@data_q0_stb_d,E6;  } }
+	      { 5[1] { H@data_q0_stb_b,E5;  } }
+	      { 5[2] { H@data_q0_stb_d,E6;  } }
+	      { 6[1] { L@data_q0_stb_b,E5;  } }
+	      { 6[2] { L@data_q0_stb_d,E6;  } }
+	      { 7[1] { H@data_q0_stb_b,E5;  } }
+	      { 7[2] { H@data_q0_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q1_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q1_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q1_stb_b,E5;  } }
+	      { 4[2] { L@data_q1_stb_d,E6;  } }
+	      { 5[1] { H@data_q1_stb_b,E5;  } }
+	      { 5[2] { H@data_q1_stb_d,E6;  } }
+	      { 6[1] { L@data_q1_stb_b,E5;  } }
+	      { 6[2] { L@data_q1_stb_d,E6;  } }
+	      { 7[1] { H@data_q1_stb_b,E5;  } }
+	      { 7[2] { H@data_q1_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q2_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q2_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q2_stb_b,E5;  } }
+	      { 4[2] { L@data_q2_stb_d,E6;  } }
+	      { 5[1] { H@data_q2_stb_b,E5;  } }
+	      { 5[2] { H@data_q2_stb_d,E6;  } }
+	      { 6[1] { L@data_q2_stb_b,E5;  } }
+	      { 6[2] { L@data_q2_stb_d,E6;  } }
+	      { 7[1] { H@data_q2_stb_b,E5;  } }
+	      { 7[2] { H@data_q2_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q3_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q3_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q3_stb_b,E5;  } }
+	      { 4[2] { L@data_q3_stb_d,E6;  } }
+	      { 5[1] { H@data_q3_stb_b,E5;  } }
+	      { 5[2] { H@data_q3_stb_d,E6;  } }
+	      { 6[1] { L@data_q3_stb_b,E5;  } }
+	      { 6[2] { L@data_q3_stb_d,E6;  } }
+	      { 7[1] { H@data_q3_stb_b,E5;  } }
+	      { 7[2] { H@data_q3_stb_d,E6;  } }
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapclk_drv,E1;  } }
+	      { 0[2] { D@tapclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@tapclk_drv,E1;  } }
+	      { 1[2] { U@tapclk_drv+Dcyc/2,E3;  } }
+	      { Z[1] { Z@tapclk_drv,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0[1] { D@taprst_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@taprst_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapin_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@tapin_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { 0[1] { L@tapout_stb,E5;  } }
+	      { 0[2] {  } }
+	      { 1[1] { H@tapout_stb,E5;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] { L@tapout_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@tapout_stb,E5;  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@dft_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dft_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { L[1] { L@dft_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dft_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@misc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@misc_stb,E5;  } }
+	      { H[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block ddr_2_ac_timing
+
+
+#Block Created By "PLT"
+Timing ddr_2_timing {
+    CommonSection  {
+      Domain default  [DataRate 2]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0[1] { D@bclk_drv,E1;  } }
+	      { 0[2] { D@bclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@bclk_drv,E1;  } }
+	      { 1[2] { U@bclk_drv+Dcyc/2,E3;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0[1] { D@cc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@cc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@cc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@cc_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] {  } }
+	      { O[1] { L@cc_stb,E5;  } }
+	      { O[2] {  } }
+	      { I[1] { H@cc_stb,E5;  } }
+	      { I[2] {  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_cmos_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_cmos_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_cmos_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_cmos_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_cmos_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0[1] { D@asyn_od_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@asyn_od_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@asyn_od_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@asyn_od_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_od_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0[1] { D@reset_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@reset_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@reset_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@reset_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0[1] { D@adstb_drv,E1;  } }
+	      { 0[2] { D@(adstb_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@adstb_drv,E1;  } }
+	      { 1[2] { U@(adstb_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@adstb_stb,E5;  } }
+	      { L[2] { L@(adstb_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@adstb_stb,E5;  } }
+	      { H[2] { H@(adstb_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_lower_drv,E1;  } }
+	      { 0[2] { D@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_lower_drv,E1;  } }
+	      { 1[2] { U@(addr_lower_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_lower_stb,E5;  } }
+	      { L[2] { L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_lower_stb,E5;  } }
+	      { H[2] { H@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page1 {
+	      { 0[1] { D@addr_upper_drv,E1;  } }
+	      { 0[2] { D@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { 1[1] { U@addr_upper_drv,E1;  } }
+	      { 1[2] { U@(addr_upper_drv+Dcyc/2),E3;  } }
+	      { L[1] { L@addr_upper_stb,E5;  } }
+	      { L[2] { L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { H[1] { H@addr_upper_stb,E5;  } }
+	      { H[2] { H@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbp_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbp_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dstbp_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@dstbp_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dstbp_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] {  } }
+	      { O[2] {  } }
+	      { I[1] {  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 0[2] { D@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 1[1] { D@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 1[2] { D@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 2[1] { U@dstbp_drv_a,E1; D@dstbp_drv_b,E2;  } }
+	      { 2[2] { U@dstbp_drv_c,E3; D@dstbp_drv_d,E4;  } }
+	      { 3[1] { U@dstbp_drv_a,E1; U@dstbp_drv_b,E2;  } }
+	      { 3[2] { U@dstbp_drv_c,E3; U@dstbp_drv_d,E4;  } }
+	      { 4[1] { L@dstbp_stb_b,E5;  } }
+	      { 4[2] { L@dstbp_stb_d,E6;  } }
+	      { 5[1] { H@dstbp_stb_b,E5;  } }
+	      { 5[2] { H@dstbp_stb_d,E6;  } }
+	      { 6[1] { L@dstbp_stb_b,E5;  } }
+	      { 6[2] { L@dstbp_stb_d,E6;  } }
+	      { 7[1] { H@dstbp_stb_b,E5;  } }
+	      { 7[2] { H@dstbp_stb_d,E6;  } }
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { Z[1] { Z@dstbn_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbn_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dstbn_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@dstbn_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dstbn_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] {  } }
+	      { O[2] {  } }
+	      { I[1] {  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 0[2] { D@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 1[1] { D@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 1[2] { D@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 2[1] { U@dstbn_drv_a,E1; D@dstbn_drv_b,E2;  } }
+	      { 2[2] { U@dstbn_drv_c,E3; D@dstbn_drv_d,E4;  } }
+	      { 3[1] { U@dstbn_drv_a,E1; U@dstbn_drv_b,E2;  } }
+	      { 3[2] { U@dstbn_drv_c,E3; U@dstbn_drv_d,E4;  } }
+	      { 4[1] { L@dstbn_stb_b,E5;  } }
+	      { 4[2] { L@dstbn_stb_d,E6;  } }
+	      { 5[1] { H@dstbn_stb_b,E5;  } }
+	      { 5[2] { H@dstbn_stb_d,E6;  } }
+	      { 6[1] { L@dstbn_stb_b,E5;  } }
+	      { 6[2] { L@dstbn_stb_d,E6;  } }
+	      { 7[1] { H@dstbn_stb_b,E5;  } }
+	      { 7[2] { H@dstbn_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q0_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q0_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] {  } }
+	      { O[2] {  } }
+	      { I[1] {  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q0_stb_b,E5;  } }
+	      { 4[2] { L@data_q0_stb_d,E6;  } }
+	      { 5[1] { H@data_q0_stb_b,E5;  } }
+	      { 5[2] { H@data_q0_stb_d,E6;  } }
+	      { 6[1] { L@data_q0_stb_b,E5;  } }
+	      { 6[2] { L@data_q0_stb_d,E6;  } }
+	      { 7[1] { H@data_q0_stb_b,E5;  } }
+	      { 7[2] { H@data_q0_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q1_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q1_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] {  } }
+	      { O[2] {  } }
+	      { I[1] {  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q1_stb_b,E5;  } }
+	      { 4[2] { L@data_q1_stb_d,E6;  } }
+	      { 5[1] { H@data_q1_stb_b,E5;  } }
+	      { 5[2] { H@data_q1_stb_d,E6;  } }
+	      { 6[1] { L@data_q1_stb_b,E5;  } }
+	      { 6[2] { L@data_q1_stb_d,E6;  } }
+	      { 7[1] { H@data_q1_stb_b,E5;  } }
+	      { 7[2] { H@data_q1_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q2_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q2_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] {  } }
+	      { O[2] {  } }
+	      { I[1] {  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q2_stb_b,E5;  } }
+	      { 4[2] { L@data_q2_stb_d,E6;  } }
+	      { 5[1] { H@data_q2_stb_b,E5;  } }
+	      { 5[2] { H@data_q2_stb_d,E6;  } }
+	      { 6[1] { L@data_q2_stb_b,E5;  } }
+	      { 6[2] { L@data_q2_stb_d,E6;  } }
+	      { 7[1] { H@data_q2_stb_b,E5;  } }
+	      { 7[2] { H@data_q2_stb_d,E6;  } }
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page1 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_a,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@data_drv_a,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@data_q3_stb_b,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@data_q3_stb_b,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { O[1] {  } }
+	      { O[2] {  } }
+	      { I[1] {  } }
+	      { I[2] {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0[1] { D@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 0[2] { D@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 1[1] { D@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 1[2] { D@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 2[1] { U@data_drv_a,E1; D@data_drv_b,E2;  } }
+	      { 2[2] { U@data_drv_c,E3; D@data_drv_d,E4;  } }
+	      { 3[1] { U@data_drv_a,E1; U@data_drv_b,E2;  } }
+	      { 3[2] { U@data_drv_c,E3; U@data_drv_d,E4;  } }
+	      { 4[1] { L@data_q3_stb_b,E5;  } }
+	      { 4[2] { L@data_q3_stb_d,E6;  } }
+	      { 5[1] { H@data_q3_stb_b,E5;  } }
+	      { 5[2] { H@data_q3_stb_d,E6;  } }
+	      { 6[1] { L@data_q3_stb_b,E5;  } }
+	      { 6[2] { L@data_q3_stb_d,E6;  } }
+	      { 7[1] { H@data_q3_stb_b,E5;  } }
+	      { 7[2] { H@data_q3_stb_d,E6;  } }
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapclk_drv,E1;  } }
+	      { 0[2] { D@tapclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@tapclk_drv,E1;  } }
+	      { 1[2] { U@tapclk_drv+Dcyc/2,E3;  } }
+	      { Z[1] { Z@tapclk_drv,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0[1] { D@taprst_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@taprst_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0[1] { D@tapin_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@tapin_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { 0[1] { L@tapout_stb,E5;  } }
+	      { 0[2] {  } }
+	      { 1[1] { H@tapout_stb,E5;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] { L@tapout_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@tapout_stb,E5;  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0[1] { D@dft_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@dft_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { L[1] { L@dft_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@dft_stb,E5;  } }
+	      { H[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { L[1] { L@misc_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@misc_stb,E5;  } }
+	      { H[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block ddr_2_timing
+
+
+#Block Created By "PLT"
+Timing ddr_sbft_timing {
+    CommonSection  {
+      Domain default  [DataRate 2]  {
+			PeriodTable {
+ 		     Period Period_3  {  TPer_3;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0[1] { D@bclk_drv,E1;  } }
+	      { 0[2] { D@bclk_drv+Dcyc/2,E3;  } }
+	      { 1[1] { U@bclk_drv,E1;  } }
+	      { 1[2] { U@bclk_drv+Dcyc/2,E3;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+		  WaveformTable page3 {
+	      { 0[1] { D@bclk_drv,E1; D@bclk_drv+Dcyc/2,E2;  } }
+	      { 0[2] { D@bclk_drv+Dcyc,E3; D@bclk_drv+1.5*Dcyc,E4;  } }
+	      { 1[1] { D@bclk_drv,E1; U@bclk_drv+Dcyc/2,E2;  } }
+	      { 1[2] { D@bclk_drv+Dcyc,E3; U@bclk_drv+1.5*Dcyc,E4;  } }
+	      { 2[1] { U@bclk_drv,E1; D@bclk_drv+Dcyc/2,E2;  } }
+	      { 2[2] { U@bclk_drv+Dcyc,E3; D@bclk_drv+1.5*Dcyc,E4;  } }
+	      { 3[1] { U@bclk_drv,E1; U@bclk_drv+Dcyc/2,E2;  } }
+	      { 3[2] { U@bclk_drv+Dcyc,E3; U@bclk_drv+1.5*Dcyc,E4;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { C[1] { U@bclk_drv,E1; D@bclk_drv+Dcyc/2,E2;  } }
+	      { C[2] { U@bclk_drv+Dcyc,E3; D@bclk_drv+1.5*Dcyc,E4;  } }
+	      { c[1] { D@bclk_drv,E1; U@bclk_drv+Dcyc/2,E2;  } }
+	      { c[2] { D@bclk_drv+Dcyc,E3; U@bclk_drv+1.5*Dcyc,E4;  } }
+		  }
+			}
+			Pin sbft_cc {
+		  WaveformTable page3 {
+	      { 0[1] { D@cc_drv,E1;  } }
+	      { 0[2] { D@cc_drv+Dcyc,E3;  } }
+	      { 1[1] { U@cc_drv,E1;  } }
+	      { 1[2] { U@cc_drv+Dcyc,E3;  } }
+	      { L[1] { L@cc_stb,E5;  } }
+	      { L[2] { L@cc_stb+Dcyc,E6;  } }
+	      { H[1] { H@cc_stb,E5;  } }
+	      { H[2] { H@cc_stb+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] { Z@cc_x+Dcyc,E3;  } }
+		  }
+			}
+			Pin bpm3t {
+		  WaveformTable page3 {
+	      { 0[1] { D@cc_drv,E1;  } }
+	      { 0[2] { D@cc_drv+Dcyc,E3;  } }
+	      { 1[1] { U@cc_drv,E1;  } }
+	      { 1[2] { U@cc_drv+Dcyc,E3;  } }
+	      { L[1] { L@cc_stb+bpm3t_offset,E5;  } }
+	      { L[2] { L@cc_stb+Dcyc+bpm3t_offset,E6;  } }
+	      { H[1] { H@cc_stb+bpm3t_offset,E5;  } }
+	      { H[2] { H@cc_stb+Dcyc+bpm3t_offset,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] { Z@cc_x+Dcyc,E3;  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page3 {
+	      { 0[1] { D@asyn_cmos_drv,E1;  } }
+	      { 0[2] { D@asyn_cmos_drv+Dcyc,E3;  } }
+	      { 1[1] { U@asyn_cmos_drv,E1;  } }
+	      { 1[2] { U@asyn_cmos_drv+Dcyc,E3;  } }
+	      { L[1] { L@asyn_cmos_stb,E5;  } }
+	      { L[2] { L@asyn_cmos_stb+Dcyc,E6;  } }
+	      { H[1] { H@asyn_cmos_stb,E5;  } }
+	      { H[2] { H@asyn_cmos_stb+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_cmos_x,E1;  } }
+	      { Z[2] { Z@asyn_cmos_x+Dcyc,E3;  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page3 {
+	      { 0[1] { D@asyn_od_drv,E1;  } }
+	      { 0[2] { D@asyn_od_drv+Dcyc,E3;  } }
+	      { 1[1] { U@asyn_od_drv,E1;  } }
+	      { 1[2] { U@asyn_od_drv+Dcyc,E3;  } }
+	      { L[1] { L@asyn_od_stb,E5;  } }
+	      { L[2] { L@asyn_od_stb+Dcyc,E6;  } }
+	      { H[1] { H@asyn_od_stb,E5;  } }
+	      { H[2] { H@asyn_od_stb+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@asyn_od_x,E1;  } }
+	      { Z[2] { Z@asyn_od_x+Dcyc,E3;  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page3 {
+	      { 0[1] { D@reset_drv,E1;  } }
+	      { 0[2] { D@reset_drv+Dcyc,E3;  } }
+	      { 1[1] { U@reset_drv,E1;  } }
+	      { 1[2] { U@reset_drv+Dcyc,E3;  } }
+	      { L[1] { L@reset_stb,E5;  } }
+	      { L[2] { L@reset_stb+Dcyc,E6;  } }
+	      { H[1] { H@reset_stb,E5;  } }
+	      { H[2] { H@reset_stb+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@cc_x,E1;  } }
+	      { Z[2] { Z@cc_x+Dcyc,E3;  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page3 {
+	      { 0[1] { D@adstb_drv,E1;  } }
+	      { 0[2] { D@(adstb_drv+Dcyc),E3;  } }
+	      { 1[1] { U@adstb_drv,E1;  } }
+	      { 1[2] { U@(adstb_drv+Dcyc),E3;  } }
+	      { L[1] { L@adstb_stb,E5;  } }
+	      { L[2] { L@(adstb_stb+Dcyc),E6;  } }
+	      { H[1] { H@adstb_stb,E5;  } }
+	      { H[2] { H@(adstb_stb+Dcyc),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@adstb_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page3 {
+	      { 0[1] { D@addr_lower_drv_sbft,E1;  } }
+	      { 0[2] { D@(addr_lower_drv_sbft+Dcyc),E3;  } }
+	      { 1[1] { U@addr_lower_drv_sbft,E1;  } }
+	      { 1[2] { U@(addr_lower_drv_sbft+Dcyc),E3;  } }
+	      { L[1] { L@addr_lower_stb,E5;  } }
+	      { L[2] { L@(addr_lower_stb+Dcyc),E6;  } }
+	      { H[1] { H@addr_lower_stb,E5;  } }
+	      { H[2] { H@(addr_lower_stb+Dcyc),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page3 {
+	      { 0[1] { D@addr_upper_drv_sbft,E1;  } }
+	      { 0[2] { D@(addr_upper_drv_sbft+Dcyc),E3;  } }
+	      { 1[1] { U@addr_upper_drv_sbft,E1;  } }
+	      { 1[2] { U@(addr_upper_drv_sbft+Dcyc),E3;  } }
+	      { L[1] { L@addr_upper_stb,E5;  } }
+	      { L[2] { L@(addr_upper_stb+Dcyc),E6;  } }
+	      { H[1] { H@addr_upper_stb,E5;  } }
+	      { H[2] { H@(addr_upper_stb+Dcyc),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { Z[1] { Z@addr_x,E1;  } }
+	      { Z[2] {  } }
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page3 {
+	      { Z[1] { Z@dstbp_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbp_drv_a,E1;  } }
+	      { 0[2] { D@dstbp_drv_a+Dcyc,E3;  } }
+	      { 1[1] { U@dstbp_drv_a,E1;  } }
+	      { 1[2] { U@dstbp_drv_a+Dcyc,E3;  } }
+	      { L[1] { L@dstbp_stb_a,E5;  } }
+	      { L[2] { L@dstbp_stb_a+Dcyc,E6;  } }
+	      { H[1] { H@dstbp_stb_a,E5;  } }
+	      { H[2] { H@dstbp_stb_a+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page3 {
+	      { Z[1] { Z@dstbn_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@dstbn_drv_a,E1;  } }
+	      { 0[2] { D@dstbn_drv_a+Dcyc,E3;  } }
+	      { 1[1] { U@dstbn_drv_a,E1;  } }
+	      { 1[2] { U@dstbn_drv_a+Dcyc,E3;  } }
+	      { L[1] { L@dstbn_stb_a,E5;  } }
+	      { L[2] { L@dstbn_stb_a+Dcyc,E6;  } }
+	      { H[1] { H@dstbn_stb_a,E5;  } }
+	      { H[2] { H@dstbn_stb_a+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page3 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_sbft,E1;  } }
+	      { 0[2] { D@data_drv_sbft+Dcyc,E3;  } }
+	      { 1[1] { U@data_drv_sbft,E1;  } }
+	      { 1[2] { U@data_drv_sbft+Dcyc,E3;  } }
+	      { L[1] { L@data_q0_stb_a,E5;  } }
+	      { L[2] { L@data_q0_stb_a+Dcyc,E6;  } }
+	      { H[1] { H@data_q0_stb_a,E5;  } }
+	      { H[2] { H@data_q0_stb_a+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page3 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_sbft,E1;  } }
+	      { 0[2] { D@data_drv_sbft+Dcyc,E3;  } }
+	      { 1[1] { U@data_drv_sbft,E1;  } }
+	      { 1[2] { U@data_drv_sbft+Dcyc,E3;  } }
+	      { L[1] { L@data_q1_stb_a,E5;  } }
+	      { L[2] { L@data_q1_stb_a+Dcyc,E6;  } }
+	      { H[1] { H@data_q1_stb_a,E5;  } }
+	      { H[2] { H@data_q1_stb_a+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page3 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_sbft,E1;  } }
+	      { 0[2] { D@data_drv_sbft+Dcyc,E3;  } }
+	      { 1[1] { U@data_drv_sbft,E1;  } }
+	      { 1[2] { U@data_drv_sbft+Dcyc,E3;  } }
+	      { L[1] { L@data_q2_stb_a,E5;  } }
+	      { L[2] { L@data_q2_stb_a+Dcyc,E6;  } }
+	      { H[1] { H@data_q2_stb_a,E5;  } }
+	      { H[2] { H@data_q2_stb_a+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page3 {
+	      { Z[1] { Z@data_x_a,E1;  } }
+	      { Z[2] {  } }
+	      { 0[1] { D@data_drv_sbft,E1;  } }
+	      { 0[2] { D@data_drv_sbft+Dcyc,E3;  } }
+	      { 1[1] { U@data_drv_sbft,E1;  } }
+	      { 1[2] { U@data_drv_sbft+Dcyc,E3;  } }
+	      { L[1] { L@data_q3_stb_a,E5;  } }
+	      { L[2] { L@data_q3_stb_a+Dcyc,E6;  } }
+	      { H[1] { H@data_q3_stb_a,E5;  } }
+	      { H[2] { H@data_q3_stb_a+Dcyc,E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page3 {
+	      { 0[1] { D@tapclk_drv,E1;  } }
+	      { 0[2] { D@tapclk_drv+Dcyc,E3;  } }
+	      { 1[1] { U@tapclk_drv,E1;  } }
+	      { 1[2] { U@tapclk_drv+Dcyc,E3;  } }
+	      { Z[1] { Z@tapclk_drv,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page3 {
+	      { 0[1] { D@taprst_drv,E1;  } }
+	      { 0[2] { D@taprst_drv+Dcyc,E3;  } }
+	      { 1[1] { U@taprst_drv,E1;  } }
+	      { 1[2] { U@taprst_drv+Dcyc,E3;  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page3 {
+	      { 0[1] { D@tapin_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@tapin_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page3 {
+	      { 0[1] { L@tapout_stb,E5;  } }
+	      { 0[2] {  } }
+	      { 1[1] { H@tapout_stb,E5;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] { L@tapout_stb,E5;  } }
+	      { L[2] {  } }
+	      { H[1] { H@tapout_stb,E5;  } }
+	      { H[2] {  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page3 {
+	      { 0[1] { D@dft_drv,E1;  } }
+	      { 0[2] { D@(dft_drv+Dcyc),E3;  } }
+	      { 1[1] { U@dft_drv,E1;  } }
+	      { 1[2] { U@(dft_drv+Dcyc),E3;  } }
+	      { Z[1] { Z@tap_x,E1;  } }
+	      { Z[2] { Z@tap_x,E3;  } }
+	      { L[1] { L@dft_stb,E5;  } }
+	      { L[2] { L@(dft_stb+Dcyc),E6;  } }
+	      { H[1] { H@dft_stb,E5;  } }
+	      { H[2] { H@(dft_stb+Dcyc),E6;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page3 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] { D@(misc_drv+Dcyc),E3;  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] { U@(misc_drv+Dcyc),E3;  } }
+	      { L[1] { L@misc_stb,E5;  } }
+	      { L[2] { L@(misc_stb+Dcyc),E6;  } }
+	      { H[1] { H@misc_stb,E5;  } }
+	      { H[2] { H@(misc_stb+Dcyc),E6;  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] { Z@misc_x+Dcyc,E3;  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page3 {
+	      { 0[1] { D@misc_drv,E1;  } }
+	      { 0[2] {  } }
+	      { 1[1] { U@misc_drv,E1;  } }
+	      { 1[2] {  } }
+	      { Z[1] { Z@misc_x,E1;  } }
+	      { Z[2] {  } }
+	      { X[1] {  } }
+	      { X[2] {  } }
+	      { L[1] {  } }
+	      { L[2] {  } }
+	      { H[1] {  } }
+	      { H[2] {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block ddr_sbft_timing
+
+
+#Block Created By "PLT"
+Timing pirom_timing {
+    CommonSection  {
+      Domain default  [DataRate 1]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin SM_D {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_sig_drv,E1;  } }
+	      { 1 { U@smbus_sig_drv,E1;  } }
+	      { X { Z@smbus_x_drv,E1;  } }
+	      { L { Z@0nS,E1; L@smbus_sig_stb,E6;  } }
+	      { H { Z@0nS,E1; H@smbus_sig_stb,E5;  } }
+	      { Z { Z@0nS,E1;  } }
+		  }
+			}
+			Pin SM_EP_A2 {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_sig_drv,E1;  } }
+	      { 1 { U@smbus_sig_drv,E1;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+	      { Z {  } }
+		  }
+			}
+			Pin SM_EP_A1 {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_sig_drv,E1;  } }
+	      { 1 { U@smbus_sig_drv,E1;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+	      { Z {  } }
+		  }
+			}
+			Pin SM_EP_A0 {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_sig_drv,E1;  } }
+	      { 1 { U@smbus_sig_drv,E1;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+	      { Z {  } }
+		  }
+			}
+			Pin SM_WP {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_sig_drv,E1;  } }
+	      { 1 { U@smbus_sig_drv,E1;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+	      { Z {  } }
+		  }
+			}
+			Pin SM_CLK {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_clk_drv,E1;  } }
+	      { 1 { U@smbus_clk_drv,E1;  } }
+	      { X { Z@smbus_x_drv,E1;  } }
+	      { L { Z@0nS,E1; L@smbus_sig_stb,E6;  } }
+	      { H { Z@0nS,E1; H@smbus_sig_stb,E5;  } }
+	      { Z { Z@0nS,E1;  } }
+		  }
+			}
+			Pin Pirom_unused_pins {
+		  WaveformTable page1 {
+	      { 0 { D@smbus_sig_drv,E1;  } }
+	      { 1 { U@smbus_sig_drv,E1;  } }
+	      { X { Z@smbus_x_drv,E1;  } }
+	      { L {  } }
+	      { H {  } }
+	      { Z {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block pirom_timing
+
+
+#Block Created By "PLT"
+Timing scan_timing {
+    CommonSection  {
+      Domain default  [DataRate 1]  {
+			PeriodTable {
+ 		     Period Period_2  {  TPer_2;  }
+			}
+			Pin sc_data_in {
+		  WaveformTable page1 {
+	      { 0 { D@sc_data_drv,E1;  } }
+	      { 1 { U@sc_data_drv,E1;  } }
+	      { L { L@sc_data_stb,E6;  } }
+	      { H { H@sc_data_stb,E5;  } }
+	      { Z { Z@sc_data_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin sc_addr_in {
+		  WaveformTable page1 {
+	      { 0 { D@sc_addr_drv,E1;  } }
+	      { 1 { U@sc_addr_drv,E1;  } }
+	      { L { L@sc_addr_stb,E6;  } }
+	      { H { H@sc_addr_stb,E5;  } }
+	      { Z { Z@sc_addr_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin sc_data_out {
+		  WaveformTable page1 {
+	      { 0 { D@sc_data_drv,E1;  } }
+	      { 1 { U@sc_data_drv,E1;  } }
+	      { L { L@sc_data_stb,E6;  } }
+	      { H { H@sc_data_stb,E5;  } }
+	      { Z { Z@sc_data_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin sc_addr_out {
+		  WaveformTable page1 {
+	      { 0 { D@sc_addr_drv,E1;  } }
+	      { 1 { U@sc_addr_drv,E1;  } }
+	      { L { L@sc_addr_stb,E6;  } }
+	      { H { H@sc_addr_stb,E5;  } }
+	      { Z { Z@sc_addr_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0 { D@tapclk_drv,E1;  } }
+	      { 1 { U@tapclk_drv,E1;  } }
+	      { C { U@tapclk_drv,E2; D@(tapclk_drv+Dcyc/2),E3;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0 { D@taprst_drv,E1;  } }
+	      { 1 { U@taprst_drv,E1;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0 { D@tapin_drv,E1;  } }
+	      { 1 { U@tapin_drv,E1;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { L { L@tapout_stb,E6;  } }
+	      { H { H@tapout_stb,E5;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0 { D@reset_drv,E1;  } }
+	      { 1 { U@reset_drv,E1;  } }
+	      { Z { Z@sc_reset_x,E3;  } }
+	      { L { L@reset_stb,E6;  } }
+	      { H { H@reset_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin sc_addr_upper {
+		  WaveformTable page1 {
+	      { 0 { D@addr_upper_drv,E1;  } }
+	      { 1 { U@addr_upper_drv,E1;  } }
+	      { Z { Z@addr_x,E3;  } }
+	      { L { L@addr_upper_stb,E6;  } }
+	      { H { H@addr_upper_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin sc_addr_lower {
+		  WaveformTable page1 {
+	      { 0 { D@addr_lower_drv,E1;  } }
+	      { 1 { U@addr_lower_drv,E1;  } }
+	      { Z { Z@addr_x,E3;  } }
+	      { L { L@addr_lower_stb,E6;  } }
+	      { H { H@addr_lower_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin DINV3t0nn_0 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q0_stb,E6;  } }
+	      { H { H@data_q0_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin DINV3t0nn_1 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q1_stb,E6;  } }
+	      { H { H@data_q1_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin DINV3t0nn_2 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q2_stb,E6;  } }
+	      { H { H@data_q2_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin DINV3t0nn_3 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q3_stb,E6;  } }
+	      { H { H@data_q3_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0 { D@bclk_drv,E1;  } }
+	      { 1 { U@bclk_drv,E1;  } }
+	      { C { U@bclk_drv,E2; D@(bclk_drv+Dcyc/2),E3;  } }
+	      { c { D@bclk_drv,E2; U@(bclk_drv+Dcyc/2),E3;  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0 { D@cc_drv,E1;  } }
+	      { 1 { U@cc_drv,E1;  } }
+	      { Z { Z@cc_x,E2;  } }
+	      { L { L@cc_stb,E6;  } }
+	      { H { H@cc_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0 { D@asyn_cmos_drv,E1;  } }
+	      { 1 { U@asyn_cmos_drv,E1;  } }
+	      { Z { Z@asyn_cmos_x,E2;  } }
+	      { L { L@asyn_cmos_stb,E6;  } }
+	      { H { H@asyn_cmos_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0 { D@asyn_od_drv,E1;  } }
+	      { 1 { U@asyn_od_drv,E1;  } }
+	      { Z { Z@asyn_od_x,E2;  } }
+	      { L { L@asyn_od_stb,E6;  } }
+	      { H { H@asyn_od_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0 { D@adstb_drv,E1;  } }
+	      { 1 { U@adstb_drv,E1;  } }
+	      { Z { Z@adstb_x,E3;  } }
+	      { L { L@adstb_stb,E5; X@(adstb_stb+Dcyc/2),E6;  } }
+	      { H { H@adstb_stb,E5; X@(adstb_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@adstb_drv,E1; D@(adstb_drv+Dcyc/2),E2;  } }
+	      { 1 { D@adstb_drv,E1; U@(adstb_drv+Dcyc/2),E2;  } }
+	      { 2 { U@adstb_drv,E1; D@(adstb_drv+Dcyc/2),E2;  } }
+	      { 3 { U@adstb_drv,E1; U@(adstb_drv+Dcyc/2),E2;  } }
+	      { 4 { L@adstb_stb,E5; L@(adstb_stb+Dcyc/2),E6;  } }
+	      { 5 { L@adstb_stb,E5; H@(adstb_stb+Dcyc/2),E6;  } }
+	      { 6 { H@adstb_stb,E5; L@(adstb_stb+Dcyc/2),E6;  } }
+	      { 7 { H@adstb_stb,E5; H@(adstb_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { 0 { D@dstbn_drv,E1;  } }
+	      { 1 { U@dstbn_drv,E1;  } }
+	      { Z { Z@dstbn_x,E3;  } }
+	      { L { L@dstbn_stb,E5; X@(dstbn_stb+Dcyc/2),E6;  } }
+	      { H { H@dstbn_stb,E5; X@(dstbn_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@dstbn_drv,E1; D@(dstbn_drv+data_quarter),E2;  } }
+	      { 1 { D@dstbn_drv,E1; U@(dstbn_drv+data_quarter),E2;  } }
+	      { 2 { U@dstbn_drv,E1; D@(dstbn_drv+data_quarter),E2;  } }
+	      { 3 { U@dstbn_drv,E1; U@(dstbn_drv+data_quarter),E2;  } }
+	      { 4 { L@dstbn_stb,E5; L@(dstbn_stb+data_quarter),E6;  } }
+	      { 5 { L@dstbn_stb,E5; H@(dstbn_stb+data_quarter),E6;  } }
+	      { 6 { H@dstbn_stb,E5; L@(dstbn_stb+data_quarter),E6;  } }
+	      { 7 { H@dstbn_stb,E5; H@(dstbn_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { 0 { D@dstbp_drv,E1;  } }
+	      { 1 { U@dstbp_drv,E1;  } }
+	      { Z { Z@dstbp_x,E3;  } }
+	      { L { L@dstbp_stb,E5; X@(dstbp_stb+Dcyc/2),E6;  } }
+	      { H { H@dstbp_stb,E5; X@(dstbp_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@dstbp_drv,E1; D@(dstbp_drv+data_quarter),E2;  } }
+	      { 1 { D@dstbp_drv,E1; U@(dstbp_drv+data_quarter),E2;  } }
+	      { 2 { U@dstbp_drv,E1; D@(dstbp_drv+data_quarter),E2;  } }
+	      { 3 { U@dstbp_drv,E1; U@(dstbp_drv+data_quarter),E2;  } }
+	      { 4 { L@dstbp_stb,E5; L@(dstbp_stb+data_quarter),E6;  } }
+	      { 5 { L@dstbp_stb,E5; H@(dstbp_stb+data_quarter),E6;  } }
+	      { 6 { H@dstbp_stb,E5; L@(dstbp_stb+data_quarter),E6;  } }
+	      { 7 { H@dstbp_stb,E5; H@(dstbp_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0 { D@dft_drv,E1;  } }
+	      { 1 { U@dft_drv,E1;  } }
+	      { Z { Z@dft_x,E2;  } }
+	      { L { L@dft_stb,E6;  } }
+	      { H { H@dft_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0 { D@misc_drv,E1;  } }
+	      { 1 { U@misc_drv,E1;  } }
+	      { Z { Z@misc_x,E2;  } }
+	      { L { L@misc_stb,E6;  } }
+	      { H { H@misc_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0 { D@misc_drv,E1;  } }
+	      { 1 { U@misc_drv,E1;  } }
+	      { Z { Z@misc_x,E2;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block scan_timing
+
+
+#Block Created By "PLT"
+Timing sdr_timing {
+    CommonSection  {
+      Domain default  [DataRate 1]  {
+			PeriodTable {
+ 		     Period Period_1  {  TPer;  }
+		     Period Period_2  {  TPer_2;  }
+			}
+			Pin bclk {
+		  WaveformTable page1 {
+	      { 0 { D@bclk_drv,E1;  } }
+	      { 1 { U@bclk_drv,E1;  } }
+	      { C { U@bclk_drv,E2; D@(bclk_drv+Dcyc/2),E3;  } }
+	      { c { D@bclk_drv,E2; U@(bclk_drv+Dcyc/2),E3;  } }
+		  }
+			}
+			Pin cc {
+		  WaveformTable page1 {
+	      { 0 { D@cc_drv,E1;  } }
+	      { 1 { U@cc_drv,E1;  } }
+	      { Z { Z@cc_x,E2;  } }
+	      { L { L@cc_stb,E6;  } }
+	      { H { H@cc_stb,E5;  } }
+	      { X {  } }
+	      { O { L@cc_stb,E6;  } }
+	      { I { H@cc_stb,E5;  } }
+		  }
+			}
+			Pin asyn_cmos {
+		  WaveformTable page1 {
+	      { 0 { D@asyn_cmos_drv,E1;  } }
+	      { 1 { U@asyn_cmos_drv,E1;  } }
+	      { Z { Z@asyn_cmos_x,E2;  } }
+	      { L { L@asyn_cmos_stb,E6;  } }
+	      { H { H@asyn_cmos_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin asyn_od {
+		  WaveformTable page1 {
+	      { 0 { D@asyn_od_drv,E1;  } }
+	      { 1 { U@asyn_od_drv,E1;  } }
+	      { Z { Z@asyn_od_x,E2;  } }
+	      { L { L@asyn_od_stb,E6;  } }
+	      { H { H@asyn_od_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin RESETnn {
+		  WaveformTable page1 {
+	      { 0 { D@reset_drv,E1;  } }
+	      { 1 { U@reset_drv,E1;  } }
+	      { Z { Z@adstb_x,E3;  } }
+	      { L { L@reset_stb,E6;  } }
+	      { H { H@reset_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin adstb1t0nn {
+		  WaveformTable page1 {
+	      { 0 { D@adstb_drv,E1;  } }
+	      { 1 { U@adstb_drv,E1;  } }
+	      { Z { Z@adstb_x,E3;  } }
+	      { L { L@adstb_stb,E5; X@(adstb_stb+Dcyc/2),E6;  } }
+	      { H { H@adstb_stb,E5; X@(adstb_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@adstb_drv,E1; D@(adstb_drv+Dcyc/2),E2;  } }
+	      { 1 { D@adstb_drv,E1; U@(adstb_drv+Dcyc/2),E2;  } }
+	      { 2 { U@adstb_drv,E1; D@(adstb_drv+Dcyc/2),E2;  } }
+	      { 3 { U@adstb_drv,E1; U@(adstb_drv+Dcyc/2),E2;  } }
+	      { 4 { L@adstb_stb,E5; L@(adstb_stb+Dcyc/2),E6;  } }
+	      { 5 { L@adstb_stb,E5; H@(adstb_stb+Dcyc/2),E6;  } }
+	      { 6 { H@adstb_stb,E5; L@(adstb_stb+Dcyc/2),E6;  } }
+	      { 7 { H@adstb_stb,E5; H@(adstb_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin addr_lower {
+		  WaveformTable page1 {
+	      { 0 { D@addr_lower_drv,E1;  } }
+	      { 1 { U@addr_lower_drv,E1;  } }
+	      { Z { Z@addr_x,E3;  } }
+	      { L { L@addr_lower_stb,E5; X@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { H { H@addr_lower_stb,E5; X@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@addr_lower_drv,E1; D@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 1 { D@addr_lower_drv,E1; U@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 2 { U@addr_lower_drv,E1; D@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 3 { U@addr_lower_drv,E1; U@(addr_lower_drv+Dcyc/2),E2;  } }
+	      { 4 { L@addr_lower_stb,E5; L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { 5 { L@addr_lower_stb,E5; H@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { 6 { H@addr_lower_stb,E5; L@(addr_lower_stb+Dcyc/2),E6;  } }
+	      { 7 { H@addr_lower_stb,E5; H@(addr_lower_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin addr_upper {
+		  WaveformTable page1 {
+	      { 0 { D@addr_upper_drv,E1;  } }
+	      { 1 { U@addr_upper_drv,E1;  } }
+	      { Z { Z@addr_x,E3;  } }
+	      { L { L@addr_upper_stb,E5; X@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { H { H@addr_upper_stb,E5; X@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@addr_upper_drv,E1; D@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 1 { D@addr_upper_drv,E1; U@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 2 { U@addr_upper_drv,E1; D@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 3 { U@addr_upper_drv,E1; U@(addr_upper_drv+Dcyc/2),E2;  } }
+	      { 4 { L@addr_upper_stb,E5; L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { 5 { L@addr_upper_stb,E5; H@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { 6 { H@addr_upper_stb,E5; L@(addr_upper_stb+Dcyc/2),E6;  } }
+	      { 7 { H@addr_upper_stb,E5; H@(addr_upper_stb+Dcyc/2),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dstbnnn {
+		  WaveformTable page1 {
+	      { 0 { D@dstbn_drv,E1;  } }
+	      { 1 { U@dstbn_drv,E1;  } }
+	      { Z { Z@dstbn_x,E3;  } }
+	      { L { L@dstbn_stb,E5; X@(dstbn_stb+Dcyc/2),E6;  } }
+	      { H { H@dstbn_stb,E5; X@(dstbn_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+	      { O { L@dstbn_stb,E6;  } }
+	      { I { H@dstbn_stb,E5;  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@dstbn_drv,E1; D@(dstbn_drv+data_quarter),E2;  } }
+	      { 1 { D@dstbn_drv,E1; U@(dstbn_drv+data_quarter),E2;  } }
+	      { 2 { U@dstbn_drv,E1; D@(dstbn_drv+data_quarter),E2;  } }
+	      { 3 { U@dstbn_drv,E1; U@(dstbn_drv+data_quarter),E2;  } }
+	      { 4 { L@dstbn_stb,E5; L@(dstbn_stb+data_quarter),E6;  } }
+	      { 5 { L@dstbn_stb,E5; H@(dstbn_stb+data_quarter),E6;  } }
+	      { 6 { H@dstbn_stb,E5; L@(dstbn_stb+data_quarter),E6;  } }
+	      { 7 { H@dstbn_stb,E5; H@(dstbn_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin dstbpnn {
+		  WaveformTable page1 {
+	      { 0 { D@dstbp_drv,E1;  } }
+	      { 1 { U@dstbp_drv,E1;  } }
+	      { Z { Z@dstbp_x,E3;  } }
+	      { L { L@dstbp_stb,E5; X@(dstbp_stb+Dcyc/2),E6;  } }
+	      { H { H@dstbp_stb,E5; X@(dstbp_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+	      { O { L@dstbn_stb,E6;  } }
+	      { I { H@dstbn_stb,E5;  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@dstbp_drv,E1; D@(dstbp_drv+data_quarter),E2;  } }
+	      { 1 { D@dstbp_drv,E1; U@(dstbp_drv+data_quarter),E2;  } }
+	      { 2 { U@dstbp_drv,E1; D@(dstbp_drv+data_quarter),E2;  } }
+	      { 3 { U@dstbp_drv,E1; U@(dstbp_drv+data_quarter),E2;  } }
+	      { 4 { L@dstbp_stb,E5; L@(dstbp_stb+data_quarter),E6;  } }
+	      { 5 { L@dstbp_stb,E5; H@(dstbp_stb+data_quarter),E6;  } }
+	      { 6 { H@dstbp_stb,E5; L@(dstbp_stb+data_quarter),E6;  } }
+	      { 7 { H@dstbp_stb,E5; H@(dstbp_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q0 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q0_stb,E5; X@(data_q0_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q0_stb,E5; X@(data_q0_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+	      { O { L@data_q0_stb,E6;  } }
+	      { I { H@data_q0_stb,E5;  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q0_stb,E5; L@(data_q0_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q0_stb,E5; H@(data_q0_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q0_stb,E5; L@(data_q0_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q0_stb,E5; H@(data_q0_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q1 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q1_stb,E5; X@(data_q1_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q1_stb,E5; X@(data_q1_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+	      { O { L@data_q1_stb,E6;  } }
+	      { I { H@data_q1_stb,E5;  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q1_stb,E5; L@(data_q1_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q1_stb,E5; H@(data_q1_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q1_stb,E5; L@(data_q1_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q1_stb,E5; H@(data_q1_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q2 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q2_stb,E5; X@(data_q2_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q2_stb,E5; X@(data_q2_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+	      { O { L@data_q2_stb,E6;  } }
+	      { I { H@data_q2_stb,E5;  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q2_stb,E5; L@(data_q2_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q2_stb,E5; H@(data_q2_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q2_stb,E5; L@(data_q2_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q2_stb,E5; H@(data_q2_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin data_q3 {
+		  WaveformTable page1 {
+	      { 0 { D@data_drv,E1;  } }
+	      { 1 { U@data_drv,E1;  } }
+	      { Z { Z@data_x,E3;  } }
+	      { L { L@data_q3_stb,E5; X@(data_q3_stb+Dcyc/2),E6;  } }
+	      { H { H@data_q3_stb,E5; X@(data_q3_stb+Dcyc/2),E6;  } }
+	      { X {  } }
+	      { O { L@data_q3_stb,E6;  } }
+	      { I { H@data_q3_stb,E5;  } }
+		  }
+		  WaveformTable page2 {
+	      { 0 { D@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 1 { D@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 2 { U@data_drv,E1; D@(data_drv+data_quarter),E2;  } }
+	      { 3 { U@data_drv,E1; U@(data_drv+data_quarter),E2;  } }
+	      { 4 { L@data_q3_stb,E5; L@(data_q3_stb+data_quarter),E6;  } }
+	      { 5 { L@data_q3_stb,E5; H@(data_q3_stb+data_quarter),E6;  } }
+	      { 6 { H@data_q3_stb,E5; L@(data_q3_stb+data_quarter),E6;  } }
+	      { 7 { H@data_q3_stb,E5; H@(data_q3_stb+data_quarter),E6;  } }
+		  }
+		  PinOptions
+		  {
+		      CompareMode = Multi;
+		  }
+			}
+			Pin tap_clk {
+		  WaveformTable page1 {
+	      { 0 { D@tapclk_drv,E1;  } }
+	      { 1 { U@tapclk_drv,E1;  } }
+	      { C { U@tapclk_drv,E2; D@(tapclk_drv+Dcyc/2),E3;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_rst {
+		  WaveformTable page1 {
+	      { 0 { D@taprst_drv,E1;  } }
+	      { 1 { U@taprst_drv,E1;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+		  }
+			}
+			Pin tap_in {
+		  WaveformTable page1 {
+	      { 0 { D@tapin_drv,E1;  } }
+	      { 1 { U@tapin_drv,E1;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+		  }
+			}
+			Pin tap_out {
+		  WaveformTable page1 {
+	      { 0 { L@tapout_stb,E6;  } }
+	      { 1 { H@tapout_stb,E5;  } }
+	      { Z { Z@tap_x,E2;  } }
+	      { X {  } }
+	      { L { L@tapout_stb,E6;  } }
+	      { H { H@tapout_stb,E5;  } }
+		  }
+			}
+			Pin dft_clk {
+		  WaveformTable page1 {
+	      { 0 { D@dft_drv,E1;  } }
+	      { 1 { U@dft_drv,E1;  } }
+	      { Z { Z@dft_x,E2;  } }
+	      { L { L@dft_stb,E6;  } }
+	      { H { H@dft_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin misc {
+		  WaveformTable page1 {
+	      { 0 { D@misc_drv,E1;  } }
+	      { 1 { U@misc_drv,E1;  } }
+	      { Z { Z@misc_x,E2;  } }
+	      { L { L@misc_stb,E6;  } }
+	      { H { H@misc_stb,E5;  } }
+	      { X {  } }
+		  }
+			}
+			Pin spare {
+		  WaveformTable page1 {
+	      { 0 { D@misc_drv,E1;  } }
+	      { 1 { U@misc_drv,E1;  } }
+	      { Z { Z@misc_x,E2;  } }
+	      { X {  } }
+	      { L {  } }
+	      { H {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block sdr_timing
+
+
+#Block Created By "PLT"
+Timing shops_timing {
+    CommonSection  {
+      Domain default  [DataRate 1]  {
+			PeriodTable {
+ 		     Period Period_1  {  TPer;  }
+			}
+			Pin ALLPINs {
+		  WaveformTable page1 {
+	      { 0 { D@os_drv,E1;  } }
+	      { 1 { U@os_drv,E1;  } }
+	      { M { Z@os_drvoff,E2; T@os_stb,E5;  } }
+	      { Z { Z@os_drvoff,E2;  } }
+	      { X {  } }
+		  }
+			}
+      }
+   }
+} #End Of Timing Block shops_timing
+
+

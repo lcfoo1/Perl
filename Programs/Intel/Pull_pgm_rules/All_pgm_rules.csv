@@ -1,0 +1,42 @@
+Module,Parameters,Value,Type,Global/Template/Timing/Levels,Package,SampleType,ProcessorFamily,MarketSegment,CacheSize,BinMatrix,VirtualFactory,Revision,Stepping,EngID,Fab,SSpec,Location
+Base,BYPASS_DFFByULT,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7205
+Base,BYPASS_DFFByULT,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7205
+Base,BYPASS_DFFtoGlobal,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7205
+Base,BYPASS_DFFtoGlobal,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7205
+Base,BYPASS_DFFtoGlobal_QA,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7205
+Base,BYPASS_DFFtoGlobal_QA,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7205
+Base,BYPASS_FUSE_BURN_DFFByULT,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_BURN_DFFByULT,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_BURN_DFFtoGlobal,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_BURN_DFFtoGlobal,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_BURN_PHASE1,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_BURN_PHASE1,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_BURN_PHASE2,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_BURN_PHASE2,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_BURN_PHASE3,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_BURN_PHASE3,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_BURN_PHASE4,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_BURN_PHASE4,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_READ_CHECK,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7751/7752/7753/7754/7764/7765/7766/7780
+Base,BYPASS_FUSE_READ_CHECK,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7751/-7752/-7753/-7754/-7764/-7765/-7766/-7780
+Base,BYPASS_FUSE_READ_DEMIX,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7798/7799
+Base,BYPASS_FUSE_READ_DEMIX,7,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7798/-7799
+Base,BYPASS_FUSE_READ_FUSED_UNIT,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7451/7751/7752/7753/7754/7764/7765/7766/7780/920?/921?
+Base,BYPASS_FUSE_READ_FUSED_UNIT,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7451/-7751/-7752/-7753/-7754/-7764/-7765/-7766/-7780/-920?/-921?
+Base,BYPASS_FUSE_READ_POSTBURN_P1,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_READ_POSTBURN_P1,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_READ_POSTBURN_P2,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_READ_POSTBURN_P2,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,BYPASS_FUSE_READ_PREBURN,-1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,BYPASS_FUSE_READ_PREBURN,1,Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,FUSE_BURN_FORK,"1",Global,usrv_FUSE, *,*,*,*,*,*,*,*,*,*,*,*,*
+Base,postinstance,"IDT.dll!DFF_GSDS GET_DFF^CR_DI-PKG-PBIC_S1+TOGSDS_HEXTOBIN^GSDS_CR_DI_BINARY-UNT,SET_GSDS^GSDS_TD_DI_BINARY-0000000000000000000000000000000000000000000000000000000000000000-UNT",FUSE::DFFByULT, *,*,*,*,*,*,*,*,*,*,*,*,7751/7757
+Base,postinstance,"IDT.dll!DFF_GSDS GET_DFF^CR_DI-PKG-PBIC_S1+TOGSDS_HEXTOBIN^GSDS_CR_DI_BINARY-UNT,SET_GSDS^GSDS_TD_DI_BINARY-0000000000000000000000000000000000000000000000000000000000000000-UNT",FUSE::DFFByULT_QA, *,*,*,*,*,*,*,*,*,*,*,*,7751/7757
+Base,postinstance,"IDT.dll!DFF_GSDS GET_DFF^CR_DI-PKG-PBIC_S1+TOGSDS_HEXTOBIN^GSDS_CR_DI_BINARY-UNT,SET_GSDS^GSDS_TD_DI_BINARY-0000000000000000000000000000000000000000000000000000000000000000-UNT",FUSE::FUSE_BURN_DFFByULT, *,*,*,*,*,*,*,*,*,*,*,*,7751/7757
+Base,function_parameter,"FRV^FRV^NONE",Template,FUSE::UF_SETUP_FRV, *,*,*,*,*,*,*,*,*,*,*,*,*/-7757
+Base,function_parameter,"FRV^FRV^PBIC_S1",Template,FUSE::UF_SETUP_FRV, *,*,*,*,*,*,*,*,*,*,*,*,7757
+Base,postinstance,"",Template,FUSE::DFFByULT, *,*,*,*,*,*,*,*,*,*,*,*,*/-7751/-7757
+Base,postinstance,"",Template,FUSE::DFFByULT_QA, *,*,*,*,*,*,*,*,*,*,*,*,*/-7751/-7757
+Base,postinstance,"",Template,FUSE::FUSE_BURN_DFFByULT, *,*,*,*,*,*,*,*,*,*,*,*,*/-7751/-7757
+Base,postinstance,"IDT.dll!DFF_GSDS GET_GLOBAL^CTSCVars.SC_SSPEC+TODFF^OLF_SSPEC",Template,FUSE::FUSE_READ_POSTBURN_P1, *,*,*,*,*,*,*,*,*,*,*,*,7751/7757
+Base,postinstance,"IDT.dll!DFF_GSDS GET_GLOBAL^CTSCVars.SC_SSPEC+TODFF^OLF_SSPEC",Template,FUSE::FUSE_READ_POSTBURN_P2, *,*,*,*,*,*,*,*,*,*,*,*,7751/7757

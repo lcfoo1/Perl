@@ -1,0 +1,7 @@
+PIN=TDI|SPARE4|SPARE8
+#PATTERN=g2487542A009821_011404c_ME0626am_0fxfxx0xhElxxxxxxxIfrxO7_cmov.pat.data
+PATTERN=123.padtrc.data
+#PLABEL=JTAGsigCtl_Start1_,JTAGsigCtl_End1_
+PLABEL=JTAGSTRAPinstrStart1,JTAGSTRAPinstrEnd1
+TCK=4
+

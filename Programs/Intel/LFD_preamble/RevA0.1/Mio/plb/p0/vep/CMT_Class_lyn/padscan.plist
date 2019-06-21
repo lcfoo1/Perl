@@ -1,0 +1,29 @@
+Version 1.0;
+
+GlobalPList padscan_list    {
+
+   GlobalPList ddr0_padscan_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [PRT lfd_com_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask MBP_2_N, tap_pins_wo_TDO, bclk] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0032109N4955863_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_padscan_ddr_rchain0;
+   } # end of ddr0_padscan_list
+
+
+   GlobalPList ddr1_padscan_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [PRT lfd_com_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask MBP_2_N, tap_pins_wo_TDO, bclk] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0045450N4955862_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_padscan_ddr_rchain1;
+   } # end of ddr1_padscan_list
+
+
+   GlobalPList ddr2_padscan_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [PRT lfd_com_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask MBP_2_N, tap_pins_wo_TDO, bclk] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0046818N4955861_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_padscan_ddr_rchain2;
+   } # end of ddr2_padscan_list
+
+
+   GlobalPList ddr3_padscan_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [PRT lfd_com_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask MBP_2_N, tap_pins_wo_TDO, bclk] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0031393N4955860_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_padscan_ddr_rchain3;
+   } # end of ddr3_padscan_list
+
+} # end of padscan_list
+

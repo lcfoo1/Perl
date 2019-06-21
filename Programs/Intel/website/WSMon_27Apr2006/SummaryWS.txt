@@ -1,0 +1,132 @@
+Status=In Active
+Server=pgxpw4018
+Team=TV
+User=kwong7
+Logon=11/08/2006 11:06:58
+LastActive=Wed Nov 29 12:15:00 2006
+Active=Yes(IDLE=0days, 3hours, 13mins)
+Status=Active
+Server=pgxpw4019
+Team=TP
+User=vchee
+Logon=11/01/2006 11:13:44
+LastActive=Wed Nov 29 15:12:21 2006
+Active=Yes(IDLE=0days, 0hours, 15mins)
+Status=In Active
+Server=pgxpw4020
+Team=TP
+User=sng27
+Logon=11/03/2006 10:01:01
+LastActive=Wed Nov 29 10:54:47 2006
+Active=Yes(IDLE=0days, 4hours, 33mins)
+Status=In Active
+Server=pgxpw4021
+Team=TP
+User=ttan4
+Logon=11/13/2006 11:12:57
+LastActive=Wed Nov 29 13:01:48 2006
+Active=Yes(IDLE=0days, 2hours, 26mins)
+Status=In Active
+Server=pgxpw4025
+Team=TV
+User=echow
+Logon=11/01/2006 11:11:06
+LastActive=Wed Nov 29 12:11:00 2006
+Active=Yes(IDLE=0days, 3hours, 17mins)
+Status=No User Logon
+Server=pgxpw4031
+Team=TP
+Status=In Active
+Server=pgxpw4032
+Team=TP
+User=vchee
+Logon=10/26/2006 14:50:10
+LastActive=Fri Nov 17 15:51:39 2006
+Active=No(IDLE=11days, 23hours, 36mins)
+Status=No User Logon
+Server=pgxpw4033
+Team=TP
+Status=No User Logon
+Server=pgxpw4034
+Team=TP
+Status=Active
+Server=pgxpw4035
+Team=TV
+User=lfoo1
+Logon=11/29/2006 09:49:59
+LastActive=Wed Nov 29 09:54:42 2006
+Active=Yes(IDLE=0days, 0hours, 0mins)
+Status=In Active
+Server=pgxpw4039
+Team=TP
+User=kwong16
+Logon=10/26/2006 14:10:54
+LastActive=Wed Nov 29 14:32:41 2006
+Active=Yes(IDLE=0days, 0hours, 55mins)
+Status=In Active
+Server=pgxpw4040
+Team=TP
+User=steh2
+Logon=10/25/2006 19:02:52
+LastActive=Wed Nov 29 14:45:09 2006
+Active=Yes(IDLE=0days, 0hours, 43mins)
+Status=In Active
+Server=pgxpw4053
+Team=TP
+User=etang
+Logon=11/06/2006 15:01:48
+LastActive=Sat Nov 25 15:02:30 2006
+Active=No(IDLE=4days, 0hours, 26mins)
+Status=In Active
+Server=pgxpw4054
+Team=TM
+User=ayeoh2
+Logon=11/29/2006 11:47:03
+LastActive=Wed Nov 29 12:17:00 2006
+Active=Yes(IDLE=0days, 3hours, 11mins)
+Status=In Active
+Server=pgxpw4055
+Team=PS
+User=klau6
+Logon=10/27/2006 11:16:41
+LastActive=Wed Nov 29 12:03:00 2006
+Active=Yes(IDLE=0days, 3hours, 26mins)
+Status=No User Logon
+Server=pgxpw4056
+Team=PS
+Status=No User Logon
+Server=pgxpw4057
+Team=TM
+Status=No User Logon
+Server=pgxpvmup101
+Team=TP(XP)
+Status=No User Logon
+Server=pgxpvmup102
+Team=TP(XP)
+Status=No User Logon
+Server=pgxpvmup103
+Team=TP
+Status=No User Logon
+Server=pgxpvmup104
+Team=TP
+Status=No User Logon
+Server=pgxpvmup105
+Team=TP
+Status=No User Logon
+Server=pgxpvmup106
+Team=TV
+Status=No User Logon
+Server=pgxpvmup107
+Team=TV
+Status=No User Logon
+Server=pgxpvmup109
+Team=PS
+Status=No User Logon
+Server=pgxpvmup110
+Team=TM
+Status=No User Logon
+Server=pgxpvmup111
+Team=TV
+Status=No User Logon
+Server=pgxpvmup112
+Team=NH

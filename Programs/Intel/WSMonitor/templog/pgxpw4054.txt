@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4054
+Team=TM
+User=ayeoh2
+Logon=3/7/2007 6:50:00 PM
+LastActive=3/7/2007 10:08:02 PM
+Active=Yes(IDLE=0days, 3hrs, 18mins)

@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4020
+Team=TP
+User=sng27
+Logon=3/7/2007 8:07:01 PM
+LastActive=3/7/2007 10:08:00 PM
+Active=Yes(IDLE=0days, 2hrs, 0mins)

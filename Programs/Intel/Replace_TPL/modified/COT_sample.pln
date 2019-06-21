@@ -1,0 +1,1176 @@
+COMPOSITE COT_SAMPLE_UNDEFINED_GLOBAL
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "Invalid_Global",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        productionMode = OFF,
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Undefined_Global_F0")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_GLOBAL_STRING
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "GL_AUTOBAD",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        productionMode = OFF,
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Global_String_F0")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        productionMode = OFF,
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_GLOBAL_FLOAT
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "One",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        productionMode = OFF,
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Global_Float_F0")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_GLOBAL_ONE
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "EDM_INT",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Global_One_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_GLOBAL_STRING_ONE
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "SEDCONE",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        preinstance="",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Global_String_One_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_UNDEFINED
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "EDM_INT",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        preinstance="",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Undefined_1_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_2_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        preinstance="",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Undefined_2_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_3_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        productionMode = OFF,
+        voltageProfile = "OFF",
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Undefined_3_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        productionMode = OFF,
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_NEGATIVE
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "-1",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        preinstance="",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        productionMode = OFF,
+        visualidChecks = "IGNORE_CAMERA",
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Negative_F0")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        preinstance="",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_ZERO
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "0",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Zero_1_P1")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_2_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        preinstance="",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Zero_2_P1")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_ONE
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "1",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        preinstance="",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_One_1_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_2_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_One_2_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_3_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_One_3_F2")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        preinstance="",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+COMPOSITE COT_SAMPLE_TWO
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "2",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        preinstance="",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Two_1_P1")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_2_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Two_2_F2")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_3_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance="",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Two_3_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_4_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        preinstance="",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Two_4_F2")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance="",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}
+
+
+COMPOSITE COT_SAMPLE_FIVE
+{
+        DEF (SEGNAME = $name,
+        mode = "RUN_IN_FLOW",
+        patlist = "COT_SOT_mode_list",
+        level = "iValIccNom",
+        timings = "iValTimingsIcc",
+        pinName = "P002",
+        idealityGlobal = "1.0002",
+        idealityLabel = "WrByte_RDIdeality1_IDFC1",
+        betaGlobal = "1.0",
+        betaLabel = "WrByte_RDBeta1_BCF1",
+        sotInputGlobal = "",
+        minLimitGlobal = "",
+        maxLimitGlobal = "",
+        minLimitDiffGlobal = "5.0",
+        maxLimitDiffGlobal = "5.0",
+        dffTokenNameGlobal = "",
+        ackBit = "",
+        bypassGlobal = "",
+        tempCorrFactor = "",
+        dffGlobal = ""  ,
+        sampleGlobal = "5",
+        # Common Test Class Parmaeters
+        debugMode = "VERBOSE");
+
+tt_ituff(name = "start_lot_P1",
+        ituffType = "STARTLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+
+tt_bkgnd(name = "part_1_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        preinstance="",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_1_P1")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_2_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance = "",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_2_P1")
+        0?NEXT,
+        1?NEXT;
+
+tt_bkgnd(name = "part_3_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        preinstance = "",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_3_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_4_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance = "",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_4_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_5_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance = "",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_5_F2")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_6_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_6_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+
+tt_bkgnd(name = "part_7_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance = "",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_7_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_8_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        preinstance = "",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_8_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_9_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_9_P1")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_10_P1",
+        instType = "START_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        preinstance = "",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_COT (name = "COT_Sample_Five_10_F2")
+                        0?NEXT,
+                        1?NEXT;
+
+tt_bkgnd(name = "part_end_P1",
+        instType = "END_DEVICE",
+        smartTcLoad = "OFF",
+        itimeSummary = "OFF",
+        voltageProfile = "OFF",
+        voltageProfilePins = "",
+        preinstance = "",
+        visualidChecks = "IGNORE_CAMERA",
+        productionMode = OFF,
+        datalogMode = "ON"
+        )
+        0?NEXT,
+        1?NEXT;
+
+tt_ituff(name = "end_lot_P1",
+        ituffType = "ENDLOT",
+        instTimeDlogEnable = "DISABLED",
+        datalogAddStreamType = "APPEND",
+        datalogFlushEnable = "DISABLED",
+        datalogMode = "ON",
+        debugMode = "DISABLED",
+        bypassGlobal = "",
+        postinstance = "iVal_utilityfunc!GenerateInstanceResults");
+}

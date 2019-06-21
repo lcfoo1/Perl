@@ -1,0 +1,3 @@
+PIN=TDI|SPARE8
+VECTOR=4
+PLABEL=JTAGsigCtl_Start1_,JTAGsigCtl_End1_

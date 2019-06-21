@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module_list>	
+	<module name="common">
+		<VCProjVersion value="8.00"/>
+		<VCProjName value="GEN_@FRAME@_tt"/>
+		<VCProjIncludes value=".;../local_code;../code;"/>
+		<ReleaseLinkerDependencies value="OASIS_GEN_code.lib OASIS_cortex_utility.lib"/>
+		<DebugLinkerDependencies value="OASIS_GEN_code.lib OASIS_cortex_utility.lib"/>
+		<ReleasePreprocessorDefinitions value="WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SECURE_SCL_THROWS;_USE_32BIT_TIME_T;__GEN_@FRAMECAP@_TEST__"/>
+		<DebugPreprocessorDefinitions value="WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SECURE_SCL_THROWS;_LIB;_USE_32BIT_TIME_T;__GEN_@FRAMECAP@_TEST__"/>
+		<ReleaseLinkerIncludes value="../lib;"/>
+		<DebugLinkerIncludes value="../lib_debug;"/>
+		<ReleaseOutputFile value="..\lib\OASIS_GEN_@FRAME@_tt.dll"/>
+		<DebugOutputFile value="..\lib_debug\OASIS_GEN_@FRAME@_tt.dll"/>
+		<ReleaseImportLib value= "../lib/OASIS_GEN_@FRAME@_tt.lib" />
+		<DebugImportLib value= "../lib_debug/OASIS_GEN_@FRAME@_tt.lib" />
+		<WarnAsError value= "TRUE" />
+		<SourceFiles value= "" />
+		<SourceHeaders value= "" />
+	</module>
+	<module name="ppf">
+		<VCProjIncludes value=".;../local_code;../code;..\third_party\pgapack;..\third_party\gpib"/>
+		<ReleaseLinkerDependencies value="OASIS_GEN_code.lib OASIS_cortex_utility.lib gpib488.obj"/>
+		<DebugLinkerDependencies value="OASIS_GEN_code.lib OASIS_cortex_utility.lib gpib488.obj"/>
+		<ReleaseLinkerIncludes value="../lib;..\third_party\gpib"/>
+		<DebugLinkerIncludes value="../lib_debug;..\third_party\gpib"/>
+		<SourceFiles value= "..\third_party\pgapack\binary.c;..\third_party\pgapack\char.c;..\third_party\pgapack\cmdline.c;..\third_party\pgapack\create.c;..\third_party\pgapack\cross.c;..\third_party\pgapack\debug.c;..\third_party\pgapack\duplcate.c;..\third_party\pgapack\evaluate.c;..\third_party\pgapack\f2c.c;..\third_party\pgapack\fitness.c;..\third_party\pgapack\hamming.c;..\third_party\pgapack\heap.c;..\third_party\pgapack\integer.c;..\third_party\pgapack\mpi.h;..\third_party\pgapack\mpi_stub.c;..\third_party\pgapack\mutation.c;..\third_party\pgapack\parallel.c;..\third_party\pgapack\pga.c;..\third_party\pgapack\pgapack.h;..\third_party\pgapack\pop.c;..\third_party\pgapack\random.c;..\third_party\pgapack\real.c;..\third_party\pgapack\report.c;..\third_party\pgapack\restart.c;..\third_party\pgapack\select.c;..\third_party\pgapack\stop.c;..\third_party\pgapack\system.c;..\third_party\pgapack\user.c;..\third_party\pgapack\utility.c" />
+	</module>
+	<module name="RRL">
+		<VCProjIncludes value=".;../local_code;../code;..\third_party\raster_analysis\src"/>
+		<SourceFiles value= "..\third_party\raster_analysis\src\raster_analysis.c" />
+		<SourceHeaders value= "..\third_party\raster_analysis\src\raster_analysis.h" />
+	</module>
+</module_list>

@@ -1,0 +1,7 @@
+Status=Active
+Server=pgxpw4040
+Team=TP
+User=steh2
+Logon=3/7/2007 5:00:03 PM
+LastActive=3/7/2007 10:08:01 PM
+Active=Yes(IDLE=0days, 5hrs, 7mins)

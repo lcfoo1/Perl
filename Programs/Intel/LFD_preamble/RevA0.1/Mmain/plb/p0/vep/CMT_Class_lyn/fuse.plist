@@ -1,0 +1,18 @@
+Version 1.0;
+
+GlobalPList fuse_16161616_list    {
+
+   GlobalPList fuseread_hfmnom_16161616_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, pxp_ins, pxp_outs, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, allpins_wo_tap]  {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=slowst
+      Pat d0033213N4956933_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_fuse_read;
+   } # end of fuseread_hfmnom_16161616_list
+
+
+   GlobalPList fuseburn_hfmnom_16161616_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask mbp, vid_bus, bclk_buf, pxp_ins, pxp_outs, IIOTDO, XDPRDYREQN_N, ocp_data, ocp_stb, allpins_wo_tap]  {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=slowst
+      Pat d0031788N4956932_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_fuse_burn;
+	Pat d0031406N4956931_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_fuse_burn_clearKAR;
+   } # end of fuseburn_hfmnom_16161616_list
+
+} # end of fuse_16161616_list
+

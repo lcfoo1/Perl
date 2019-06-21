@@ -1,0 +1,17 @@
+Version 1.0;
+
+GlobalPList ddr_aciolb_list    {
+
+   GlobalPList ddr_dq_aciolb_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [PRT lfd_com_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask MBP_2_N, tap_pins_wo_TDO, bclk] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat d0032457N4751045_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_ddr_dq_aciolb;
+   } # end of ddr_dq_aciolb_list
+
+
+   GlobalPList ddr_cmdctl_aciolb_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [PRT lfd_com_2M_vrevA5_16161616_4C_1ttx21_6g8m_funfn_sdr_0] [Mask MBP_2_N, tap_pins_wo_TDO, bclk] {
+#   LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=sdr
+      Pat g0031354N4955294_16161616a2x18_MA0cA01Rxg_2txx22F_4x0xxxpxx0xxx_ddr_cmdctl_aciolb;
+   } # end of ddr_cmdctl_aciolb_list
+
+} # end of ddr_aciolb_list
+

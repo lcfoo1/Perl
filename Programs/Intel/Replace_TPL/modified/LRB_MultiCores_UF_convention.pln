@@ -1,0 +1,37 @@
+INST tt_multicores_func {
+    NAME                                    $name;
+    TEMPLATE                                iCFuncTest;
+    patlist                                 $patlist;                                #Datatype=STRING, REQUIRED
+    timings                                 $timings;                                #Datatype=STRING, REQUIRED
+    second_pass_timings                     $secondPassTimings;                      #Datatype=STRING, OPTIONAL
+    level                                   $level;                                  #Datatype=STRING, REQUIRED
+    EAP_mode                                $eapMode;                                #Datatype=STRING, OPTIONAL  #Choices : EAP_OFF, EAP_ON
+    max_capture_fails                         $maxCaptureFails;                          #Datatype=INTEGER, OPTIONAL
+    #debug_capture_type                      $debugCaptureType;                       #Datatype=STRING, OPTIONAL  #Choices : PATTERN, PATTERN_LIST
+    datalog_mode                             $datalogMode;                             #Datatype=STRING, OPTIONAL  #Choices : ON, DISABLED, CAPTURE_ONLY
+    debug_mode                              $debugMode;                              #Datatype=STRING, OPTIONAL  #Choices : DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+    #serial_mode                            $serialMode;                             #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    bypass_global                           $bypassGlobal;                           #Datatype=STRING, OPTIONAL
+    preinstance                            $preinstance;                            #Datatype=STRING, OPTIONAL
+    postinstance                            $postinstance;                           #Datatype=STRING, OPTIONAL
+    #preplist                               $preplist;                               #Datatype=STRING, OPTIONAL
+    #postplist                              $postplist;                              #Datatype=STRING, OPTIONAL
+    #preburst                               $preburst;                               #Datatype=STRING, OPTIONAL
+    #postburst                              $postburst;                              #Datatype=STRING, OPTIONAL
+    #EOT_power_down                         $eotPowerDown;                           #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+#    mask_pins                              $maskPins;                               #Datatype=STRING, OPTIONAL
+    #thermal_monitor_mode                   $thermalMonitorMode;                     #Datatype=STRING, OPTIONAL  #Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+    #thermal_monitor_offset_check           $thermalMonitorOffsetCheck;              #Datatype=STRING, OPTIONAL  #Choices : CHECK_LIMITS, MEASURE_ONLY
+    #thermal_monitor_ituff_tname            $thermalMonitorItuffTname;               #Datatype=STRING, OPTIONAL
+    #instance_profile                       $instanceProfile;                        #Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    #plist_check                       $plistCheck;                         #Datatype=STRING, OPTIONAL  #Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+    #ignore_alarm                           $ignoreAlarm;                            #Datatype=STRING, OPTIONAL  #Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+    ssid_e_sequence                  $ssidESequence;                    #Datatype=STRING, OPTIONAL
+    ssid_e_recovery                 $ssidERecovery;                   #Datatype=STRING, OPTIONAL
+    ssid_g_restore                     $ssidGRestore;                       #Datatype=STRING, OPTIONAL
+    ssid_g_pwrdwn           $ssidGPwrdwn;             #Datatype=STRING, OPTIONAL  #Choices : NO, YES
+    #relay_token                            $relayToken;                             #Datatype=STRING, OPTIONAL
+    ssid_o_execute                   $ssidOExecute;                     #Datatype=STRING, OPTIONAL  #Choices : FORCE_ALL, FIRST_FAIL
+    #capture_result                   $captureResult;                     #Datatype=STRING, OPTIONAL  #Choices : DO_NOT_CLEAR, CLEAR
+}
+

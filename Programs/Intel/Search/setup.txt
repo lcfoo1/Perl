@@ -1,0 +1,577 @@
+Test iCSearchTest Fmax_Search_Cache
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Fmax_Search_Cache";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Fmax_pbist_TAG_LRU_l2_c_011602 Fmax_pbist_TAG_LRU_l2_c_011002 Fmax_pbist_Data_NoEcc_l2_c_011602 Fmax_pbist_Data_NoEcc_l2_c_011002 Fmax_pbist_l1_all_c_011602 Fmax_pbist_l1_all_c_011002 Fmax_cache_list1 Fmax_cache_list2 Fmax_cache_list3 Fmax_cache_list4";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Fmax_Search_Cache_FF
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Fmax_Search_Cache_FF";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Fmax_pbist_TAG_LRU_l2_c_011602 Fmax_pbist_TAG_LRU_l2_c_011002 Fmax_pbist_Data_NoEcc_l2_c_011602 Fmax_pbist_Data_NoEcc_l2_c_011002 Fmax_pbist_l1_all_c_011602 Fmax_pbist_l1_all_c_011002 Fmax_cache_list1 Fmax_cache_list2 Fmax_cache_list3 Fmax_cache_list4";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Fmax_Search_Core_PSMI
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Fmax_Search_Core_PSMI";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "FreqSearch_psmi_list1 FreqSearch_psmi_list2 FreqSearch_psmi_list3 FreqSearch_psmi_list4 FreqSearch_psmi_list5";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Fmax_Search_Core_PSMI_FF
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Fmax_Search_Core_PSMI_FF";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "FreqSearch_psmi_list1 FreqSearch_psmi_list2 FreqSearch_psmi_list3 FreqSearch_psmi_list4 FreqSearch_psmi_list5";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Fmax_Search_DieSpt_DieSym
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Fmax_Search_DieSpt_DieSym";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Fmax_bf_dspt_cfrc_a_011604 Fmax_bf_dsym_cfrc_0_011604 Fmax_bf_dsym_cfrc_1_011604 Fmax_bf_dspt_a_cmp0_011604 Fmax_bf_dspt_q_cmp0_011604 Fmax_bf_dsym_0_cmp0_011604 Fmax_bf_dsym_1_cmp0_011604 Fmax_bf_dspt_a_cmp1_011604 Fmax_bf_dsym_0_cmp1_011604 Fmax_bf_dsym_1_cmp1_011604 Fmax_core_list1 Fmax_core_list2 Fmax_core_list3 Fmax_core_list4 Fmax_core_list5";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Fmax_Search_DieSpt_DieSym_FF
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Fmax_Search_DieSpt_DieSym_FF";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Fmax_bf_dspt_cfrc_a_011604 Fmax_bf_dsym_cfrc_0_011604 Fmax_bf_dsym_cfrc_1_011604 Fmax_bf_dspt_a_cmp0_011604 Fmax_bf_dspt_q_cmp0_011604 Fmax_bf_dsym_0_cmp0_011604 Fmax_bf_dsym_1_cmp0_011604 Fmax_bf_dspt_a_cmp1_011604 Fmax_bf_dsym_0_cmp1_011604 Fmax_bf_dsym_1_cmp1_011604 Fmax_core_list1 Fmax_core_list2 Fmax_core_list3 Fmax_core_list4 Fmax_core_list5";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+
+Test iCSearchTest Vmax_Search_Core
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Vmax_Search_Core";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Vmax_core_list1 Vmax_core_list2 Vmax_core_list3 Vmax_core_list4 Vmax_core_list5 Vmax_core_list6 Vmax_core_list7 Vmax_core_list8 Vmax_core_list9 Vmax_core_list10 Vmax_core_list11 Vmax_core_list12 Vmax_core_list13 Vmax_core_list14 Vmax_core_list15 Vmax_core_list16 Vmax_core_list17 Vmax_core_list18 Vmax_core_list19 Vmax_core_list20";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Vmax_Search_Core_FF
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Vmax_Search_Core_FF";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Vmax_core_list1 Vmax_core_list2 Vmax_core_list3 Vmax_core_list4 Vmax_core_list5 Vmax_core_list6 Vmax_core_list7 Vmax_core_list8 Vmax_core_list9 Vmax_core_list10 Vmax_core_list11 Vmax_core_list12 Vmax_core_list13 Vmax_core_list14 Vmax_core_list15 Vmax_core_list16 Vmax_core_list17 Vmax_core_list18 Vmax_core_list19 Vmax_core_list20";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Vmin_Search_Cache
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Vmin_Search_Cache";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Vmin_pbist_TAG_LRU_l2_c_011602 Vmin_pbist_TAG_LRU_l2_c_011002 Vmin_pbist_Data_NoEcc_l2_c_011602 Vmin_pbist_Data_NoEcc_l2_c_011002 Vmin_pbist_l1_all_c_011602 Vmin_pbist_l1_all_c_011002 Vmin_cache_list1 Vmin_cache_list2 Vmin_cache_list3 Vmin_cache_list4";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Vmin_Search_Cache_FF
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Vmin_Search_Cache_FF";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Vmin_pbist_TAG_LRU_l2_c_011602 Vmin_pbist_TAG_LRU_l2_c_011002 Vmin_pbist_Data_NoEcc_l2_c_011602 Vmin_pbist_Data_NoEcc_l2_c_011002 Vmin_pbist_l1_all_c_011602 Vmin_pbist_l1_all_c_011002 Vmin_cache_list1 Vmin_cache_list2 Vmin_cache_list3 Vmin_cache_list4";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Vmin_Search_DieSpt_DieSym
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Vmin_Search_DieSpt_DieSym";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Vmin_bf_dspt_cfrc_a_011604 Vmin_bf_dsym_cfrc_0_011604 Vmin_bf_dsym_cfrc_1_011604 Vmin_bf_dspt_a_cmp0_011604 Vmin_bf_dspt_q_cmp0_011604 Vmin_bf_dsym_0_cmp0_011604 Vmin_bf_dsym_1_cmp0_011604 Vmin_bf_dspt_a_cmp1_011604 Vmin_bf_dsym_0_cmp1_011604 Vmin_bf_dsym_1_cmp1_011604";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+
+Test iCSearchTest Vmin_Search_DieSpt_DieSym_FF
+{
+	EOT_power_down = "TRUE";                                              #Choices = FALSE, TRUE
+	SBFMode = "DISABLED";                                                 #Choices = DISABLED, ENABLED
+	all_pass_value = 9999.0;
+	bin_number_global = "";
+	bins_values_global = "";
+	bus_ratio = 28.0;
+	bypass_global = "BYPASSVars.BYPASS_Vmin_Search_DieSpt_DieSym_FF";
+	datalog_off = "ON";                                                   #Choices = ON, DISABLED, CAPTURE_ONLY
+	debug_mode = "DISABLED";                                              #Choices = DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+	enable_window_search = "DISABLED";                                    #Choices = DISABLED, ENABLED
+	exec_mode = "ALL_PAT";                                                #Choices = ALL_PAT, PER_PAT
+	fail_data_mode = "ENABLED";                                           #Choices = DISABLED, ENABLED
+	freq_mode = "CORE";                                                   #Choices = FSB, CORE, UNDEFINED
+	high_search_value = 2800.0;
+	ituff_add_instance_name = "ENABLED";                                  #Choices = ENABLED, DISABLED
+	ituff_name = "fmax_bf_sig_off_1_2V_CR0";
+	level = "bf_lvl_Vmin";
+	limit = 2200.0;
+	low_search_value = 1400.0;
+	monitor_setup_id = "ThermalDiode_Execute_Production_die12!NGThermalDiode_both_diodes";
+	offset_constant = 2.0;
+	offset_enable = "DISABLED";                                           #Choices = DISABLED, ENABLED
+	offset_slope = 1.0;
+	patlist = "fmax_list";
+	period_format = "FREQ";                                               #Choices = PERIOD, FREQ
+	prebuild_search_points = "DISABLED";                                  #Choices = ENABLED, DISABLED
+	resolution = 10.0;
+	result_global = "";
+	sample_rate = 1;
+	search_config_file = "./input_files/CKT_search_fmax_config_input.txt";
+	search_delay = 0;
+	search_direction = "PASS_TO_FAIL";                                    #Choices = PASS_TO_FAIL, FAIL_TO_PASS
+	search_method = "BINARY";                                             #Choices = LINEAR, BINARY
+	search_parameter = "PSBPer";
+	search_repeats = 1;
+	search_sets = "Vmin_bf_dspt_cfrc_a_011604 Vmin_bf_dsym_cfrc_0_011604 Vmin_bf_dsym_cfrc_1_011604 Vmin_bf_dspt_a_cmp0_011604 Vmin_bf_dspt_q_cmp0_011604 Vmin_bf_dsym_0_cmp0_011604 Vmin_bf_dsym_1_cmp0_011604 Vmin_bf_dspt_a_cmp1_011604 Vmin_bf_dsym_0_cmp1_011604 Vmin_bf_dsym_1_cmp1_011604";
+	search_type = "FMAX";                                                 #Choices = FMIN, FMAX, VMIN, VMAX, UNDEFINED
+	test_point_delay = 0;
+	thermal_monitor_ituff_tname = "";
+	thermal_monitor_mode = "PREPOSTTEST";                                 #Choices = DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermal_monitor_offset_check = "MEASURE_ONLY";                        #Choices = CHECK_LIMITS, MEASURE_ONLY
+	thermal_test_name_datalog_format = "INSTNAME!DIODE";
+	timings = "sdr_timing_Fmax";
+	window_search_width = 10;
+}
+

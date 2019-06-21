@@ -1,0 +1,156 @@
+#Import C:\intel\tpapps\cortex\oasis\Rev3.0.2e08.6_p2\templates\OASIS_tt.ph
+INST tt_tmmavid {
+	TEMPLATE                                iCTMMAvidTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_aciolb {
+    TEMPLATE                                iCACIOLBTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_func_acio {
+    TEMPLATE                                iCFuncTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_func_aciolb {
+    TEMPLATE                                iCFuncTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_func_acio_tvatvb_min {
+    TEMPLATE                                iCFuncTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_bkgnd_starttime {
+    TEMPLATE                                iCBkgndTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_bkgnd {
+    TEMPLATE                                iCBkgndTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_dap {
+    TEMPLATE                                iCDAPTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_dcparametric {
+    TEMPLATE                                iCDCParametricTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0e01.3\templates\OASIS_tt.ph
+INST tt_dualcoreflow {
+    TEMPLATE                                iCDualCoreFlowTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_eeprom {
+    TEMPLATE                                iCEEPROMTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_findultorvid {
+    TEMPLATE                                iCFindULTorVIDTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_flowbuild {
+    TEMPLATE                                iCFlowBuildTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_flowfork {
+    TEMPLATE                                iCFlowForkTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_flowspider {
+    TEMPLATE                                iCFlowSpiderTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_func {
+    TEMPLATE                                iCFuncTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0e01.3\templates\OASIS_tt.ph
+INST tt_fuseburn {
+    TEMPLATE                                iCFuseBurnTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_fuseconfig {
+    TEMPLATE                                iCFuseConfigTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_fuseread {
+    TEMPLATE                                iCFuseReadTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_fuseread_SubstepID {
+    TEMPLATE                                iCFuseReadTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_fuseread_ult {
+    TEMPLATE                                iCFuseReadTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_gift {
+    TEMPLATE                                iCGiftTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_glxpress {
+    TEMPLATE                                iCGlXpressTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_icc {
+    TEMPLATE                                iCIccTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_icc_sicc_cluster {
+	TEMPLATE                                iCIccTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_init {
+    TEMPLATE                                iCInitTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_instloop {
+    TEMPLATE                                iCInstLoopTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_ituff {
+    TEMPLATE                                iCItuffTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_leakage {
+    TEMPLATE                                iCLeakageTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_lfsr {
+    TEMPLATE                                iCLfsrTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_librarymgr {
+    TEMPLATE                                iCLibraryMgr;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_ovid {
+    TEMPLATE                                iCOVIDTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_patternmodify {
+    TEMPLATE                                iCPatternModifyTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_pause {
+    TEMPLATE                                iCPauseTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_powerdown {
+    TEMPLATE                                iCPowerDownTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_rampage {
+    TEMPLATE                                iCRampageTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_redundancy {
+    TEMPLATE                                iCRedundancyTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_samplerate {
+    TEMPLATE                                iCSampleRateTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_scanfi {
+    TEMPLATE                                iCScanFITest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_scoreboard {
+    TEMPLATE                                iCScoreboardTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_script {
+    TEMPLATE                                iCScriptTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_search {
+    TEMPLATE                                iCSearchTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_shops {
+    TEMPLATE                                iCShopsTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_sigmode {
+    TEMPLATE                                iCSigModeTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_siteload {
+    TEMPLATE                                iCSiteLoadTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_thermaldiode {
+    TEMPLATE                                iCThermalDiodeTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_thermalthrottle {
+    TEMPLATE                                iCThermalThrottleTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_ube {
+    TEMPLATE                                iCUBETest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_userfunc {
+    TEMPLATE                                iCUserFuncTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_vcccontinuity {
+    TEMPLATE                                iCVccContinuityTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_vipr {
+    TEMPLATE                                iCViprTest;
+#Import I:\tpapps\cortex\oasis\Rev3.0.0\templates\OASIS_tt.ph
+INST tt_xiucheck {
+    TEMPLATE                                iCXiuCheckTest;

@@ -1,0 +1,294 @@
+COMPOSITE LRBAVID
+{
+	DEF (
+	BMFCFILE = "LRBAVID/BMFC.xml",
+
+	whichSocketFile = "",                        			#Datatype=STRING, OPTIONAL
+    	globalDebugMode = "",	                         		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    	globalDatalogMode = "FALSE",                       		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	engineeringMode = "",		                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, GET_USER_INPUT, SILENT
+	productName = "",				                #Datatype=STRING, OPTIONAL
+	locationCode = "",                             			#Datatype=INTEGER, OPTIONAL
+	testTemp = "",		                               		#Datatype=DOUBLE, OPTIONAL
+	corrWaferLot = "",			                        #Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	verifyAllInstances = "",	                     		#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	engLocnGlobalName = "",                      			#Datatype=STRING, OPTIONAL
+	staticInstanceFilename = "",					#Datatype=STRING, OPTIONAL
+
+	# Common Test Class Parmaeters
+	preinstance = "",
+	preplist = "",
+	postplist = "",
+	preburst = "",
+	postburst = "",
+	eotPowerDown = FALSE,						#Choices : FALSE, TRUE
+	maskPins = "",
+	thermalMonitorMode = DISABLED,					#Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermalMonitorOffsetCheck = CHECK_LIMITS,			#Choices : CHECK_LIMITS, MEASURE_ONLY
+	thermalMonitorItuffTname = "",
+	instanceProfile = FALSE,					#Choices : FALSE, TRUE
+	plistCheck = EMPTY_DISABLED,				#Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+	ignoreAlarm = NONE,						#Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+	ssidESequence = "",
+	ssidERecovery = "",
+	ssidGPwrdwn = NO,				#Choices : NO, YES
+	relayToken = "",
+	ssidOExecute = FIRST_FAIL,	#Choices : FORCE_ALL, FIRST_FAIL
+	captureResult = CLEAR,	#Choices : DO_NOT_CLEAR, CLEAR
+
+	ituffVerbosity = "BRIEF",					#BRIEF, VERBOSE, OBNOXIOUS
+	debugMode = "VERBOSE",						#DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+   	datalogMode = ON,						#Choices : ON, DISABLED
+	binMatrixFilePath = "", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "CLEAR_DUT_DATA",
+	loopMode = "VLOOP",
+	activeTestDomain = "",
+	portToTestValue = "",
+	invalidFlows = "",
+	dffTokenName = "",
+	dffTokenValue = "",
+	defaultHardBin = 1,
+	enableextendedbinning = "DISABLED",
+	bypassGlobal = "",
+	postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+	preinstance = "",
+	setcomma =",",
+	setctsclocn = "SET_GLOBAL^CTSCVars.SC_LOCN-",
+	sclocn = "7721",
+	setctscube = "SET_GLOBAL^CTSCVars.SC_ULT_DOWNLOAD_PATH-./iVal_LRBAVID.ube",
+        secondPassTimings = "",
+        maxCaptureFails = 1,
+        eapMode = EAP_OFF
+        ssidESequence = "",
+        ssidERecovery = "",
+        ssidGPwrdwn = NO,
+        ssidGRestore = "",
+        ssidOExecute = "FIRST_FAIL",
+        );
+
+	DEF (TEMPLATENAME = LRBAVID, 
+	TESTTYPE = EXECUTE, 
+	TESTITEM = "", 
+	TESTMODE = LRBAVID, 
+	DEBUGMODE = $debugMode,
+	DESIREDOUT = "");
+  	DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$TESTMODE_$DEBUGMODE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+
+
+	tt_userfunc (
+		TESTITEM = SETLOCN,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = $setctsclocn$sclocn$setcomma$setctscube
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+    	tt_init (
+		TEMPLATENAME = INIT,
+		TESTITEM = LRBAVID, 
+      		DESIREDOUT = P1,
+	        whichSocketFile = "which_socket.txt",
+	        globalDebugMode = FALSE,
+	        engineeringMode = DISABLED,
+	        productName = "ABCDEFGHIJ---T1--",
+	        locationCode = 7721,
+	        testTemp = 93.0,
+	        corrWaferLot = DISABLED,
+	        verifyAllInstances = DISABLED,
+	        staticInstanceFilename = ""
+	)
+	        
+    	0?NEXT,
+    	1?NEXT;
+
+
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = ClearDUTData,
+		TESTITEM = BFMC,
+		TESTMODE = VLOOP, 
+      		DESIREDOUT = P1,	
+		debugMode = "DISABLED",
+       	       	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+		loopMode = "VLOOP",
+  		activeTestDomain = "core_freq",
+		defaultHardBin = 1,
+    		operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+	##############################################################################
+    	# Test Description: Get DFF data
+    	# Expected Behavior: Pass, exit port 1.
+    	############################################################################## 
+	tt_ube (
+		TEMPLATENAME = UBE,
+		TESTITEM = DFF,
+		TESTMODE = DOWNLOAD,
+    		DESIREDOUT = P1, 
+		ubeGlobal = "",
+		ubeField = "",
+		datalogMode = "ON",
+		bypassGlobal = "",
+		dffLogForAries = "ENABLED",
+            	dffLogMegaToken = "ENABLED",	
+        )
+       	1?NEXT,
+       	0?NEXT;
+
+	tt_userfunc (
+		TESTITEM = PHLRBAVIDGSDS,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_GSDS^DICC1_32_VCCP-125.68-UNT_DBL,SET_GSDS^DICC1_28_VCCP-118.414-UNT_DBL,SET_GSDS^DICC1_24_VCCP-107.739-UNT_DBL,SET_GSDS^SICC1_VCCP-7.7632-UNT_DBL"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_lrbavid (
+		TESTITEM = PH,
+      		DESIREDOUT = P1,
+		configFile = "./LRBAVID/avid_VCore_hot_rev1.30_HP.xml",
+		avidMode = "AVID_POWERHOUSE",
+		powerSupply = "VTT",
+		outputXml = "output_ref.xls",
+		outputXls = "output.xls"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_func_prep (
+		TEMPLATENAME = LRBFUNC,
+		TESTITEM = FUNC,
+		TESTMODE = TEST,       		
+		DESIREDOUT = P1,
+      		serialMode = "FALSE",
+      		relayToken = "",
+      		timings = iValTimings50MHz,
+		secondPassTimings = "",
+		maxCaptureFails = 1,
+        	level = iValLevelFuncPass,
+		patlist = "basic_func_list_pass",
+		preplist = "LRB_AvidUFs!HardwareWriteOrGlobalUpdate INSTANCE-LRBAVID_EXECUTE_PH_LRBAVID_VERBOSE_P1 SOLVER-MN UPDATE_TO-HDPS VCC_CORNER-VMIN TO_DFF-A_VMIN_MN_C FROM_DFF-PBIC_S1.A_VMIN_MN_C FLOW-1",
+		preinstance = "LRB_AvidUFs!BypassAndCheckVID INSTANCE-LRBAVID_EXECUTE_PH_LRBAVID_VERBOSE_P1 SOLVER-MN FROM_DFF-PBIC_S1.A_VMIN_MN_C FLOW-1",
+		ssidESequence = ""
+	)
+        0?NEXT,
+        1?NEXT;
+
+
+    	tt_binmatrixflowcontrol (
+		TEMPLATENAME = DisableF123,
+		TESTITEM = BFMCVLOOP, 
+    		DESIREDOUT = P1,
+		debugMode = "DISABLED",
+       	       	binMatrixFilePath = $BMFCFILE,
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+  		operatingMode = "SET_FLOW_INFO",
+  		activeTestDomain = "core_freq",
+  		invalidFlows = "1,2,3",
+  		dffTokenName = "",
+  		dffTokenValue = "",
+        )
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_userfunc (
+		TESTITEM = PVAVIDGSDS,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "GET_GSDS^DICC1_28_VCCP-UNT_DBL+TOGSDS^DICC_PV_VCCP-UNT_DBL,GET_GSDS^SICC1_VCCP-UNT_DBL+TOGSDS^SICC_PV_VCCP-UNT_DBL"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_lrbavid (
+		TESTITEM = PV,
+      		DESIREDOUT = P1,
+		configFile = "./LRBAVID/avid_VCore_hot_rev1.30_HP.xml",
+		avidMode = "AVID_POWERVERIFY",
+		powerSupply = "VTT",
+		outputXml = "output_ref.xls",
+		outputXls = "output.xls",
+	)
+  	0?NEXT,
+  	1?NEXT;
+		
+	tt_binmatrixflowcontrol (
+		TEMPLATENAME = SetDUTFinalData,
+		TESTITEM = BMFC,
+		TESTMODE = VLOOP, 
+      		DESIREDOUT = P1,
+		debugMode = "DISABLED",
+               	binMatrixFilePath = $BMFCFILE, 
+    		activeBingroupUservar = "SC_ActiveBinGroup_Product",
+    		operatingMode = "SET_DUT_FINAL_DATA",
+  		activeTestDomain = "core_freq",
+		loopMode = "VLOOP",
+		defaultHardBin = 1,
+    		enableextendedbinning = "ENABLED",
+    		defaultHardBin = 6901
+	)
+  	0?NEXT,
+  	1?NEXT; 
+
+		tt_userfunc (
+		TESTITEM = PHLRBAVIDGSDS_NoValidVID,
+      		DESIREDOUT = P1,
+		datalogMode = "ON",
+		functionName = "IDT.dll!DFF_GSDS",
+		functionParameter = "SET_GSDS^DICC1_32_VCCP-0-UNT_DBL,SET_GSDS^DICC1_28_VCCP-0-UNT_DBL,SET_GSDS^DICC1_24_VCCP-0-UNT_DBL,SET_GSDS^SICC1_VCCP-0-UNT_DBL"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_lrbavid (
+		TESTITEM = PH_NoValidVID,
+      		DESIREDOUT = P1,
+		configFile = "./LRBAVID/avid_VCore_hot_rev1.30_HP.xml",
+		avidMode = "AVID_POWERHOUSE",
+		powerSupply = "VTT",
+		outputXml = "output_NoVIDref.xls",
+		outputXls = "output_NoVID.xls"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	tt_func_prep (
+		TEMPLATENAME = LRBFUNC_NoVID,
+		TESTITEM = FUNC,
+		TESTMODE = TEST,       		
+		DESIREDOUT = P0,
+      		serialMode = "FALSE",
+      		relayToken = "",
+      		timings = iValTimings50MHz,
+		secondPassTimings = "",
+		maxCaptureFails = 1,
+        	level = iValLevelFuncPass,
+		patlist = "basic_func_list_pass",
+		preinstance = "LRB_AvidUFs!BypassAndCheckVID INSTANCE-LRBAVID_EXECUTE_PH_NoValidVID_LRBAVID_VERBOSE_P1 SOLVER-MN FROM_DFF-PBIC_S1.A_VMIN_MN_C FLOW-1",
+		preplist = "LRB_AvidUFs!HardwareWriteOrGlobalUpdate INSTANCE-LRBAVID_EXECUTE_PH_LRBAVID_VERBOSE_P1 SOLVER-MN UPDATE_TO-HDPS VCC_CORNER-VMIN TO_DFF-A_VMIN_MN_C FROM_DFF-PBIC_S1.A_VMIN_MN_C FLOW-1",
+		ssidESequence = ""
+	)
+        0?1,
+        1?1;
+		
+       tt_librarymgr (
+		TEMPLATENAME = LibraryManager,
+		TESTITEM = Unload,
+   	        DESIREDOUT = P1,                
+                bypassGlobal = "",
+		debugMode = "DISABLED",
+		postinstance = "iVal_utilityfunc!GenerateInstanceResults")
+   	-2?1,
+   	-1?1,
+   	0?1,
+   	1?1;
+}

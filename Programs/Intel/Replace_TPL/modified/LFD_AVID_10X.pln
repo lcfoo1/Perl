@@ -1,0 +1,762 @@
+###############################################################################################
+# Template Name: LFD_AVID_10X
+# Description: Contains execute test cases for LFDAVID
+# Date: 9 March 2010
+# TP Base: LFDDTEHC0MC004W02A
+# LFDAVID code revision: Rev10.12
+# LFDAVID code revision notes (SVN access required): 
+# http://pgweb08.png.intel.com:8080/svn/PDE_PROJ/Greenlane/branches/B_DEV_LFDAVID_Bstep_TP/Docs/GLNTMM_LFD_AVID_rev_note.xls
+###############################################################################################
+
+COMPOSITE LFD_AVID_10X
+{
+	DEF (
+	# LFDAVID setup
+	LFDAVIDREV10X = "10X",
+	BMFCFILE = "LFD_AVID_10X/BMFC.xml",
+	AVIDCONFIGSET = "LFD_CFD_rev1",
+	ENGRCONFIGFILE = "LFD_AVID_10X/LFD_LGA_AVID.xml"
+	ENGROUTPUTFILE = "LFD_AVID_10X/avidout.txt",
+	
+	whichSocketFile = "",                        			#Datatype=STRING, OPTIONAL
+    globalDebugMode = "",	                         		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+    globalDatalogMode = "FALSE",                       		#Datatype=STRING, OPTIONAL  #Choices : FALSE, TRUE
+	engineeringMode = "",		                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, GET_USER_INPUT, SILENT
+	productName = "",						                #Datatype=STRING, OPTIONAL
+	locationCode = "",                             			#Datatype=INTEGER, OPTIONAL
+	testTemp = "",		                               		#Datatype=DOUBLE, OPTIONAL
+	corrWaferLot = "",			                        	#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	verifyAllInstances = "",	                     		#Datatype=STRING, OPTIONAL  #Choices : DISABLED, ENABLED
+	engLocnGlobalName = "",                      			#Datatype=STRING, OPTIONAL
+	staticInstanceFilename = "",							#Datatype=STRING, OPTIONAL
+
+	# Common Test Class Parmaeters
+	preinstance = "",
+	preplist = "",
+	postplist = "",
+	preburst = "",
+	postburst = "",
+	eotPowerDown = FALSE,									#Choices : FALSE, TRUE
+	maskPins = "",
+	thermalMonitorMode = DISABLED,							#Choices : DISABLED, PRETEST, POSTTEST, PREPOSTTEST
+	thermalMonitorOffsetCheck = CHECK_LIMITS,				#Choices : CHECK_LIMITS, MEASURE_ONLY
+	thermalMonitorItuffTname = "",
+	instanceProfile = FALSE,								#Choices : FALSE, TRUE
+	plistCheck = EMPTY_DISABLED,					#Choices : EMPTY_DISABLED, EMPTY_ONLY, DISABLED_ONLY, NOCHECK
+	ignoreAlarm = NONE,										#Choices : NONE, CLAMP_ONLY, SPIKE_ONLY, OSC_ONLY, CLAMP_SPIKE, CLAMP_OSC, SPIKE_OSC, ALL_THREE
+	ssidESequence = "",
+	ssidERecovery = "",
+	ssidGPwrdwn = NO,						#Choices : NO, YES
+	relayToken = "",
+	ssidOExecute = FIRST_FAIL,	#Choices : FORCE_ALL, FIRST_FAIL
+	captureResult = CLEAR,	#Choices : DO_NOT_CLEAR, CLEAR
+	ituffVerbosity = "BRIEF",								#BRIEF, VERBOSE, OBNOXIOUS
+	debugMode = "DISABLED",									#DISABLED, BRIEF, VERBOSE, OBNOXIOUS
+   	datalogMode = ON,										#Choices : ON, DISABLED
+	binMatrixFilePath = "", 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "CLEAR_DUT_DATA",
+	loopMode = "VLOOP",
+	activeTestDomain = "",
+	portToTestValue = "",
+	invalidFlows = "",
+	dffTokenName = "",
+	dffTokenValue = "",
+	defaultHardBin = 1,
+	enableextendedbinning = "DISABLED",
+	bypassGlobal = "",
+	postinstance = "iVal_utilityfunc!GenerateInstanceResults",
+	preinstance = "",
+	setavidlocnstr = "SET_GLOBAL^AVIDCntlVars.AVID_CNTL_LOCATION_MODE-",
+	setcomma =",",
+	setctsclocn = "SET_GLOBAL^CTSCVars.SC_LOCN-"
+	setclearssid = "SET_GLOBAL^CorTeXGlobals.iCGL_SSIDSetupName"
+	setctscube = "SET_GLOBAL^CTSCVars.SC_ULT_DOWNLOAD_PATH-./LFD_AVID_10X/LFD_AVID_10X.ube"
+	Locn="PBIC", sclocn="7721", 
+	LocnCold="COLD", sclocnCold="7731", 
+	LocnQa="QA", sclocnQa="7757"
+    );
+
+	LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode (COMPNAME = LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode, debugMode = "VERBOSE", ituffVerbosity = "VERBOSE")
+	0?NEXT,
+	1?NEXT;
+	
+	LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode (COMPNAME = LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode, debugMode = "OBNOXIOUS", ituffVerbosity = "OBNOXIOUS")
+	0?NEXT,
+	1?NEXT;
+	
+	LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode (COMPNAME = LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode, debugMode = "BRIEF", ituffVerbosity = "BRIEF")
+	0?NEXT,
+	1?NEXT;
+	
+	LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode (COMPNAME = LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode, debugMode = "DISABLED", ituffVerbosity = "BRIEF")
+	0?NEXT,
+	1?NEXT;
+}
+
+COMPOSITE LFD_AVID_$LFDAVIDREV10X_Execute_$debugMode
+{	
+	DEF (
+	TEMPLATENAME = LFDAVID, 
+	TESTTYPE = EXECUTE, 
+	TESTITEM = "", 
+	TESTMODE = "", 
+	DEBUGMODE = $debugMode,
+	DESIREDOUT = ""
+	);
+  	DEF (INSTANCENAME = $TEMPLATENAME_$TESTTYPE_$TESTITEM_$TESTMODE_$DEBUGMODE_$DESIREDOUT); 
+	DEF (name = $INSTANCENAME, BINNAME = $INSTANCENAME, debugMode = $debugMode);
+	  
+	
+	###############################################################################
+	# Test Description: Set Global location - HOT LOCATION
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = GLOBAL, 
+	TESTITEM = SETLOCN,
+	TESTMODE = $Locn,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = $setavidlocnstr$Locn$setcomma$setctsclocn$sclocn$setcomma$setclearssid$setcomma$setctscube
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Common Init
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_init (
+	TEMPLATENAME = INIT,
+	TESTTYPE = LFDAVID,
+	TESTITEM = $LFDAVIDREV10X,
+	TESTMODE = ALL, 
+	DESIREDOUT = P1,
+	whichSocketFile = "which_socket.txt",
+	globalDebugMode = FALSE,
+	engineeringMode = DISABLED,
+	productName = "ABCDEFGHIJ---T1--",
+	locationCode = 7721,
+	testTemp = 93.0,
+	corrWaferLot = DISABLED,
+	verifyAllInstances = DISABLED,
+	staticInstanceFilename = ""
+	)	        
+	0?NEXT,
+	1?NEXT;
+	
+	
+  	###############################################################################
+  	# Test Description: This test executes CLEAR_DUT_DATA mode which does the bin matrix file
+  	#		      		parser function and activate all the flows.
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = ClearDUTData,
+	TESTITEM = BFMC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE, 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	loopMode = "VLOOP",
+	activeTestDomain = "core_freq",
+	defaultHardBin = 1,
+	operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+	
+	###############################################################################
+	# Test Description: Get DFF data
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_ube (
+	TEMPLATENAME = UBE,
+	TESTITEM = DFF,
+	TESTMODE = DOWNLOAD,
+	DESIREDOUT = P1, 
+	ubeGlobal = "",
+	ubeField = "",
+	datalogMode = "ON",
+	bypassGlobal = "",
+	dffLogForAries = "ENABLED",
+	dffLogMegaToken = "ENABLED",	
+	)
+	1?NEXT,
+	0?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set GSDS fuse string
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = UFGSDS,
+	TESTITEM = SETSTR,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = "SET_GSDS^FUSEREAD_CSI_Ratio_Max-001001-UNT,SET_GSDS^FUSEREAD_Core0_Disable-0-UNT,SET_GSDS^FUSEREAD_Core1_Disable-0-UNT,SET_GSDS^FUSEREAD_Core2_Disable-0-UNT,SET_GSDS^FUSEREAD_Core3_Disable-0-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_1Core-0111-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_2Cores-0110-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_3Cores-001-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_4Cores-01-UNT,SET_GSDS^FUSEREAD_Max_Eff_Ratio-0001001-UNT,SET_GSDS^FUSEREAD_Max_Non_Turbo_Ratio-0010011-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Efficiency-01101110-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Non_Turbo-01010001-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Turbo-00011111-UNT,SET_GSDS^FUSEREAD_PllFuseDivideRatioUncore-0010010-UNT,SET_GSDS^FUSEREAD_RTC_V_Slope_Adjust-01110-UNT,SET_GSDS^FUSEREAD_TT_Ratio_Max-101-UNT,SET_GSDS^FUSEREAD_Vtt_VID-101-UNT"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set GSDS fuse integer
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = UFGSDS,
+	TESTITEM = SETINT,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = "SET_GSDS^AVIDFirstPowerFlowCheckerInstance-1-UNT_INT,SET_GSDS^AVIDInBin-4-UNT_INT,SET_GSDS^AVIDOutBin-4-UNT_INT,SET_GSDS^BINBEFOREAUTOBYPASS-10866212-UNT_INT,SET_GSDS^DTS_CAPTURE_DATA_VALID_FLAG-1-UNT_INT,SET_GSDS^FLOWOFAUTOBYPASSEDTEST-6-UNT_INT,SET_GSDS^TESTAUTOBYPASSED-0-UNT_INT"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+  	###############################################################################
+  	# Test Description: Parse xml and store in tester memory LFDAVID INIT
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_lfdavid (
+	TESTITEM = INIT,
+	DESIREDOUT = P1,
+	engrFileConfigSet = $AVIDCONFIGSET,
+	engrOutputFile = $ENGROUTPUTFILE,
+	engrConfigFile = $ENGRCONFIGFILE 
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set flow info instance
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetFlowInfo,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE,
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_FLOW_INFO",
+	activeTestDomain = "core_freq",
+	invalidFlows = "1",
+	dffTokenName = "",
+	dffTokenValue = ""
+	)
+	0?NEXT,
+	1?NEXT;
+
+	
+	###############################################################################
+  	# Test Description: AVID POWERHOUSE
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (	
+	TESTITEM = POWERHOUSE,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!PowerHouse",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+ 	# Test Description: AVID LEVELUPDATE
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = LEVELUPDATE,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!LevelsUpdate",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+
+	###############################################################################
+ 	# Test Description: AVID FLOWCHECKER
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = FLOWCHECKER,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!FlowChecker",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+ 	# Test Description: AVID POWERVERIFY
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = POWERVERIFY,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!PowerVerify",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Set Global location - COLD LOCATION
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = GLOBAL, 
+	TESTITEM = SETLOCN,
+	TESTMODE = $LocnCold,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = $setavidlocnstr$LocnCold$setcomma$setctsclocn$sclocnCold$setcomma$setclearssid$setcomma$setctscube
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Common Init
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_init (
+	TEMPLATENAME = INIT,
+	TESTTYPE = LFDAVID,
+	TESTITEM = $LFDAVIDREV10X,
+	TESTMODE = ALL, 
+	DESIREDOUT = P1,
+	whichSocketFile = "which_socket.txt",
+	globalDebugMode = FALSE,
+	engineeringMode = DISABLED,
+	productName = "ABCDEFGHIJ---T1--",
+	locationCode = 7721,
+	testTemp = 93.0,
+	corrWaferLot = DISABLED,
+	verifyAllInstances = DISABLED,
+	staticInstanceFilename = ""
+	)	        
+	0?NEXT,
+	1?NEXT;
+	
+	
+  	###############################################################################
+  	# Test Description: This test executes CLEAR_DUT_DATA mode which does the bin matrix file
+  	#		      		parser function and activate all the flows.
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = ClearDUTData,
+	TESTITEM = BFMC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE, 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	loopMode = "VLOOP",
+	activeTestDomain = "core_freq",
+	defaultHardBin = 1,
+	operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+	
+	###############################################################################
+	# Test Description: Get DFF data
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_ube (
+	TEMPLATENAME = UBE,
+	TESTITEM = DFF,
+	TESTMODE = DOWNLOAD,
+	DESIREDOUT = P1, 
+	ubeGlobal = "",
+	ubeField = "",
+	datalogMode = "ON",
+	bypassGlobal = "",
+	dffLogForAries = "ENABLED",
+	dffLogMegaToken = "ENABLED",	
+	)
+	1?NEXT,
+	0?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set GSDS fuse string
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = UFGSDS,
+	TESTITEM = SETSTR,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = "SET_GSDS^FUSEREAD_CSI_Ratio_Max-001001-UNT,SET_GSDS^FUSEREAD_Core0_Disable-0-UNT,SET_GSDS^FUSEREAD_Core1_Disable-0-UNT,SET_GSDS^FUSEREAD_Core2_Disable-0-UNT,SET_GSDS^FUSEREAD_Core3_Disable-0-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_1Core-0111-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_2Cores-0110-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_3Cores-001-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_4Cores-01-UNT,SET_GSDS^FUSEREAD_Max_Eff_Ratio-0001001-UNT,SET_GSDS^FUSEREAD_Max_Non_Turbo_Ratio-0010011-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Efficiency-01101110-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Non_Turbo-01010001-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Turbo-00011111-UNT,SET_GSDS^FUSEREAD_PllFuseDivideRatioUncore-0010010-UNT,SET_GSDS^FUSEREAD_RTC_V_Slope_Adjust-01110-UNT,SET_GSDS^FUSEREAD_TT_Ratio_Max-101-UNT,SET_GSDS^FUSEREAD_Vtt_VID-101-UNT"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set GSDS fuse integer
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = UFGSDS,
+	TESTITEM = SETINT,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = "SET_GSDS^AVIDFirstPowerFlowCheckerInstance-1-UNT_INT,SET_GSDS^AVIDInBin-4-UNT_INT,SET_GSDS^AVIDOutBin-4-UNT_INT,SET_GSDS^BINBEFOREAUTOBYPASS-10866212-UNT_INT,SET_GSDS^DTS_CAPTURE_DATA_VALID_FLAG-1-UNT_INT,SET_GSDS^FLOWOFAUTOBYPASSEDTEST-6-UNT_INT,SET_GSDS^TESTAUTOBYPASSED-0-UNT_INT"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+  	###############################################################################
+  	# Test Description: Parse xml and store in tester memory LFDAVID INIT
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_lfdavid (
+	TESTITEM = INIT,
+	DESIREDOUT = P1,
+	engrFileConfigSet = $AVIDCONFIGSET,
+	engrOutputFile = $ENGROUTPUTFILE,
+	engrConfigFile = $ENGRCONFIGFILE 
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set flow info instance
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetFlowInfo,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE,
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_FLOW_INFO",
+	activeTestDomain = "core_freq",
+	invalidFlows = "1",
+	dffTokenName = "",
+	dffTokenValue = ""
+	)
+	0?NEXT,
+	1?NEXT;
+
+	
+	###############################################################################
+  	# Test Description: AVID POWERHOUSE
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (	
+	TESTITEM = POWERHOUSE,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!PowerHouse",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+ 	# Test Description: AVID LEVELUPDATE
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = LEVELUPDATE,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!LevelsUpdate",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+
+	###############################################################################
+ 	# Test Description: AVID FLOWCHECKER
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = FLOWCHECKER,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!FlowChecker",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+ 	# Test Description: AVID POWERVERIFY
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = POWERVERIFY,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!PowerVerify",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: Set Global location - QA LOCATION
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = GLOBAL, 
+	TESTITEM = SETLOCN,
+	TESTMODE = $LocnQa,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = $setavidlocnstr$LocnQa$setcomma$setctsclocn$sclocnQa$setcomma$setclearssid$setcomma$setctscube
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Common Init
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_init (
+	TEMPLATENAME = INIT,
+	TESTTYPE = LFDAVID,
+	TESTITEM = $LFDAVIDREV10X,
+	TESTMODE = ALL, 
+	DESIREDOUT = P1,
+	whichSocketFile = "which_socket.txt",
+	globalDebugMode = FALSE,
+	engineeringMode = DISABLED,
+	productName = "ABCDEFGHIJ---T1--",
+	locationCode = 7721,
+	testTemp = 93.0,
+	corrWaferLot = DISABLED,
+	verifyAllInstances = DISABLED,
+	staticInstanceFilename = ""
+	)	        
+	0?NEXT,
+	1?NEXT;
+	
+	
+  	###############################################################################
+  	# Test Description: This test executes CLEAR_DUT_DATA mode which does the bin matrix file
+  	#		      		parser function and activate all the flows.
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = ClearDUTData,
+	TESTITEM = BFMC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE, 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	loopMode = "VLOOP",
+	activeTestDomain = "core_freq",
+	defaultHardBin = 1,
+	operatingMode = "CLEAR_DUT_DATA"
+	)
+  	0?NEXT (BINSUM=BIN, BIN=3, INCR=1201, BINNAME=csi_min_fail_bin),
+  	1?NEXT (BINSUM=BIN, BIN=1, INCR=014, BINNAME=bmfc_pass_clear_dut);
+
+	
+	###############################################################################
+	# Test Description: Get DFF data
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_ube (
+	TEMPLATENAME = UBE,
+	TESTITEM = DFF,
+	TESTMODE = DOWNLOAD,
+	DESIREDOUT = P1, 
+	ubeGlobal = "",
+	ubeField = "",
+	datalogMode = "ON",
+	bypassGlobal = "",
+	dffLogForAries = "ENABLED",
+	dffLogMegaToken = "ENABLED",	
+	)
+	1?NEXT,
+	0?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set GSDS fuse string
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = UFGSDS,
+	TESTITEM = SETSTR,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = "SET_GSDS^FUSEREAD_CSI_Ratio_Max-001001-UNT,SET_GSDS^FUSEREAD_Core0_Disable-0-UNT,SET_GSDS^FUSEREAD_Core1_Disable-0-UNT,SET_GSDS^FUSEREAD_Core2_Disable-0-UNT,SET_GSDS^FUSEREAD_Core3_Disable-0-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_1Core-0111-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_2Cores-0110-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_3Cores-001-UNT,SET_GSDS^FUSEREAD_CoreTurboUpside_4Cores-01-UNT,SET_GSDS^FUSEREAD_Max_Eff_Ratio-0001001-UNT,SET_GSDS^FUSEREAD_Max_Non_Turbo_Ratio-0010011-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Efficiency-01101110-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Non_Turbo-01010001-UNT,SET_GSDS^FUSEREAD_Max_VID_Max_Turbo-00011111-UNT,SET_GSDS^FUSEREAD_PllFuseDivideRatioUncore-0010010-UNT,SET_GSDS^FUSEREAD_RTC_V_Slope_Adjust-01110-UNT,SET_GSDS^FUSEREAD_TT_Ratio_Max-101-UNT,SET_GSDS^FUSEREAD_Vtt_VID-101-UNT"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set GSDS fuse integer
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_userfunc (
+	TEMPLATENAME = UFGSDS,
+	TESTITEM = SETINT,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "IDT.dll!DFF_GSDS",
+	functionParameter = "SET_GSDS^AVIDFirstPowerFlowCheckerInstance-1-UNT_INT,SET_GSDS^AVIDInBin-4-UNT_INT,SET_GSDS^AVIDOutBin-4-UNT_INT,SET_GSDS^BINBEFOREAUTOBYPASS-10866212-UNT_INT,SET_GSDS^DTS_CAPTURE_DATA_VALID_FLAG-1-UNT_INT,SET_GSDS^FLOWOFAUTOBYPASSEDTEST-6-UNT_INT,SET_GSDS^TESTAUTOBYPASSED-0-UNT_INT"
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+  	###############################################################################
+  	# Test Description: Parse xml and store in tester memory LFDAVID INIT
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_lfdavid (
+	TESTITEM = INIT,
+	DESIREDOUT = P1,
+	engrFileConfigSet = $AVIDCONFIGSET,
+	engrOutputFile = $ENGROUTPUTFILE,
+	engrConfigFile = $ENGRCONFIGFILE 
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+	# Test Description: Set flow info instance
+	# Expected Behavior: Pass, exit port 1.
+	############################################################################## 
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetFlowInfo,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE,
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_FLOW_INFO",
+	activeTestDomain = "core_freq",
+	invalidFlows = "1",
+	dffTokenName = "",
+	dffTokenValue = ""
+	)
+	0?NEXT,
+	1?NEXT;
+
+	
+	###############################################################################
+  	# Test Description: AVID POWERHOUSE
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (	
+	TESTITEM = POWERHOUSE,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!PowerHouse",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+ 	# Test Description: AVID LEVELUPDATE
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = LEVELUPDATE,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!LevelsUpdate",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+
+	###############################################################################
+ 	# Test Description: AVID FLOWCHECKER
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = FLOWCHECKER,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!FlowChecker",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+
+	
+	###############################################################################
+ 	# Test Description: AVID POWERVERIFY
+  	# Expected Behavior: Pass test, exit port 1.
+  	##############################################################################  
+	tt_userfunc (
+	TESTITEM = POWERVERIFY,
+	DESIREDOUT = P1,
+	datalogMode = "ON",
+	functionName = "iCLFDAVIDTest!PowerVerify",
+	functionParameter = ""
+	)
+  	0?NEXT,
+  	1?NEXT;
+	
+	
+	###############################################################################
+	# Test Description: This test executes SET_DUT_FINAL_DATA mode which set the DUT final data
+  	# Expected Behavior: Pass test, exit port 1.
+	##############################################################################  
+	tt_binmatrixflowcontrol (
+	TEMPLATENAME = SetDUTFinalData,
+	TESTITEM = BMFC,
+	TESTMODE = VLOOP, 
+	DESIREDOUT = P1,
+	binMatrixFilePath = $BMFCFILE, 
+	activeBingroupUservar = "SC_ActiveBinGroup_Product",
+	operatingMode = "SET_DUT_FINAL_DATA",
+	activeTestDomain = "core_freq",
+	loopMode = "VLOOP",
+	defaultHardBin = 1,
+	enableextendedbinning = "ENABLED",
+	defaultHardBin = 6901
+	)
+  	0?NEXT,
+  	1?NEXT; 	
+}
+

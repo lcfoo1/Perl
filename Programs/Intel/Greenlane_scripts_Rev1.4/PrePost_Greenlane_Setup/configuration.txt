@@ -1,0 +1,4 @@
+# Configuration for changing CorTeX revision - by Foo Lye Cheung
+Root=C:\Development\intel\tpapps\CorTeX
+#Root=C:\intel\tpapps\CorTeX
+Revision=GLN_Rev4.12.0_PG1.1

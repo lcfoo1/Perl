@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BinMatrix>
+  <BinMatrixName>HSW_B0_03DP1</BinMatrixName>
+  <BinMatrixRevision>1</BinMatrixRevision>
+  <AttributeValueTable>
+    <Attribute name="core_freq" order="tightest-to-loosest">3600000000,3500000000,3400000000,3300000000,3200000000,3000000000,2900000000,2800000000,2700000000,2600000000,2500000000,2400000000,2300000000,2200000000,2000000000,1900000000,1800000000,1400000000</Attribute>
+    <Attribute name="cpu_func_cores" order="tightest-to-loosest">4,2</Attribute>
+    <Attribute name="graphics_func_cores" order="tightest-to-loosest">2,1,0</Attribute>
+    <Attribute name="ddr3_freq" order="tightest-to-loosest">1600000000</Attribute>
+    <Attribute name="opio_freq" order="tightest-to-loosest">0</Attribute>
+  </AttributeValueTable>
+  <BOMGroupTable>
+    <BOMGroup name="BGA_PERF">
+      <!--
+<BOMList>
+	<BOM>YM4EXHAV_B</BOM>
+	<BOM>YM4EXHBV_B</BOM>
+	<BOM>YM4EXHCV_B</BOM>
+	<BOM>YM4EXHSV_B</BOM>
+	<BOM>YM4EXHUV_B</BOM>
+	<BOM>YM4EXHZV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1388">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="2" bin="1389">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="3" bin="1390">
+        <Attribute name="core_freq">2900000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="4" bin="1391">
+        <Attribute name="core_freq">2700000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="5" bin="1392">
+        <Attribute name="core_freq">2300000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="6" bin="1393">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="7" bin="1394">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="8" bin="1395">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="9" bin="1396">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="10" bin="1397">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="11" bin="1398">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="12" bin="1399">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="13" bin="1400">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="14" bin="1401">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="BGA_STD">
+      <!--
+<BOMList>
+	<BOM>YM4EZHAV_B</BOM>
+	<BOM>YM4EZHBV_B</BOM>
+	<BOM>YM4EZHCV_B</BOM>
+	<BOM>YM4EZHSV_B</BOM>
+	<BOM>YM4EZHUV_B</BOM>
+	<BOM>YM4EZHZV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1306">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="2" bin="1307">
+        <Attribute name="core_freq">2300000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="3" bin="1315">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="4" bin="1310">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="5" bin="1311">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="6" bin="1312">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="7" bin="1316">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="8" bin="1317">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="9" bin="1318">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="10" bin="1319">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="11" bin="1320">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="12" bin="1321">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="13" bin="1313">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="14" bin="1314">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="HSW_DT">
+      <!--
+<BOMList>
+	<BOM>0Z4EZHAV_B</BOM>
+	<BOM>0Z4EZHBV_B</BOM>
+	<BOM>0Z4EZHCV_B</BOM>
+	<BOM>0Z4EZHSV_B</BOM>
+	<BOM>0Z4EZHUV_B</BOM>
+	<BOM>0Z4EZHZV_B</BOM>
+	<BOM>WE4EZHAV_B</BOM>
+	<BOM>WE4EZHBV_B</BOM>
+	<BOM>WE4EZHCV_B</BOM>
+	<BOM>WE4EZHSV_B</BOM>
+	<BOM>WE4EZHUV_B</BOM>
+	<BOM>WE4EZHZV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1344">
+        <Attribute name="core_freq">3500000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="2" bin="1345">
+        <Attribute name="core_freq">3200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="3" bin="1346">
+        <Attribute name="core_freq">3000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="4" bin="1347">
+        <Attribute name="core_freq">2800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="5" bin="1348">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="6" bin="1349">
+        <Attribute name="core_freq">2500000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="7" bin="1350">
+        <Attribute name="core_freq">2500000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="8" bin="1351">
+        <Attribute name="core_freq">2400000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="9" bin="1352">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="10" bin="1353">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="11" bin="1354">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="12" bin="1355">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="13" bin="1356">
+        <Attribute name="core_freq">2400000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="14" bin="1357">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="15" bin="1358">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="HSW_SVR">
+      <!--
+<BOMList>
+	<BOM>0Z4EXHAV_B</BOM>
+	<BOM>0Z4EXHBV_B</BOM>
+	<BOM>0Z4EXHCV_B</BOM>
+	<BOM>0Z4EXHSV_B</BOM>
+	<BOM>0Z4EXHUV_B</BOM>
+	<BOM>0Z4EXHZV_B</BOM>
+	<BOM>WE4EXHAV_B</BOM>
+	<BOM>WE4EXHBV_B</BOM>
+	<BOM>WE4EXHCV_B</BOM>
+	<BOM>WE4EXHSV_B</BOM>
+	<BOM>WE4EXHUV_B</BOM>
+	<BOM>WE4EXHZV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1373">
+        <Attribute name="core_freq">3600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="2" bin="1374">
+        <Attribute name="core_freq">3600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="3" bin="1375">
+        <Attribute name="core_freq">3600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="4" bin="1376">
+        <Attribute name="core_freq">3400000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="5" bin="1377">
+        <Attribute name="core_freq">3300000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="6" bin="1378">
+        <Attribute name="core_freq">3200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="7" bin="1379">
+        <Attribute name="core_freq">3200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="8" bin="1380">
+        <Attribute name="core_freq">3000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="9" bin="1381">
+        <Attribute name="core_freq">2800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="10" bin="1382">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="11" bin="1383">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="12" bin="1384">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="13" bin="1385">
+        <Attribute name="core_freq">1900000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="14" bin="1386">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="15" bin="1387">
+        <Attribute name="core_freq">1400000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="PGA_PERF">
+      <!--
+<BOMList>
+	<BOM>YH4EXHAV_B</BOM>
+	<BOM>YH4EXHBV_B</BOM>
+	<BOM>YH4EXHCV_B</BOM>
+	<BOM>YH4EXHSV_B</BOM>
+	<BOM>YH4EXHUV_B</BOM>
+	<BOM>YH4EXHZV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1402">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="2" bin="1403">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="3" bin="1404">
+        <Attribute name="core_freq">2900000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="4" bin="1405">
+        <Attribute name="core_freq">2700000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="5" bin="1406">
+        <Attribute name="core_freq">2300000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="6" bin="1407">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="7" bin="1408">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="8" bin="1409">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="9" bin="1410">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="10" bin="1411">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="11" bin="1412">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="12" bin="1413">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="13" bin="1414">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="14" bin="1415">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+    </BOMGroup>
+    <BOMGroup name="PGA_STD">
+      <!--
+<BOMList>
+	<BOM>YH4EZHAV_B</BOM>
+	<BOM>YH4EZHBV_B</BOM>
+	<BOM>YH4EZHCV_B</BOM>
+	<BOM>YH4EZHSV_B</BOM>
+	<BOM>YH4EZHUV_B</BOM>
+	<BOM>YH4EZHZV_B</BOM>
+</BOMList>
+-->
+      <Flow index="1" bin="1328">
+        <Attribute name="core_freq">2600000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="2" bin="1329">
+        <Attribute name="core_freq">2300000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="3" bin="1337">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="4" bin="1332">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="5" bin="1333">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="6" bin="1334">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="7" bin="1338">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="8" bin="1339">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="9" bin="1340">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">4</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="10" bin="1341">
+        <Attribute name="core_freq">2200000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="11" bin="1342">
+        <Attribute name="core_freq">2000000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="12" bin="1343">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">2</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="13" bin="1335">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">1</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+      <Flow index="14" bin="1336">
+        <Attribute name="core_freq">1800000000</Attribute>
+        <Attribute name="cpu_func_cores">2</Attribute>
+        <Attribute name="graphics_func_cores">0</Attribute>
+        <Attribute name="ddr3_freq">1600000000</Attribute>
+        <Attribute name="opio_freq">0</Attribute>
+      </Flow>
+    </BOMGroup>
+  </BOMGroupTable>
+</BinMatrix>

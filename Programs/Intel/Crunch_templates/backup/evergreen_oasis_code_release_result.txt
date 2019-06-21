@@ -1,0 +1,15 @@
+
+Microsoft (R) Visual Studio Version 8.0.50727.762.
+Copyright (C) Microsoft Corp 1984-2005. All rights reserved.
+1>------ Rebuild All started: Project: Evergreen_OASIS_Code, Configuration: Release Win32 ------
+1>Deleting intermediate and output files for project 'Evergreen_OASIS_Code', configuration 'Release|Win32'
+1>Compiling...
+1>EVG_oasis_core.cpp
+1>C:\T2000\Root\UserSDK\inc\OAI/core/SynchronizationGroup.h (234) : TODO: SynchronizationGroup::setCoherentSynchGroup() is obsolete method.
+1>C:\T2000\Root\UserSDK\inc\OAI/core/SynchronizationGroup.h (235) : TODO: Please replace setCoherentSynchGroup() with setSynchronousSynchGroup().
+1>Linking...
+1>   Creating library ..\..\lib\Evergreen_OASIS_Code.lib and object ..\..\lib\Evergreen_OASIS_Code.exp
+1>Embedding manifest...
+1>Build log was saved at "file://p:\tpapps\CorTeX\OASIS\Rev4.9.1_PG1\nhm\src\code\Release\BuildLog.htm"
+1>Evergreen_OASIS_Code - 0 error(s), 0 warning(s)
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========

@@ -1,0 +1,86 @@
+DTTimesetBasicSheet,version=2.3:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1	Time Sets (Basic)																	
+																		
+	Timing Mode:	Single		Master Timeset Name:														
+	Time Domain:			Strobe Ref Setup Name:														
+																		
+		Cycle	Pin/Group			Data		Drive				Compare				Edge Resolution		
+	Time Set	Period	Name	Clock Period	Setup	Src	Fmt	On	Data	Return	Off	Mode	Open	Close	Ref Offset	Mode	Comment	
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_4		i/o	PAT	NR	0	0.0		0	Edge	=C8*0.750	=C8*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_5		i/o	PAT	NR	0	0.0		0	Edge	=C9*0.750	=C9*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_3		i/o	PAT	NR	0	0.0		0	Edge	=C10*0.750	=C10*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_2		i/o	PAT	RH	0	=C11*0.250	=C11*0.750	0	Edge	=C11*0.750	=C11*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_6		i/o	PAT	NR	0	0.0		0	Edge	=C12*0.750	=C12*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_10		i/o	PAT	NR	0	0.0		0	Edge	=C13*0.750	=C13*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_11		i/o	PAT	NR	0	0.0		0	Edge	=C14*0.750	=C14*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_12		i/o	PAT	NR	0	0.0		0	Edge	=C15*0.750	=C15*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_13		i/o	PAT	NR	0	0.0		0	Edge	=C16*0.750	=C16*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_14		i/o	PAT	NR	0	0.0		0	Edge	=C17*0.750	=C17*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_15		i/o	PAT	NR	0	0.0		0	Edge	=C18*0.750	=C18*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_16		i/o	PAT	NR	0	0.0		0	Edge	=C19*0.750	=C19*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_17		i/o	PAT	NR	0	0.0		0	Edge	=C20*0.750	=C20*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	LPO_IN		i/o	PAT	NR	0	0			Off				Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	PCIE_CLKREQ_L		i/o	PAT	NR	0	0.0		0	Edge	=C22*0.750	=C22*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	PCI_PME_L		i/o	PAT	NR	0	0.0		0	Edge	=C23*0.750	=C23*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_UART_RXD		i/o	PAT	NR	0	0.0		0	Edge	=C24*0.750	=C24*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_TM1		i/o	PAT	NR	0	0.0		0	Edge	=C25*0.750	=C25*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	PERST_L		i/o	PAT	NR	0	0.0		0	Edge	=C26*0.750	=C26*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	WL_REG_ON		i/o	PAT	NR	0	0			Off				Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_DEV_WAKE		i/o	PAT	NR	0	0.0		0	Edge	=C28*0.750	=C28*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_AJTAG_TDI		i/o	PAT	NR	0	0.0		0	Edge	=C29*0.750	=C29*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_AJTAG_TDO		i/o	PAT	NR	0	0.0		0	Edge	=C30*0.750	=C30*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_I2S_DI		i/o	PAT	NR	0	0.0		0	Edge	=C31*0.750	=C31*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_I2S_DO		i/o	PAT	NR	0	0.0		0	Edge	=C32*0.750	=C32*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_0		i/o	PAT	NR	0	0.0		0	Edge	=C33*0.750	=C33*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_1		i/o	PAT	NR	0	0.0		0	Edge	=C34*0.750	=C34*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_2		i/o	PAT	NR	0	0.0		0	Edge	=C35*0.750	=C35*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	WPT_REG_ON		i/o	PAT	NR	0	0			Off				Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_3		i/o	PAT	NR	0	0.0		0	Edge	=C37*0.750	=C37*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_4		i/o	PAT	NR	0	0.0		0	Edge	=C38*0.750	=C38*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_5		i/o	PAT	NR	0	0.0		0	Edge	=C39*0.750	=C39*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_6		i/o	PAT	NR	0	0.0		0	Edge	=C40*0.750	=C40*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_7		i/o	PAT	NR	0	0.0		0	Edge	=C41*0.750	=C41*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_8		i/o	PAT	NR	0	0.0		0	Edge	=C42*0.750	=C42*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_9		i/o	PAT	NR	0	0.0		0	Edge	=C43*0.750	=C43*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_AJTAG_TCK		i/o	PAT	NR	0	0.0		0	Edge	=C44*0.750	=C44*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_8		i/o	PAT	NR	0	0.0		0	Edge	=C45*0.750	=C45*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_9		i/o	PAT	NR	0	0.0		0	Edge	=C46*0.750	=C46*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_7		i/o	PAT	NR	0	0.0		0	Edge	=C47*0.750	=C47*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_0		i/o	PAT	NR	0	0.0		0	Edge	=C48*0.750	=C48*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_1		i/o	PAT	NR	0	0.0		0	Edge	=C49*0.750	=C49*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_PCM_IN		i/o	PAT	NR	0	0.0		0	Edge	=C50*0.750	=C50*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_UART_TXD		i/o	PAT	NR	0	0.0		0	Edge	=C51*0.750	=C51*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_22		i/o	PAT	NR	0	0.0		0	Edge	=C52*0.750	=C52*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_PCM_CLK		i/o	PAT	NR	0	0.0		0	Edge	=C53*0.750	=C53*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_20		i/o	PAT	NR	0	0.0		0	Edge	=C54*0.750	=C54*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_21		i/o	PAT	NR	0	0.0		0	Edge	=C55*0.750	=C55*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	JTAG_SEL		i/o	PAT	NR	0	0.0		0	Edge	=C56*0.750	=C56*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_I2S_WS		i/o	PAT	NR	0	0.0		0	Edge	=C57*0.750	=C57*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_16		i/o	PAT	NR	0	0.0		0	Edge	=C58*0.750	=C58*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_17		i/o	PAT	NR	0	0.0		0	Edge	=C59*0.750	=C59*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_14		i/o	PAT	NR	0	0.0		0	Edge	=C60*0.750	=C60*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_15		i/o	PAT	NR	0	0.0		0	Edge	=C61*0.750	=C61*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_12		i/o	PAT	NR	0	0.0		0	Edge	=C62*0.750	=C62*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_13		i/o	PAT	NR	0	0.0		0	Edge	=C63*0.750	=C63*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_10		i/o	PAT	NR	0	0.0		0	Edge	=C64*0.750	=C64*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_11		i/o	PAT	NR	0	0.0		0	Edge	=C65*0.750	=C65*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_PCM_SYNC		i/o	PAT	NR	0	0.0		0	Edge	=C66*0.750	=C66*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_18		i/o	PAT	NR	0	0.0		0	Edge	=C67*0.750	=C67*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	GPIO_19		i/o	PAT	NR	0	0.0		0	Edge	=C68*0.750	=C68*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_UART_CTS_N		i/o	PAT	NR	0	0.0		0	Edge	=C69*0.750	=C69*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_HOST_WAKE		i/o	PAT	NR	0	0.0		0	Edge	=C70*0.750	=C70*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_GPIO_2		i/o	PAT	NR	0	0.0		0	Edge	=C71*0.750	=C71*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_GPIO_3		i/o	PAT	NR	0	0.0		0	Edge	=C72*0.750	=C72*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_GPIO_4		i/o	PAT	NR	0	0.0		0	Edge	=C73*0.750	=C73*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_GPIO_5		i/o	PAT	NR	0	0.0		0	Edge	=C74*0.750	=C74*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	LHL_GPIO0		i/o	PAT	NR	0	0.0		0	Edge	=C75*0.750	=C75*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	LHL_GPIO1		i/o	PAT	NR	0	0.0		0	Edge	=C76*0.750	=C76*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_AJTAG_TMS		i/o	PAT	NR	0	0.0		0	Edge	=C77*0.750	=C77*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	LHL_GPIO2		i/o	PAT	NR	0	0.0		0	Edge	=C78*0.750	=C78*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	LHL_GPIO3		i/o	PAT	NR	0	0.0		0	Edge	=C79*0.750	=C79*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_PCM_OUT		i/o	PAT	NR	0	0.0		0	Edge	=C80*0.750	=C80*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_UART_RTS_N		i/o	PAT	NR	0	0.0		0	Edge	=C81*0.750	=C81*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_REG_ON		i/o	PAT	NR	0	0.0		0	Edge	=C82*0.750	=C82*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	BT_I2S_CLK		i/o	PAT	NR	0	0.0		0	Edge	=C83*0.750	=C83*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	CLK_REQ		i/o	PAT	NR	0	0.0		0	Edge	=C84*0.750	=C84*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_18		i/o	PAT	NR	0	0.0		0	Edge	=C85*0.750	=C85*1.000		Auto		
+	tset1_wl_chip_top_first_waveset	100.000E-09	RF_SW_CTRL_19		i/o	PAT	NR	0	0.0		0	Edge	=C86*0.750	=C86*1.000		Auto		

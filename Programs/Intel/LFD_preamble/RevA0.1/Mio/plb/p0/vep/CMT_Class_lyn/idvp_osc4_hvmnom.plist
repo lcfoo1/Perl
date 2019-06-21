@@ -1,0 +1,13 @@
+Version 1.0;
+
+GlobalPList idvp_hvmnom_osc4_16161616_list [PreBurst lfd_pre_2M_vrevA5_16161616_4C_0ttx21_6g8m_sbfsn_slowst_0] [Mask bclk_buf, vid_bus, PRDY_N, pxp_outs] {
+#LRS_VCFINFO: utype=cmt vrev=vrevA5 mode=6g8m vectype=slowst
+   Pat g0033275N4955089_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_core0_osc04_allfublets;
+   Pat g0046416N4955112_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_core1_osc04_allfublets;
+   Pat g0031170N4955135_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_core2_osc04_allfublets;
+   Pat g0046424N4955158_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_core3_osc04_allfublets;
+   Pat g0031568N4955187_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_uncore_osc04_allfubs_seg1;
+   Pat g0033352N4955188_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_uncore_osc04_allfubs_seg2;
+   Pat g0033520N4955189_16161616a2x18_MA0cA01NxB_2bxa2eF_4x0xxxpxx0xxx_idv_uncore_osc04_allfubs_seg3;
+} # end of idvp_hvmnom_osc4_16161616_list
+
