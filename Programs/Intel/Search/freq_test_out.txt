@@ -1,7 +1,0 @@
-Fmax_bf_dspt_cfrc_a_011604 Fmax_bf_dsym_cfrc_0_011604 Fmax_bf_dsym_cfrc_1_011604 Fmax_bf_dspt_a_cmp0_011604 Fmax_bf_dspt_q_cmp0_011604 Fmax_bf_dsym_0_cmp0_011604 Fmax_bf_dsym_1_cmp0_011604 Fmax_bf_dspt_a_cmp1_011604 Fmax_bf_dsym_0_cmp1_011604 Fmax_bf_dsym_1_cmp1_011604
-
-
-
-
-
-

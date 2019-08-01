@@ -1,7 +1,0 @@
-Status=Active
-Server=pgxpw4053
-Team=TP
-User=etang
-Logon=2/15/2007 2:32:00 AM
-LastActive=3/7/2007 10:08:00 PM
-Active=No(IDLE=20days, 19hrs, 36mins)

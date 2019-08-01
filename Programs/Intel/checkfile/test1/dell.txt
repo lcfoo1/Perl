@@ -1,2 +1,0 @@
-intel core2duo T5550
-2739

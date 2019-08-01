@@ -1,7 +1,0 @@
-Status=Active
-Server=pgxpw4021
-Team=TP
-User=klow5
-Logon=3/7/2007 8:51:00 PM
-LastActive=3/7/2007 10:08:01 PM
-Active=Yes(IDLE=0days, 1hrs, 17mins)

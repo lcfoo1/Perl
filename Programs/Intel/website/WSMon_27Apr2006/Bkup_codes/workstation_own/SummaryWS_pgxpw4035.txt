@@ -1,7 +1,0 @@
-Status=Active
-Server=pgxpw4035
-Team=TV
-User=cwong28
-Logon=03/17/2006 13:48:33
-LastActive=Wed Mar 22 11:44:30 2006
-Active=Yes(IDLE=0days, 0hours, 3mins)

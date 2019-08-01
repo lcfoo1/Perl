@@ -1,5 +1,0 @@
-PIN=TDI|TDI_2|SPARE4|SPARE8
-PATTERN=cwma_pre_vrevN2_P_010606_c_N_B0_548b_j_f_u_0_h_1_f1_reg_0_x_008813.pat
-PLABEL=JTAGpllTest_Start1,JTAGpllTest_End1
-TCK=2
-

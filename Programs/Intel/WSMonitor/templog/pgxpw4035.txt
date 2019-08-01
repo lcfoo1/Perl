@@ -1,7 +1,0 @@
-Status=Active
-Server=pgxpw4035
-Team=TV
-User=jhong4
-Logon=3/5/2007 10:21:00 AM
-LastActive=3/7/2007 9:57:04 PM
-Active=No(IDLE=2days, 11hrs, 36mins)

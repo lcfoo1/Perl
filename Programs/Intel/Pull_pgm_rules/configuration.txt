@@ -1,1 +1,0 @@
-TPPath=C:\intel\cmtprogs\knc\kncdt0aa0mca01Ew08a0\CMTP_Outputs\OTPL_loadables\knc_Bx_class

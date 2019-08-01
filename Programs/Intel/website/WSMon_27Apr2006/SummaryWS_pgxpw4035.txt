@@ -1,7 +1,0 @@
-Status=Active
-Server=pgxpw4035
-Team=TV
-User=lfoo1
-Logon=11/29/2006 09:49:59
-LastActive=Wed Nov 29 09:54:42 2006
-Active=Yes(IDLE=0days, 0hours, 0mins)

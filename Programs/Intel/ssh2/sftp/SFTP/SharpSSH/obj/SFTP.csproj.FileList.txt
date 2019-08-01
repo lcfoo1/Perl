@@ -1,7 +1,0 @@
-bin\Release\SFTP.exe
-bin\Release\SFTP.pdb
-bin\Release\DiffieHellman.dll
-bin\Release\Org.Mentalis.Security.dll
-obj\Release\ResolveAssemblyReference.cache
-obj\Release\SFTP.exe
-obj\Release\SFTP.pdb

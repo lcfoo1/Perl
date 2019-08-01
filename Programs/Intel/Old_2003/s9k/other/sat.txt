@@ -1,4 +1,0 @@
-444587
-449169
-Verse lot tested by any operator : L422 onwards.
-select * from A11_PROD_5.F_LOTHIST where lot like 'L4240312%' and PREV_OPERATION like '61_2' and PRODUCT like 'FW8VD32V A B BFKL6R3K%'

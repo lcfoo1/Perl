@@ -1,3 +1,0 @@
-Status=Down
-Server=pgxpw4056
-Team=PS

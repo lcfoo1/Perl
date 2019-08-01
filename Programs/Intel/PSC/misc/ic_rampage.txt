@@ -1,7 +1,0 @@
-C:\Documents and Settings\lfoo1\Desktop\revl0a5b_cclass_dt_PatchA\main\avator\rampage_dir\L-0_BM_83G_rev18.4.xls found
-C:\Documents and Settings\lfoo1\Desktop\revl0a5b_cclass_dt_PatchA\main\avator\rampage_dir\L-0_PSC_TPSP_A5A0_CMTCS_rev18.4.xls found
-C:\Documents and Settings\lfoo1\Desktop\revl0a5b_cclass_dt_PatchA\main\avator\rampage_dir\psc_flow_select_rev2_5.xls found
-C:\Documents and Settings\lfoo1\Desktop\revl0a5b_cclass_dt_PatchA\main\avator\rampage_dir\psc_tbs_rev2_6_ww15.6_anna.xls found
-C:\Documents and Settings\lfoo1\Desktop\revl0a5b_cclass_dt_PatchA\main\avator\rampage_dir\psc_template_rev4.pln found
-C:\Documents and Settings\lfoo1\Desktop\revl0a5b_cclass_dt_PatchA\main\avator\rampage_dir\psc_tests_composites_rev2_6.xls found
-
